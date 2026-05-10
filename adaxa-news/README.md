@@ -27,3 +27,16 @@ Then open:
 ## Cron example
 
 `/usr/local/bin/php /home/USERNAME/public_html/adaxa-news/refresh.php group=light key=SECRET >/dev/null 2>&1`
+
+## Move project to new repository
+
+If you want to move this skeleton to `https://github.com/dakson2/adaxa-news/`, run:
+
+```bash
+cd adaxa-news
+./scripts/export-to-new-repo.sh ../adaxa-news-repo
+```
+
+Then initialize/push from the target directory using the commands printed by the script.
+
+> Note: runtime cache JSON files are intentionally excluded (`data/*.json`) because they are generated data and are already ignored by `.gitignore`.
