@@ -34,9 +34,24 @@ If you want to move this skeleton to `https://github.com/dakson2/adaxa-news/`, r
 
 ```bash
 cd adaxa-news
-./scripts/export-to-new-repo.sh ../adaxa-news-repo
+./scripts/export-to-new-repo.sh ../adaxa-news-repo https://github.com/dakson2/adaxa-news.git main
 ```
 
 Then initialize/push from the target directory using the commands printed by the script.
 
 > Note: runtime cache JSON files are intentionally excluded (`data/*.json`) because they are generated data and are already ignored by `.gitignore`.
+
+
+For token-based push:
+
+```bash
+cd adaxa-news
+GITHUB_TOKEN=ghp_xxx ./scripts/export-to-new-repo.sh ../adaxa-news-repo https://github.com/dakson2/adaxa-news.git main
+```
+
+For SSH-based push:
+
+```bash
+cd adaxa-news
+./scripts/export-to-new-repo.sh ../adaxa-news-repo git@github.com:dakson2/adaxa-news.git main
+```
