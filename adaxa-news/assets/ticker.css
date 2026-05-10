@@ -1,0 +1,18 @@
+.football-ticker {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #111;
+  color: #fff;
+  padding: .5rem .75rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .football-ticker { animation: ticker-scroll 30s linear infinite; }
+}
+@keyframes ticker-scroll {
+  0% { text-indent: 100%; }
+  100% { text-indent: -100%; }
+}
