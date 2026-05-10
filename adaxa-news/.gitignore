@@ -1,0 +1,6 @@
+config.local.php
+.env
+data/*.json
+data/*/snapshots/*.json
+cache/*.lock
+vendor/
