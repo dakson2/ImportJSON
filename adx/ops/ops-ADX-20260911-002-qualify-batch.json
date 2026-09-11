@@ -1,0 +1,98 @@
+{
+  "batchId": "ADX-20260911-002",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Qualification pass over AI-1's 13 prospects (Found positions 170-182). Fills the empty Fit score column, records the TestGorilla pause, and claims Q-20260911-DARIO for the package lane AI-1 left open. Found positions column Y (Actions) is deliberately untouched, and AI-1's Priority values are left as set except for TestGorilla, where the recorded priority is now factually wrong.",
+  "ops": [
+    {
+      "type": "queue.claim",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Package Tier A: OnTheGoSystems r170, Powered by Search r172, Brand Bolt r182. Submission requires web access, which AI-2 does not have.",
+      "notes": "AI-2 claims the package lane per AI-1's advisory note. AI-1 keeps sourcing on Q-20260911-SOURCES2. TestGorilla r180 paused by Dario 11/09."
+    },
+
+    { "type": "found.patch", "row": 170, "expect": { "Company": "OnTheGoSystems", "Fit score": "" }, "cells": { "Fit score": 94 },
+      "why": "Employer-direct URL, worldwide remote on EMEA hours, Independent Contractor engagement that matches the Adaxa B2B model exactly, and the role is core technical paid advertising. No geo, language or engagement caveat." },
+
+    { "type": "found.patch", "row": 172, "expect": { "Company": "Powered by Search", "Fit score": "" }, "cells": { "Fit score": 92 },
+      "why": "Employer-direct Breezy URL. Senior strategist role at a B2B SaaS paid-media agency, which is the closest match to the work Dario actually does daily. 4h overlap with 9am-5pm EST is roughly 15:00-20:00 CEST, workable from Croatia." },
+
+    { "type": "found.patch", "row": 182, "expect": { "Company": "Brand Bolt", "Fit score": "" }, "cells": { "Fit score": 90 },
+      "why": "Employer-direct Teamtailor URL and an exact title match. AI-1 flagged '$500k budget evidence' as conditional, but this is a strength rather than a risk: the verified case-study record is ~EUR 2.5M/month personally managed. Only caveat is US business-hour overlap." },
+
+    { "type": "found.patch", "row": 173, "expect": { "Company": "Yoru", "Fit score": "" }, "cells": { "Fit score": 86 },
+      "why": "Title is a bullseye and Europe is accepted with 3h US Eastern overlap, but the employer-original posting was not found. Per the rules an aggregator is a discovery source only, so this cannot be packaged until the employer-direct route is confirmed." },
+
+    { "type": "found.patch", "row": 171, "expect": { "Company": "UTTR", "Fit score": "" }, "cells": { "Fit score": 84 },
+      "why": "Employer-direct CATS URL and a senior performance title, but US business hours are required and the scope is 20-25h per week. Useful as a part-time income bridge during the LHG wind-down rather than as a replacement role. Same employer as the RevOps role at row 62, which also carried a timezone caveat." },
+
+    { "type": "found.patch", "row": 175, "expect": { "Company": "AutoGPT", "Fit score": "" }, "cells": { "Fit score": 80 },
+      "why": "Strong day rate (GBP 500-650 for ~3 days/week) and European overlap, but two real frictions: the scope is 0-to-1 GTM leadership rather than paid-media ownership, which is the weakest area in the case-study record, and AI-1 recorded the engagement as individual-only, which conflicts with contracting through Adaxa Agency." },
+
+    { "type": "found.patch", "row": 181, "expect": { "Company": "Ellipsis", "Fit score": "" }, "cells": { "Fit score": 74 },
+      "why": "Salary is disclosed (GBP 60-65k) and UK/EU core hours suit Croatia, but 'Accounts Lead' is client account management rather than hands-on paid-media ownership, and the Workable board was not parsed so the employer-direct route is unconfirmed." },
+
+    { "type": "found.patch", "row": 177, "expect": { "Company": "Decentralized Masters", "Fit score": "" }, "cells": { "Fit score": 72 },
+      "why": "Media buying is core, but the employer-original posting was not found and the category is crypto education, which carries Google Ads restriction and reputational considerations. A judgement call for Dario, not an automatic add." },
+
+    { "type": "found.patch", "row": 174, "expect": { "Company": "mr.Booster", "Fit score": "" }, "cells": { "Fit score": 68 },
+      "why": "The role appears on the official careers list but the vacancy detail link failed, so scope and seniority are unknown. 'Marketing Specialist' is also broader and likely more junior than the target band." },
+
+    { "type": "found.patch", "row": 178, "expect": { "Company": "ClickGuard", "Fit score": "" }, "cells": { "Fit score": 66 },
+      "why": "Interesting domain adjacency (click-fraud protection sits next to Google Ads), but Croatia eligibility is unconfirmed, which is a hard check, and the role centres on pipeline and HubSpot lifecycle work, the weakest evidenced area." },
+
+    { "type": "found.patch", "row": 179, "expect": { "Company": "Blackbird e-Solutions", "Fit score": "" }, "cells": { "Fit score": 62 },
+      "why": "Croatia eligibility unconfirmed, the remit mixes SEO with paid media, and 'Specialist' sits below the target seniority band." },
+
+    { "type": "found.patch", "row": 176, "expect": { "Company": "OnTheGoSystems", "Fit score": "" }, "cells": { "Fit score": 45 },
+      "why": "Head of Content is off-profile. It is also the same employer as row 170, and applying for both would weaken the paid-advertising application. Recommend no package time." },
+
+    { "type": "found.patch", "row": 180, "expect": { "Company": "TestGorilla", "Fit score": "" }, "cells": { "Fit score": 83 },
+      "why": "Score taken from the existing package's own assessment (83/100) rather than re-derived, so the number stays evidence-backed." },
+
+    { "type": "found.patch", "row": 180,
+      "expect": { "Company": "TestGorilla", "Priority": "A - Strong / ATS verify" },
+      "cells": { "Priority": "HOLD - paused by Dario 11/09; package already exists (Application 21)" },
+      "why": "The recorded priority is now factually wrong and is a live trap for the other AI: it would send package work to a role that already has a finished package from 22/08 and that Dario has explicitly paused. This is the only AI-1 priority value being changed." },
+
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "front": "DARIO",
+          "activityType": "Employer research",
+          "target": "Found positions 170-182 (AI-1 crawl batch)",
+          "targetUrl": "https://docs.google.com/spreadsheets/d/15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4",
+          "relatedId": "Q-20260911-DARIO",
+          "action": "Qualification pass on the 13 prospects: duplicate check against APPLIED and the prior 168 Found positions rows, Drive application-folder cross-check, Gmail cross-check for existing employer contact, geo/language/engagement hard checks, and Fit scores for all 13 (the column was empty).",
+          "outcome": "Tier A ready to package: OnTheGoSystems r170 (94), Powered by Search r172 (92), Brand Bolt r182 (90). Tier B with caveats: Yoru r173 (86), UTTR r171 (84), AutoGPT r175 (80). Blocked on employer-direct verification: r173, r174, r177, r181. Geo unconfirmed: r178, r179. Off-profile: r176. No duplicates found against APPLIED; no existing email contact with any of the 11 non-TestGorilla employers.",
+          "nextStep": "Prepare Tier A packages. Submission is not possible from this session: no outbound web access, so ATS forms cannot be reached.",
+          "notes": "Found positions column Y was not touched. AI-1 Priority values left as set, except TestGorilla r180."
+        },
+        {
+          "front": "DARIO",
+          "activityType": "Other",
+          "target": "TestGorilla - Senior Demand Generation Manager",
+          "targetUrl": "https://jobs.ashbyhq.com/testgorilla/007f6b53-027e-477d-beb5-630715ed7470",
+          "relatedId": "Q-20260911-DARIO",
+          "action": "Established from Drive and Gmail that the TestGorilla package was completed on 22/08/2026 but never submitted: no Ashby confirmation, no application receipt, and no message after the recruiter's 24/08 note saying she would watch for the application.",
+          "outcome": "Paused by Dario on 11/09. A reply to the recruiter was prepared as an unsent Gmail draft in the existing thread and deliberately left unsent.",
+          "nextStep": "On resume: verify the Ashby role is still open, resolve the start date left open in the package, and decide which email address to apply under.",
+          "notes": "Inbound recruiter interest, not an outbound application. Prepared is not submitted."
+        }
+      ]
+    },
+
+    {
+      "type": "daily.upsert",
+      "date": "11/09/2026",
+      "fields": {
+        "Qualified shortlist": 6,
+        "Front A submitted": 0,
+        "Blockers": "AI-2 cannot submit: no outbound web access, so no ATS form can be reached and no employer-direct URL can be verified. Tier A packages can be prepared but not sent. Also open: Ruby Labs (Application 20, 23/07) and TestGorilla (Application 21, 22/08) are finished packages in Drive with no submission evidence and no APPLIED row - both were prepared and never sent. Base vocabulary is split: ALL2 holds 195 tags absent from the documented master All.",
+        "Next action": "AI-1 or Dario to submit Tier A (r170 OnTheGoSystems, r172 Powered by Search, r182 Brand Bolt). Decide whether Ruby Labs is still worth sending."
+      }
+    }
+  ]
+}

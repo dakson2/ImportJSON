@@ -211,6 +211,9 @@ function adxApplyOp_(ss, op, owner, dryRun) {
     case 'applied.patch':    return adxAppliedPatch_(ss, op, dryRun);
     case 'applied.shiftLeft': return adxAppliedShiftLeft_(ss, op, dryRun);
     case 'found.append':     return adxRowsAppend_(ss, 'Found positions', op, dryRun);
+    case 'found.patch':      return adxRowsPatch_(ss, 'Found positions', op, dryRun);
+    case 'listings.patch':   return adxRowsPatch_(ss, 'Listings', op, dryRun);
+    case 'employers.patch':  return adxRowsPatch_(ss, 'Employers', op, dryRun);
     case 'listings.append':  return adxRowsAppend_(ss, 'Listings', op, dryRun);
     case 'employers.append': return adxRowsAppend_(ss, 'Employers', op, dryRun);
     case 'crawl.append':     return adxRowsAppend_(ss, 'Crawl', op, dryRun);
@@ -525,6 +528,47 @@ function adxRowsAppend_(ss, tabName, op, dryRun) {
   var at = adxFirstFreeRow_(t);
   t.sheet.getRange(at, 1, out.length, t.width).setValues(out);
   return { status: 'APPLIED', detail: 'Appended ' + out.length + ' row(s) to ' + tabName + ' at ' + at };
+}
+
+/**
+ * Patches named cells on a discovery tab. Same contract as applied.patch: an `expect` block is required, and the
+ * tab's protected columns are refused even when the caller asks for them.
+ */
+function adxRowsPatch_(ss, tabName, op, dryRun) {
+  var t = adxTable_(ss, tabName);
+
+  var row = op.row || null;
+  if (op.matchUrl) {
+    var found = adxFindRow_(t, 'Url', op.matchUrl);
+    if (!found) return { status: 'REFUSED', detail: 'matchUrl not found in ' + tabName };
+    if (row && row !== found) return { status: 'REFUSED', detail: 'row and matchUrl disagree' };
+    row = found;
+  }
+  if (!row || row <= t.headerRow) return { status: 'REFUSED', detail: 'Supply a valid data row or matchUrl' };
+  if (!op.expect) return { status: 'REFUSED', detail: tabName + ' patches require an expect block' };
+
+  var cells = op.cells || {};
+  if (!Object.keys(cells).length) return { status: 'SKIPPED', detail: 'No cells supplied' };
+
+  var protectedCols = ADX.PROTECTED[tabName] || [];
+  var blocked = Object.keys(cells).filter(function (k) { return protectedCols.indexOf(k) !== -1; });
+  if (blocked.length) return { status: 'REFUSED', detail: 'Protected column(s) in ' + tabName + ': ' + blocked.join(', ') };
+
+  var unknown = Object.keys(cells).concat(Object.keys(op.expect))
+    .filter(function (k) { return !t.index.hasOwnProperty(k); });
+  if (unknown.length) return { status: 'REFUSED', detail: 'Unknown ' + tabName + ' columns: ' + unknown.join(', ') };
+
+  var drift = [];
+  Object.keys(op.expect).forEach(function (k) {
+    var live = String(adxCell_(t, row, k)).trim();
+    var want = String(op.expect[k]).trim();
+    if (live !== want) drift.push(k + ': live "' + live + '" != expected "' + want + '"');
+  });
+  if (drift.length) return { status: 'REFUSED', detail: 'Row changed since you read it — ' + drift.join('; ') };
+
+  if (dryRun) return { status: 'APPLIED', detail: 'Would patch ' + tabName + ' row ' + row + ': ' + Object.keys(cells).join(', ') };
+  adxWriteCells_(t, row, cells);
+  return { status: 'APPLIED', detail: 'Patched ' + tabName + ' row ' + row + ': ' + Object.keys(cells).join(', ') };
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------
