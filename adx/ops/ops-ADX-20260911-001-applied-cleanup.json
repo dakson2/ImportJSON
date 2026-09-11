@@ -1,0 +1,109 @@
+{
+  "batchId": "ADX-20260911-001",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "APPLIED cleanup: repair the two column-shifted plancraft rows, restore the lost folder reference, and mark the Lead Ember and Noventra duplicates without deleting history. Flip dryRun to false after the dry-run receipt looks right.",
+  "ops": [
+    {
+      "type": "applied.shiftLeft",
+      "row": 7,
+      "fromColumn": "Company",
+      "expect": {
+        "Company": "Full Funnel",
+        "Job site": "plancraft",
+        "STATUS": "applied 25/5, didnt Get the Job"
+      },
+      "why": "A stray tag value 'Full Funnel' landed in Company and pushed the whole row one column right. Shifting the live cells left restores Company=plancraft, Url=https://plancraft.jobs.personio.com/job/2605447..., Fit=93, Priority=A - Primary, STATUS=CLOSED without retyping the long description."
+    },
+    {
+      "type": "applied.shiftLeft",
+      "row": 14,
+      "fromColumn": "Company",
+      "expect": {
+        "Company": "Paid Search",
+        "Job site": "plancraft",
+        "STATUS": "Existing malformed APPLIED row should be ignored"
+      },
+      "why": "Same defect, same employer. Stray tag 'Paid Search' in Company. After the shift: Company=plancraft, Url=https://plancraft.jobs.personio.com/job/2605074..., Fit=97, Priority=A - Applied, STATUS=CLOSED."
+    },
+    {
+      "type": "applied.patch",
+      "row": 14,
+      "expect": {
+        "STATUS": "CLOSED",
+        "GOOGLE DRIVE FOLDER Name/Url": ""
+      },
+      "cells": {
+        "GOOGLE DRIVE FOLDER Name/Url": "Aplication 11 - Plancraft — https://drive.google.com/drive/folders/14Mx9iLedm57B7mGic1f04cxqxlufTURc"
+      },
+      "why": "The shift pushed the folder reference off the end of the row. Recovered from Drive: the folder exists and was created 25/05/2026, matching this row's date and its 'Application 11' tag."
+    },
+    {
+      "type": "applied.patch",
+      "row": 7,
+      "expect": {
+        "STATUS": "CLOSED",
+        "GOOGLE DRIVE FOLDER Name/Url": ""
+      },
+      "cells": {
+        "GOOGLE DRIVE FOLDER Name/Url": "Manual verify — no separate folder found in Applications; check whether Aplication 11 - Plancraft covers this second plancraft role (job/2605447) as well"
+      },
+      "why": "This row is a different Personio job ID at the same employer, but only one plancraft folder exists. Recording the uncertainty rather than guessing a folder."
+    },
+    {
+      "type": "applied.patch",
+      "row": 16,
+      "expect": {
+        "STATUS": "Waiting"
+      },
+      "cells": {
+        "STATUS": "CLOSED / DUPLICATE OF ROW 9",
+        "Actions": "Duplicate of row 9: identical application URL and the same folder (Aplication 13 - Lead Ember). Row 9 is canonical because it carries the submission date (applied 3/6). Kept for history, excluded from counts."
+      },
+      "why": "Hard duplicate named in the DAILY CONTROL blocker (Lead Ember rows 9/16). Not deleted, per the preserve-history rule."
+    },
+    {
+      "type": "applied.patch",
+      "row": 8,
+      "expect": {
+        "STATUS": "NO REPLY - CLOSE"
+      },
+      "cells": {
+        "STATUS": "CLOSED / DUPLICATE OF ROW 15",
+        "Actions": "Duplicate of row 15: same company and role, same folder (Aplication 12 - noventraeurope). Row 15 is canonical because it holds the employer-direct URL /careers/paid-media-specialist/ rather than the homepage. Kept for history, excluded from counts."
+      },
+      "why": "Soft duplicate that URL-first deduplication cannot catch, only the Company + Job title fallback."
+    },
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "front": "DARIO",
+          "activityType": "Other",
+          "target": "Work > APPLIED",
+          "action": "APPLIED data-quality repair: shifted rows 7 and 14 back into their correct columns, restored the Aplication 11 - Plancraft folder reference, and marked the Lead Ember (row 16) and Noventra (row 8) duplicates.",
+          "outcome": "21 rows reduce to ~18 unique submitted applications. The DAILY CONTROL blocker on Lead Ember rows 9/16 is resolved.",
+          "nextStep": "Verify whether the two plancraft Personio job IDs (2605447, 2605074) were both actually submitted or only one.",
+          "notes": "Applied through ADX Bridge batch ADX-20260911-001. Column Y in Found positions and column G in Job sites were not touched."
+        },
+        {
+          "front": "DARIO",
+          "activityType": "Other",
+          "target": "Drive > Applications",
+          "action": "Cross-checked the 20 application folders in Drive against the 21 APPLIED rows.",
+          "outcome": "Two application packages exist in Drive but are missing from APPLIED: 'Aplication 20 - Ruby Labs' (23/07/2026) and 'Application 21 - TestGorilla' (22/08/2026). Also confirmed 'Aplication 17 - AML' corresponds to the ALM Corp row.",
+          "nextStep": "Open both folders, confirm whether the applications were submitted, then add them to APPLIED so the duplicate guard covers them on the next crawl.",
+          "notes": "Last real application activity is therefore 22/08/2026, not July as the brief's snapshot implies."
+        }
+      ]
+    },
+    {
+      "type": "daily.upsert",
+      "date": "11/09/2026",
+      "fields": {
+        "Blockers": "APPLIED repaired (rows 7, 14 shift; rows 8, 16 duplicates). Remaining: (1) Ruby Labs and TestGorilla packages exist in Drive but are not in APPLIED; (2) two plancraft job IDs share one folder — confirm how many were submitted; (3) BLACKSMITH row 11 still has a placeholder title and a Drive URL instead of the role URL; (4) job pool is 51-97 days stale and cannot be refreshed until outbound web access is opened.",
+        "Next action": "Verify and enter the Ruby Labs and TestGorilla applications, then re-crawl once network access is available."
+      }
+    }
+  ]
+}
