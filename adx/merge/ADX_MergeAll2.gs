@@ -65,7 +65,7 @@ function adxMergeAll2() {
   var dstIdx = adxHeaderIndex_(dst);
   if (!srcIdx[KEY] || !dstIdx[KEY]) throw new Error('Column "' + KEY + '" must exist in both tabs');
 
-  var dstWidth = Object.keys(dstIdx).length ? adxMaxCol_(dstIdx) : dst.getLastColumn();
+  var dstWidth = adxMaxCol_(dstIdx);
   var srcRows  = adxReadRows_(src, srcIdx);
   var dstRows  = adxReadRows_(dst, dstIdx);
   say('read: ' + TARGET + ' ' + dstRows.length + ' rows, ' + SOURCE + ' ' + srcRows.length + ' rows');
@@ -113,7 +113,7 @@ function adxMergeAll2() {
     var line = [];
     for (var i = 0; i < dstWidth; i++) line.push('');
     Object.keys(dstIdx).forEach(function (col) {
-      if (!(col in srcIdx)) return;
+      if (col === '__row' || !(col in srcIdx)) return;
       var v = s.values[col];
       line[dstIdx[col] - 1] = (v == null) ? '' : v;
     });
@@ -150,7 +150,6 @@ function adxMergeAll2() {
       ', filled ' + filled + ', appended ' + out.length);
   if (DRY_RUN) say('Nothing was written. Set DRY_RUN = false and run again.');
 
-  try { SpreadsheetApp.getUi().alert(log.join('\n')); } catch (e) { /* no UI when run from editor */ }
   return log.join('\n');
 }
 
@@ -160,7 +159,7 @@ function adxKey_(v) { return v == null ? '' : String(v).trim().toLowerCase(); }
 function adxEmpty_(v) { return v == null || String(v).trim() === ''; }
 function adxMaxCol_(idx) {
   var m = 0;
-  Object.keys(idx).forEach(function (k) { if (idx[k] > m) m = idx[k]; });
+  Object.keys(idx).forEach(function (k) { if (k !== '__row' && idx[k] > m) m = idx[k]; });
   return m;
 }
 
