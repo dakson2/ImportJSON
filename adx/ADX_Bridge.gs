@@ -42,6 +42,7 @@
 
 var ADX = {
   WORK_ID: '15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4',
+  BASE_ID: '1JoqSmuT4TengPkDyLbngv7V2E0WM715kk59bvOos5Ks',
   PROJECT_FOLDER_ID: '1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-',
   INBOX_NAME: 'ADX_INBOX',
   PROCESSED_NAME: 'processed',
@@ -217,6 +218,8 @@ function adxApplyOp_(ss, op, owner, dryRun) {
     case 'listings.append':  return adxRowsAppend_(ss, 'Listings', op, dryRun);
     case 'employers.append': return adxRowsAppend_(ss, 'Employers', op, dryRun);
     case 'crawl.append':     return adxRowsAppend_(ss, 'Crawl', op, dryRun);
+    case 'tabs.merge':       return adxTabsMerge_(op, dryRun);
+    case 'tabs.delete':      return adxTabsDelete_(op, dryRun);
     default:
       return { status: 'REFUSED', detail: 'Unknown op type: ' + op.type };
   }
@@ -569,6 +572,167 @@ function adxRowsPatch_(ss, tabName, op, dryRun) {
   if (dryRun) return { status: 'APPLIED', detail: 'Would patch ' + tabName + ' row ' + row + ': ' + Object.keys(cells).join(', ') };
   adxWriteCells_(t, row, cells);
   return { status: 'APPLIED', detail: 'Patched ' + tabName + ' row ' + row + ': ' + Object.keys(cells).join(', ') };
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------
+   Tab-level operations: consolidating one vocabulary tab into another, then removing the source
+   --------------------------------------------------------------------------------------------------------------------------------- */
+
+function adxBook_(which) {
+  if (which === 'base') return SpreadsheetApp.openById(ADX.BASE_ID);
+  if (which === 'work' || !which) return SpreadsheetApp.openById(ADX.WORK_ID);
+  throw new Error('Unknown spreadsheet: ' + which);
+}
+
+function adxKey_(v) { return String(v === null || v === undefined ? '' : v).trim().toLowerCase(); }
+
+/**
+ * Copies rows whose key does not yet exist in the target tab, mapping by header name so the two tabs do not
+ * need identical columns. Columns present only in the source are ignored; the target's schema wins.
+ *
+ * Optional passes:
+ *   fillMissing  fills cells that are EMPTY in the target from the source row with the same key. It never
+ *                overwrites a value that is already there, so a manual decision in the target cannot be lost.
+ *   trimKeys     trims stray leading/trailing whitespace from the target's key column, which otherwise breaks
+ *                every exact-match lookup against that row.
+ */
+function adxTabsMerge_(op, dryRun) {
+  var ss = adxBook_(op.spreadsheet);
+  var src = adxTable_(ss, op.from);
+  var dst = adxTable_(ss, op.to);
+  var keyCol = op.keyColumn || 'Tag';
+  if (!src.index.hasOwnProperty(keyCol) || !dst.index.hasOwnProperty(keyCol)) {
+    return { status: 'REFUSED', detail: 'Key column "' + keyCol + '" must exist in both tabs' };
+  }
+
+  var srcRows = adxReadRows_(src);
+  var dstRows = adxReadRows_(dst);
+
+  var trimmed = 0;
+  if (op.trimKeys && !dryRun) {
+    dstRows.forEach(function (r) {
+      var raw = String(r.values[keyCol] === null || r.values[keyCol] === undefined ? '' : r.values[keyCol]);
+      if (raw !== raw.trim() && raw.trim() !== '') {
+        dst.sheet.getRange(r.row, adxCol_(dst, keyCol)).setValue(raw.trim());
+        trimmed++;
+      }
+    });
+  } else if (op.trimKeys) {
+    dstRows.forEach(function (r) {
+      var raw = String(r.values[keyCol] === null || r.values[keyCol] === undefined ? '' : r.values[keyCol]);
+      if (raw !== raw.trim() && raw.trim() !== '') trimmed++;
+    });
+  }
+
+  var have = {};
+  dstRows.forEach(function (r) {
+    var k = adxKey_(r.values[keyCol]);
+    if (k && !have.hasOwnProperty(k)) have[k] = r;
+  });
+
+  var filled = 0;
+  if (op.fillMissing) {
+    srcRows.forEach(function (s) {
+      var k = adxKey_(s.values[keyCol]);
+      var target = have[k];
+      if (!k || !target) return;
+      Object.keys(dst.index).forEach(function (col) {
+        if (col === keyCol) return;
+        var cur = target.values[col];
+        var incoming = s.values[col];
+        var curEmpty = cur === null || cur === undefined || String(cur).trim() === '';
+        var hasIncoming = !(incoming === null || incoming === undefined || String(incoming).trim() === '');
+        if (curEmpty && hasIncoming) {
+          if (!dryRun) dst.sheet.getRange(target.row, adxCol_(dst, col)).setValue(incoming);
+          filled++;
+        }
+      });
+    });
+  }
+
+  var out = [], added = {};
+  srcRows.forEach(function (s) {
+    var k = adxKey_(s.values[keyCol]);
+    if (!k || have.hasOwnProperty(k) || added.hasOwnProperty(k)) return;
+    added[k] = true;
+    var line = new Array(dst.width).fill('');
+    Object.keys(dst.index).forEach(function (col) {
+      if (!src.index.hasOwnProperty(col)) return;
+      var v = s.values[col];
+      line[adxCol_(dst, col) - 1] = (v === null || v === undefined) ? '' : v;
+    });
+    out.push(line);
+  });
+
+  if (dryRun) {
+    return { status: 'APPLIED', detail: 'Would append ' + out.length + ' row(s) from ' + op.from + ' to ' + op.to +
+                                        '; fill ' + filled + ' empty cell(s); trim ' + trimmed + ' key(s)' };
+  }
+  if (out.length) {
+    var at = adxFirstFreeRow_(dst);
+    dst.sheet.getRange(at, 1, out.length, dst.width).setValues(out);
+  }
+  return { status: 'APPLIED', detail: 'Appended ' + out.length + ' row(s) to ' + op.to +
+                                      '; filled ' + filled + ' empty cell(s); trimmed ' + trimmed + ' key(s)' };
+}
+
+/**
+ * Deletes a tab, but only after proving the data is safe somewhere else.
+ *
+ * `requireKeysIn` names the tab that must already contain every key from the tab being deleted. If even one key
+ * is missing the op refuses and lists what would have been lost. A destructive op on a master vocabulary should
+ * not be reachable by getting the order of a batch wrong.
+ */
+function adxTabsDelete_(op, dryRun) {
+  var ss = adxBook_(op.spreadsheet);
+  var doomed = adxTable_(ss, op.tab);
+  var keyCol = op.keyColumn || 'Tag';
+
+  if (!op.requireKeysIn) {
+    return { status: 'REFUSED', detail: 'tabs.delete requires requireKeysIn naming the tab that must hold the data' };
+  }
+  var keeper = adxTable_(ss, op.requireKeysIn);
+
+  var keeperKeys = {};
+  adxReadRows_(keeper).forEach(function (r) {
+    var k = adxKey_(r.values[keyCol]);
+    if (k) keeperKeys[k] = true;
+  });
+
+  var missing = [];
+  adxReadRows_(doomed).forEach(function (r) {
+    var k = adxKey_(r.values[keyCol]);
+    if (k && !keeperKeys[k]) missing.push(String(r.values[keyCol]).trim());
+  });
+
+  if (missing.length) {
+    return { status: 'REFUSED',
+             detail: 'Refusing to delete ' + op.tab + ': ' + missing.length + ' key(s) are not in ' +
+                     op.requireKeysIn + ' — ' + missing.slice(0, 12).join(', ') +
+                     (missing.length > 12 ? ', …' : '') };
+  }
+
+  if (dryRun) {
+    return { status: 'APPLIED', detail: 'Would delete ' + op.tab + '; all keys verified present in ' + op.requireKeysIn };
+  }
+  ss.deleteSheet(doomed.sheet);
+  return { status: 'APPLIED', detail: 'Deleted ' + op.tab + ' after verifying every key exists in ' + op.requireKeysIn };
+}
+
+/** Reads a tab into [{row, values:{header: value}}], skipping fully empty rows. */
+function adxReadRows_(t) {
+  var last = t.sheet.getLastRow();
+  if (last <= t.headerRow) return [];
+  var vals = t.sheet.getRange(t.headerRow + 1, 1, last - t.headerRow, t.width).getValues();
+  var out = [];
+  for (var i = 0; i < vals.length; i++) {
+    var empty = vals[i].every(function (v) { return v === null || v === undefined || String(v).trim() === ''; });
+    if (empty) continue;
+    var o = {};
+    Object.keys(t.index).forEach(function (h) { o[h] = vals[i][t.index[h] - 1]; });
+    out.push({ row: t.headerRow + 1 + i, values: o });
+  }
+  return out;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,52 @@
+{
+  "batchId": "ADX-20260915-003",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Consolidate Base > ALL2 into Base > All, optimize All, then delete ALL2. Backup taken first: 'Base — BACKUP before ALL2 merge 2026-09-15' in the main project folder. IMPORTANT: on a dry run the tabs.delete op will legitimately REFUSE, because the merge has not actually written anything yet so the 195 keys are still missing from All. That refusal is the guard working correctly, not a failure. Read the merge result first; if it reports 195 rows, set dryRun to false and re-run, and the delete will then verify and proceed.",
+  "ops": [
+    {
+      "type": "tabs.merge",
+      "spreadsheet": "base",
+      "from": "ALL2",
+      "to": "All",
+      "keyColumn": "Tag",
+      "fillMissing": true,
+      "trimKeys": true,
+      "why": "195 tags exist only in ALL2 and are real operating vocabulary: Microsoft Ads, Facebook Ads, Attribution, B2B SaaS, Large Budgets and 190 more. Mapping is by header name, so ALL2's two extra columns (Category_Change, Subcategory_Change) are ignored and All's A:M schema wins. Verified safe to merge: stripping case and punctuation produces zero tag collisions between the two tabs, so nothing is ambiguous. fillMissing repairs the only two gaps in All - 'Google Sheets API' and 'Apps Script – Google Ads' both have an empty Category, and ALL2 supplies 'Tool' for both. It only ever writes into empty cells, so no manual decision in All can be overwritten. trimKeys fixes the trailing space in the tag 'Apps Script – Google Ads ', which silently breaks every exact-match lookup against that row.",
+      "expectedResult": "195 rows appended (All goes 286 -> 481), 2 empty cells filled, 1 key trimmed."
+    },
+    {
+      "type": "tabs.delete",
+      "spreadsheet": "base",
+      "tab": "ALL2",
+      "keyColumn": "Tag",
+      "requireKeysIn": "All",
+      "why": "Deletes ALL2 only after proving every one of its 470 tags exists in All. If a single tag is missing the op refuses and names what would have been lost, so getting the batch order wrong cannot destroy vocabulary. A full backup of Base was copied before this batch was written."
+    },
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "front": "DARIO",
+          "activityType": "Other",
+          "target": "Base > All / ALL2 consolidation",
+          "targetUrl": "https://docs.google.com/spreadsheets/d/1JoqSmuT4TengPkDyLbngv7V2E0WM715kk59bvOos5Ks",
+          "action": "Merged the 195 tags that existed only in ALL2 into the documented master All, filled the two missing Category values from ALL2, trimmed one tag with trailing whitespace, then deleted ALL2 after verifying every key survived.",
+          "outcome": "All becomes the single master at 481 tags: Skill 257, Job 95, Tool 41, Platform 32, Industry 19, Metric 17, Case Study 10, Campaign Type 8, and no rows left without a Category. Backup kept as 'Base — BACKUP before ALL2 merge 2026-09-15'.",
+          "nextStep": "Decide two follow-ups: (1) ALL2 introduces two categories All has never had, Industry (19 tags) and Case Study (10) - neither has a display tab, unlike Platforms/Tools/Skills/Campaign/Metric/Job. (2) Eight incoming Case Study rows break All's Score = Expirience + Job Interest invariant, which held on all 286 existing rows.",
+          "notes": "Scores on those 8 rows were preserved exactly as set rather than normalized, because they look like deliberate weighting and the project rule forbids silently rewriting manual decisions."
+        }
+      ]
+    },
+    {
+      "type": "daily.upsert",
+      "date": "15/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 0,
+        "Blockers": "No outbound web access: every job source, LinkedIn and every employer domain is refused at CONNECT, so no crawl, no employer-direct verification and no ATS submission is possible from this session. Only googleapis.com is reachable. Prepared-but-unsent backlog now stands at six: TestGorilla (22/08, paused), Ruby Labs (23/07, CV only), SimpleStudy, Thyssen Ads, Egear (11/09, letters by AI-1), OnTheGoSystems (11/09, full package by AI-2). Egear closes 23/09.",
+        "Next action": "Submit from the existing backlog rather than sourcing more. Thyssen Ads r184 and Egear r185 first; Egear has the nearest deadline."
+      }
+    }
+  ]
+}
