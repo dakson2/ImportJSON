@@ -43,11 +43,19 @@ function adxMergeAll2() {
   // instead of the 2 real gaps.
   var FILLABLE = ['Category', 'Sub category'];
 
-  var ss  = SpreadsheetApp.getActiveSpreadsheet();
+  // Bound to Base by ID rather than getActiveSpreadsheet(), so the script works no matter which
+  // spreadsheet's editor it is pasted into. getActiveSpreadsheet() silently targets the wrong file
+  // and fails with "Tab not found: ALL2" when the script happens to live in Work.
+  var BASE_ID = '1JoqSmuT4TengPkDyLbngv7V2E0WM715kk59bvOos5Ks';
+
+  var ss  = SpreadsheetApp.openById(BASE_ID);
   var src = ss.getSheetByName(SOURCE);
   var dst = ss.getSheetByName(TARGET);
-  if (!src) throw new Error('Tab not found: ' + SOURCE);
-  if (!dst) throw new Error('Tab not found: ' + TARGET);
+  if (!src || !dst) {
+    throw new Error('Tab not found: ' + (!src ? SOURCE : TARGET) +
+                    '. Spreadsheet "' + ss.getName() + '" has: ' +
+                    ss.getSheets().map(function (s) { return s.getName(); }).join(', '));
+  }
 
   var log = [];
   function say(s) { log.push(s); Logger.log(s); }
