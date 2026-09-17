@@ -211,6 +211,10 @@ function adxApplyOp_(ss, op, owner, dryRun) {
     case 'leads.upsert':     return adxLeadsUpsert_(ss, op, dryRun);
     case 'applied.patch':    return adxAppliedPatch_(ss, op, dryRun);
     case 'applied.shiftLeft': return adxAppliedShiftLeft_(ss, op, dryRun);
+    // Appending to APPLIED needs no bespoke handler: adxRowsAppend_ already validates column
+    // names against the live header and refuses protected columns. APPLIED has none protected,
+    // so a submission row is an ordinary append. Patching APPLIED still requires `expect`.
+    case 'applied.append':   return adxRowsAppend_(ss, 'APPLIED', op, dryRun);
     case 'found.append':     return adxRowsAppend_(ss, 'Found positions', op, dryRun);
     case 'found.patch':      return adxRowsPatch_(ss, 'Found positions', op, dryRun);
     case 'listings.patch':   return adxRowsPatch_(ss, 'Listings', op, dryRun);
