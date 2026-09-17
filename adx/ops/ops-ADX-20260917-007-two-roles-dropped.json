@@ -1,0 +1,38 @@
+{
+  "batchId": "ADX-20260917-007",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Two roles dropped permanently at Dario's instruction on 17/09: 'SKIPP OVA DVA i zaboravi ih vise'. Egear (Found positions r185) and the UTTR Performance Marketing Director role. Neither is to be raised again by any AI session. Recorded here so the drop survives into the shared record rather than living only in a chat, because both were carried as open items in three Drive documents and Egear held the project's only deadline.",
+  "ops": [
+    {
+      "type": "found.patch",
+      "row": 185,
+      "expect": { "Company": "Egear", "Priority": "A - Primary / Video required" },
+      "cells": { "Priority": "DROPPED 17/09 by Dario - do not raise again" },
+      "why": "Dario dropped it outright. The role required a self-recorded video introduction plus anonymized cases plus RedTrack experience that is not in the verified record, and it carried the deadline of 23/09/2026 - the only hard date in the pool. The video was the blocking item from 15/09 onward and was never going to be produced by an AI session. Dropping it removes the project's only deadline pressure and closes a package that had been prepared twice. The letter and the video spine remain in Drive folder 05 if the decision is ever reversed, but no session should propose it."
+    },
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-17T20:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Coordination",
+          "target": "Egear r185 and UTTR Performance Marketing Director",
+          "action": "Record Dario's instruction to drop both roles permanently and stop raising them",
+          "outcome": "DROPPED. Egear r185 patched in Found positions. The UTTR Director role has no Found positions row of its own - it was discovered on 17/09 while checking the UTTR careers page, and the part-time role at r171 was the one actually submitted - so it is closed by this note rather than by a cell.",
+          "nextStep": "No AI session is to propose either role again. Prepared material stays in Drive but is not to be surfaced as an open item.",
+          "notes": "Dario's words: 'SKIPP OVA DVA i zaboravi ih vise'. Consequence worth recording: with Egear gone the project has no deadline-bound role left, so sequencing is now driven by fit and by which postings are still live rather than by a clock. The letter for UTTR Director exists as Drive doc 14 and the Egear material sits in folder 05; both are dormant, not pending."
+        }
+      ]
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "From the 17/09 night crawl, in order: Deel Senior Paid Search Manager (remote anywhere in EMEA, so Croatia is eligible and the contracting question is moot - letter is Drive doc 15), EER Poland Google Ads Media Buyer (100% remote on EU core hours, ecommerce account portfolio - letter is doc 16, but ask who the end client is because EER is a recruiter), then Welltech Google Ads Team Lead if Dario accepts the mobile-app UA gap (letter is doc 17). After that Dario picks by number from Tier B of the crawl document. Verify each employer before sending - still not possible from an AI session while WebFetch is blocked.",
+      "notes": "Egear r185 and UTTR Performance Marketing Director both DROPPED permanently 17/09 - do not raise either again. Seven applications submitted 16-17/09. Two postings found dead (Whatnot, Impact Brands), two skipped on fit (SimpleStudy - role changed to mobile-app UA; AutoGPT - GTM rather than paid media). Night crawl of 17/09 found 18 net-new roles, three with letters written. Open question still unanswered since 15/09: is hybrid work in scope? It decides whether the Croatian source tier gets any cadence - that tier produced its first real findings on 17/09 (Global Gaming Services, Brazy, Dolium, Bluesun) after being empty for the whole project.",
+      "why": "The lane's next action named Egear as the priority because it held the only deadline. With both roles dropped the queue has to be re-pointed at the crawl's Tier A, or the next session will start on work Dario has explicitly closed."
+    }
+  ]
+}
