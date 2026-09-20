@@ -109,3 +109,57 @@ boards that return content.
 
 **Yield on 20/09:** 9,700 postings across 87 boards → 112 paid-media roles within 14 days → 2
 usable, both Croatian, both found only because hybrid had been opened hours earlier.
+
+---
+
+## Addendum 2, 20/09 late — the Workable global search API
+
+**Run this first, before anything else.** It is the single highest-yield source found, and it is the
+layer that produced the first Croatia-eligible roles in the project.
+
+```
+https://jobs.workable.com/api/v1/jobs?query=<kw>&location=<country>&pageToken=<tok>
+```
+
+Searches **every company hosted on Workable**, not one board. Returns `created`, `locations`,
+`workplace`, `employmentType`, full `description` and `requirementsSection` — so work model,
+years and salary can all be read locally without fetching a single page. Paginate with
+`nextPageToken`. 337 paginated calls across 20 queries × 19 country locations returned 2,204
+unique postings.
+
+This matters because **small agencies and SMEs do not syndicate to Remotive, RemoteOK or
+Himalayas.** They post on Workable and nowhere else. Two crawls that searched only aggregators and
+named company boards concluded the market was exhausted. It was not — the employer class had never
+been queried.
+
+### Also newly productive
+
+| Source | Endpoint |
+| --- | --- |
+| Working Nomads | `workingnomads.com/api/exposed_jobs/` |
+| Landing.jobs | `landing.jobs/api/v1/jobs?limit=100` |
+| devitjobs | `devitjobs.com/api/jobsLight` (2,891 records) |
+| WeWorkRemotely | `weworkremotely.com/remote-jobs.rss` |
+
+**The WWR RSS carries the FULL job description in the item body.** WeWorkRemotely returns HTTP 403
+to page fetches, so the RSS is the only way in — and it is a better way, because the whole posting
+arrives in one request and is read locally.
+
+### Dead ends — do not spend time re-testing
+
+SmartRecruiters has no global postings endpoint (404). JOIN.com and Adzuna need API keys.
+justjoin.it returns 503. NoFluffJobs rejects the search shape with 405. Teamtailor's per-company
+`.json` is not public. RemoteOK's RSS is retired (HTTP 410). WeWorkRemotely **category** feeds
+301-redirect to nothing — only the root feed works. Himalayas caps at 20 per page against ~105k
+jobs, so pagination is not viable.
+
+### Standing correction
+
+On 20/09 this session twice concluded that the EU market was exhausted, on the strength of
+aggregator and per-company-ATS searches alone. Dario rejected that conclusion and instructed a
+wider search. Four new usable roles appeared within the hour.
+
+**A negative claim about supply requires a named, exhausted source list.** State which layers were
+searched before saying a market is empty. The narrower claim that survives: fully-remote, EU-wide,
+senior *Google Ads* seats at the €100,000 level remain close to empty. That is not the same
+statement, and the difference is four roles.

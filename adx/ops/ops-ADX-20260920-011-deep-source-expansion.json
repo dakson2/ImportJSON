@@ -1,0 +1,179 @@
+{
+  "batchId": "ADX-20260920-011",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Third crawl of 20/09, run after Dario rejected the conclusion that the pool was as large as the market allowed and instructed that new aggregators and company-site postings be found. He was right to push. The previous two crawls had missed an entire layer: Workable operates a GLOBAL job search API across every company hosted on it, and that layer is where small agencies and SMEs post - exactly the employers that never reach Remotive or RemoteOK. Querying it produced the first roles of the entire project that name Croatia as an eligible location. Roughly 16,500 dated postings have now been examined across the three crawls of this day.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-20T21:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Sourcing",
+          "target": "Deep source expansion - new aggregators, RSS layer, and the Workable global search API",
+          "action": "Test twelve previously untried aggregator APIs, fourteen RSS feeds, and search for a global cross-company ATS endpoint rather than querying one company board at a time",
+          "outcome": "Found the layer that was missing. jobs.workable.com/api/v1/jobs takes query and location parameters and searches EVERY company hosted on Workable, with pagination tokens. 337 paginated calls across 20 queries and 19 country locations returned 2,204 unique postings. This produced the first two roles in the project that explicitly list Croatia as an eligible location. Also newly productive: Working Nomads API, Landing.jobs API, devitjobs (2,891 records), and the WeWorkRemotely RSS feed, which carries FULL job descriptions in the item body and therefore works even though WeWorkRemotely returns HTTP 403 to page fetches.",
+          "evidenceUrl": "https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-",
+          "nextStep": "The Workable global endpoint becomes a standing daily source. Run it before the per-company ATS probes, not after.",
+          "notes": "Dead ends worth not repeating: SmartRecruiters has no global postings endpoint (404); JOIN.com and Adzuna need keys; justjoin.it returned 503; NoFluffJobs rejected the search shape with 405; Teamtailor per-company .json is not public; RemoteOK's RSS is retired with HTTP 410; WeWorkRemotely CATEGORY feeds 301-redirect to nothing, only the root remote-jobs.rss works."
+        },
+        {
+          "dateTime": "2026-09-20T21:40:00.000Z",
+          "front": "DARIO",
+          "activityType": "Analysis",
+          "target": "Correction to the earlier conclusion of the day",
+          "action": "Re-examine the claim, made after the first two crawls, that the small pool was a property of the market rather than of the search",
+          "outcome": "PARTIALLY WRONG, and the correction matters. The structural finding still holds for the specific segment of fully-remote, EU-wide, senior GOOGLE ADS seats at the EUR 100,000 level - that remains close to empty across every source tried. But the broader claim that no further roles existed was wrong, and it was wrong because an entire class of employer had never been queried. Small agencies and SMEs on Workable do not syndicate to the aggregators the earlier crawls relied on, and they are where the Croatia-eligible roles turned out to be.",
+          "nextStep": "Treat 'the market is empty' as a hypothesis requiring a named, exhausted source list, not as a conclusion. Before repeating it, state which layers were searched.",
+          "notes": "Recorded deliberately and in full. Dario pushed back on a conclusion this session had stated twice with confidence, and pushing back produced four new usable roles within the hour. The lesson is about the standard of evidence for a negative claim, and it belongs in the record rather than in a chat message that scrolls away."
+        },
+        {
+          "dateTime": "2026-09-20T21:45:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "Roles opened and rejected in this crawl",
+          "action": "Open each candidate and check geography, seniority, compensation and working hours before recommending",
+          "outcome": "StubGroup Senior Google Ads Account Manager: open to Europe, but USD 48,000-60,000 and working hours 09:00-17:00 US Central, which is 16:00-24:00 in Croatia - void twice over. hosting.com Senior PPC Growth Specialist: excellent content match, names Tableau and daily AI tooling, contract type, but applicantLocationRequirements is Lithuania only. Hostinger Senior PPC Specialist 'Based in Europe': published 30/04/2026, 143 days old, and its secondary locations are Czechia, Poland, Estonia and Latvia, not Croatia. Treatwell, Future Publishing, Webranking, Visualsoft, Journey Further, Trade Nation, Channel Factory: all city-hybrid. Pavago, Paired, Mellow Sleep, Nasoft, ELVTR: Latin America, India, Egypt, Ukraine. MM Coaching Head of Paid Marketing: 2 years, UK/Ireland/Dubai. Ganey Law Group via JobRack: USD 4,000-5,500/month and 7+ years, but the country list is Serbia, Romania, North Macedonia and Bosnia - Croatia is absent.",
+          "nextStep": "None of these proceed.",
+          "notes": "hosting.com is the painful one: it asks for Tableau, conversion tracking, attribution, daily use of Claude or ChatGPT, and subscription/DTC growth - and Dario runs a reseller hosting business, so the domain is native. Only the Lithuania restriction blocks it. Worth re-checking if they ever widen the geography."
+        }
+      ]
+    },
+    {
+      "type": "found.append",
+      "rows": [
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "B2B SaaS PPC Manager (Senior)",
+          "Company": "SimpleTiger",
+          "Job site": "WeWorkRemotely",
+          "Work mode / Location": "100% remote, flexible hours. WeWorkRemotely region field reads 'Anywhere in the World' - but see the compensation flag.",
+          "Engagement type": "Full-time",
+          "Compensation": "Not stated. Benefits are US payroll instruments: JustWorks PEO health insurance, Vestwell 401(k), US public holidays.",
+          "Availability status": "VERIFIED 20/09/2026 - full posting read from the WeWorkRemotely RSS body. Published 15/09/2026, 5 days old.",
+          "Fit score": 89,
+          "Priority": "A - Primary / send, with the residency question expected early",
+          "Work description": "On requirements this is the closest match of the entire day to the verified record, closer even than Hilo: Google Ads across Search, Display, YouTube, remarketing, Performance Max, conversion tracking and automated bidding; LinkedIn and Meta alongside; Google Analytics, Tag Manager and Looker Studio; and explicitly AI-enabled tooling and platform automation with the judgement to validate what it produces, which is exactly how Dario works rather than a box he ticks. Requires 5+ years, which he clears twice over. Two honest gaps. The vertical is B2B SaaS with HubSpot, MQL/SQL, pipeline and CAC/LTV vocabulary, where his weight sits in ecommerce and retail. And the benefits package - JustWorks and Vestwell are US-only providers - suggests US employment despite the 'Anywhere in the World' tag. Apply regardless: the board tag is set by the employer, and the worst case is a fast no.",
+          "Url": "https://weworkremotely.com/remote-jobs/simpletiger-b2b-saas-ppc-manager",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Performance Max",
+          "Tag 3": "LinkedIn Ads",
+          "Tag 4": "B2B SaaS",
+          "Tag 5": "Looker Studio",
+          "Tag 6": "AI Tooling",
+          "Tag 7": "Remote"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Senior Performance Marketing Specialist (Fortis Media)",
+          "Company": "Fortis Media, hiring through JobRack",
+          "Job site": "Workable / JobRack",
+          "Work mode / Location": "Fully remote, CROATIA explicitly listed as an eligible country, EET time zone",
+          "Engagement type": "Full-time",
+          "Compensation": "EUR 3,500-4,500 per month, stated in the posting - roughly EUR 42,000-54,000 per year",
+          "Availability status": "VERIFIED 20/09/2026 - full posting read. Published 15/09/2026, 5 days old. First role in the entire project that names Croatia as an eligible location.",
+          "Fit score": 71,
+          "Priority": "B - Conditional / real and Croatian, but two compromises",
+          "Work description": "A performance agency specialising in regulated verticals - iGaming, gambling and sports betting - managing large media budgets and complex advertising infrastructure. Requires 5+ years hands-on paid media in an agency environment with end-to-end ownership, a commercial mindset tied to CAC, LTV and profitability rather than CPMs, and deep tracking knowledge: GA4, GTM, pixels, server-side tracking, Conversion APIs, UTMs, click IDs, attribution windows. All of that is squarely Dario's. Two compromises. The channel emphasis is paid social - Meta, TikTok and programmatic DSPs - with paid search appearing only in budget allocation, so Google is not the centre here. And the band is roughly half the EUR 100,000 reference. Note also the vertical: this is gambling, but unlike the iGaming role rejected on 20/09 it asks for nothing resembling cloaking or anti-detect tooling, so it passes the integrity filter.",
+          "Url": "https://jobs.workable.com/view/mTgb5AWRwi7p2qhpMt6CWy/remote-fortis-media---senior-performance-marketing-specialist-in-croatia-at-jobrack",
+          "Tag 1": "Performance Marketing",
+          "Tag 2": "Meta",
+          "Tag 3": "Programmatic",
+          "Tag 4": "Server-side Tracking",
+          "Tag 5": "Croatia",
+          "Tag 6": "Remote",
+          "Tag 7": "iGaming"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Head of Marketing",
+          "Company": "OnTheGoSystems",
+          "Job site": "Workable",
+          "Work mode / Location": "Fully remote, listed for Novi Sad, Serbia",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "Found 20/09/2026 through the Workable global search. Published 18/09/2026, 2 days old. Croatia eligibility NOT confirmed - the listing names Serbia.",
+          "Fit score": 76,
+          "Priority": "FLAG - Dario already has a live application with this employer",
+          "Work description": "ATTENTION, this needs a decision rather than an application. Dario submitted to OnTheGoSystems on 17/09 for the Technical Paid Advertising Specialist role (Found positions r170, fit 94). This is a different and more senior seat at the same company, posted the day after. Applying separately without acknowledging the first application would look careless to a recruiter who sees both. The better move is almost certainly to reference the existing application and ask whether the Head of Marketing seat is the better fit, which also serves as a legitimate follow-up on an application now three days old. Confirm Croatia eligibility before anything else - the posting names Serbia, and OnTheGoSystems is a distributed company, so it may or may not extend.",
+          "Url": "https://jobs.workable.com/view/bsHqQwiCYX9wDkcF9ANWCt/remote-head-of-marketing-in-novi-sad-at-onthegosystems",
+          "Tag 1": "Head of Marketing",
+          "Tag 2": "Remote",
+          "Tag 3": "Follow-up",
+          "Tag 4": "Serbia"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Senior Performance Marketing Strategist",
+          "Company": "Powered by Search",
+          "Job site": "WeWorkRemotely",
+          "Work mode / Location": "Global, fully remote team. Headquarters Toronto.",
+          "Engagement type": "Not stated",
+          "Compensation": "Not disclosed",
+          "Availability status": "Found 20/09/2026. Published 16/09/2026, 4 days old. Employer rated 4.x on Glassdoor per the posting.",
+          "Fit score": 80,
+          "Priority": "FLAG - do not apply twice",
+          "Work description": "Owns paid media strategy for fast-growing B2B companies, running Google Ads accounts with LinkedIn and Meta alongside, and leading senior client conversations. DO NOT SUBMIT A SECOND APPLICATION: Dario applied to Powered by Search on 17/09 (Found positions r172). This posting may be the same seat re-listed or a parallel one, and a duplicate submission four days apart reads as scattergun. Treat it as a reason to follow up on the existing application, and note that the same employer also has a Senior SEO and Organic Growth Strategist open, which is not Dario's channel.",
+          "Url": "https://weworkremotely.com/remote-jobs/powered-by-search-senior-performance-marketing-strategist",
+          "Tag 1": "Google Ads",
+          "Tag 2": "B2B",
+          "Tag 3": "Agency",
+          "Tag 4": "Follow-up"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Senior Media Buyer (In-House D2C Brand Experience Required)",
+          "Company": "Creatunity LLC",
+          "Job site": "Workable",
+          "Work mode / Location": "Fully remote, Zagreb, Croatia listed as eligible",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "VERIFIED 20/09/2026 - full posting read. Published 11/09/2026, 9 days old.",
+          "Fit score": 54,
+          "Priority": "C - Weak / recorded for completeness",
+          "Work description": "CORRECTION TO A FIRST READING: the figure USD 100,000 in this posting is the monthly META BUDGET the employer requires candidates to have managed, not the salary. That reading was wrong when first surfaced and is corrected here. The seat asks for 2+ years as an in-house D2C media buyer, which is midweight, and the channel is Meta. Croatia eligibility and the D2C framing are the only points in its favour. The same employer is simultaneously advertising several Direct Response video editor roles, which suggests a creative-production shop rather than a senior strategy seat.",
+          "Url": "https://jobs.workable.com/view/eu2yQixoopvATi2E6XQ54Z/remote-senior-media-buyer-(in-house-d2c-brand-experience-required)-in-zagreb-at-creatunity-llc",
+          "Tag 1": "Meta",
+          "Tag 2": "Media Buying",
+          "Tag 3": "DTC",
+          "Tag 4": "Croatia"
+        }
+      ],
+      "why": "Five net-new rows. Two of them - SimpleTiger and Fortis Media - are genuine additions to the sendable pool. Two are flags rather than opportunities, because Dario already has live applications with those employers and a duplicate submission would damage both. One is recorded weak, including an explicit correction of a compensation figure this session misread on first pass. Column Y (Actions) is protected and not written."
+    },
+    {
+      "type": "daily.upsert",
+      "date": "20/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 0,
+        "Front A remaining": 10,
+        "Qualified shortlist": "2 primary and sendable (Hilo by Aktiia, SimpleTiger). 3 conditional (Infobip Growth Marketing Senior Specialist - Zagreb hybrid; Fortis Media - Croatia remote but paid-social and half band; Infobip Senior Digital Advertising Specialist - best content match in Croatia but 39 days old, on HOLD). 4 marginal (CapsLock, Ruby Labs, Creatunity, Falkensteiner). 2 flagged as existing-employer follow-ups rather than new applications (OnTheGoSystems, Powered by Search).",
+        "Packages ready": "Hilo letter v2 with the Class IIa medical-device advertising-policy angle. SimpleTiger needs a letter written - its requirement list is the closest match of the day to the verified record.",
+        "Follow-ups due": "OnTheGoSystems (submitted 17/09, and a Head of Marketing seat opened 18/09). Powered by Search (submitted 17/09, and a Senior Performance Marketing Strategist seat listed 16/09). Both are legitimate reasons to follow up on applications now three days old.",
+        "LinkedIn visits": 0,
+        "Adaxa Web visits": 0,
+        "Forms submitted": 0,
+        "Confirmations/evidence": "https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-",
+        "Blockers": "Hilo is verified, letter-ready and STILL UNSENT after four days - this is now the single largest self-inflicted loss in the pipeline. Seven APPLIED rows still need pasting at A23 from adx/ops/APPLIED_append_7_rows.tsv. Base ALL2 merge: dry run passed 15/09, live run never done. Ops batches 001-011 all remain unapplied.",
+        "Next action": "Send Hilo. Write and send SimpleTiger. Decide Zagreb. Follow up with OnTheGoSystems and Powered by Search rather than re-applying.",
+        "Last updated": "20/09/2026"
+      },
+      "why": "The shortlist went from 1 sendable role to 2 sendable plus 3 conditional in a single evening, entirely because a source layer was added rather than because the market changed. The blockers field names Hilo explicitly because a verified, letter-ready role sitting unsent for four days is a larger problem than anything the crawl can fix."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Send Hilo by Aktiia today. Write the SimpleTiger letter around Performance Max, automated bidding, Looker Studio and validated AI tooling, and send it. Then decide whether Zagreb hybrid is in scope, which unlocks two Infobip roles.",
+      "notes": "Source layer added 20/09 evening: the Workable global search API at jobs.workable.com/api/v1/jobs, which covers every company hosted on Workable and is where small agencies and SMEs post. It produced the first Croatia-eligible roles in the project. Standing correction recorded in this batch: the claim that the market was exhausted was stated twice today on the strength of aggregator and per-company-ATS searches alone, and it was wrong. A negative claim about supply now requires a named, exhausted source list.",
+      "why": "The lane needs both the new technique and the correction attached to it, so that a future AI does not repeat the false conclusion or re-derive the technique from scratch."
+    }
+  ]
+}
