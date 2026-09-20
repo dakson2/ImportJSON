@@ -1,0 +1,41 @@
+{
+  "batchId": "ADX-20260920-008",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "New standing rule set by Dario on 20/09/2026: postings older than 14 days are not to be considered at all. Cut-off on the day it was set is 06/09/2026. Recorded here because it changes how every future crawl must work, not just which roles are on today's list. It also voids Easygenerator, which this session had ranked first in the 20/09 crawl before checking its date.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-20T19:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Coordination",
+          "target": "Crawl method - all future sourcing",
+          "action": "Record the standing rule that job postings older than 14 days are excluded from consideration entirely",
+          "outcome": "RULE SET. Immediate effect: Easygenerator SEM Manager is VOID - posted 10 July 2026, which is 72 days old. It had been ranked first in the 20/09 crawl as the best content match in the project, and the letter written for it (Drive doc 20) is now dormant. Hilo by Aktiia is CONFIRMED within the window at 4 days old.",
+          "nextStep": "Crawl primarily through date-stamped boards where posting age is visible. Treat ATS deep links as secondary, because posting dates are not exposed in search results for Ashby, Greenhouse, Workable or Teamtailor.",
+          "notes": "The rule exposes a real limitation rather than just filtering a list. WebFetch is blocked, so this session cannot open a posting to read its date. Search results carry a date only when the indexing board displays one - Remotive, Himalayas, RemoteOK, WeWorkRemotely and Dynamite Jobs do; employer ATS pages generally do not. So for most roles found through ATS-restricted search the age is simply unknown, and saying so is more honest than implying the filter has been applied."
+        },
+        {
+          "dateTime": "2026-09-20T19:05:00.000Z",
+          "front": "DARIO",
+          "activityType": "Sourcing",
+          "target": "20/09 crawl results re-filtered against the 14-day rule",
+          "action": "Check posting dates for the roles surfaced in the 20/09 crawl and re-rank against the new cut-off",
+          "outcome": "Only one role has a confirmed date inside the window: Hilo by Aktiia, Head of Performance Marketing, posted 4 days ago, corroborated on six sources. Easygenerator is confirmed outside it at 72 days and is dropped. Every other role from both the 17/09 and 20/09 crawls has an unverified date. Two further leads checked today and rejected: YourCode Demand Generation Marketing Manager is US-based, and the Senior Google Shopping / Product Feed Manager lead in Germany could not be tied to a live posting.",
+          "nextStep": "Dario applies to Hilo. For anything else, the posting page itself shows the date - check it there before investing time.",
+          "notes": "A 'Senior PPC Specialist, Europe' posted roughly a week ago appears on Remotive but the employer is not named in search results, so it cannot be qualified from here. It is worth Dario opening Remotive directly."
+        }
+      ]
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Apply to Hilo by Aktiia, Head of Performance Marketing - the only role with a confirmed posting date inside the 14-day window (4 days old, six sources). Letter is Drive doc 21. For every other candidate from the 17/09 and 20/09 crawls, check the posting date on the page before spending time; this session cannot read it. Future crawls run primarily on date-stamped boards.",
+      "notes": "STANDING RULE 20/09: nothing older than 14 days. Easygenerator is void at 72 days despite being the closest content match found in the project - its posting explicitly asked for scripts and LLMs to expand keywords, test ad copy and flag anomalies, which is exactly the SERP monitoring system in the record. Letter kept as Drive doc 20 in case the role is reposted. Earlier standing rules still hold: employer credibility verified before documentation is used, and that check remains impossible from an AI session while WebFetch is blocked; drafts only for applications that genuinely go by email; Egear and UTTR Director dropped permanently on 17/09.",
+      "why": "The rule changes sourcing rather than just pruning one list, so it belongs in the lane's standing notes where the next session reads it before crawling."
+    }
+  ]
+}
