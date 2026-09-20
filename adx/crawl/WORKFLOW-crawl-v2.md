@@ -75,3 +75,37 @@ EU-remote at this seniority. The live ones are US, Brazil, India, or country-loc
 supply finding, not a method failure: the EU-remote senior Google Ads segment is close to empty,
 and no crawling technique will produce 10 qualified roles a day from it. The lever is scope —
 hybrid, Croatian tier, adjacent channels, Front B — not crawl frequency.
+
+---
+
+## Addendum, 20/09 evening — ATS-direct querying
+
+Highest-yield technique found so far, and it was not in v1. Probe company ATS endpoints directly
+instead of waiting for aggregators to carry the posting.
+
+```
+Greenhouse     https://boards-api.greenhouse.io/v1/boards/<org>/jobs?content=true
+Greenhouse EU  https://boards-api.eu.greenhouse.io/v1/boards/<org>/jobs?content=true
+Ashby          https://api.ashbyhq.com/posting-api/job-board/<org>
+Lever          https://api.lever.co/v0/postings/<org>?mode=json
+Recruitee      https://<org>.recruitee.com/api/offers/
+SmartRecruiters https://api.smartrecruiters.com/v1/companies/<org>/postings?limit=100
+Workday (list)  POST https://<t>.wdN.myworkdayjobs.com/wday/cxs/<t>/<site>/jobs
+                body: {"appliedFacets":{},"limit":20,"offset":0,"searchText":"marketing"}
+Workday (one)   GET  https://<t>.wdN.myworkdayjobs.com/wday/cxs/<t>/<site><externalPath>
+```
+
+All answer unauthenticated. Probe a curated org list in parallel with `xargs -P 10` and keep the
+boards that return content.
+
+- **SmartRecruiters returns HTTP 200 for companies that do not exist.** Filter on content, not
+  on status code, or you will count 108 boards where 2 exist.
+- **Workday's list endpoint gives `postedOn` as a bucket** ("30+ Days Ago"). The per-job endpoint
+  gives `startDate` and `remoteType` exactly. Always follow through to the per-job call before
+  applying the 14-day rule — that is the difference between "30+ days" and a usable date.
+- Pull `?content=true` once per board and read work model locally. Cheaper and faster than
+  fetching each posting, and it is how "hybrid, 1-2 days at the office" was caught across the
+  whole DEPT board in one pass.
+
+**Yield on 20/09:** 9,700 postings across 87 boards → 112 paid-media roles within 14 days → 2
+usable, both Croatian, both found only because hybrid had been opened hours earlier.
