@@ -1,64 +1,49 @@
 # Upute za drugi AI — projekt 1.ADX-Jobs
 
-Stanje na 20.09.2026. Pročitaj ovo prije bilo čega drugog.
+Stanje na **24.09.2026**. Zamjenjuje verziju od 20.09.
 
-## Tko je kandidat
+## Izvor istine
 
-Dario Šuler, Osijek. Google Ads preko 10 godina, osobno vodio i optimizirao do **~2,5 M €
-mjesečno** u Google Adsu. Zadnje 1–2 godine EMEA + APAC, koordinirao **15+ vanjskih agencijskih
-PPC stručnjaka**, nadzor nad preko 5 M € mjesečno. Meta ~500 K/mj, LinkedIn ~30 K, TikTok ~20 K,
-plus Microsoft/Bing i Amazon Ads. Gradi u Apps Scriptu i Ads Scriptsima. Referenca za plaću:
-**~100.000 € bruto godišnje**. Može i kao zaposlenik i B2B preko Adaxa Agency.
+Živi listovi `Work` i `Base`, kako ih je 20.09. uskladio **CODEX-0920** (izravni upisi, ne Bridge).
+APPLIED r23–30 je popunjen (uključujući LAYER, 17.09.), `Base/All` ima 481 tag, ALL2 zadržan.
+**Ops batchevi 001–012 u `adx/ops/` se ne pokreću** — prepisali bi uskladene retke. Vidi
+`adx/ops/SUPERSEDED.md`. Batch 013 je samo zapis, s `doNotReplay: true`.
 
-## Pet pravila koja se ne pregovaraju
+## Dvije netočne tvrdnje iz 20.09. — ispravljene
 
-1. **Oglas stariji od 14 dana ne postoji.** Bez iznimke.
-2. **Otvori oglas prije nego ga preporučiš.** Četiri role su preporučene neotvorene i sve četiri
-   su umrle na provjeri — jedna nakon što je pismo već bilo napisano.
-3. **Provjera vjerodostojnosti poslodavca je tvoj posao, ne Darijev.** Funding, headcount,
-   proizvod, recenzije. Napiši što si provjerio.
-4. **Hibrid:** u Hrvatskoj da, prvenstveno Slavonija i Osijek. Ostatak EU samo ako se na lokaciju
-   ide otprilike jednom u 6–12 mjeseci. Dva-tri dana tjedno u stranom gradu je selidba, ne hibrid.
-5. **Integritet:** odbij svaki oglas koji traži anti-detect alate, cloaking ili zaobilaženje
-   politike oglašavanja, koliko god fit bio dobar.
+- **Hilo by Aktiia, Head of Performance Marketing — NIJE ŽIVO.** Datum 16.09. bio je s agregatora.
+- **Fortis Media — PADA na integritetu.** Zahtjevi traže cloaking i nabavu Business Managera od resellera.
 
-## Kako se piše
+Oba su ušla u dokument za slanje od 21.09., koji je sad na Driveu označen ❌.
 
-Nikad izmišljen postotak ni rezultat. Osjetljiva kategorija se opisuje **po kategoriji, nikad po
-klijentu** — ime klijenta se ne spominje. Praznine se izrijekom priznaju (nema medtech iskustva,
-nema formalnog incrementality frameworka) jer priznata praznina prolazi intervju, a napuhana ne.
-Razdvajaj **osobno vođen budžet** (2,5 M €/mj) od **regionalne odgovornosti** (5 M+ €/mj) — to
-dvoje se nikad ne smije čitati kao ista tvrdnja.
+## Pet pravila (nepromijenjeno)
 
-## Kako se pretražuje
+1. Oglas stariji od 14 dana ne postoji. **Starost = najranija objava iste role u bilo kojoj zemlji**, ne
+   zadnja kopija ni osvježenje.
+2. **Provjereno = pročitano na ATS-u poslodavca ili u indeksu tog ATS-a.** Agregator je otkrivanje, ne provjera.
+3. Vjerodostojnost poslodavca provjerava AI, ne Dario.
+4. Hibrid: Hrvatska da (prvenstveno Slavonija/Osijek); ostatak EU samo ako je dolazak ~jednom u 6–12 mjeseci.
+5. Integritet: odbij cloaking, anti-detect, izbjegavanje banova, nabavu računa od resellera. **Pročitaj cijeli
+   tekst zahtjeva** prije presude. Tracker sam po sebi (Voluum, Keitaro) nije prekršaj.
 
-Cijeli postupak, izvori, API endpointi i zamke: `adx/crawl/WORKFLOW-crawl-v2.md`. Ukratko:
-idi na strukturirane API-je jer vraćaju datume, ne na isječke iz tražilice. Najveći prinos ima
-`api.lever.co/v0/postings/jobgether?mode=json`. Workable preko `curl` vraća Cloudflare 1015 —
-za Workable koristi WebFetch.
+## Stanje pipelinea 24.09.
 
-## Kako se piše u tablicu
+Aktualni dokument: Drive **„SLANJE — stanje 24-09-2026 (provjereno na izvoru poslodavca)"**.
 
-Claude ne može pisati u postojeći Google Sheet. Kanal je `adx/ADX_Bridge.gs`, koji se **zalijepi
-u Extensions → Apps Script** nad tablicom `Work`. Ti pišeš ops JSON u `ADX_INBOX/`, skripta ga
-izvrši i vrati receipt. Format i pravila su u `adx/README.md`.
+- **Tier A:** Infobip Growth Marketing Senior Specialist (Zagreb hibrid, objavljen 10.09. — zadnji dan 24.09.),
+  RNK Health preko Toogeze (Head of Marketing, Europa remote, compounded GLP-1 telehealth — regulatorni rizik
+  naveden), SimpleTiger (B2B SaaS PPC Manager, Breezy, tim u SAD-u).
+- **Tier B:** Amplemarket, saas.group, Huzzle Senior Growth Marketer, SolCrov (datum nepoznat), Ruby Labs UA.
+- **Follow-up, ne nova prijava:** OnTheGoSystems (Head of Marketing), Powered by Search.
+- **Čeka Darijevu odluku:** Zagreb; RNK Health vertikala; je li 21.09. išta poslano.
 
-**Stanje: ni jedan ops batch nije primijenjen.** Čeka ih devet, `001` do `009`. Prije `005`
-obriši retke za **Whatnot** i **Impact Brands** iz njegovog `found.append` — oba oglasa su mrtva.
+## Metoda
 
-## Što čeka
+`adx/crawl/WORKFLOW-crawl-v2.md`, sva tri dodatka. Najkorisnije: Workable globalna pretraga, izravni ATS
+API-ji, **Remote Rocketship `__NEXT_DATA__` s poljem `locationCountries`** (točan popis dopuštenih zemalja),
+Workday per-job endpoint za točan `startDate`.
 
-- **Hilo by Aktiia, Head of Performance Marketing** — jedina živa rola, provjerena, objavljena
-  16.09. Pismo v2 je na Driveu, s kutem oko medicinskog uređaja klase IIa i politike oglašavanja.
-  To je najjači argument koji Dario ima i v1 pismo ga nije imalo.
-- 7 redaka za `APPLIED` — `adx/ops/APPLIED_append_7_rows.tsv`, lijepi se na **A23**.
-- ALL2 merge u tablici `Base` — dry run prošao 15.09., živi run nikad nije pokrenut.
+## Jedna brojka
 
-## Jedna stvar koju moraš znati o brojkama
-
-Cilj je 10 prijava dnevno. Crawl od 20.09. prošao je ~4.100 oglasa s datumima i našao **jednu**
-rolu koja prolazi sve filtre. Od 3.879 Jobgether oglasa, 45 spominje Google Ads u zadnjih 14
-dana i **nijedan** nije EU-remote na Darijevoj razini.
-
-To nije neuspjeh pretrage nego nalaz o tržištu. Ne pokušavaj to riješiti češćim crawlanjem.
-Poluga je opseg — hibrid, hrvatski tier, susjedni kanali, Front B — a ne učestalost.
+24.09. pretraženo ~20.700 oglasa kroz sve slojeve. Remote Rocketship u cijelom indeksu vidi 16 marketinških
+rola otvorenih Hrvatskoj. Mali pool je nalaz o tržištu uz imenovan popis izvora — ne povod za češće crawlanje.

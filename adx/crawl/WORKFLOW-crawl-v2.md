@@ -163,3 +163,53 @@ wider search. Four new usable roles appeared within the hour.
 searched before saying a market is empty. The narrower claim that survives: fully-remote, EU-wide,
 senior *Google Ads* seats at the €100,000 level remain close to empty. That is not the same
 statement, and the difference is four roles.
+
+---
+
+## Addendum 3, 24/09 — verification rules that were broken, and three new sources
+
+### Two rules, written because this session broke both on 20/09
+
+**1. Verified means read on the employer's own ATS, or in that ATS's own index.** Aggregators —
+resumebuilder.careers, Jobicy, nomado24, Remote Rocketship, Working Nomads — are *discovery*, never
+verification. Hilo by Aktiia was reported "verified live, posted 16/09" on the strength of an aggregator
+while every Workable fetch returned an empty JS shell. It was not live. When the employer page will not
+render, query the ATS index instead (`jobs.workable.com/api/v1/jobs?query=<company>`, Greenhouse/Ashby/
+Lever board APIs, Workday per-job endpoint). If neither works, the role is *unverified*, and says so.
+
+**2. Read the whole requirements section before an integrity verdict.** Fortis Media's 6,906-character
+requirements were judged on their first 1,500 characters; the cloaking requirement sat further down.
+Search the full text for `cloak`, `anti-detect`, ban evasion, account farming, and acquiring Business
+Managers or ad accounts "from vendors/resellers when standard access is limited". A tracker named on its
+own (Voluum, Keitaro, Binom) is **not** an integrity failure — trackers are ordinary in affiliate and native
+work. It becomes one only alongside cloaking or account-evasion language, as it did at Fortis.
+
+### Posting age: the earliest appearance wins
+
+Recruiters on Workable (Huzzle, JobRack, Creatunity) post **one copy of the same role per country**, and add
+countries weeks later. Huzzle's *Media Buyer* showed a 21/09 Croatia posting; the role was first published
+**12/06**. Group by company + normalised title and take the **earliest** `created` across every country copy.
+The same trap on DOU: the date shown is the last refresh. DOU vacancy IDs run at roughly 200 per day in
+September 2026 (IDs ~374,300–374,500 on 23–24/09), so an ID 12,000 lower is about two months old whatever
+date the page shows.
+
+### New sources
+
+| Source | How | Why it matters |
+| --- | --- | --- |
+| **Remote Rocketship** | Server-rendered pages carry `__NEXT_DATA__` → `props.pageProps.initialJobOpenings`. Only 20 per page are rendered and `?page=2` repeats them, so crawl many narrow pages: `/country/croatia/jobs/<slug>/`, `/country/europe/jobs/<slug>/`, `/jobs/<slug>/`. | Each opening has **`locationCountries`** — the exact list of eligible countries — plus the direct ATS `url`, `created_at`, `requiredLanguages`, seniority flags, `salaryRange` and a `ghostScore`. 210 pages → 1,026 unique openings on 24/09. Best single filter for "is Croatia actually allowed". |
+| **nomado24.de** | `/en/remote-jobs/marketing` and job pages | Tags roles EU/EMEA vs Worldwide vs Germany-only. Dates can be refreshes (EverAI showed 24/09; original 31/08). |
+| **DOU (Ukraine)** | `jobs.dou.ua/vacancies/feeds/?category=Marketing` RSS | Ukrainian product companies and agencies, many roles in English and open "за кордоном" (abroad). Use the vacancy ID for age. |
+| **Toogeza** | Ashby board `toogeza` | Ukrainian recruiter placing Europe-remote leadership roles for product startups. |
+| **posao.hr** | RSS and server-rendered category/city pages | Works — and confirms the Croatian market: ~12 real marketing ads nationwide on 24/09, **zero** in Osijek. |
+
+### Market notes worth not re-learning
+
+- **DACH "100% remote" SEA roles** (Tomorrow Education, hurra.com, celebrate company, Digital Career
+  Institute) are almost always **Germany residency plus fluent German**. They look ideal in English
+  summaries and fail on both counts in the original.
+- **"Worldwide" on an aggregator is not the employer's word.** Found (weight-care telehealth) was tagged
+  worldwide; its own Ashby board says USA/Canada. Magic's *Paid Search Manager* was tagged Europe; the
+  employer says Mexico only, ET hours.
+- The Workable global API rate-limits at roughly one request per second. Pace at 1.2 s with 8 s/16 s backoff
+  on HTTP 429; expect ~25 minutes for 24 queries × 18 locations.
