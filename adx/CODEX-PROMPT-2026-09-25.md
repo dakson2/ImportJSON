@@ -1,5 +1,7 @@
 # Prompt for Codex - write the 25/09/2026 crawl into Work
 
+> Superseded by `CODEX-PROMPT-2026-09-25-FINAL.md` (end-of-day batch). Do not run this one.
+
 Copy everything inside the code block below into Codex.
 
 ```text
