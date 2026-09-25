@@ -38,9 +38,12 @@
    "company": "Ruby Labs",
    "role": "Google Ads Manager (AI Native)",
    "approxDate": "~23/07/2026",
-   "status": "Dario believes it was sent (25/09); never logged in APPLIED",
+   "status": "CONFIRMED by Dario 25/09 (screenshot): applied ~23/07/2026, Recruiter Screen held, rejected by email 04/08/2026 09:20 (Ruby Labs Recruitment Team via no-reply@ashbyhq.com)",
    "evidence": "Drive folder 'Aplication 20 - Ruby Labs' (1XXvHj5KUcPC07gWFYrKGXTUkNHtK19Iq, created 23/07/2026) holding RubyLabs_CV_Dario_Suler.docx titled 'Google Ads Manager (AI Native) | Application for Ruby Labs' with a tailored landing page link (utm_source=linkedin); Adaxa web LOG 04/08 mentions a 'Ruby Labs landing'. ops-001/002 (11/09) found no submission proof. Role no longer on the Ruby Labs Ashby board on 25/09.",
-   "action": "Add an APPLIED row only after Dario confirms it was sent; date approximate."
+   "action": "Add APPLIED row: Date found 22/07/2026; Job title 'Google Ads Manager (AI Native)'; Company 'Ruby Labs'; Job site 'Ashby (employer ATS)'; Work mode 'Remote, within +/-4h of CET'; STATUS 'Rejected 04/08/2026 (after Recruiter Screen)'; Availability status 'Submitted ~23/07/2026 (package in Drive folder Aplication 20 - Ruby Labs); recruiter screen held; rejection email 04/08/2026'."
   }
+ ],
+ "notes": [
+  "Application confirmations and rejections reach Dario's other inbox (not the connected dakson2@gmail.com). A Gmail-connector search is therefore not proof that nothing was sent; ask Dario to search his inbox."
  ]
 }
