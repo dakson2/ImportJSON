@@ -1,0 +1,25 @@
+{
+  "batchId": "ADX-20260924-013",
+  "owner": "AI-2",
+  "dryRun": true,
+  "doNotReplay": true,
+  "description": "RECORD ONLY - do not replay through the Bridge. The live sheets were reconciled directly on 20/09 by CODEX-0920 and that reconciliation is the source of truth; see adx/ops/SUPERSEDED.md. This file records two corrections to claims made by this session on 20/09, and the state of every pending role as re-verified on 24/09 against employer sources.",
+  "corrections": [
+    {"claim": "Hilo by Aktiia Head of Performance Marketing verified live (batches 009, 012)", "truth": "Not live. Absent from Hilo's own Workable index (14 current postings, none this role) on 24/09; job URL redirected to not_found on 20/09 per CODEX-0920-HILO. The 16/09 date came from an aggregator.", "impact": "Recommended as #1 in the 21/09 bulk-send document, with a letter. Document renamed with a warning prefix."},
+    {"claim": "Fortis Media passes the integrity filter (batches 011, 012)", "truth": "Fails. Requirements state hands-on cloaking experience is highly desirable and ask for acquiring Business Managers and ad accounts from vendors and resellers when standard access is limited. CODEX-0920 recorded this correctly.", "impact": "Recommended in Tier B with a letter. Excluded."}
+  ],
+  "pendingReverified": [
+    {"role": "Infobip - Growth Marketing Senior Specialist (Zagreb, hybrid)", "status": "LIVE, canApply true", "posted": "2026-09-10", "note": "Exactly 14 days old on 24/09 - last day inside the rule. Needs Dario's Zagreb decision today."},
+    {"role": "SimpleTiger - B2B SaaS PPC Manager", "status": "LIVE on employer ATS (Breezy)", "posted": "2026-09-15 original (Breezy shows 2026-09-22 refresh)", "note": "Team 'spread around the US'; US payroll benefits. Eligibility for Croatia unconfirmed."},
+    {"role": "Ruby Labs - User Acquisition Manager (Meta & Snapchat)", "status": "LIVE", "posted": "2026-09-19", "note": "Deadline 19/10. Midweight, Meta/Snapchat. Marginal."},
+    {"role": "OnTheGoSystems - Head of Marketing", "status": "LIVE", "posted": "2026-09-18", "note": "Listed for Warsaw, Novi Sad, Lisbon, Barcelona. Dario already applied to the same employer 17/09 - follow-up route, not a second application."},
+    {"role": "Powered by Search - Senior Performance Marketing Strategist", "status": "ALREADY APPLIED 17/09 (APPLIED r27)", "note": "Do not reapply."},
+    {"role": "SolCrov - Performance Marketing Specialist (Croatia, 100% remote)", "status": "LIVE page with application form", "posted": "UNKNOWN - no date in page or structured data; not yet indexed by search engines, which weakly suggests it is new", "note": "Google Ads + Meta, GA4, GTM, Looker Studio, min EUR 10k monthly budgets. Croatian solar company, founded 2022."},
+    {"role": "Creatunity - Senior Media Buyer", "status": "LIVE", "posted": "2026-09-11", "note": "Weak: 2+ years, Meta. The USD 100,000 figure is the monthly Meta budget required, not salary. Posted simultaneously in Venezuela, Ecuador, Argentina, Mexico, Poland, Croatia."},
+    {"role": "Hilo by Aktiia - Head of Performance Marketing", "status": "NOT LIVE", "note": "See corrections."},
+    {"role": "Fortis Media - Senior Performance Marketing Specialist", "status": "EXCLUDED - integrity", "note": "See corrections."},
+    {"role": "CapsLock - Performance Marketing Lead (Native Ads)", "status": "OUT - 18 days old on 24/09"},
+    {"role": "HelloFresh - Paid Search Lead", "status": "OUT - 15 days old on 24/09, and Berlin residency"},
+    {"role": "Almond Clear, Paleo Valley, Web Marketing for Dentists", "status": "Not present in Workable's index on 24/09 - treat as closed"}
+  ]
+}

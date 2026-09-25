@@ -1,0 +1,138 @@
+{
+  "batchId": "ADX-20260917-005",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "First real submissions of the cycle plus a live crawl. Front A submitted moves off 0 for the first time since 18/06: Thyssen Ads (r184) submitted 16/09 and Brand Bolt (r182) submitted 17/09, both confirmed by Dario. Also records the 17/09 crawl, which was the first one with actual web access - WebSearch became available where it had been blocked on 15/09, so roles were discovered live rather than mined from the existing pool. WebFetch is still blocked by the egress proxy, so postings could not be opened and employers still cannot be verified from this session. KNOWN GAP: the bridge has no 'applied.append' op, so the two APPLIED rows cannot be written by this batch. They are listed in the description of the activity rows below and must be added by hand or by extending the bridge.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-16T22:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "Thyssen Ads - Google Ads Specialist",
+          "targetUrl": "https://thyssenads.com/careers/google-ads-specialist/apply",
+          "relatedId": "Found positions r184",
+          "action": "Submit application through the employer's own careers form: motivation letter PDF plus master CV PDF, with screening answers written for the e-commerce, tracking, campaign strategy and mindset sections",
+          "outcome": "SUBMITTED, confirmed by Dario. First Front A submission of the cycle - APPLIED had been static at 21 rows since 18/06 and submitted had been 0.",
+          "nextStep": "Add the APPLIED row by hand: Date found, Job title 'Google Ads Specialist', Company 'Thyssen Ads', STATUS 'Submitted 16/09/2026'. The bridge has no applied.append op.",
+          "notes": "Ten screening answers were written for this form and saved as a reusable bank: Drive doc 'ADX - BANKA ODGOVORA za obrasce (Google Ads)'. Same questions recur on the other ATS forms in the pool."
+        },
+        {
+          "dateTime": "2026-09-17T06:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "Brand Bolt - Senior Google Media Buyer",
+          "targetUrl": "https://brandbolt.na.teamtailor.com/jobs/686969-senior-google-media-buyer",
+          "relatedId": "Found positions r182",
+          "action": "Submit application through the employer's Teamtailor form: motivation letter with two anonymized account cases, master CV, and the form's own screening fields including personally managed monthly spend",
+          "outcome": "SUBMITTED, confirmed by Dario. Second Front A submission of the cycle.",
+          "nextStep": "Add the APPLIED row by hand: Job title 'Senior Google Media Buyer', Company 'Brand Bolt', STATUS 'Submitted 17/09/2026'.",
+          "notes": "Spend field answered 2700000 USD, the strict reading of 'personally managed and optimized' (EUR 2.5M hands-on). The EUR 7.8M regional figure was placed in the free-text examples field, labelled as regional responsibility rather than hands-on, so the two cannot be read as the same claim. Beauty/skincare/supplements question answered honestly as no, with policy-constrained category experience offered as the transferable ground."
+        },
+        {
+          "dateTime": "2026-09-17T07:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Sourcing",
+          "target": "Live crawl across Ashby, Greenhouse, Lever, Teamtailor, Workable, Recruitee, Dynamite Jobs and the Croatian market",
+          "action": "Run the first crawl of the project with live web access, deduplicate against the 166 companies already in Found positions and APPLIED, and rank what is new",
+          "outcome": "WebSearch is available for the first time - it was refused at CONNECT on 15/09. WebFetch remains blocked by the egress proxy, so postings could not be opened and no employer could be verified. Roughly 20 net-new roles found; 3 packaged (Whatnot, Impact Brands, Adcubator), the rest listed for selection. Monks excluded on geography: US states only plus a return-to-office policy.",
+          "evidenceUrl": "https://drive.google.com/drive/folders/1fq-xW9VRJo1-lUvnGTG1GUDH4x4aAx25",
+          "nextStep": "Dario picks by number from the candidate list. Employer verification still cannot be done from this session.",
+          "notes": "The 15/09 source audit finding still holds and is now actionable: the pipeline had inherited the bias of two boards. This crawl deliberately queried ATS platforms directly rather than aggregators."
+        }
+      ]
+    },
+    {
+      "type": "found.append",
+      "rows": [
+        {
+          "Date found": "17/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Senior Performance Marketing Manager, Europe",
+          "Company": "Whatnot",
+          "Job site": "Greenhouse (employer ATS)",
+          "Work mode / Location": "Remote Europe / London referenced - confirm Croatia eligibility",
+          "Engagement type": "Full-time",
+          "Compensation": "GBP 120,000-150,000 per year plus benefits and equity",
+          "Availability status": "Found via live search 17/09; posting not opened - WebFetch blocked; employer NOT verified",
+          "Fit score": 93,
+          "Priority": "A - Primary / geo eligibility to confirm",
+          "Work description": "Identify, test and scale emerging paid media channels for European expansion. Requires 7+ years, 3+ in European markets, and a hands-on track record managing $1M+/month with proven payback. The $1M+/month gate is the differentiator: EUR 2.5M hands-on (~$2.7M) clears it 2.7x. Honest gap: the role centres on emerging channels beyond the established ones, while the record is concentrated in Google and paid search. Compensation sits above the EUR 100,000 reference.",
+          "Url": "https://job-boards.greenhouse.io/whatnot/jobs/5474579004",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Performance Marketing",
+          "Tag 3": "Large Budgets",
+          "Tag 4": "EMEA"
+        },
+        {
+          "Date found": "17/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Media Buyer - Google Ads",
+          "Company": "Impact Brands",
+          "Job site": "Recruitee (employer ATS)",
+          "Work mode / Location": "Fully remote, any location",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "Found via live search 17/09; posting not opened - WebFetch blocked; employer NOT verified",
+          "Fit score": 89,
+          "Priority": "A - Primary / comp band to confirm",
+          "Work description": "Google Ads buying for a portfolio of 7+ health and wellness supplement brands (PureHealth Research, Nation Health MD, Pureance, Trumeta, PetMade, VitalPeak, Nature's Blast). Directly answers the supplements gap the Brand Bolt form exposed: supplements sit under the same strict platform policy as the sensitive-category retail work in the record, which is the transferable edge. Fully remote with no geography constraint. Flag: title is Media Buyer rather than senior, so the band may sit below the EUR 100,000 reference - establish it early.",
+          "Url": "https://impactbrands.recruitee.com/o/media-buyer-google-ads-remote-4",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Ecommerce",
+          "Tag 3": "DTC",
+          "Tag 4": "Sensitive Category"
+        },
+        {
+          "Date found": "17/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Senior Google Ads Media Buyer",
+          "Company": "Adcubator",
+          "Job site": "Deel / Dynamite Jobs",
+          "Work mode / Location": "Fully remote, flexible hours",
+          "Engagement type": "Full-time",
+          "Compensation": "Listed as $16k-$26k per year - VERIFY, implausibly low for a senior seat",
+          "Availability status": "Found via live search 17/09; posting not opened - WebFetch blocked; employer NOT verified",
+          "Fit score": 84,
+          "Priority": "B - Conditional / compensation is the blocker, not the fit",
+          "Work description": "Full-stack Google buyer, core Search and Shopping at scale. Agency states nine figures in annual ad spend across 180+ ecommerce DTC brands, direct relationships with Google product teams, alpha and beta access, weekly mentoring from the founder. On content this is the closest match in the whole pool to the verified record. The posted band of $16k-$26k per year is the problem: it is roughly a quarter of the EUR 100,000 reference and suggests hiring from low-cost regions. Fit score reflects the work; the priority reflects the money. Establish compensation before investing interview time.",
+          "Url": "https://jobs.deel.com/adcubator/job-details/11319ab9-f2e9-4fa1-9a02-a97516d4e89a/overview",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Shopping",
+          "Tag 3": "Paid Search",
+          "Tag 4": "Ecommerce"
+        }
+      ],
+      "why": "Three net-new roles worth packaging, deduplicated against the 166 companies already present in Found positions and APPLIED. Column Y (Actions) is protected and deliberately not written. Availability status records honestly that the posting was never opened, because WebFetch is blocked - the detail comes from search results, not from the employer's page."
+    },
+    {
+      "type": "daily.upsert",
+      "date": "17/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 2,
+        "Front A remaining": 8,
+        "Qualified shortlist": "13 documented (r168, r170-r175, r182-r185 plus Whatnot, Impact Brands, Adcubator). 2 submitted, 10 ready to send, 1 on HOLD (Yoru r173).",
+        "Packages ready": "10 letters ready as PDF and Google Doc. Reusable screening-answer bank created for ATS forms.",
+        "Follow-ups due": "Egear r185 - deadline 23/09/2026, 6 days. Video must be recorded by Dario.",
+        "LinkedIn visits": 0,
+        "Adaxa Web visits": 0,
+        "Forms submitted": 2,
+        "Confirmations/evidence": "https://drive.google.com/drive/folders/1fq-xW9VRJo1-lUvnGTG1GUDH4x4aAx25",
+        "Blockers": "Employer verification still impossible from this session - WebSearch works but WebFetch is blocked by the egress proxy. Egear needs a video only Dario can record. Aimers needs a publicly hosted CV URL. Adcubator compensation is implausibly low and needs confirming. Whatnot geography needs confirming. Bridge has no applied.append op, so the two APPLIED rows must be entered by hand. Base ALL2 merge: dry run passed, live run still not done.",
+        "Next action": "Send the remaining ready applications this evening. Record both APPLIED rows by hand. Run the ALL2 merge live in Base."
+      },
+      "why": "Front A submitted has been 0 for the whole project and APPLIED static at 21 rows since 18/06. Two submissions on consecutive days is the first movement, and the tab exists to record exactly that."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Send the remaining prepared applications: OnTheGoSystems r170, SimpleStudy r183, Powered by Search r172, UTTR r171, AutoGPT r175, plus Whatnot, Impact Brands and Adcubator from the 17/09 crawl. Aimers r168 needs a hosted CV URL first; Egear r185 needs a video before 23/09; Yoru r173 stays on HOLD until the employer is verified. Verify each employer before sending - the standing rule of 16/09 still applies and this session still cannot do it.",
+      "notes": "Thyssen Ads submitted 16/09, Brand Bolt submitted 17/09, both confirmed by Dario. Live crawl run 17/09 - first with web access; WebSearch available, WebFetch still blocked. Three new roles packaged, roughly seventeen more listed for selection by number. Both APPLIED rows still need to be written by hand: the bridge has no applied.append op, which is the next useful extension to it.",
+      "why": "The lane was left QUEUED and UNASSIGNED for the next AI. Work is now actively moving, so it reads IN PROGRESS, and the next action names exactly what is left rather than restating the plan."
+    }
+  ]
+}

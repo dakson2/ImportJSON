@@ -1,0 +1,101 @@
+{
+  "batchId": "ADX-20260920-010",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Second crawl of 20/09, run against a source layer the project had never touched: employer ATS boards queried directly by API, rather than aggregators. 9,700 postings scanned across 87 company boards plus Infobip's Workday tenant. The headline result is two live Croatian roles at Infobip, which exist only because Dario opened hybrid work to Croatia earlier today - under the previous remote-only scope neither would have been surfaced. The second result is a negative one, and it is now confirmed twice from independent source layers: there is no EU-remote senior Google Ads seat on the open market this fortnight.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-20T20:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Sourcing",
+          "target": "ATS-direct crawl - 87 employer boards plus Infobip Workday",
+          "action": "Probe company ATS endpoints directly (Greenhouse, Greenhouse EU, Ashby, Lever, Recruitee, SmartRecruiters, Workday) across three curated org lists - European scale-ups, remote-first companies, and Croatian employers - then filter on title, date and work model",
+          "outcome": "9,700 postings scanned. Batch 1 (European scale-ups and agencies): 3,664 postings across 47 boards, 62 paid-media roles within 14 days. Batch 2 (remote-first companies): 5,827 postings across 33 boards, 50 paid-media roles within 14 days, EVERY ONE of them US, Brazil, India, Canada or Mexico. Batch 3 (Croatian tech employers): 7 boards resolved, zero marketing roles. Infobip's Workday tenant: 143 marketing postings, two of them live and Croatian.",
+          "evidenceUrl": "https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-",
+          "nextStep": "Decide on the two Infobip roles. Send Hilo, which remains unsent.",
+          "notes": "Method note for the next AI: querying employer ATS APIs directly is the highest-yield technique found so far and it was not in the v1 workflow. Greenhouse, Ashby, Lever and Recruitee all answer unauthenticated GETs; Workday answers an unauthenticated POST to /wday/cxs/<tenant>/<site>/jobs with a JSON body, and its per-job endpoint returns startDate and remoteType, which is how both Infobip roles were dated precisely rather than by Workday's '30+ days ago' bucket. SmartRecruiters returns HTTP 200 for unknown companies, so filter on content rather than status code."
+        },
+        {
+          "dateTime": "2026-09-20T20:45:00.000Z",
+          "front": "DARIO",
+          "activityType": "Analysis",
+          "target": "Second independent confirmation that the EU-remote senior Google Ads segment is empty",
+          "action": "Compare the ATS-direct result against the aggregator result from earlier the same day, since the two draw on different data",
+          "outcome": "CONFIRMED from both sides. Aggregators (09:00 crawl): 45 Google Ads or paid-search roles within 14 days across 3,879 Jobgether postings, none EU-remote at this seniority. Employer ATS (20:00 crawl): 112 paid-media roles within 14 days across 9,491 postings, none EU-remote at this seniority. The two crawls share no source, so this is not one index being stale.",
+          "nextStep": "Stop treating the small pool as a crawl problem. The next increment comes from scope, and hybrid was the first scope change - it produced two roles within hours where remote-only had produced none in a week.",
+          "notes": "What the EU market actually offers at this level is city-hybrid agency work: DEPT is hiring Senior Paid Search consultants in Amsterdam, Rotterdam, Cologne, Berlin, Hamburg, London, Manchester and Budapest, and Brainlabs at Manager and Associate Director level across the UK. All of them require one to two office days per week, which fails Dario's EU hybrid rule of roughly one visit every six to twelve months. They are not rejected on fit - DEPT's Amsterdam seat asks for exactly the 5+ years of paid search and shopping that he has - but on presence. If Dario ever revises the EU hybrid rule toward relocation, that cohort is where the volume is."
+        },
+        {
+          "dateTime": "2026-09-20T20:50:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "Roles opened and rejected in this crawl",
+          "action": "Pull full job content locally for the shortlisted boards and read work model, seniority and requirements before recommending anything",
+          "outcome": "DEPT SEA Consultant (Cologne, Berlin, Hamburg): 'Flexible hybrid working policy (1-2 days at the office)' plus 2+ years - fails presence and seniority. DEPT Senior Paid Search (SEA) Consultant (Amsterdam, Rotterdam): posting says 'hybrid' in the title line, 5+ years - fit is good, presence fails. DEPT Mid/Senior PPC Specialist (Budapest): 3+ years, no remote policy stated. Oura Paid Search Specialist (UK): hybrid London and 2-3+ years - too junior, and worth noting Oura itself warns of scammers impersonating its recruiters for remote roles. Brainlabs, Wise, Raisin, Gymshark, Enpal, GetYourGuide, N26, Monks: all city-bound or non-EU.",
+          "nextStep": "None of these proceed.",
+          "notes": "Oura was checked specifically because it is a health wearable and would have carried the same medical-device advertising-policy angle that makes Hilo a strong fit. The seat is simply too junior."
+        }
+      ]
+    },
+    {
+      "type": "found.append",
+      "rows": [
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Growth Marketing Senior Specialist",
+          "Company": "Infobip",
+          "Job site": "Workday (employer ATS)",
+          "Work mode / Location": "Hybrid, Zagreb, Croatia - Workday field remoteType reads 'Hybrid'",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "VERIFIED 20/09/2026 - posting opened through Workday's per-job endpoint. startDate 10/09/2026, 10 days old, inside the window. Employer needs no verification: Infobip is Croatia's largest technology company, 3,500+ employees, 75+ offices.",
+          "Fit score": 82,
+          "Priority": "A - Primary / Croatian tier, decision needed on Zagreb",
+          "Work description": "Owns paid traffic strategy for self-service signups, working with the global growth team and external agencies, managing paid search, paid social and display, and allocating budget for paid self-service. Two elements match the verified record unusually well. First, 'partner with external marketing agencies to strengthen paid traffic strategies' is precisely what Dario did for the last one to two years with 15+ outsourced agency PPC specialists. Second, Infobip states an AI-first operating model and says every role contributes to it, which is where his GPT and Apps Script tooling stops being a footnote and becomes relevant. Open question is the seat's level: 'Senior Specialist' at Infobip may sit below the EUR 100,000 reference, so establish the band early. The real decision is Zagreb: it is Croatia, which satisfies the hybrid rule's first branch, but it is not Slavonia or Osijek and sits roughly 280km from home.",
+          "Url": "https://infobip.wd3.myworkdayjobs.com/InfobipCareers/job/Zagreb-Croatia/Growth-Marketing-Senior-Specialist_JR104930",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Paid Search",
+          "Tag 3": "Growth Marketing",
+          "Tag 4": "Agency Management",
+          "Tag 5": "Croatia",
+          "Tag 6": "Hybrid",
+          "Tag 7": "B2B SaaS"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Senior Digital Advertising Specialist",
+          "Company": "Infobip",
+          "Job site": "Workday (employer ATS)",
+          "Work mode / Location": "Hybrid, Zagreb, Croatia",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "VERIFIED 20/09/2026 - posting opened. startDate 12/08/2026, which is 39 days old. OUTSIDE the 14-day rule. Recorded rather than sent, because it is the closest title match to the verified record anywhere in the Croatian market and Dario should decide on it himself rather than have it silently dropped.",
+          "Fit score": 88,
+          "Priority": "HOLD - fit is the highest in the Croatian tier, but the posting is 39 days old and the standing rule voids it",
+          "Work description": "Owns the digital advertising strategy end to end: budget planning and allocation, campaigns across Google Ads, Facebook and LinkedIn, performance reporting on CTR, conversion rate and ROI, and mentoring team members in advanced technique. On content this is the single best match to Dario's record found in Croatia - it is his day job written out. Nice-to-haves are B2B lead generation and self-serve product-led SaaS campaigns, where his weight sits in ecommerce instead. The only thing wrong with it is its age.",
+          "Url": "https://infobip.wd3.myworkdayjobs.com/InfobipCareers/job/Zagreb-Croatia/Senior-Digital-Advertising-Specialist_JR104819",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Paid Search",
+          "Tag 3": "LinkedIn Ads",
+          "Tag 4": "Croatia",
+          "Tag 5": "Hybrid",
+          "Tag 6": "Mentoring"
+        }
+      ],
+      "why": "Two net-new Croatian rows, both verified through Workday's per-job endpoint so the dates are exact rather than Workday's '30+ days ago' bucket. Column Y (Actions) is protected and not written. The second row is deliberately recorded at Priority HOLD rather than dropped: the 14-day rule voids it, but it is the best content match in the Croatian market and the decision to override a standing rule belongs to Dario, not to this session."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Send Hilo by Aktiia - still unsent, letter v2 ready, posting now 4 days old. Then decide the two Infobip roles: whether Zagreb hybrid is acceptable at all, and whether the 39-day Senior Digital Advertising Specialist is worth an exception to the 14-day rule.",
+      "notes": "Hybrid scope opened at roughly 19:30 on 20/09 and produced two verified Croatian roles within an hour, after a week in which remote-only scope produced none. That is the clearest evidence in the project that the constraint is scope rather than crawl effort. ATS-direct querying is now the primary technique and is documented in adx/crawl/WORKFLOW-crawl-v2.md.",
+      "why": "The lane's next action still names Hilo because it is still unsent, and adding the Infobip decisions without repeating that would bury the one thing that is actually ready to go."
+    }
+  ]
+}

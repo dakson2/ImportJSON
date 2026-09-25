@@ -1,0 +1,77 @@
+{
+ "note": "Queued for the 26/09/2026 instructions (Dario, 25/09): close the six June applications that have had no reply for 3+ months.",
+ "APPLIED_close_old_waiting": [
+  {
+   "expected_row": 9,
+   "verify": {
+    "Company": "Lead Ember",
+    "Job title starts with": "Senior Google Ads Account Manager - Remo"
+   },
+   "current_STATUS": "Waiting",
+   "set": {
+    "STATUS": "NO REPLY - CLOSE"
+   },
+   "append_to_Actions": " | Closed 26/09/2026 - no reply for 3+ months (decided by Dario 25/09/2026)."
+  },
+  {
+   "expected_row": 17,
+   "verify": {
+    "Company": "Jordan Digital Marketing",
+    "Job title starts with": "Performance Marketing Manager"
+   },
+   "current_STATUS": "Waiting",
+   "set": {
+    "STATUS": "NO REPLY - CLOSE"
+   },
+   "append_to_Actions": " | Closed 26/09/2026 - no reply for 3+ months (decided by Dario 25/09/2026)."
+  },
+  {
+   "expected_row": 19,
+   "verify": {
+    "Company": "Sporty Group",
+    "Job title starts with": "Performance Marketing Manager - Paid Soc"
+   },
+   "current_STATUS": "Applied - Waiting",
+   "set": {
+    "STATUS": "NO REPLY - CLOSE"
+   },
+   "append_to_Actions": " | Closed 26/09/2026 - no reply for 3+ months (decided by Dario 25/09/2026)."
+  },
+  {
+   "expected_row": 20,
+   "verify": {
+    "Company": "ALM Corp",
+    "Job title starts with": "Senior Manager – Performance Marketing ("
+   },
+   "current_STATUS": "Applied - Waiting",
+   "set": {
+    "STATUS": "NO REPLY - CLOSE"
+   },
+   "append_to_Actions": " | Closed 26/09/2026 - no reply for 3+ months (decided by Dario 25/09/2026)."
+  },
+  {
+   "expected_row": 21,
+   "verify": {
+    "Company": "Qdrant",
+    "Job title starts with": "Fractional Paid Media Specialist (EMEA)"
+   },
+   "current_STATUS": "Applied - Waiting",
+   "set": {
+    "STATUS": "NO REPLY - CLOSE"
+   },
+   "append_to_Actions": " | Closed 26/09/2026 - no reply for 3+ months (decided by Dario 25/09/2026)."
+  },
+  {
+   "expected_row": 22,
+   "verify": {
+    "Company": "StubGroup",
+    "Job title starts with": "Senior Google Ads Account Manager"
+   },
+   "current_STATUS": "Applied - Waiting",
+   "set": {
+    "STATUS": "NO REPLY - CLOSE"
+   },
+   "append_to_Actions": " | Closed 26/09/2026 - no reply for 3+ months (decided by Dario 25/09/2026)."
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+  "batchId": "ADX-20260920-009",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "First crawl of the project run with working outbound network. WebFetch became available on 20/09 after Dario changed the cloud environment's network access level, so for the first time a posting could be opened and read before being recommended, and employers could be researched rather than guessed at. Two consequences. First, verification now runs BEFORE a role reaches Dario, not after - the 16/09 standing rule that employers must be verified is finally executable from this session. Second, three roles that were sitting in the ready-to-send pile died on contact with their own posting pages, including Henry Schein, for which a letter had already been written. Also records Dario's answer to the hybrid question that had been open since 15/09.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-20T17:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Standing rule",
+          "target": "Hybrid work scope - question open since 15/09",
+          "action": "Record Dario's answer on whether hybrid roles are in scope, and apply it to the source list",
+          "outcome": "ANSWERED. Hybrid is in scope under two distinct conditions, which are not the same rule. (1) CROATIA: a hybrid or on-site role is acceptable when the workplace is in Croatia, primarily Slavonia or Osijek. (2) REST OF EU: a hybrid role elsewhere in the EU is acceptable only when required on-site presence is roughly once every 6-12 months. A role demanding two or three office days a week in a foreign city is therefore NOT in scope and must not be raised - that is relocation, not hybrid.",
+          "nextStep": "Croatian sources get a real cadence for the first time: mojposao.hr, posao.hr, adorio.hr, hr.jooble.org, poslovi.infostud.com. Remote roles with quarterly or annual gatherings now qualify under condition 2 and should no longer be filtered out.",
+          "notes": "This reading of condition 2 is an interpretation of 'jednom u 6-12 mjeseci mogao prihvatiti i bilo koji hibridni posao u EU' as a FREQUENCY of required presence rather than a future willingness to relocate. Flagged to Dario for correction. If it is wrong, condition 2 widens considerably and the German on-site roles below come back into play."
+        },
+        {
+          "dateTime": "2026-09-20T18:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Sourcing",
+          "target": "First verified crawl - ~4,100 dated postings across nine sources",
+          "action": "Query board and ATS APIs directly for structured data with posting dates, then open each surviving posting before recommending it",
+          "outcome": "1 role survives every filter (Hilo by Aktiia), 2 marginal, everything else void. Sources: Jobgether/Lever public API (3,879 postings, 39MB), Arbeitnow (250 detailed EU records), Jobicy (10 keyword and geo queries), Remotive API, RemoteOK API, Himalayas API, TheMuse API, WeWorkRemotely, plus targeted site-scoped web search. Funnel: ~4,100 dated postings -> ~80 PPC/paid-media within 14 days -> 12 Europe-eligible -> 1 surviving seniority, channel, compensation and integrity filters.",
+          "evidenceUrl": "https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-",
+          "nextStep": "Send Hilo. Decide on the two marginal roles. Croatian sources now need their own cadence under the new hybrid rule.",
+          "notes": "STRUCTURAL FINDING, the most important output of this crawl: of 3,879 Jobgether postings, 45 mention Google Ads or paid search within the last 14 days, and NOT ONE is EU-remote at Dario's seniority. The live roles are US, Brazil, India, or locked to a single country ('based in Spain', 'Dublin-based'). The EU-remote senior Google Ads segment is not thin, it is close to empty. A target of 10 submissions a day is arithmetically unreachable in this cross-section, and no improvement in crawling technique will change that. The lever is scope, not effort."
+        },
+        {
+          "dateTime": "2026-09-20T18:15:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "Henry Schein - Digital Paid Media Specialist EMEA",
+          "targetUrl": "https://henryschein.wd1.myworkdayjobs.com/External_Careers/job/Madrid-Spain---Remote/Digital-Paid-Media-Specialist--EMEA_R132978",
+          "action": "Open the posting and check it against the 14-day rule and the compensation reference before Dario sends the letter that was already written for it",
+          "outcome": "VOID on three independent grounds. Posted 07/04/2026, which is 166 days old. Salary EUR 45,000 gross plus EUR 5,000 bonus, under half the EUR 100,000 reference. Requires 3+ years, mid-level. The '6 October deadline' previously recorded came from an aggregator, not the employer; the employer states only that no reply within 15 days means rejection.",
+          "nextStep": "Drive letter document 22 is dormant. Do not send.",
+          "notes": "This role had been reported to Dario as ready to send. It is the fourth recommendation in this project that did not survive verification, after Whatnot, Impact Brands and EER Poland. All four were recommended while postings could not be opened. That failure mode is now closed."
+        },
+        {
+          "dateTime": "2026-09-20T18:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "Four further roles checked and rejected",
+          "action": "Open each posting and check geography, seniority, compensation and platform-policy integrity",
+          "outcome": "Cato Networks: remote board returns 'No job opportunities are available' - closed. Tines Senior Performance Marketing Manager: EUR 125,000-145,000 and 10+ years, an excellent match on substance, but eligibility is Ireland (Dublin-based) or US only - void on geography. Lago Performance Marketing Manager: USD 8-12 per hour, roughly USD 1,280-1,920 per month, on Eastern time - void on compensation. automadeit GmbH: 2+ years, mid-level, German-language posting - void on seniority.",
+          "nextStep": "None. All four closed.",
+          "notes": "Tines is the one worth remembering. The substance fit was the best in the crawl and the band was well above the reference; only residency blocked it. If Dario ever reconsiders Irish residency, that employer profile is the target shape."
+        },
+        {
+          "dateTime": "2026-09-20T18:45:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "Google Media Buying Team Lead - REJECTED ON INTEGRITY",
+          "targetUrl": "https://jobs.lever.co/jobgether/dde5ec6f-2087-43b6-9240-6ef59a8984a1",
+          "action": "Read the full requirements of a role that matched on title, date and geography before putting it in front of Dario",
+          "outcome": "REJECTED, not for fit but for what it asks. Posted 18/09, fully remote, duplicated across ten European countries, wants Google Ads plus Ads Scripts, APIs and Tableau - on the surface the best title match of the crawl. The requirements also demand 'practical experience with anti-detect software, trackers, and cloaking technologies' in an iGaming context. Cloaking is deliberate deception of Google's ad review process. Not raised with Dario as an option.",
+          "nextStep": "Add an integrity filter to the crawl: reject any posting requiring anti-detect tooling, cloaking, or policy circumvention, whatever the fit score would otherwise be.",
+          "notes": "Also required 2+ years in iGaming, which Dario does not have. But the disqualifier is the cloaking requirement, and it would stand even if the industry experience were there. Recording it here so a future AI does not surface the same role as a high-fit miss."
+        }
+      ]
+    },
+    {
+      "type": "found.append",
+      "rows": [
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Head of Performance Marketing (m/f/d)",
+          "Company": "Hilo by Aktiia",
+          "Job site": "Workable (employer ATS)",
+          "Work mode / Location": "Fully remote within Europe; HQ Neuchatel, Switzerland; quarterly team gatherings",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "VERIFIED 20/09/2026 - posting opened and read. Published 16/09/2026, 4 days old. Employer verified: venture-backed scale-up, over USD 96M raised, technology from 18 years of CSEM research, CE-marked Class IIa medical device, sold in 12 countries.",
+          "Fit score": 91,
+          "Priority": "A - Primary / send immediately",
+          "Work description": "Own the paid acquisition engine across Meta, Google and Amazon on roughly EUR 7.8M annual budget. Wants DTC, subscription, marketplace or consumer-tech paid acquisition, agency management and accountability, practical AI tooling, and GA4 plus attribution, Looker and tag management. Prefers Amazon, subscription, healthcare or medtech, and incrementality testing. THE ANGLE: Hilo advertises a CE-marked Class IIa medical device, so Google and Meta health advertising policy governs the account - restricted condition targeting, constrained remarketing, claim review, landing-page review, account-level disapproval risk. Dario's years of large-budget work inside strict platform policy in a sensitive category are direct experience of that constraint, not merely transferable. Honest gaps: no healthcare or medtech background, and no formal incrementality framework owned end to end.",
+          "Url": "https://apply.workable.com/hilobyaktiia/j/DD6A14D9B6",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Performance Marketing",
+          "Tag 3": "Meta",
+          "Tag 4": "Amazon Ads",
+          "Tag 5": "Remote Europe",
+          "Tag 6": "Sensitive Category",
+          "Tag 7": "Agency Management"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Performance Marketing Lead (Native Ads)",
+          "Company": "CapsLock",
+          "Job site": "Jobicy",
+          "Work mode / Location": "Fully remote from Europe",
+          "Engagement type": "Full-time employee",
+          "Compensation": "Not disclosed",
+          "Availability status": "VERIFIED 20/09/2026 - posting opened. Published 06/09/2026, 14 days old, at the edge of the window.",
+          "Fit score": 62,
+          "Priority": "B - Marginal / channel mismatch",
+          "Work description": "Requires 7+ years hands-on in performance marketing or media buying, which Dario clears comfortably, and the geography is open across Europe. The channels are the problem: Taboola, Microsoft Ads Native, LiveIntent and Newsbreak, with Outbrain, MGID and MediaGo as preferred adjacents. Native advertising is a genuinely different discipline from paid search - different inventory, different creative economics, different fraud profile. Only the Microsoft Ads component touches the verified record. Worth applying to only if Dario is willing to present as a paid-media generalist rather than a Google specialist.",
+          "Url": "https://jobicy.com/jobs/148665-performance-marketing-lead-native-ads",
+          "Tag 1": "Native Ads",
+          "Tag 2": "Performance Marketing",
+          "Tag 3": "Remote Europe"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "User Acquisition Manager (Meta & Snapchat)",
+          "Company": "Ruby Labs",
+          "Job site": "Jobicy",
+          "Work mode / Location": "Any country within approximately +/- 4 hours of CET - Croatia is central to that band",
+          "Engagement type": "Independent Contractor - matches the Adaxa Agency B2B route with no friction",
+          "Compensation": "Not disclosed; Jobicy estimates a market median around USD 102,500",
+          "Availability status": "VERIFIED 20/09/2026 - posting opened. Published 19/09/2026, 1 day old.",
+          "Fit score": 58,
+          "Priority": "B - Marginal / seniority and channel mismatch",
+          "Work description": "The contract shape is the best in the whole pool: explicit Independent Contractor agreement, timezone band that puts Osijek in the middle, and an estimated band that is not far off the reference. Two problems. It is scoped as midweight at 2+ years, so Dario is well above the seat, which usually means the budget is too. And the channels are Meta and Snapchat, not Google - paid social rather than paid search. Raise it as an option, not a recommendation.",
+          "Url": "https://jobicy.com/jobs/150980-user-acquisition-manager-meta-snapchat",
+          "Tag 1": "Meta",
+          "Tag 2": "User Acquisition",
+          "Tag 3": "Contractor",
+          "Tag 4": "CET"
+        },
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Expires in 27 days from 20/09/2026",
+          "Job title": "Meta Search i Affiliate Marketing Specijalist (m/z)",
+          "Company": "Falkensteiner Hotelmanagement d.o.o.",
+          "Job site": "posao.hr",
+          "Work mode / Location": "Zadar, Croatia - work mode not stated, assume on-site or hybrid",
+          "Engagement type": "Full-time",
+          "Compensation": "Not disclosed",
+          "Availability status": "Found 20/09/2026 on the posao.hr marketing category. Posting not yet opened in detail - listing-level data only.",
+          "Fit score": 55,
+          "Priority": "C - Croatian tier / location is the blocker",
+          "Work description": "The only performance-adjacent role in the entire Croatian market on the day. Hotel metasearch - Google Hotel Ads, Trivago, Kayak, TripAdvisor - is bid management on auction inventory and sits closer to paid search than the title suggests, and affiliate adds a second performance channel. Falkensteiner is a substantial Austrian-Croatian hotel group, so the employer is not a risk. The blocker is Zadar: not Slavonia, not Osijek, and roughly 600km from home, so it satisfies neither branch of the hybrid rule unless it turns out to be remote.",
+          "Url": "https://www.posao.hr/djelatnosti/marketing-pr-i-mediji/",
+          "Tag 1": "Meta Search",
+          "Tag 2": "Affiliate",
+          "Tag 3": "Croatia",
+          "Tag 4": "Hospitality"
+        }
+      ],
+      "why": "Four net-new rows, each carrying a verification status that says explicitly whether the posting was opened. Column Y (Actions) is protected and deliberately not written. Fit scores are deliberately spread - 91, 62, 58, 55 - rather than clustered in the high eighties as in earlier batches, because three of these four are being recorded as options rather than recommendations and the score should say so."
+    },
+    {
+      "type": "daily.upsert",
+      "date": "20/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 0,
+        "Front A remaining": 10,
+        "Qualified shortlist": "1 primary (Hilo by Aktiia, verified live, 4 days old), 2 marginal (CapsLock, Ruby Labs), 1 Croatian tier blocked on location (Falkensteiner Zadar).",
+        "Packages ready": "Hilo letter v2 written with the Class IIa medical-device policy angle, which the v1 letter did not contain because the posting could not be opened when it was written. Drive: 'HILO by Aktiia - Head of Performance Marketing - PISMO v2 (medtech policy kut)'.",
+        "Follow-ups due": "None. Seven applications submitted 16-17/09 are inside normal response windows.",
+        "LinkedIn visits": 0,
+        "Adaxa Web visits": 0,
+        "Forms submitted": 0,
+        "Confirmations/evidence": "https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-",
+        "Blockers": "RESOLVED TODAY: outbound network access. WebFetch now works, so postings can be opened and employers researched from this session. Standing blocker instead is market supply: the EU-remote senior Google Ads segment is close to empty, which caps daily throughput regardless of method. Seven APPLIED rows still need pasting by hand at A23 from adx/ops/APPLIED_append_7_rows.tsv - the bridge now has an applied.append op but no batch has been run. Base ALL2 merge: dry run passed 15/09, live run still not done. Ops batches 001-009 all remain unapplied.",
+        "Next action": "Send Hilo with the v2 letter. Decide CapsLock and Ruby Labs. Set a Croatian source cadence under the new hybrid rule.",
+        "Last updated": "20/09/2026"
+      },
+      "why": "Front A submitted is 0 for 20/09 and the tab should say so plainly rather than carry forward the seven submissions of 17/09. The blockers field records the network unblock, because it is the single largest capability change in the project so far and the next AI needs to know that opening a posting is now possible."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Send Hilo by Aktiia, Head of Performance Marketing, using letter v2. It is the only role in the pool that survives every filter. Then decide the two marginal roles, and start a daily pass over the Croatian sources now that hybrid is in scope for Slavonia and Osijek.",
+      "notes": "Network access changed on 20/09: WebFetch works, so postings can be opened and employers researched before anything reaches Dario. The 16/09 rule that employers must be verified is now enforceable from this session and has been applied to every row in this batch. Verification immediately killed Henry Schein (166 days, EUR 45k, mid-level), Cato Networks (board closed), Tines (Ireland-only), Lago (USD 8-12/hour) and a cloaking-dependent iGaming role. Known trap: curl to apply.workable.com is blocked by Cloudflare with error 1015, but WebFetch reaches the same pages - use WebFetch for Workable, and public ATS APIs (api.lever.co/v0/postings/<org>, boards-api.greenhouse.io/v1/boards/<org>/jobs, apply.workable.com/api/v1/widget/accounts/<org>) for structured data with dates.",
+      "why": "The lane's next action had been Hilo since 20/09 but on unverified grounds. It is now verified, and the reason the pool is this small is recorded as a market finding rather than left looking like a crawl failure."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+ "note": "Running record for the end-of-day Codex batch on 25/09/2026. Dario asked to do the Codex instructions at the end.",
+ "submitted": [
+  {
+   "company": "Social Discovery Group",
+   "role": "Lead PPC Specialist",
+   "submitted": "25/09/2026",
+   "url": "https://social-discovery-ventures.breezy.hr/p/9ea048d3de3f01-lead-ppc-spesialist",
+   "ats": "Breezy",
+   "letter": "Drive 1tKL87541-uJxLjr7JByDp2bdeyC-mD5K1De93OPnXeI",
+   "note": "Sent as an exception to the 14-day rule: first published 27/07/2026, re-published 21/09/2026."
+  },
+  {
+   "company": "ennovationHUB",
+   "role": "Senior Google Ads Specialist | International E-commerce | Remote",
+   "url": "https://ennovationhub.com/o/senior-google-ads-specialist-international-e-commerce-remote-asap",
+   "ats": "Recruitee",
+   "letter": "Drive 1vGnUKtanW7HTKauq_xQoCVqnTxuh2CFud_ZU6ljai8I",
+   "priorContact": "No application found. Work sheet Found positions r16 and Employers r15 hold a different May role (Performance Marketing Specialist (Google Ads), found 18/05/2026), which the IPinfo prep notes of 18/05/2026 record as 'ennovationHUB - SKIP'. Not in APPLIED. Gmail dakson2@: no messages. dario.suler@ inbox not accessible to Claude.",
+   "submitted": "25/09/2026",
+   "answers": "Q1 in-house ecommerce team (with Adaxa contracting disclosed in Q2 and letter); Q3 travel: Sound good"
+  },
+  {
+   "company": "Taxes for Expats",
+   "role": "Paid Acquisition Lead",
+   "url": "https://himalayas.app/companies/taxes-for-expats/jobs/paid-acquisition-lead",
+   "ats": "Himalayas (employer posts there)",
+   "letter": "Drive 1Sr6u3dMDMxJmt6m9R6L5FTfoV1ksGkWt436VUSPiLD4",
+   "note": "Posted 08/08/2026, deadline 07/10/2026; exception to the 14-day rule chosen by Dario 25/09. No prior contact in Work or dakson2 Gmail.",
+   "submitted": "25/09/2026"
+  },
+  {
+   "company": "Genesis",
+   "role": "Paid Acquisition Lead (Google Ads) - AI Product Launch",
+   "url": "https://gen-tech.breezy.hr/p/afa4c6be853a-paid-acquisition-lead-google-ads-ai-product-launch",
+   "ats": "Breezy",
+   "letter": "Drive 1vVpja2hFa-776CRDLG8viQaXRm7ePw-SgEr-MfCkry0",
+   "note": "First published 28/08/2026 (Breezy first_publish_date); exception to the 14-day rule. No questionnaire; preferred location field required. Letter states the SaaS-metrics and AppsFlyer/Adjust gaps.",
+   "submitted": "25/09/2026"
+  },
+  {
+   "company": "OnHires (client undisclosed)",
+   "role": "Senior PPC Specialist (Google Ads)",
+   "url": "https://jobs.ashbyhq.com/onhires/da74ab40-92aa-4e95-92dc-3bee4c03fbf5",
+   "ats": "Ashby (recruiter)",
+   "letter": "Drive 1MIMpnsN6WLjCQxNNikyyrUg_RiLvmyAz79ECgPb_00M (merged in front of CV)",
+   "note": "In Work since 22/07 (Found positions r162), never applied; re-published on Ashby 04/09. Exception to the 14-day rule. Form: name, email, resume, LinkedIn (required); no letter field.",
+   "submitted": "25/09/2026"
+  }
+ ],
+ "inProgress": [],
+ "skipped": [
+  {
+   "company": "LottieFiles",
+   "role": "Head of Growth",
+   "url": "https://lottiefiles.bamboohr.com/careers/144",
+   "ats": "BambooHR",
+   "letter": "Drive 1w-8-_YF14AIfgnIF5n4mAquqC2-WyQeX6OduTXZKj98",
+   "note": "datePosted 16/09/2026, re-checked live 25/09. No prior contact in Work/Base/Gmail. Form has no cover-letter field: letter merged in front of the CV. Stretch fit: posting asks 8-12+ yrs PLG growth leadership and an in-house multi-disciplinary team, stated openly in the letter.",
+   "decision": "Skipped by Dario 25/09/2026"
+  },
+  {
+   "company": "Base360.ai (The Flex)",
+   "role": "Founding Growth Marketer",
+   "decision": "Not sent; Dario moved on to a new crawl 25/09/2026"
+  },
+  {
+   "company": "SimpleStudy",
+   "role": "Head of Paid Ads - Performance Marketing Lead",
+   "url": "https://jobs.ashbyhq.com/simplestudy/3b0de68e-cf2c-426f-88d2-d9e9823cd249",
+   "ats": "Ashby (employer)",
+   "note": "Live 25/09; published 07/08/2026 (exception). In Found positions r183 since 11/09 with packages from 11/09 (AI-1) and 16/09 (Drive folder '04 - SimpleStudy - Head of Paid Ads (r183)'), never sent. Employer checked 25/09: LinkedIn company page, several open roles, seed-backed. Form: why apply (long text), salary with currency, channels above $10K/month, largest monthly budget. Answers reuse the 16/09 package minus two unverified claims (SQL comfort, offline conversion import).",
+   "decision": "Skipped by Dario 25/09/2026: 'nije naša regija' (target markets UK, IE, BR, ZA, AU)"
+  }
+ ],
+ "previousApplicationsFound": [
+  {
+   "company": "Ruby Labs",
+   "role": "Google Ads Manager (AI Native)",
+   "approxDate": "~23/07/2026",
+   "status": "CONFIRMED by Dario 25/09 (screenshot): applied ~23/07/2026, Recruiter Screen held, rejected by email 04/08/2026 09:20 (Ruby Labs Recruitment Team via no-reply@ashbyhq.com)",
+   "evidence": "Drive folder 'Aplication 20 - Ruby Labs' (1XXvHj5KUcPC07gWFYrKGXTUkNHtK19Iq, created 23/07/2026) holding RubyLabs_CV_Dario_Suler.docx titled 'Google Ads Manager (AI Native) | Application for Ruby Labs' with a tailored landing page link (utm_source=linkedin); Adaxa web LOG 04/08 mentions a 'Ruby Labs landing'. ops-001/002 (11/09) found no submission proof. Role no longer on the Ruby Labs Ashby board on 25/09.",
+   "action": "Add APPLIED row: Date found 22/07/2026; Job title 'Google Ads Manager (AI Native)'; Company 'Ruby Labs'; Job site 'Ashby (employer ATS)'; Work mode 'Remote, within +/-4h of CET'; STATUS 'Rejected 04/08/2026 (after Recruiter Screen)'; Availability status 'Submitted ~23/07/2026 (package in Drive folder Aplication 20 - Ruby Labs); recruiter screen held; rejection email 04/08/2026'."
+  }
+ ],
+ "notes": [
+  "Application confirmations and rejections reach Dario's other inbox (not the connected dakson2@gmail.com). A Gmail-connector search is therefore not proof that nothing was sent; ask Dario to search his inbox."
+ ],
+ "submitted_after_final_prompt_note": "Anything submitted after the end-of-day Codex prompt (CODEX-PROMPT-2026-09-25-FINAL.md) goes into the next day's batch."
+}

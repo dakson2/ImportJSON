@@ -1,0 +1,146 @@
+{
+  "batchId": "ADX-20260916-004",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Session close for 16/09/2026 and handoff to the next AI. Records what was actually produced (10 role folders with documentation in Drive, 0 submissions), the two standing rules Dario set on 16/09, and releases the DARIO queue lane so the next AI can claim it. IMPORTANT ORDERING NOTE: batches 001, 002 and 003 were never applied - this session has no way to write cells, so every ops file to date is still pending. The found.patch ops below carry expect:{'Fit score':''}. If batch 002 is applied first those ops will REFUSE because the cell is no longer empty; that refusal is correct and harmless, and the receipt will name it. If 002 is never applied, these ops land the eight scores that matter for the current batch on their own. Found positions column Y (Actions) is protected and is deliberately not written anywhere in this file, so the per-role instructions live in ACTIVITY LOG and in the Drive folders instead.",
+  "ops": [
+    {
+      "type": "found.patch",
+      "row": 168,
+      "expect": { "Company": "Aimers", "Fit score": "" },
+      "cells": { "Fit score": 88 },
+      "why": "All four named channels (Google, Microsoft, Meta, LinkedIn) plus tracking, CRM reporting and AI optimisation are in the verified record, and the AI/automation half is unusually strong rather than merely adequate. Held below 90 because the posting asks for 2+ years, which is a mid-level band with undisclosed pay, and because the apply form requires the CV as a hosted URL that does not exist yet."
+    },
+    {
+      "type": "found.patch",
+      "row": 170,
+      "expect": { "Company": "OnTheGoSystems", "Fit score": "" },
+      "cells": { "Fit score": 94 },
+      "why": "Paid media plus Ads Scripts plus AI automation and QA is the narrow intersection where the record is differentiated rather than merely qualified. Independent Contractor matches the Adaxa B2B route exactly and EMEA hours are native. Documentation prepared 16/09 in Drive folder '02 - OnTheGoSystems'."
+    },
+    {
+      "type": "found.patch",
+      "row": 171,
+      "expect": { "Company": "UTTR", "Fit score": "" },
+      "cells": { "Fit score": 84 },
+      "why": "Value is as a bridge rather than a replacement role: 20-25 h/week on contract during the LHG wind-down is income that does not block a full-time search. Paid-media requirement is covered; the pure-B2B requirement is not the record's depth. Documentation prepared 16/09 in Drive folder '08 - UTTR'."
+    },
+    {
+      "type": "found.patch",
+      "row": 172,
+      "expect": { "Company": "Powered by Search", "Fit score": "" },
+      "cells": { "Fit score": 86 },
+      "why": "Lowered from AI-1's 92 on two grounds read from the recorded requirements: 3+ years B2B including 1 year SaaS, where the case-study source puts the verified depth in ecommerce, retail and sensitive-category work; and a posted board salary of $75-85k, below the EUR 95-115k reference. Budget is not the constraint - the posting asks $50k/month against a record roughly 50x that."
+    },
+    {
+      "type": "found.patch",
+      "row": 173,
+      "expect": { "Company": "Yoru", "Fit score": "" },
+      "cells": { "Fit score": 86 },
+      "why": "Score reflects the role's CONTENT, which is a bullseye - Search, Shopping, PMax and Bing with feeds. It does not reflect viability: see the Priority change in the next op. Fit score and submittability are separate facts and are recorded separately."
+    },
+    {
+      "type": "found.patch",
+      "row": 173,
+      "expect": { "Company": "Yoru", "Priority": "A - Strong / NDA verify" },
+      "cells": { "Priority": "HOLD - employer unverified 16/09 (original posting not found; aggregator only) + live-screenshare NDA conflict + per-account pay, not salary" },
+      "why": "Factual correction, not a preference. The Availability status column already records 'original not found; manual verify'. Per the project's own rule an aggregator is a discovery source only, so there is no verified employer and no verified apply route, which makes 'A - Strong' wrong on its face. Two further blockers survive even if the employer checks out: the posting requests a live results screenshare, which conflicts directly with client NDAs, and the pay is $500-1k per account plus variable rather than a salary, so the quoted $2-7k/month is volume-dependent. Drive folder '10 - Yoru' deliberately contains NO cover letter - preparing documentation for an unverified employer is exactly what Dario's 16/09 rule forbids."
+    },
+    {
+      "type": "found.patch",
+      "row": 175,
+      "expect": { "Company": "AutoGPT", "Fit score": "" },
+      "cells": { "Fit score": 80 },
+      "why": "Rate (GBP 500-650/day) and European overlap are excellent, and the paid-search plus automation half is strong. Held at 80 because the scope is 0-to-1 GTM leadership with proven SaaS outcomes required, and the case-study source puts B2B SaaS pipeline as the weakest evidenced area. Also the single strictest handling rule in the batch: the posting rejects agency applications, so this is individual-only and nothing Adaxa-branded may be sent, CV header included."
+    },
+    {
+      "type": "found.patch",
+      "row": 182,
+      "expect": { "Company": "Brand Bolt", "Fit score": "" },
+      "cells": { "Fit score": 93 },
+      "why": "Raised above AI-1's 'B - Conditional / $500k budget evidence' reading on the evidence itself: the posting makes personally managed Google spend of $500k+/month mandatory ($1M preferred), and the verified record is approximately EUR 2.5M/month personally managed and optimized. The gate that eliminates most of the market is cleared by roughly 5x the mandatory bar. DTC across Search, Shopping, PMax and YouTube is the deepest part of the record. Only real caveat is US business-hour overlap from Croatia."
+    },
+    {
+      "type": "found.patch",
+      "row": 182,
+      "expect": { "Company": "Brand Bolt", "Priority": "B - Conditional / $500k budget evidence" },
+      "cells": { "Priority": "A - Primary / US hours overlap to agree" },
+      "why": "The condition AI-1 recorded is satisfied, and the evidence is in the verified record rather than pending: the $500k/month mandatory gate is met at roughly 5x. Leaving it as 'B - Conditional' would keep a Tier A role parked behind a condition that has already been answered. The remaining caveat is moved into the priority text so it is not lost."
+    },
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-16T01:05:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application preparation",
+          "target": "10 roles from the 11/09 crawl",
+          "targetUrl": "https://drive.google.com/drive/folders/1fq-xW9VRJo1-lUvnGTG1GUDH4x4aAx25",
+          "relatedId": "Q-20260911-DARIO",
+          "action": "Prepare full application documentation per role in numbered Drive folders, each opening with an employer-verification block",
+          "outcome": "10 folders and 11 documents created (01 Thyssen Ads, 02 OnTheGoSystems, 03 Brand Bolt, 04 SimpleStudy, 05 Egear, 06 Aimers, 07 Powered by Search, 08 UTTR, 09 AutoGPT, 10 Yoru, plus 00 READ ME FIRST index). 0 applications submitted, 0 forms opened, 0 employers contacted.",
+          "evidenceUrl": "https://drive.google.com/file/d/1xmfw35uvdMyEoYRtgeIbrTpVAwhJHJhE/view",
+          "nextStep": "Verify each employer before any documentation is used. Folder 10 (Yoru) carries no letter by design.",
+          "notes": "Parent folder is deliberately named 'employer NOT verified' so the state cannot be mistaken. Rename only after verification."
+        },
+        {
+          "dateTime": "2026-09-16T01:06:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "All 10 employers in the 16/09 batch",
+          "action": "Attempt employer credibility verification as required by the standing rule Dario set on 16/09/2026",
+          "outcome": "NOT DONE for all 10. This session has no outbound web access - every employer domain, aggregator and LinkedIn is refused by the network policy at CONNECT stage, so not one employer could be checked. Yoru (r173) is a separate case: the employer-original posting was already recorded as not found, which is a FAILED check rather than an unattempted one.",
+          "nextStep": "Run the 9-point checklist in '00 - READ ME FIRST' per employer before sending anything. Anything unconfirmable: do not send, and log the reason here.",
+          "notes": "Recorded as a negative result on purpose. The documentation exists; the approval to use it does not."
+        },
+        {
+          "dateTime": "2026-09-16T01:08:00.000Z",
+          "front": "DARIO",
+          "activityType": "Correction",
+          "target": "Gmail drafts labelled 1.2.ADX-JOB",
+          "action": "Delete the 7 self-addressed Gmail drafts created earlier in the session, per Dario's instruction that drafts are for email applications only and must use the real recipient address",
+          "outcome": "All 7 deleted and verified - list_drafts returns empty. 9 of the 10 roles in this batch apply through a web form (own careers page, Ashby, Teamtailor, Breezy, CATS, tally.so), so no draft is correct for any of them.",
+          "nextStep": "Create a draft only when an application genuinely goes to a real recipient address. Label 1.2.ADX-JOB (Label_24) still applies when one is made.",
+          "notes": "The drafts were addressed to Dario himself, which made them useless as applications. Documented rather than quietly dropped."
+        },
+        {
+          "dateTime": "2026-09-16T01:10:00.000Z",
+          "front": "DARIO",
+          "activityType": "Coordination",
+          "target": "Next AI session",
+          "action": "Release the DARIO queue lane and record the blockers that only Dario can clear",
+          "outcome": "Q-20260911-DARIO left UNASSIGNED and QUEUED so the next AI can claim it. Four person-only blockers named: Egear video (deadline 23/09), Aimers hosted CV URL, AutoGPT Adaxa-stripped CV, Yoru employer verification.",
+          "nextStep": "Next AI: read '00 - READ ME FIRST' in the batch folder before touching any role row.",
+          "notes": "Ops batches 001, 002, 003 and 004 are all still pending - no cell writes are possible from an AI session without the Apps Script bridge installed or a Google credential in the environment."
+        }
+      ]
+    },
+    {
+      "type": "daily.upsert",
+      "date": "16/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 0,
+        "Front A remaining": 10,
+        "Qualified shortlist": "10 roles documented (r168, r170, r171, r172, r173, r175, r182, r183, r184, r185); 9 ready pending employer verification, 1 on HOLD (Yoru r173)",
+        "Packages ready": "9 of 10 (Yoru has no letter by design). Plus 6 older prepared-but-unsent packages already in Drive.",
+        "Follow-ups due": "Egear r185 - deadline 23/09/2026, 7 days. Video must be recorded by Dario.",
+        "LinkedIn visits": 0,
+        "Adaxa Web visits": 0,
+        "Forms submitted": 0,
+        "Confirmations/evidence": "https://drive.google.com/drive/folders/1fq-xW9VRJo1-lUvnGTG1GUDH4x4aAx25",
+        "Blockers": "EMPLOYER VERIFICATION NOT DONE on all 10 - no outbound web access from the AI session. Egear needs a video only Dario can record. Aimers needs a publicly hosted CV URL that does not exist. AutoGPT needs an Adaxa-stripped CV. Yoru employer original not found. No cell writes possible: ops batches 001-004 all pending.",
+        "Next action": "Verify employers with the 9-point checklist in '00 - READ ME FIRST', then submit only with explicit authorization. Record the new standing rules in ADXJOBS_03_SCHEMA_AND_STATUS.md."
+      },
+      "why": "DAILY CONTROL had one row, 11/09, showing target 10 and submitted 0. Five days of preparation have happened since with no submission, and recording that plainly is the point of the tab. Submitted stays 0 because it is 0 - nothing was sent."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "QUEUED",
+      "nextAction": "Claim this lane, then: (1) verify the 10 employers in Drive folder 'ADX - Applications PREPARED (employer NOT verified) 2026-09-16' using the 9-point checklist in '00 - READ ME FIRST'; (2) do NOT prepare documentation for any employer before its credibility is established - Dario's standing rule of 16/09/2026; (3) create Gmail drafts ONLY for applications that genuinely go to a real recipient address, never self-addressed, label 1.2.ADX-JOB; (4) Egear r185 deadline is 23/09/2026 and needs a video only Dario can record.",
+      "notes": "Left UNASSIGNED and QUEUED on purpose so the next AI can claim it - not held by AI-2. State at handoff 16/09: documentation for 10 roles complete in Drive, 11 documents, 0 submissions, 0 forms, 0 employer contact. 7 self-addressed Gmail drafts deleted and verified gone. Person-only blockers: Egear video (deadline 23/09), Aimers hosted CV URL, AutoGPT Adaxa-stripped CV, Yoru employer verification or close the row. Front A submitted has been 0 and APPLIED static at 21 rows since 18/06 - sourcing and preparation are not the constraint, submission is.",
+      "why": "The lane was left UNASSIGNED/QUEUED by AI-1 with an advisory note. Keeping it that way means the next AI can take it; claiming it would lock it to a session that has ended."
+    }
+  ]
+}

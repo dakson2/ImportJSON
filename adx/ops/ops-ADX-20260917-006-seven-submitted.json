@@ -1,0 +1,123 @@
+{
+  "batchId": "ADX-20260917-006",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Seven applications submitted on 16-17/09, all confirmed by Dario. Front A submitted goes from 0 to 7 - APPLIED had been static at 21 rows since 18/06. This batch records the five submissions not already in batch 005 (Thyssen and Brand Bolt are recorded there), corrects the record on two roles that changed or were declined, and sets DAILY CONTROL for 17/09. IMPORTANT, BEFORE APPLYING BATCH 005: delete the Whatnot and Impact Brands rows from its found.append op. Both postings are dead - Whatnot's Greenhouse board is inactive and Impact Brands' Recruitee posting was not found. They were discovered from search results only, because WebFetch is blocked by the egress proxy and the pages could never be opened. Adcubator's row in 005 should have its Availability status changed to 'Applied 17/09'. APPLIED rows are supplied separately as APPLIED_append_7_rows.tsv (paste at A23) because the bridge had no applied.append op when the work was done; that op has since been added to ADX_Bridge.gs, so a future batch can write them directly.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-17T17:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "OnTheGoSystems - Technical Paid Advertising Specialist",
+          "targetUrl": "https://apply.workable.com/on-the-go-systems/",
+          "relatedId": "Found positions r170",
+          "action": "Submit through the employer's Workable form, including the technical stack checklist and two free-text answers on AI use and AI agents built for advertising",
+          "outcome": "SUBMITTED. Tech stack answered honestly: Ads Scripts, Apps Script, Python, JavaScript, GA4, Looker Studio and AI agents ticked; BigQuery deliberately NOT ticked because it has not been used in production, and Zapier/Make left to Dario's judgement.",
+          "nextStep": "Process is 2-3 interviews of 60-90 minutes. Paid 14-day test plus 3-month trial to weigh against the LHG runway.",
+          "notes": "Requirements were richer than the 11/09 record showed - the posting names Python, BigQuery, Zapier and Make explicitly. The three public GPT assistants were offered as verifiable evidence rather than described."
+        },
+        {
+          "dateTime": "2026-09-17T18:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "UTTR - Senior Performance Marketing Manager (Part-Time)",
+          "targetUrl": "https://uttr.catsone.com/careers/117958-General/jobs/16780223-Senior-Performance-Marketing-Manager-Part-Time",
+          "relatedId": "Found positions r171",
+          "action": "Submit through the CATS form: CV, contact details, expected pay rate and the required EST timezone commitment",
+          "outcome": "SUBMITTED. EST answered Yes with a concrete window: 9:00-14:00 EST equals 15:00-20:00 in Osijek, six hours ahead, giving 25 hours across five days without the day collapsing. Pay rate quoted at $60-70/hour as a B2B contractor.",
+          "nextStep": "Paid ~4-week trial precedes any longer engagement - agree rate, payment date, method and invoicing entity in writing first.",
+          "notes": "The 2-years-B2B requirement is not cleanly met and was not claimed. UTTR also has a Performance Marketing Director role, full-time and work-from-anywhere with no US-hours constraint; a letter for it exists as Drive doc '14 - UTTR - Performance Marketing Director'. Worth applying to as well. Do not merge with the separate UTTR RevOps role at row 62."
+        },
+        {
+          "dateTime": "2026-09-17T18:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "Powered by Search - Senior Performance Marketing Strategist",
+          "targetUrl": "https://powered-by-search.breezy.hr/p/4ce63e4d917c-senior-performance-marketing-strategist",
+          "relatedId": "Found positions r172",
+          "action": "Submit through the employer's Breezy form with the letter that states the B2B SaaS gap openly",
+          "outcome": "SUBMITTED. The Breezy URL had changed since 11/09 - the record's old link was stale and the current one is above.",
+          "nextStep": "Confirm in writing that the role is genuinely global and not Canada-restricted; the posted benefits were Canada-only. Establish compensation early - the board showed $75-85k, below the EUR 95-115k reference.",
+          "notes": "Weakest of the seven on requirements: 3+ years B2B including 1 year SaaS against a record whose depth is ecommerce and sensitive-category retail. Sent because it is structurally the closest thing in the pool to the day-to-day work - an agency-side senior strategist seat."
+        },
+        {
+          "dateTime": "2026-09-17T19:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "Adcubator - Senior Google Ads Media Buyer",
+          "targetUrl": "https://jobs.deel.com/adcubator/job-details/11319ab9-f2e9-4fa1-9a02-a97516d4e89a/overview",
+          "action": "Submit through the Deel form - eleven substantial technical questions covering feed optimisation, branded vs non-branded methodology, PMax setup and scaling, tROAS plateau diagnosis, competitor bidding, and finding the truth when platform ROAS and MER disagree",
+          "outcome": "SUBMITTED. The technical answers are the strongest material produced in this project and are worth reusing. Three questions demanded ROAS, MER and CAC figures; all three were answered by stating plainly that the numbers are NDA-covered and offering to go through them verbally, with the published Dubrovnik ~30% given as the one shareable result. TripleWhale and Northbeam were not claimed - that question was answered on method.",
+          "nextStep": "Compensation was raised directly in the application: the posted $16k-$26k per year is roughly a quarter of the reference. Expect that to end the process or to produce a real number.",
+          "notes": "A no-BS agency may screen this out precisely because the metrics were declined rather than invented. That was the deliberate choice - the alternative is defending fabricated figures to people who run nine figures of annual spend. Posting lists Portugal as the entity; Croatia was stated plainly."
+        },
+        {
+          "dateTime": "2026-09-17T19:30:00.000Z",
+          "front": "DARIO",
+          "activityType": "Application submitted",
+          "target": "Aimers - PPC Manager",
+          "targetUrl": "https://aimers.io/about/vacancies/ppc-manager",
+          "relatedId": "Found positions r168",
+          "action": "Submit through the employer's careers form using the CV as a hosted public URL, which the form requires instead of an upload",
+          "outcome": "SUBMITTED. The hosted CV link was the blocker on this role and on the OnTheGoSystems form; Dario made the master CV public on 17/09, which cleared both. Link: https://drive.google.com/file/d/13-k6kp3so90pImf7E_xyHKNjfJQARQAu/view?usp=sharing",
+          "nextStep": "Ask for the compensation band early - the posting asks for 2+ years, which is a mid-level signal with pay undisclosed and USD-linked.",
+          "notes": "AI-1 logged a recruiter LinkedIn profile for this employer on 11/09 but the visit was never confirmed. If anyone makes contact claiming to be their recruiter, verify the profile against the company page before replying."
+        },
+        {
+          "dateTime": "2026-09-17T19:45:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "Whatnot and Impact Brands postings",
+          "action": "Open the apply routes found in the 17/09 crawl",
+          "outcome": "BOTH DEAD. Whatnot's Greenhouse board returns 'no longer active' and their live listings are US-based; hubs are US, Canada, UK, Ireland and Germany, with Croatia not among them. Impact Brands' Recruitee posting was not found. Both were discovered from search results only - WebFetch is blocked by the egress proxy, so neither page could ever be opened to verify it.",
+          "nextStep": "Delete both rows from batch 005's found.append before applying it. For future crawls, enter through the employer's careers page rather than a deep link from search results, which index stale postings.",
+          "notes": "This is the cost of a crawl that can search but cannot fetch. Two of three newly discovered roles were already closed. The five roles AI-1 verified on employer ATS domains on 11/09 were all still live."
+        }
+      ]
+    },
+    {
+      "type": "found.patch",
+      "row": 183,
+      "expect": { "Company": "SimpleStudy", "Priority": "A - Primary / Mobile-app verify" },
+      "cells": { "Priority": "SKIPPED 17/09 - role changed to mobile-app UA (Google Ads UAC), which is the record's one real gap" },
+      "why": "Checked on 17/09: the Ashby URL is unchanged but the role is not. It now reads 'Performance Marketing / Ads Manager' rather than 'Head of Paid Ads', and the requirements are paid user acquisition for consumer and mobile apps via Google Ads UAC, Meta and TikTok, at 4+ years. Mobile-app acquisition is the one thing genuinely absent from the verified record, and it has moved from a side caveat to the core requirement. Fit drops from 92 to roughly 70. AI-1's letter carries the old title and aims at the old role, so sending it would read as not having read the posting. Dario skipped it. The employer itself checks out - Lisbon office, ~$4M seed with investors from Strava, OpenAI and Meta, 1.5M students, 40-50k joining weekly - so this is a fit decision, not a credibility one."
+    },
+    {
+      "type": "found.patch",
+      "row": 175,
+      "expect": { "Company": "AutoGPT", "Priority": "A - Strong / Individual only" },
+      "cells": { "Priority": "SKIPPED 17/09 by Dario - GTM leadership role, not a paid media role" },
+      "why": "Dario declined it: 'ovo nema veze samnom'. He is right and it matches the qualification note - the scope is 0-to-1 GTM leadership with proven SaaS outcomes, and the case-study source puts B2B SaaS pipeline as the weakest evidenced area. The paid-search and automation half was strong but it is half a role. A full package exists in Drive doc '09 - AutoGPT' including the four form answers, so nothing is lost if the position is reconsidered. The posting was confirmed active on 17/09."
+    },
+    {
+      "type": "daily.upsert",
+      "date": "17/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 7,
+        "Front A remaining": 3,
+        "Qualified shortlist": "7 submitted (Thyssen Ads, Brand Bolt, OnTheGoSystems, UTTR part-time, Powered by Search, Adcubator, Aimers). 2 postings found dead (Whatnot, Impact Brands). 2 skipped (SimpleStudy - role changed to mobile-app UA; AutoGPT - GTM rather than paid media). 1 on HOLD (Yoru r173). 1 awaiting a video (Egear r185).",
+        "Packages ready": "Reusable: screening-answer bank for ATS forms, plus the Adcubator technical answers on feed optimisation, branded vs non-branded, PMax scaling, tROAS diagnosis, competitor bidding and MER/CAC reconciliation. A UTTR Performance Marketing Director letter is written and unsent.",
+        "Follow-ups due": "Egear r185 - deadline 23/09/2026, 6 days, video must be recorded by Dario. UTTR Director role letter ready to send.",
+        "LinkedIn visits": 0,
+        "Adaxa Web visits": 0,
+        "Forms submitted": 7,
+        "Confirmations/evidence": "https://drive.google.com/drive/folders/1fq-xW9VRJo1-lUvnGTG1GUDH4x4aAx25",
+        "Blockers": "Employer verification still not possible from this session: WebSearch works, WebFetch is blocked by the egress proxy, so no employer among the seven was verified before sending. Master CV is now public, which cleared the hosted-link blocker on two forms. Egear needs a video. Yoru employer original still not found. Base ALL2 merge: dry run passed, live run still not done. APPLIED rows supplied as a TSV for manual paste; applied.append has now been added to the bridge for next time.",
+        "Next action": "Record the seven APPLIED rows. Egear video before 23/09. Send the UTTR Director application. Run the ALL2 merge live in Base."
+      },
+      "why": "Front A submitted was 0 for the entire project and APPLIED had been static at 21 rows since 18/06. Seven submissions across two days against a target of 10 is the first time this tab has recorded real movement, and that is precisely what it exists for."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Egear r185 is the only deadline: 23/09/2026, needs a video only Dario can record - spine is in Drive folder 05. Send the UTTR Performance Marketing Director application, letter already written. Yoru r173 stays on HOLD until the employer is verified. Then a fresh crawl entering through employer careers pages rather than deep links from search results.",
+      "notes": "Seven submitted 16-17/09: Thyssen Ads, Brand Bolt, OnTheGoSystems, UTTR part-time, Powered by Search, Adcubator, Aimers. Two postings dead (Whatnot, Impact Brands) - both discovered from search results, neither page openable. Two skipped on fit (SimpleStudy, AutoGPT). Master CV made public, clearing the hosted-link blocker permanently. Reusable assets created: screening-answer bank and the Adcubator technical answers. Bridge extended with applied.append so submissions can be written directly rather than pasted. Standing rule from 16/09 still unmet by any AI session: employer credibility cannot be verified from here while WebFetch is blocked - that check remains Dario's.",
+      "why": "The lane is genuinely mid-flight rather than queued, and the next action names the one thing with a clock on it instead of restating the whole plan."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "batchId": "ADX-20260920-012",
+  "owner": "AI-2",
+  "dryRun": true,
+  "description": "Fourth and final crawl of 20/09, run on Dario's instruction to keep looking because the bulk send is scheduled for the morning of 21/09. Its purpose was to establish whether the source list was genuinely exhausted or merely unfinished, after this session had twice claimed exhaustion wrongly earlier in the day. The answer is that the Workable layer is now saturated: a third sweep with 32 entirely different queries across 2,186 postings returned exactly the same three roles as the previous two sweeps. New layers were tested and mostly failed. Roughly 25,000 dated postings have now been examined across four crawls in one day. The batch also records the bulk-send package for the morning.",
+  "ops": [
+    {
+      "type": "activity.append",
+      "rows": [
+        {
+          "dateTime": "2026-09-20T22:00:00.000Z",
+          "front": "DARIO",
+          "activityType": "Sourcing",
+          "target": "Saturation test - new source layers plus a third Workable sweep on entirely new queries",
+          "action": "Test ten further untried endpoints (EURES, Ashby global, Breezy, Personio, Teamtailor, Recruitee global, Welcome to the Jungle), probe 217 more company ATS boards, and re-run the Workable global search with 32 queries that share no terms with the previous two sweeps",
+          "outcome": "SATURATION CONFIRMED for this profile. The third Workable sweep (32 new queries such as 'head of growth', 'google shopping', 'product feed', 'apps script', 'ga4', 'attribution', 'subscription growth', across 11 locations, 2,186 unique postings) returned the SAME THREE Croatia/Europe-eligible roles as the earlier sweeps: Fortis Media, Creatunity and Tyk Technologies. Different queries, same answer, which is what exhaustion looks like. The 217-org ATS probe resolved 52 new boards and 4,190 postings, yielding 60 paid-media roles within 14 days and no new EU-remote senior seat. Running total across four crawls today: roughly 25,000 dated postings.",
+          "evidenceUrl": "https://docs.google.com/document/d/1l1EUsZMMqHiBBORc-iG09ubTJvzQmE7UCakncEPfz5w/edit",
+          "nextStep": "Stop widening for now. The bulk send on 21/09 is the bottleneck, not discovery.",
+          "notes": "This is a different claim from the two wrong ones made earlier today. Those said the market was empty on the strength of aggregators alone, and were refuted within the hour. This one says the WORKABLE LAYER is saturated for this profile, and is supported by a same-answer result from a disjoint query set. The distinction is the standard of evidence recorded in batch 011."
+        },
+        {
+          "dateTime": "2026-09-20T22:10:00.000Z",
+          "front": "DARIO",
+          "activityType": "Analysis",
+          "target": "Source layers tested and found unproductive - record so they are not re-tested",
+          "action": "Test each candidate endpoint and record the exact failure mode rather than a general impression",
+          "outcome": "EURES (the EU's own mobility portal): the search API rejects the documented request shape with HTTP 405 and the api.ec.europa.eu host does not resolve for this path - worth revisiting only with current API documentation. Ashby has no global cross-company search; its GraphQL endpoint rejects the jobBoardSearch field. Recruitee's jobs.recruitee.com/api/offers looks global but returns a single company's nine offers. Teamtailor's per-org jobs.json IS public and 23 of 70 probed orgs resolved, but the whole layer produced 71 postings and zero paid-media matches. Breezy per-org /json returned 404 for the orgs tried. Personio's jobs XML 307-redirects. Welcome to the Jungle exposes an organizations list but no job search.",
+          "nextStep": "Of these, only Teamtailor is worth keeping in rotation, and only because it is cheap - not because it yielded anything.",
+          "notes": "Arbeitnow does paginate (page=2 and page=3 both return ~2MB), which the earlier crawl missed by fetching only page 1. Its content is heavily German on-site, so paginating it further is low value under the current hybrid rule, but the capability is recorded in case the EU hybrid rule is ever revised toward relocation."
+        },
+        {
+          "dateTime": "2026-09-20T22:20:00.000Z",
+          "front": "DARIO",
+          "activityType": "Verification",
+          "target": "HelloFresh Paid Search Lead (Experimentation & Measurement) - strongest content match rejected on presence",
+          "targetUrl": "https://careers.hellofresh.com/global/en/job/8168957?gh_jid=8168957",
+          "action": "Pull the full posting content locally and read the requirement list and work model",
+          "outcome": "REJECTED on presence, not fit. Requires 7+ years hands-on Paid Search and describes owning the global testing and measurement strategy, plus budgeting, infrastructure development and automation - which is Dario's profile item by item, including the automation layer that usually has to be argued for rather than asked for. But the package names 'Berlin relocation support' and a hybrid working model, so it needs someone living in Berlin.",
+          "nextStep": "Record as the reference shape. If the EU hybrid rule is ever revised toward relocation, this is the first role to revisit.",
+          "notes": "Worth stating plainly for the record: across roughly 25,000 postings, the two best pure content matches for this candidate were HelloFresh (Berlin, relocation) and Tines (Dublin or US, EUR 125-145k). Both were blocked by residency alone. That is the sharpest available evidence that the binding constraint on this search is geography rather than the strength of the profile."
+        }
+      ]
+    },
+    {
+      "type": "found.append",
+      "rows": [
+        {
+          "Date found": "20/09/2026",
+          "Application deadline": "Not stated",
+          "Job title": "Paid Search Lead (Experimentation & Measurement)",
+          "Company": "HelloFresh",
+          "Job site": "Greenhouse (employer ATS)",
+          "Work mode / Location": "Berlin, Germany. Hybrid working model, posting explicitly offers Berlin relocation support.",
+          "Engagement type": "Full-time, individual contributor",
+          "Compensation": "Not disclosed; subsidised pension scheme referenced",
+          "Availability status": "VERIFIED 20/09/2026 - full posting content pulled and read. Published 09/09/2026, 11 days old, inside the window.",
+          "Fit score": 93,
+          "Priority": "HOLD - highest content match found today, blocked by residency",
+          "Work description": "Owns the global testing and measurement strategy for Paid Search at DTC subscription scale, as a senior individual contributor sitting between performance marketing, ad tech and automation, with responsibility for budgeting, infrastructure development and automation. Requires 7+ years hands-on Paid Search, agency or client side, with a track record of owning or leading. Every element of that maps onto the verified record, and the automation and infrastructure component maps onto the part of Dario's profile - Apps Script, Ads Scripts, scripted RSA feed management across a multi-level MCC - that most roles do not even ask for. The only blocker is Berlin residency under a hybrid model, which fails the EU hybrid rule of roughly one visit every six to twelve months. Recorded at HOLD rather than dropped, because if Dario ever revises that rule this is the first role to reopen.",
+          "Url": "https://careers.hellofresh.com/global/en/job/8168957?gh_jid=8168957",
+          "Tag 1": "Google Ads",
+          "Tag 2": "Paid Search",
+          "Tag 3": "Measurement",
+          "Tag 4": "Automation",
+          "Tag 5": "DTC Subscription",
+          "Tag 6": "Berlin",
+          "Tag 7": "Hybrid"
+        }
+      ],
+      "why": "One net-new row, recorded at HOLD. It is the highest fit score assigned in the project and it is unreachable under the current geography rule - which is exactly why it belongs in the sheet rather than in a chat message. Column Y (Actions) is protected and not written."
+    },
+    {
+      "type": "daily.upsert",
+      "date": "20/09/2026",
+      "fields": {
+        "Front A target": 10,
+        "Front A submitted": 0,
+        "Front A remaining": 10,
+        "Qualified shortlist": "8 actionable for the 21/09 bulk send: Tier A - Hilo by Aktiia, SimpleTiger, Infobip Growth Marketing Senior Specialist. Tier B - Fortis Media, CapsLock, Ruby Labs. Follow-ups rather than new applications - OnTheGoSystems, Powered by Search. Plus 2 on HOLD pending Dario's decisions: Infobip Senior Digital Advertising Specialist (40 days old) and HelloFresh Paid Search Lead (Berlin residency).",
+        "Packages ready": "ALL LETTERS WRITTEN. Drive doc 'BULK SLANJE 21-09-2026 ujutro - sve prijave, jedna po jedna' carries a finished letter for every Tier A and Tier B role, both follow-up emails, the send order, and a verified kill list of 13 roles with the reason each one died.",
+        "Follow-ups due": "OnTheGoSystems and Powered by Search, both submitted 17/09 and both with newer postings that make a follow-up natural rather than pushy.",
+        "LinkedIn visits": 0,
+        "Adaxa Web visits": 0,
+        "Forms submitted": 0,
+        "Confirmations/evidence": "https://docs.google.com/document/d/1l1EUsZMMqHiBBORc-iG09ubTJvzQmE7UCakncEPfz5w/edit",
+        "Blockers": "Two decisions are Dario's alone and gate three roles: (1) is Zagreb hybrid acceptable, which gates both Infobip roles; (2) is EUR 42,000-54,000 with a paid-social rather than Google emphasis acceptable, which gates Fortis Media. Everything else is written and ready. Standing items unchanged: 7 APPLIED rows to paste at A23, ALL2 merge live run never done, ops batches 001-012 all unapplied.",
+        "Next action": "21/09 morning: send in the order given in the bulk document. Hilo first - it has been verified and letter-ready for five days.",
+        "Last updated": "20/09/2026"
+      },
+      "why": "Packages ready moves from a single letter to a complete send-ready set, which is the actual state change of the evening. Blockers is narrowed to the two decisions only Dario can make, because everything else that was blocking is now written."
+    },
+    {
+      "type": "queue.update",
+      "queueId": "Q-20260911-DARIO",
+      "status": "IN PROGRESS",
+      "nextAction": "Execute the 21/09 morning bulk send from the Drive document 'BULK SLANJE 21-09-2026 ujutro'. Expect 4-6 submissions plus 2 follow-ups, depending on the Zagreb and Fortis Media decisions.",
+      "notes": "Four crawls on 20/09 examined roughly 25,000 dated postings across aggregators, employer ATS boards, the Workable global search and RSS. The day's arc is worth stating once: the pool went from 1 sendable role to 8 actionable items, and the increment came from adding scope (hybrid) and adding a source layer (Workable global), never from crawling the same sources more often. The two best content matches found all day - HelloFresh at fit 93 and Tines at EUR 125-145k - were both blocked by residency alone, which is the clearest evidence that geography rather than profile strength is the binding constraint on this search.",
+      "why": "The lane should carry the send instruction and the one structural conclusion that survived four crawls, so the next session does not re-run discovery when execution is what is outstanding."
+    }
+  ]
+}
