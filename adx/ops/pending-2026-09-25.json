@@ -30,7 +30,16 @@
    "submitted": "25/09/2026"
   }
  ],
- "inProgress": [],
+ "inProgress": [
+  {
+   "company": "Genesis",
+   "role": "Paid Acquisition Lead (Google Ads) - AI Product Launch",
+   "url": "https://gen-tech.breezy.hr/p/afa4c6be853a-paid-acquisition-lead-google-ads-ai-product-launch",
+   "ats": "Breezy",
+   "letter": "Drive 1vVpja2hFa-776CRDLG8viQaXRm7ePw-SgEr-MfCkry0",
+   "note": "First published 28/08/2026 (Breezy first_publish_date); exception to the 14-day rule. No questionnaire; preferred location field required. Letter states the SaaS-metrics and AppsFlyer/Adjust gaps."
+  }
+ ],
  "skipped": [
   {
    "company": "LottieFiles",
