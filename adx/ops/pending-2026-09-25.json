@@ -21,7 +21,15 @@
    "answers": "Q1 in-house ecommerce team (with Adaxa contracting disclosed in Q2 and letter); Q3 travel: Sound good"
   }
  ],
- "inProgress": [],
+ "inProgress": [
+  {
+   "company": "Base360.ai (The Flex)",
+   "role": "Founding Growth Marketer",
+   "url": "https://jobs.ashbyhq.com/the-flex/f23c0827-40ec-4d97-82b1-ab31c21f5daa",
+   "ats": "Ashby",
+   "note": "Live 25/09, published 23/09/2026. No prior contact in Work (the 18/06 'Flex' row is a different US company). Form has no cover-letter field; asks age, university, part-time vs full-time, minimum salary in GBP per month, and two essays marked 'Do not use AI - we will detect it and cancel your application'. Junior-leaning signals. Claude advised Dario to write the essays himself and not to attach an AI-written letter."
+  }
+ ],
  "skipped": [
   {
    "company": "LottieFiles",
