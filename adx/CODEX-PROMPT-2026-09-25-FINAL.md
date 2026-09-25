@@ -18,10 +18,10 @@ R6. Replace every "<current UTC ISO time>" with the real UTC time at the moment 
 
 STEPS:
 1. WORK QUEUE - cell A1 reads "ovo sve " (text pasted there by accident on 24/09). If it still reads exactly that, set it to "Queue ID". If it reads anything else, leave it and report the value. Change nothing else on this tab in this step.
-2. Found positions - append the 6 rows in Found_positions_append, in the given order (last data row should be 186).
-3. APPLIED - append the 3 rows in APPLIED_append, in the given order (last data row should be 36). Then the Amplemarket rejection: find the row where Company = "Amplemarket" and Job title = "Growth Marketing Manager" (expected row 34; verify both values before editing). Set STATUS = "Rejected 25/09/2026" and append the text in APPLIED_update_Amplemarket.append_to_Actions to the END of the existing Actions cell - do not replace what is there.
+2. Found positions - append the 5 rows in Found_positions_append, in the given order (last data row should be 186).
+3. APPLIED - append the 4 rows in APPLIED_append, in the given order (last data row should be 36). Then the Amplemarket rejection: find the row where Company = "Amplemarket" and Job title = "Growth Marketing Manager" (expected row 34; verify both values before editing). Set STATUS = "Rejected 25/09/2026" and append the text in APPLIED_update_Amplemarket.append_to_Actions to the END of the existing Actions cell - do not replace what is there.
 4. DAILY CONTROL - append one row for 25/09/2026 from DAILY_CONTROL_append. If a 25/09/2026 row already exists, do not add a second one; report it.
-5. ACTIVITY LOG - append the 7 rows in ACTIVITY_LOG_append, in the given order (last data row should be 28).
+5. ACTIVITY LOG - append the 8 rows in ACTIVITY_LOG_append, in the given order (last data row should be 28).
 6. WORK QUEUE - on the row where Queue ID = "Q-20260911-DARIO", set only the three fields in WORK_QUEUE_update.set. Leave every other field unchanged.
 
 REPORT BACK:
@@ -154,32 +154,6 @@ PAYLOAD:
   },
   {
    "Date found": "25/09/2026",
-   "Application deadline": "07/10/2026",
-   "Job title": "Paid Acquisition Lead",
-   "Company": "Taxes for Expats",
-   "Job site": "Himalayas (employer posts directly there)",
-   "Work mode / Location": "Remote worldwide; CET-aligned hours preferred",
-   "Engagement type": "Full time",
-   "Compensation": "Not disclosed",
-   "Availability status": "Live 25/09/2026 on Himalayas (employer's own posting, apply via Himalayas account). Posted 08/08/2026, deadline 07/10/2026: older than 14 days, exception candidate for Dario's decision.",
-   "Fit score": 90,
-   "Priority": "B - Exception candidate (older than 14 days, live)",
-   "Work description": "Full ownership of Google Ads (strategy, architecture, bidding, copy, landing pages) for a US expat tax firm; 6+ years Google Ads Search/Display/PMax; GA4/GTM; AI tools and custom GPTs an advantage; interview includes a Google Ads audit and AI workflow demo.",
-   "Url": "https://himalayas.app/companies/taxes-for-expats/jobs/paid-acquisition-lead",
-   "Tag 1": "Google Ads",
-   "Tag 2": "Performance Max",
-   "Tag 3": "Lead Gen",
-   "Tag 4": "GA4",
-   "Tag 5": "AI Workflows",
-   "Tag 6": "Custom GPTs",
-   "Tag 7": "CRO",
-   "Tag 8": "CET Hours",
-   "Tag 9": "Remote Worldwide",
-   "Tag 10": "Exception",
-   "Tag 11": "Deadline 07/10"
-  },
-  {
-   "Date found": "25/09/2026",
    "Application deadline": "Not stated",
    "Job title": "Paid Acquisition Lead (Google Ads) - AI Product Launch",
    "Company": "Genesis",
@@ -266,20 +240,42 @@ PAYLOAD:
    "Actions": "Optional: reply to the recruiter asking for feedback and pointing to the open Performance Marketing Lead (Google & Microsoft Ads) role (draft given to Dario 25/09).",
    "STATUS": "Rejected 04/08/2026 (after Recruiter Screen)",
    "GOOGLE DRIVE FOLDER Name/Url": "https://drive.google.com/drive/folders/1XXvHj5KUcPC07gWFYrKGXTUkNHtK19Iq"
+  },
+  {
+   "Date found": "25/09/2026",
+   "Application deadline": "07/10/2026",
+   "Job title": "Paid Acquisition Lead",
+   "Company": "Taxes for Expats",
+   "Job site": "Himalayas (employer posts there)",
+   "Work mode / Location": "Remote worldwide; CET-aligned hours",
+   "Engagement type": "Full-time",
+   "Compensation": "Not disclosed",
+   "Availability status": "Submitted 25/09/2026 via Himalayas. Exception to the 14-day rule chosen by Dario: posted 08/08/2026, deadline 07/10/2026. Interview process: soft skills, Google Ads audit + AI workflow demo, CEO.",
+   "Fit score": 90,
+   "Priority": "Applied - do not duplicate",
+   "Work description": "Senior hands-on owner of Google Ads (Search, Display, PMax) and paid expansion (Microsoft, Meta, Reddit, Quora, LinkedIn) for a US expat tax firm; AI agents, custom GPTs and landing pages are part of the role.",
+   "Url": "https://himalayas.app/companies/taxes-for-expats/jobs/paid-acquisition-lead",
+   "Tag 1": "Google Ads",
+   "Tag 2": "Lead Gen",
+   "Tag 3": "AI Workflows",
+   "Tag 4": "CET Hours",
+   "Actions": "Prepare the Google Ads audit and AI workflow demo if invited",
+   "STATUS": "Submitted 25/09/2026",
+   "GOOGLE DRIVE FOLDER Name/Url": "https://docs.google.com/document/d/1Sr6u3dMDMxJmt6m9R6L5FTfoV1ksGkWt436VUSPiLD4/edit"
   }
  ],
  "DAILY_CONTROL_append": {
   "Date": "25/09/2026",
   "Front A target": 10,
-  "Front A submitted": 2,
-  "Front A remaining": 8,
-  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC and ennovationHUB sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
-  "Packages ready": "Letters on Drive: SDG, ennovationHUB (sent); LottieFiles (skipped)",
+  "Front A submitted": 3,
+  "Front A remaining": 7,
+  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB and Taxes for Expats (exception) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
+  "Packages ready": "Letters on Drive: SDG, ennovationHUB, Taxes for Expats (sent); LottieFiles (skipped)",
   "Follow-ups due": "Powered by Search and OnTheGoSystems (applied 17/09); SDG and ennovationHUB ~09/10",
   "Front B qualified leads": 0,
   "LinkedIn visits": 0,
   "Adaxa Web visits": 0,
-  "Forms submitted": 2,
+  "Forms submitted": 3,
   "Confirmations/evidence": "https://github.com/dakson2/ImportJSON/pull/2",
   "Blockers": "Supply: few senior Google-first remote roles open to Croatia within 14 days. Exceptions for older live roles are Dario's call.",
   "Next action": "Dario decides on exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy); follow-ups ~01/10 for 17/09 applications",
@@ -383,6 +379,20 @@ PAYLOAD:
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
    "Next step": "None",
    "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260925-SUB-TFX",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Application submitted",
+   "Target": "Taxes for Expats - Paid Acquisition Lead",
+   "Target URL": "https://himalayas.app/companies/taxes-for-expats/jobs/paid-acquisition-lead",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Submit application (Himalayas; letter + CV).",
+   "Outcome": "Submitted 25/09/2026, confirmed by Dario. Exception to the 14-day rule (posted 08/08, deadline 07/10).",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "Prepare Google Ads audit + AI workflow demo if invited",
+   "Notes": ""
   }
  ],
  "WORK_QUEUE_update": {
@@ -392,7 +402,7 @@ PAYLOAD:
   "set": {
    "Last updated": "<current UTC ISO time>",
    "Next action": "Dario decides on exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy); follow-ups ~01/10 for 17/09 applications",
-   "Notes": "25/09: 2 submitted (SDG, ennovationHUB); Ruby Labs July application recorded; exceptions list in ACTIVITY LOG CLAUDE-20260925-CRAWL2."
+   "Notes": "25/09: 3 submitted (SDG, ennovationHUB, Taxes for Expats); Ruby Labs July application recorded; Amplemarket rejected; exceptions list in ACTIVITY LOG CLAUDE-20260925-CRAWL2."
   }
  }
 }
