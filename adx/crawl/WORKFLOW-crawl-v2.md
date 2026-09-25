@@ -213,3 +213,50 @@ date the page shows.
   employer says Mexico only, ET hours.
 - The Workable global API rate-limits at roughly one request per second. Pace at 1.2 s with 8 s/16 s backoff
   on HTTP 429; expect ~25 minutes for 24 queries × 18 locations.
+
+---
+
+## Addendum 4, 25/09 — four more public ATS feeds, slug mining, and Himalayas' country filter
+
+### Public feeds that were missing from the endpoint list
+
+| ATS | Endpoint | Notes |
+| --- | --- | --- |
+| Teamtailor | `https://<org>.teamtailor.com/jobs.rss`, or `https://careers.<company>/jobs.rss` on a custom domain | **Public.** This corrects the Addendum 2 dead-end entry, which covered only the `.json`. Items carry `pubDate`, `remoteStatus`, `tt:locations` and the full description. |
+| Personio | `https://<org>.jobs.personio.de/xml` (or `.com/xml`) | `createdAt`, office, seniority, years of experience, full description. A redirect to `personio.com` means the org slug does not exist. |
+| Breezy | `https://<org>.breezy.hr/json` | `published_date` and a location object with `is_remote`. No description. |
+| BambooHR | `https://<org>.bamboohr.com/careers/list`, then `/careers/<id>/detail` | The list has **no dates**; the detail call gives `datePosted`. |
+| Lever EU | `https://api.eu.lever.co/v0/postings/<org>?mode=json` | EU-hosted Lever tenants are invisible on `api.lever.co`. |
+
+### Slug mining — the ATS-direct layer, generalised
+
+Every aggregator payload (Remote Rocketship, Jobgether, Jobicy, WWR, Working Nomads, the 20/09 files) contains apply
+URLs. Regex them for `jobs.ashbyhq.com/<org>`, `boards.greenhouse.io/<org>`, `jobs.lever.co/<org>`, `<org>.teamtailor.com`,
+`<org>.jobs.personio.de`, `<org>.breezy.hr`, `<org>.recruitee.com`, `jobs.smartrecruiters.com/<org>`, `<org>.bamboohr.com`
+and Workday tenants. Then pull each board whole. On 25/09 this gave 652 slugs, 308 live boards and 15,043 postings. It also
+finds employers that posted a second role the aggregator never carried.
+
+A curated list of 541 employer names, probed across all 12 endpoints, gave 323 more boards. The probe code is in the
+scratchpad under `c25/probe25.py`.
+
+### Himalayas has a country-eligibility filter
+
+`https://himalayas.app/jobs/api/search?q=<kw>&country=Croatia&page=<n>` returns only roles open to Croatia: worldwide ones,
+plus those whose `locationRestrictions` list Croatia. On 25/09, 24 keywords returned 349 unique roles. This corrects the
+Addendum 2 note that Himalayas was not worth paginating. The search endpoint is. The unfiltered feed is not.
+
+**Himalayas `pubDate` is a refresh date.** Unifonic's *Principal Performance Marketing Specialist* showed 17/09 on Himalayas
+and was published 11/06 on the employer's Recruitee. Go Vocal's two roles showed 17/09 and were published 12/06. Novakid
+showed 15/09 and was published 10/06. Treat Himalayas as discovery only, like every other aggregator.
+
+### The earliest-copy rule holds on Greenhouse too
+
+DoiT's *Senior Growth Manager* has Romania and Serbia copies dated 16/09. A 99%-identical Estonia copy was first published
+20/07. The role is 67 days old.
+
+### Dead ends found on 25/09
+
+- `hiring.cafe` — its API moved to `hiringcafe.com` and sits behind a Cloudflare challenge (HTTP 403).
+- `mojposao.hr` — WebFetch gets HTTP 403.
+- The DOU vacancy-ID age rule held again. Interactive Online Technologies' *Senior Paid Search Manager* is ID 362,369 against
+  ~374,500 on 24/09, which puts it at roughly two months old whatever date DOU shows.
