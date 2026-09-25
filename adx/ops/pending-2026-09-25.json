@@ -32,5 +32,15 @@
    "note": "datePosted 16/09/2026, re-checked live 25/09. No prior contact in Work/Base/Gmail. Form has no cover-letter field: letter merged in front of the CV. Stretch fit: posting asks 8-12+ yrs PLG growth leadership and an in-house multi-disciplinary team, stated openly in the letter.",
    "decision": "Skipped by Dario 25/09/2026"
   }
+ ],
+ "previousApplicationsFound": [
+  {
+   "company": "Ruby Labs",
+   "role": "Google Ads Manager (AI Native)",
+   "approxDate": "~23/07/2026",
+   "status": "Dario believes it was sent (25/09); never logged in APPLIED",
+   "evidence": "Drive folder 'Aplication 20 - Ruby Labs' (1XXvHj5KUcPC07gWFYrKGXTUkNHtK19Iq, created 23/07/2026) holding RubyLabs_CV_Dario_Suler.docx titled 'Google Ads Manager (AI Native) | Application for Ruby Labs' with a tailored landing page link (utm_source=linkedin); Adaxa web LOG 04/08 mentions a 'Ruby Labs landing'. ops-001/002 (11/09) found no submission proof. Role no longer on the Ruby Labs Ashby board on 25/09.",
+   "action": "Add an APPLIED row only after Dario confirms it was sent; date approximate."
+  }
  ]
 }
