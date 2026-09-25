@@ -21,14 +21,16 @@
    "answers": "Q1 in-house ecommerce team (with Adaxa contracting disclosed in Q2 and letter); Q3 travel: Sound good"
   }
  ],
- "inProgress": [
+ "inProgress": [],
+ "skipped": [
   {
    "company": "LottieFiles",
    "role": "Head of Growth",
    "url": "https://lottiefiles.bamboohr.com/careers/144",
    "ats": "BambooHR",
    "letter": "Drive 1w-8-_YF14AIfgnIF5n4mAquqC2-WyQeX6OduTXZKj98",
-   "note": "datePosted 16/09/2026, re-checked live 25/09. No prior contact in Work/Base/Gmail. Form has no cover-letter field: letter merged in front of the CV. Stretch fit: posting asks 8-12+ yrs PLG growth leadership and an in-house multi-disciplinary team, stated openly in the letter."
+   "note": "datePosted 16/09/2026, re-checked live 25/09. No prior contact in Work/Base/Gmail. Form has no cover-letter field: letter merged in front of the CV. Stretch fit: posting asks 8-12+ yrs PLG growth leadership and an in-house multi-disciplinary team, stated openly in the letter.",
+   "decision": "Skipped by Dario 25/09/2026"
   }
  ]
 }
