@@ -18,10 +18,10 @@ R6. Replace every "<current UTC ISO time>" with the real UTC time at the moment 
 
 STEPS:
 1. WORK QUEUE - cell A1 reads "ovo sve " (text pasted there by accident on 24/09). If it still reads exactly that, set it to "Queue ID". If it reads anything else, leave it and report the value. Change nothing else on this tab in this step.
-2. Found positions - append the 5 rows in Found_positions_append, in the given order (last data row should be 186).
-3. APPLIED - append the 4 rows in APPLIED_append, in the given order (last data row should be 36). Then the Amplemarket rejection: find the row where Company = "Amplemarket" and Job title = "Growth Marketing Manager" (expected row 34; verify both values before editing). Set STATUS = "Rejected 25/09/2026" and append the text in APPLIED_update_Amplemarket.append_to_Actions to the END of the existing Actions cell - do not replace what is there.
+2. Found positions - append the 4 rows in Found_positions_append, in the given order (last data row should be 186).
+3. APPLIED - append the 5 rows in APPLIED_append, in the given order (last data row should be 36). Then the Amplemarket rejection: find the row where Company = "Amplemarket" and Job title = "Growth Marketing Manager" (expected row 34; verify both values before editing). Set STATUS = "Rejected 25/09/2026" and append the text in APPLIED_update_Amplemarket.append_to_Actions to the END of the existing Actions cell - do not replace what is there.
 4. DAILY CONTROL - append one row for 25/09/2026 from DAILY_CONTROL_append. If a 25/09/2026 row already exists, do not add a second one; report it.
-5. ACTIVITY LOG - append the 8 rows in ACTIVITY_LOG_append, in the given order (last data row should be 28).
+5. ACTIVITY LOG - append the 9 rows in ACTIVITY_LOG_append, in the given order (last data row should be 28).
 6. WORK QUEUE - on the row where Queue ID = "Q-20260911-DARIO", set only the three fields in WORK_QUEUE_update.set. Leave every other field unchanged.
 
 REPORT BACK:
@@ -151,28 +151,6 @@ PAYLOAD:
    "Tag 9": "Recruiter",
    "Tag 10": "Startup",
    "Tag 11": "Remote EMEA"
-  },
-  {
-   "Date found": "25/09/2026",
-   "Application deadline": "Not stated",
-   "Job title": "Paid Acquisition Lead (Google Ads) - AI Product Launch",
-   "Company": "Genesis",
-   "Job site": "Breezy (employer ATS)",
-   "Work mode / Location": "Remote-first, work from anywhere",
-   "Engagement type": "Full time",
-   "Compensation": "Base + results-based bonuses (amount not stated)",
-   "Availability status": "Live 25/09/2026 on Breezy; first published 28/08/2026 (first_publish_date): older than 14 days, exception candidate for Dario's decision.",
-   "Fit score": 88,
-   "Priority": "B - Exception candidate (older than 14 days, live)",
-   "Work description": "Scale a Google Ads channel for an AI product from $100k/month to $1M+/month profitably; build Tier-1 Google Ads from scratch; works with the General Manager on budget forecasting and P&L; B2+ English.",
-   "Url": "https://gen-tech.breezy.hr/p/afa4c6be853a-paid-acquisition-lead-google-ads-ai-product-launch",
-   "Tag 1": "Google Ads",
-   "Tag 2": "Scaling",
-   "Tag 3": "AI Product",
-   "Tag 4": "Paid Acquisition",
-   "Tag 5": "P&L",
-   "Tag 6": "Remote Worldwide",
-   "Tag 7": "Exception"
   }
  ],
  "APPLIED_append": [
@@ -262,20 +240,42 @@ PAYLOAD:
    "Actions": "Prepare the Google Ads audit and AI workflow demo if invited",
    "STATUS": "Submitted 25/09/2026",
    "GOOGLE DRIVE FOLDER Name/Url": "https://docs.google.com/document/d/1Sr6u3dMDMxJmt6m9R6L5FTfoV1ksGkWt436VUSPiLD4/edit"
+  },
+  {
+   "Date found": "25/09/2026",
+   "Application deadline": "Not stated",
+   "Job title": "Paid Acquisition Lead (Google Ads) - AI Product Launch",
+   "Company": "Genesis",
+   "Job site": "Breezy (employer ATS)",
+   "Work mode / Location": "Remote-first, work from anywhere",
+   "Engagement type": "Full-time",
+   "Compensation": "Base + results-based bonuses (not stated)",
+   "Availability status": "Submitted 25/09/2026. Exception to the 14-day rule chosen by Dario: first published 28/08/2026 (Breezy first_publish_date). Form shown in Ukrainian; answered in English.",
+   "Fit score": 88,
+   "Priority": "Applied - do not duplicate",
+   "Work description": "Personally run a search-first global Google Ads engine for an AI product and scale it from $100k to $1M+ per month; reports to the General Manager; Claude used for campaign analysis and planning.",
+   "Url": "https://gen-tech.breezy.hr/p/afa4c6be853a-paid-acquisition-lead-google-ads-ai-product-launch",
+   "Tag 1": "Google Ads",
+   "Tag 2": "Scaling",
+   "Tag 3": "AI Product",
+   "Tag 4": "Remote Worldwide",
+   "Actions": "Wait for reply",
+   "STATUS": "Submitted 25/09/2026",
+   "GOOGLE DRIVE FOLDER Name/Url": "https://docs.google.com/document/d/1vVpja2hFa-776CRDLG8viQaXRm7ePw-SgEr-MfCkry0/edit"
   }
  ],
  "DAILY_CONTROL_append": {
   "Date": "25/09/2026",
   "Front A target": 10,
-  "Front A submitted": 3,
-  "Front A remaining": 7,
-  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB and Taxes for Expats (exception) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
-  "Packages ready": "Letters on Drive: SDG, ennovationHUB, Taxes for Expats (sent); LottieFiles (skipped)",
+  "Front A submitted": 4,
+  "Front A remaining": 6,
+  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB, Taxes for Expats and Genesis (both exceptions) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
+  "Packages ready": "Letters on Drive: SDG, ennovationHUB, Taxes for Expats, Genesis (sent); LottieFiles (skipped)",
   "Follow-ups due": "Powered by Search and OnTheGoSystems (applied 17/09); SDG and ennovationHUB ~09/10",
   "Front B qualified leads": 0,
   "LinkedIn visits": 0,
   "Adaxa Web visits": 0,
-  "Forms submitted": 3,
+  "Forms submitted": 4,
   "Confirmations/evidence": "https://github.com/dakson2/ImportJSON/pull/2",
   "Blockers": "Supply: few senior Google-first remote roles open to Croatia within 14 days. Exceptions for older live roles are Dario's call.",
   "Next action": "Dario decides on exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy); follow-ups ~01/10 for 17/09 applications",
@@ -393,6 +393,20 @@ PAYLOAD:
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
    "Next step": "Prepare Google Ads audit + AI workflow demo if invited",
    "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260925-SUB-GENESIS",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Application submitted",
+   "Target": "Genesis - Paid Acquisition Lead (Google Ads) - AI Product Launch",
+   "Target URL": "https://gen-tech.breezy.hr/p/afa4c6be853a-paid-acquisition-lead-google-ads-ai-product-launch",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Submit application (Breezy; letter + CV + work history).",
+   "Outcome": "Submitted 25/09/2026, confirmed by Dario. Exception to the 14-day rule (first published 28/08).",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "Wait for reply",
+   "Notes": ""
   }
  ],
  "WORK_QUEUE_update": {
@@ -402,7 +416,7 @@ PAYLOAD:
   "set": {
    "Last updated": "<current UTC ISO time>",
    "Next action": "Dario decides on exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy); follow-ups ~01/10 for 17/09 applications",
-   "Notes": "25/09: 3 submitted (SDG, ennovationHUB, Taxes for Expats); Ruby Labs July application recorded; Amplemarket rejected; exceptions list in ACTIVITY LOG CLAUDE-20260925-CRAWL2."
+   "Notes": "25/09: 4 submitted (SDG, ennovationHUB, Taxes for Expats, Genesis); Ruby Labs July application recorded; Amplemarket rejected; exceptions list in ACTIVITY LOG CLAUDE-20260925-CRAWL2."
   }
  }
 }
