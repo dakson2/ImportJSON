@@ -48,15 +48,7 @@
    "submitted": "25/09/2026"
   }
  ],
- "inProgress": [
-  {
-   "company": "SimpleStudy",
-   "role": "Head of Paid Ads - Performance Marketing Lead",
-   "url": "https://jobs.ashbyhq.com/simplestudy/3b0de68e-cf2c-426f-88d2-d9e9823cd249",
-   "ats": "Ashby (employer)",
-   "note": "Live 25/09; published 07/08/2026 (exception). In Found positions r183 since 11/09 with packages from 11/09 (AI-1) and 16/09 (Drive folder '04 - SimpleStudy - Head of Paid Ads (r183)'), never sent. Employer checked 25/09: LinkedIn company page, several open roles, seed-backed. Form: why apply (long text), salary with currency, channels above $10K/month, largest monthly budget. Answers reuse the 16/09 package minus two unverified claims (SQL comfort, offline conversion import)."
-  }
- ],
+ "inProgress": [],
  "skipped": [
   {
    "company": "LottieFiles",
@@ -71,6 +63,14 @@
    "company": "Base360.ai (The Flex)",
    "role": "Founding Growth Marketer",
    "decision": "Not sent; Dario moved on to a new crawl 25/09/2026"
+  },
+  {
+   "company": "SimpleStudy",
+   "role": "Head of Paid Ads - Performance Marketing Lead",
+   "url": "https://jobs.ashbyhq.com/simplestudy/3b0de68e-cf2c-426f-88d2-d9e9823cd249",
+   "ats": "Ashby (employer)",
+   "note": "Live 25/09; published 07/08/2026 (exception). In Found positions r183 since 11/09 with packages from 11/09 (AI-1) and 16/09 (Drive folder '04 - SimpleStudy - Head of Paid Ads (r183)'), never sent. Employer checked 25/09: LinkedIn company page, several open roles, seed-backed. Form: why apply (long text), salary with currency, channels above $10K/month, largest monthly budget. Answers reuse the 16/09 package minus two unverified claims (SQL comfort, offline conversion import).",
+   "decision": "Skipped by Dario 25/09/2026: 'nije naša regija' (target markets UK, IE, BR, ZA, AU)"
   }
  ],
  "previousApplicationsFound": [

@@ -1,9 +1,9 @@
 # Prompt for Codex - write everything from 25/09/2026 into Work (end of day)
 
-This replaces `CODEX-PROMPT-2026-09-25.md` (the morning prompt). Do not run both. Copy everything inside the code block below into Codex.
+This replaces `CODEX-PROMPT-2026-09-25.md` (the morning prompt). Do not run both. Copy everything inside the code block below into Codex, or into any AI session (Codex or Claude) that has write access to the Work sheet.
 
 ```text
-TASK: Record Claude's work of 25/09/2026 in the live Google Sheet "Work" (project 1.ADX-Jobs): the day's two crawls, two submitted applications, one earlier application found in Drive, and Dario's skip decisions. Claude (AI-2) verified every role on the employer's own posting but cannot write cells; you have write access. Do exactly steps 1-6, nothing else. This prompt REPLACES the morning prompt CODEX-PROMPT-2026-09-25.md; if you already ran that one, stop and report which rows it wrote before doing anything.
+TASK (for the AI with write access to the sheet - Codex or Claude): Record Claude's work of 25/09/2026 in the live Google Sheet "Work" (project 1.ADX-Jobs): the day's two crawls, two submitted applications, one earlier application found in Drive, and Dario's skip decisions. Claude (AI-2) verified every role on the employer's own posting but cannot write cells; you have write access. Do exactly steps 1-6, nothing else. This prompt REPLACES the morning prompt CODEX-PROMPT-2026-09-25.md; if you already ran that one, stop and report which rows it wrote before doing anything.
 
 SHEET: Work - https://docs.google.com/spreadsheets/d/15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4
 Tabs used: WORK QUEUE, Found positions, APPLIED, DAILY CONTROL, ACTIVITY LOG.
@@ -291,7 +291,7 @@ PAYLOAD:
   "Front A target": 10,
   "Front A submitted": 5,
   "Front A remaining": 5,
-  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB, Taxes for Expats, Genesis and OnHires (exceptions) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
+  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB, Taxes for Expats, Genesis and OnHires (exceptions) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision SimpleStudy skipped (region).",
   "Packages ready": "Letters on Drive: SDG, ennovationHUB, Taxes for Expats, Genesis, OnHires (sent); LottieFiles (skipped)",
   "Follow-ups due": "Powered by Search and OnTheGoSystems (applied 17/09); SDG and ennovationHUB ~09/10",
   "Front B qualified leads": 0,
@@ -365,11 +365,11 @@ PAYLOAD:
    "Date/time": "<current UTC ISO time>",
    "Front": "DARIO",
    "Activity type": "Decision",
-   "Target": "LottieFiles Head of Growth; Ruby Labs Growth Marketing Lead; Base360.ai Founding Growth Marketer",
+   "Target": "LottieFiles Head of Growth; Ruby Labs Growth Marketing Lead; Base360.ai Founding Growth Marketer; SimpleStudy Head of Paid Ads",
    "Target URL": "",
    "Related ID": "Q-20260911-DARIO",
    "Action": "Dario reviewed and skipped.",
-   "Outcome": "LottieFiles: stretch (PLG leadership). Ruby Labs: prior rejection. Base360: junior signals, AI-banned essays.",
+   "Outcome": "LottieFiles: stretch (PLG leadership). Ruby Labs: prior rejection 04/08. Base360: junior signals, AI-banned essays. SimpleStudy (Found positions r183): not our region - its markets are UK, IE, BR, ZA, AU.",
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
    "Next step": "None",
    "Notes": ""
