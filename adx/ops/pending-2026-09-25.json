@@ -23,11 +23,12 @@
  ],
  "inProgress": [
   {
-   "company": "Base360.ai (The Flex)",
-   "role": "Founding Growth Marketer",
-   "url": "https://jobs.ashbyhq.com/the-flex/f23c0827-40ec-4d97-82b1-ab31c21f5daa",
-   "ats": "Ashby",
-   "note": "Live 25/09, published 23/09/2026. No prior contact in Work (the 18/06 'Flex' row is a different US company). Form has no cover-letter field; asks age, university, part-time vs full-time, minimum salary in GBP per month, and two essays marked 'Do not use AI - we will detect it and cancel your application'. Junior-leaning signals. Claude advised Dario to write the essays himself and not to attach an AI-written letter."
+   "company": "Taxes for Expats",
+   "role": "Paid Acquisition Lead",
+   "url": "https://himalayas.app/companies/taxes-for-expats/jobs/paid-acquisition-lead",
+   "ats": "Himalayas (employer posts there)",
+   "letter": "Drive 1Sr6u3dMDMxJmt6m9R6L5FTfoV1ksGkWt436VUSPiLD4",
+   "note": "Posted 08/08/2026, deadline 07/10/2026; exception to the 14-day rule chosen by Dario 25/09. No prior contact in Work or dakson2 Gmail."
   }
  ],
  "skipped": [
@@ -39,6 +40,11 @@
    "letter": "Drive 1w-8-_YF14AIfgnIF5n4mAquqC2-WyQeX6OduTXZKj98",
    "note": "datePosted 16/09/2026, re-checked live 25/09. No prior contact in Work/Base/Gmail. Form has no cover-letter field: letter merged in front of the CV. Stretch fit: posting asks 8-12+ yrs PLG growth leadership and an in-house multi-disciplinary team, stated openly in the letter.",
    "decision": "Skipped by Dario 25/09/2026"
+  },
+  {
+   "company": "Base360.ai (The Flex)",
+   "role": "Founding Growth Marketer",
+   "decision": "Not sent; Dario moved on to a new crawl 25/09/2026"
   }
  ],
  "previousApplicationsFound": [
@@ -53,5 +59,6 @@
  ],
  "notes": [
   "Application confirmations and rejections reach Dario's other inbox (not the connected dakson2@gmail.com). A Gmail-connector search is therefore not proof that nothing was sent; ask Dario to search his inbox."
- ]
+ ],
+ "submitted_after_final_prompt_note": "Anything submitted after the end-of-day Codex prompt (CODEX-PROMPT-2026-09-25-FINAL.md) goes into the next day's batch."
 }
