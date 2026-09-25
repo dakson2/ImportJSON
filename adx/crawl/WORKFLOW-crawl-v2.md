@@ -260,3 +260,11 @@ DoiT's *Senior Growth Manager* has Romania and Serbia copies dated 16/09. A 99%-
 - `mojposao.hr` — WebFetch gets HTTP 403.
 - The DOU vacancy-ID age rule held again. Interactive Online Technologies' *Senior Paid Search Manager* is ID 362,369 against
   ~374,500 on 24/09, which puts it at roughly two months old whatever date DOU shows.
+
+### Breezy's list date is a re-publish date — correction made on 25/09
+
+`<org>.breezy.hr/json` gives `published_date`, which is refreshed whenever a position is re-published. The position's
+apply page (`/p/<id>/apply`) embeds the position object with **`first_publish_date`** and `last_publish_date`. Social
+Discovery Group's *Lead PPC Specialist* showed 21/09 in the list and carries `first_publish_date` 27/07/2026. It was
+recommended as the day's top role before this was checked, and was corrected while its letter was being prepared. For
+every Breezy role, read `first_publish_date` before applying the 14-day rule.

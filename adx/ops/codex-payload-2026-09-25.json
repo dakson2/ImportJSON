@@ -9,9 +9,9 @@
    "Work mode / Location": "Fully remote, no location restrictions",
    "Engagement type": "Full time",
    "Compensation": "Not disclosed; shared during process. 28 days vacation, bonus, health allowance",
-   "Availability status": "Verified live 25/09/2026 on employer Breezy; published 21/09/2026; one copy only, no older duplicate. Full text read: no cloaking/evasion terms.",
+   "Availability status": "Live 25/09/2026 on employer Breezy, but FIRST PUBLISHED 27/07/2026: the position's own data on the apply page carries first_publish_date 2026-07-27; the 21/09/2026 date on the job list is a re-publish. Fails the 14-day rule unless Dario makes an exception; the re-publish suggests the seat is still open. Full text read: no cloaking/evasion terms.",
    "Fit score": 94,
-   "Priority": "A - Primary / Apply",
+   "Priority": "D - EXCLUDED / older than 14 days (first published 27/07/2026) - Dario decides on exception",
    "Work description": "Owns global Paid Search strategy (Google Ads primary, Microsoft Ads) across a dating/social product portfolio; leads and hires the Paid Search team; six-figure+ monthly search spend; pLTV value-based Smart Bidding, Google Ads Experiments, Enhanced Conversions, offline imports, SQL/BigQuery; Ads Scripts an advantage.",
    "Url": "https://social-discovery-ventures.breezy.hr/p/9ea048d3de3f01-lead-ppc-spesialist",
    "Tag 1": "Google Ads",
@@ -167,9 +167,9 @@
    "Target URL": "",
    "Related ID": "Q-20260911-DARIO",
    "Action": "Workable global API (34 queries x 25 locations, 4,215 postings); 688 employer ATS boards (Greenhouse, Ashby, Lever/Lever EU, Recruitee, SmartRecruiters, Teamtailor RSS, Personio XML, Breezy, BambooHR) from a 541-name probe plus 652 slugs mined from aggregator apply links; 64 Workday tenants; Jobgether; Remote Rocketship (284 pages); Himalayas search with country=Croatia (349 roles); WWR, Working Nomads, Jobicy, Remotive, RemoteOK, Arbeitnow, TheMuse, Landing.jobs; DOU; posao.hr. Window: first published on/after 11/09/2026, earliest copy wins.",
-   "Outcome": "611 in-window paid/growth marketing roles; 6 verified at employer source and added to Found positions (Social Discovery Group Lead PPC Specialist, ennovationHUB Senior Google Ads Specialist remote, LottieFiles Head of Growth, Ruby Labs Growth Marketing Lead, Base360.ai Founding Growth Marketer, Pragmatike CMO EMEA). Excluded after source check: DoiT Senior Growth Manager (original 20/07), Unifonic, Go Vocal, Novakid (June originals re-dated by Himalayas), Gismart UA (03/09), Interactive Online Technologies Senior Paid Search (DOU ID ~2 months old), Nord Security PPC Team Lead and Ovoko Head of Marketing (hybrid Vilnius/Warsaw), hosting.com Senior PPC Growth Specialist (Lithuania only), MM Coaching Head of Paid Marketing (UAE/IE/UK/CA only), CoinPoker (gray-market jurisdictions), German-language DACH roles.",
+   "Outcome": "611 in-window paid/growth marketing roles; 6 recorded in Found positions: 5 pass (ennovationHUB Senior Google Ads Specialist remote, LottieFiles Head of Growth, Ruby Labs Growth Marketing Lead, Base360.ai Founding Growth Marketer, Pragmatike CMO EMEA) and Social Discovery Group Lead PPC Specialist, which is live but was first published 27/07/2026 (Breezy first_publish_date; list date 21/09 is a re-publish), so it fails the 14-day rule unless Dario makes an exception. Excluded after source check: DoiT Senior Growth Manager (original 20/07), Unifonic, Go Vocal, Novakid (June originals re-dated by Himalayas), Gismart UA (03/09), Interactive Online Technologies Senior Paid Search (DOU ID ~2 months old), Nord Security PPC Team Lead and Ovoko Head of Marketing (hybrid Vilnius/Warsaw), hosting.com Senior PPC Growth Specialist (Lithuania only), MM Coaching Head of Paid Marketing (UAE/IE/UK/CA only), CoinPoker (gray-market jurisdictions), German-language DACH roles.",
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
-   "Next step": "Dario applies one by one, starting with Social Discovery Group; Claude prepares each letter on request.",
+   "Next step": "Dario decides on the SDG exception; otherwise apply one by one starting with ennovationHUB. Claude prepares each letter on request.",
    "Notes": "Record: adx/ops/ops-ADX-20260925-014-crawl.json. Workflow: adx/crawl/WORKFLOW-crawl-v2.md Addendum 4."
   }
  ]

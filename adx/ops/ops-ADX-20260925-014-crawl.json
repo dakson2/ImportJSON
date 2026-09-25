@@ -1,41 +1,139 @@
 {
-  "batchId": "ADX-20260925-014",
-  "owner": "AI-2 (Claude)",
-  "doNotReplay": true,
-  "description": "Record of the 25/09/2026 crawl. The sheet write is done by Codex from adx/CODEX-PROMPT-2026-09-25.md; this file is the evidence trail, not an instruction.",
-  "window": "first published on or after 11/09/2026; earliest copy across countries and aggregators wins",
-  "sources": {
-    "workableGlobal": "34 queries x 25 locations, 1,160 calls, 0 rate-limit errors, 4,215 unique postings",
-    "employerAtsBoards": "688 boards: 323 from a 541-name probe across 12 endpoints, 308 from 652 slugs mined from aggregator apply links, 56 carried over from 20-24/09",
-    "workday": "64 tenants (63 mined + Infobip), 7 search terms each, per-job startDate",
-    "aggregators": "Jobgether (3,946), Remote Rocketship (284 pages, 882 openings), Himalayas search country=Croatia (349), WWR, Working Nomads, Jobicy, Remotive, RemoteOK, Arbeitnow, TheMuse, Landing.jobs, DOU (2 feeds), posao.hr",
-    "total": "46,548 dated postings from 652 distinct boards/feeds; 611 unique in-window paid/growth marketing roles"
+ "batchId": "ADX-20260925-014",
+ "owner": "AI-2 (Claude)",
+ "doNotReplay": true,
+ "description": "Record of the 25/09/2026 crawl. The sheet write is done by Codex from adx/CODEX-PROMPT-2026-09-25.md; this file is the evidence trail, not an instruction.",
+ "window": "first published on or after 11/09/2026; earliest copy across countries and aggregators wins",
+ "sources": {
+  "workableGlobal": "34 queries x 25 locations, 1,160 calls, 0 rate-limit errors, 4,215 unique postings",
+  "employerAtsBoards": "688 boards: 323 from a 541-name probe across 12 endpoints, 308 from 652 slugs mined from aggregator apply links, 56 carried over from 20-24/09",
+  "workday": "64 tenants (63 mined + Infobip), 7 search terms each, per-job startDate",
+  "aggregators": "Jobgether (3,946), Remote Rocketship (284 pages, 882 openings), Himalayas search country=Croatia (349), WWR, Working Nomads, Jobicy, Remotive, RemoteOK, Arbeitnow, TheMuse, Landing.jobs, DOU (2 feeds), posao.hr",
+  "total": "46,548 dated postings from 652 distinct boards/feeds; 611 unique in-window paid/growth marketing roles"
+ },
+ "verifiedAndRecommended": [
+  {
+   "company": "ennovationHUB",
+   "role": "Senior Google Ads Specialist | International E-commerce | Remote",
+   "published": "18/09/2026",
+   "source": "Recruitee",
+   "geo": "remote; travel every 4-8 weeks to Belgrade/Barcelona/London",
+   "fit": 88,
+   "conditions": [
+    "in-house e-commerce Google Ads experience required",
+    "travel cadence exceeds the 6-12-month hybrid rule; Dario decides"
+   ]
   },
-  "verifiedAndRecommended": [
-    {"company": "Social Discovery Group", "role": "Lead PPC Specialist", "published": "21/09/2026", "source": "Breezy", "geo": "fully remote, no location restrictions", "fit": 94},
-    {"company": "ennovationHUB", "role": "Senior Google Ads Specialist | International E-commerce | Remote", "published": "18/09/2026", "source": "Recruitee", "geo": "remote; travel every 4-8 weeks to Belgrade/Barcelona/London", "fit": 88, "conditions": ["in-house e-commerce Google Ads experience required", "travel cadence exceeds the 6-12-month hybrid rule; Dario decides"]},
-    {"company": "LottieFiles", "role": "Head of Growth", "published": "16/09/2026", "source": "BambooHR", "geo": "fully remote, Asia/Europe overlap", "fit": 78},
-    {"company": "Ruby Labs", "role": "Growth Marketing Lead (B2B SaaS & Payments)", "published": "21/09/2026", "source": "Ashby", "geo": "remote, Croatia listed", "fit": 70},
-    {"company": "Base360.ai (The Flex)", "role": "Founding Growth Marketer", "published": "23/09/2026", "source": "Ashby", "geo": "remote, Croatia listed", "fit": 66},
-    {"company": "Pragmatike (AI cloud startup)", "role": "Chief Marketing Officer (EMEA - Remote)", "published": "14/09/2026", "source": "Ashby", "geo": "remote, EMEA timezone", "fit": 60}
-  ],
-  "excludedAfterSourceCheck": [
-    {"role": "DoiT - Senior Growth Manager (CEE copies)", "reason": "99% identical Estonia copy first published 20/07/2026"},
-    {"role": "Unifonic - Principal Performance Marketing Specialist", "reason": "Recruitee published 11/06/2026; Himalayas showed 17/09"},
-    {"role": "Go Vocal - Digital Marketing Manager / AI Growth Marketing Lead", "reason": "Recruitee published 12/06/2026; EUR 57.5-67.5k"},
-    {"role": "Novakid - Performance Marketing Manager (Easy Start)", "reason": "Recruitee published 10/06/2026"},
-    {"role": "Gismart - User Acquisition Manager", "reason": "Ashby published 03/09/2026"},
-    {"role": "Interactive Online Technologies - Senior Paid Search Manager", "reason": "DOU ID 362,369, about two months old; Sunday-Thursday Israel-time schedule"},
-    {"role": "Nord Security - PPC Team Lead (B2B)", "reason": "hybrid Vilnius/Kaunas or Warsaw"},
-    {"role": "Ovoko - Head of Marketing", "reason": "hybrid Vilnius (EUR 9,000/month gross offered)"},
-    {"role": "hosting.com - Senior PPC Growth Specialist", "reason": "single copy, remote Lithuania only"},
-    {"role": "MM Coaching - Head of Paid Marketing", "reason": "copies only for UAE, Ireland, UK, Canada; Meta-first coaching funnel"},
-    {"role": "CoinPoker - Paid Marketing Manager", "reason": "integrity: requires results in restricted or gray-market jurisdictions via push/native/crypto networks"},
-    {"role": "Adaptive Teams - Senior Amazon PPC Manager", "reason": "same role posted since 04/09/2025"},
-    {"role": "Tripledot - Senior Growth Manager", "reason": "Warsaw office, 20 remote days per year"},
-    {"role": "Tyk - Growth Marketing Manager", "reason": "2-3 years, midweight"},
-    {"role": "Eskimi/Roigen - Paid Media Specialist", "reason": "3+ years specialist, midweight"},
-    {"role": "DACH SEA roles (adSoul, everydays, Spacedome, WBS, Just Hiring, Drink & Paint, STUR, Zenjob, UJAM)", "reason": "German required"}
-  ],
-  "newSourceFindings": "See adx/crawl/WORKFLOW-crawl-v2.md Addendum 4"
+  {
+   "company": "LottieFiles",
+   "role": "Head of Growth",
+   "published": "16/09/2026",
+   "source": "BambooHR",
+   "geo": "fully remote, Asia/Europe overlap",
+   "fit": 78
+  },
+  {
+   "company": "Ruby Labs",
+   "role": "Growth Marketing Lead (B2B SaaS & Payments)",
+   "published": "21/09/2026",
+   "source": "Ashby",
+   "geo": "remote, Croatia listed",
+   "fit": 70
+  },
+  {
+   "company": "Base360.ai (The Flex)",
+   "role": "Founding Growth Marketer",
+   "published": "23/09/2026",
+   "source": "Ashby",
+   "geo": "remote, Croatia listed",
+   "fit": 66
+  },
+  {
+   "company": "Pragmatike (AI cloud startup)",
+   "role": "Chief Marketing Officer (EMEA - Remote)",
+   "published": "14/09/2026",
+   "source": "Ashby",
+   "geo": "remote, EMEA timezone",
+   "fit": 60
+  }
+ ],
+ "excludedAfterSourceCheck": [
+  {
+   "role": "DoiT - Senior Growth Manager (CEE copies)",
+   "reason": "99% identical Estonia copy first published 20/07/2026"
+  },
+  {
+   "role": "Unifonic - Principal Performance Marketing Specialist",
+   "reason": "Recruitee published 11/06/2026; Himalayas showed 17/09"
+  },
+  {
+   "role": "Go Vocal - Digital Marketing Manager / AI Growth Marketing Lead",
+   "reason": "Recruitee published 12/06/2026; EUR 57.5-67.5k"
+  },
+  {
+   "role": "Novakid - Performance Marketing Manager (Easy Start)",
+   "reason": "Recruitee published 10/06/2026"
+  },
+  {
+   "role": "Gismart - User Acquisition Manager",
+   "reason": "Ashby published 03/09/2026"
+  },
+  {
+   "role": "Interactive Online Technologies - Senior Paid Search Manager",
+   "reason": "DOU ID 362,369, about two months old; Sunday-Thursday Israel-time schedule"
+  },
+  {
+   "role": "Nord Security - PPC Team Lead (B2B)",
+   "reason": "hybrid Vilnius/Kaunas or Warsaw"
+  },
+  {
+   "role": "Ovoko - Head of Marketing",
+   "reason": "hybrid Vilnius (EUR 9,000/month gross offered)"
+  },
+  {
+   "role": "hosting.com - Senior PPC Growth Specialist",
+   "reason": "single copy, remote Lithuania only"
+  },
+  {
+   "role": "MM Coaching - Head of Paid Marketing",
+   "reason": "copies only for UAE, Ireland, UK, Canada; Meta-first coaching funnel"
+  },
+  {
+   "role": "CoinPoker - Paid Marketing Manager",
+   "reason": "integrity: requires results in restricted or gray-market jurisdictions via push/native/crypto networks"
+  },
+  {
+   "role": "Adaptive Teams - Senior Amazon PPC Manager",
+   "reason": "same role posted since 04/09/2025"
+  },
+  {
+   "role": "Tripledot - Senior Growth Manager",
+   "reason": "Warsaw office, 20 remote days per year"
+  },
+  {
+   "role": "Tyk - Growth Marketing Manager",
+   "reason": "2-3 years, midweight"
+  },
+  {
+   "role": "Eskimi/Roigen - Paid Media Specialist",
+   "reason": "3+ years specialist, midweight"
+  },
+  {
+   "role": "DACH SEA roles (adSoul, everydays, Spacedome, WBS, Just Hiring, Drink & Paint, STUR, Zenjob, UJAM)",
+   "reason": "German required"
+  }
+ ],
+ "newSourceFindings": "See adx/crawl/WORKFLOW-crawl-v2.md Addendum 4",
+ "flaggedForDarioDecision": [
+  {
+   "company": "Social Discovery Group",
+   "role": "Lead PPC Specialist",
+   "published": "list shows 21/09/2026; position data shows first_publish_date 27/07/2026",
+   "source": "Breezy",
+   "geo": "fully remote, no location restrictions",
+   "fit": 94,
+   "status": "fails 14-day rule unless Dario makes an exception",
+   "correctedOn": "25/09/2026, found while preparing the letter"
+  }
+ ]
 }
