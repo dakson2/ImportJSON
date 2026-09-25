@@ -19,9 +19,9 @@ R6. Replace every "<current UTC ISO time>" with the real UTC time at the moment 
 STEPS:
 1. WORK QUEUE - cell A1 reads "ovo sve " (text pasted there by accident on 24/09). If it still reads exactly that, set it to "Queue ID". If it reads anything else, leave it and report the value. Change nothing else on this tab in this step.
 2. Found positions - append the 4 rows in Found_positions_append, in the given order (last data row should be 186).
-3. APPLIED - append the 5 rows in APPLIED_append, in the given order (last data row should be 36). Then the Amplemarket rejection: find the row where Company = "Amplemarket" and Job title = "Growth Marketing Manager" (expected row 34; verify both values before editing). Set STATUS = "Rejected 25/09/2026" and append the text in APPLIED_update_Amplemarket.append_to_Actions to the END of the existing Actions cell - do not replace what is there.
+3. APPLIED - append the 6 rows in APPLIED_append, in the given order (last data row should be 36). Then the Amplemarket rejection: find the row where Company = "Amplemarket" and Job title = "Growth Marketing Manager" (expected row 34; verify both values before editing). Set STATUS = "Rejected 25/09/2026" and append the text in APPLIED_update_Amplemarket.append_to_Actions to the END of the existing Actions cell - do not replace what is there.
 4. DAILY CONTROL - append one row for 25/09/2026 from DAILY_CONTROL_append. If a 25/09/2026 row already exists, do not add a second one; report it.
-5. ACTIVITY LOG - append the 9 rows in ACTIVITY_LOG_append, in the given order (last data row should be 28).
+5. ACTIVITY LOG - append the 10 rows in ACTIVITY_LOG_append, in the given order (last data row should be 28).
 6. WORK QUEUE - on the row where Queue ID = "Q-20260911-DARIO", set only the three fields in WORK_QUEUE_update.set. Leave every other field unchanged.
 
 REPORT BACK:
@@ -262,20 +262,42 @@ PAYLOAD:
    "Actions": "Wait for reply",
    "STATUS": "Submitted 25/09/2026",
    "GOOGLE DRIVE FOLDER Name/Url": "https://docs.google.com/document/d/1vVpja2hFa-776CRDLG8viQaXRm7ePw-SgEr-MfCkry0/edit"
+  },
+  {
+   "Date found": "22/07/2026",
+   "Application deadline": "Not stated",
+   "Job title": "Senior PPC Specialist (Google Ads)",
+   "Company": "OnHires client",
+   "Job site": "Ashby (OnHires recruiter ATS)",
+   "Work mode / Location": "Remote (Europe), B2B contract",
+   "Engagement type": "B2B contract",
+   "Compensation": "Not disclosed",
+   "Availability status": "Submitted 25/09/2026. Exception to the 14-day rule chosen by Dario: in Found positions since 22/07/2026 (listed there as 'PPC Specialist (Google Ads)'), re-published on Ashby 04/09/2026. Letter merged in front of the CV (form has no letter field).",
+   "Fit score": 85,
+   "Priority": "Applied - do not duplicate",
+   "Work description": "Hands-on Google Ads for a portfolio of B2C subscription products for the US market; CAC/CPA/ROAS/LTV; A/B testing; works with the founder and a Data Engineer.",
+   "Url": "https://jobs.ashbyhq.com/onhires/da74ab40-92aa-4e95-92dc-3bee4c03fbf5",
+   "Tag 1": "Google Ads",
+   "Tag 2": "B2C Subscription",
+   "Tag 3": "US Market",
+   "Tag 4": "B2B Contract",
+   "Actions": "Wait for reply",
+   "STATUS": "Submitted 25/09/2026",
+   "GOOGLE DRIVE FOLDER Name/Url": "https://docs.google.com/document/d/1MIMpnsN6WLjCQxNNikyyrUg_RiLvmyAz79ECgPb_00M/edit"
   }
  ],
  "DAILY_CONTROL_append": {
   "Date": "25/09/2026",
   "Front A target": 10,
-  "Front A submitted": 4,
-  "Front A remaining": 6,
-  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB, Taxes for Expats and Genesis (both exceptions) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
-  "Packages ready": "Letters on Drive: SDG, ennovationHUB, Taxes for Expats, Genesis (sent); LottieFiles (skipped)",
+  "Front A submitted": 5,
+  "Front A remaining": 5,
+  "Qualified shortlist": "Morning crawl (46,548 postings, 611 in-window): SDG Lead PPC, ennovationHUB, Taxes for Expats, Genesis and OnHires (exceptions) sent; LottieFiles, Ruby Labs Growth Marketing Lead, Base360 skipped; Pragmatike not pursued. Evening crawl: evening re-crawl found no new in-window role; 4 older live exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy) for Dario's decision",
+  "Packages ready": "Letters on Drive: SDG, ennovationHUB, Taxes for Expats, Genesis, OnHires (sent); LottieFiles (skipped)",
   "Follow-ups due": "Powered by Search and OnTheGoSystems (applied 17/09); SDG and ennovationHUB ~09/10",
   "Front B qualified leads": 0,
   "LinkedIn visits": 0,
   "Adaxa Web visits": 0,
-  "Forms submitted": 4,
+  "Forms submitted": 5,
   "Confirmations/evidence": "https://github.com/dakson2/ImportJSON/pull/2",
   "Blockers": "Supply: few senior Google-first remote roles open to Croatia within 14 days. Exceptions for older live roles are Dario's call.",
   "Next action": "Dario decides on exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy); follow-ups ~01/10 for 17/09 applications",
@@ -407,6 +429,20 @@ PAYLOAD:
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
    "Next step": "Wait for reply",
    "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260925-SUB-ONHIRES",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Application submitted",
+   "Target": "OnHires client - Senior PPC Specialist (Google Ads)",
+   "Target URL": "https://jobs.ashbyhq.com/onhires/da74ab40-92aa-4e95-92dc-3bee4c03fbf5",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Submit application (Ashby; letter + CV in one PDF; LinkedIn).",
+   "Outcome": "Submitted 25/09/2026, confirmed by Dario. Exception to the 14-day rule (known since 22/07).",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "Wait for reply",
+   "Notes": "Found positions r162 holds the same role under the older title 'PPC Specialist (Google Ads)'."
   }
  ],
  "WORK_QUEUE_update": {
@@ -416,7 +452,7 @@ PAYLOAD:
   "set": {
    "Last updated": "<current UTC ISO time>",
    "Next action": "Dario decides on exception candidates (Taxes for Expats, Genesis, OnHires, SimpleStudy); follow-ups ~01/10 for 17/09 applications",
-   "Notes": "25/09: 4 submitted (SDG, ennovationHUB, Taxes for Expats, Genesis); Ruby Labs July application recorded; Amplemarket rejected; exceptions list in ACTIVITY LOG CLAUDE-20260925-CRAWL2."
+   "Notes": "25/09: 5 submitted (SDG, ennovationHUB, Taxes for Expats, Genesis, OnHires); Ruby Labs July application recorded; Amplemarket rejected; exceptions list in ACTIVITY LOG CLAUDE-20260925-CRAWL2."
   }
  }
 }

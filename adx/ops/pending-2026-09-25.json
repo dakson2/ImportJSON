@@ -37,18 +37,18 @@
    "letter": "Drive 1vVpja2hFa-776CRDLG8viQaXRm7ePw-SgEr-MfCkry0",
    "note": "First published 28/08/2026 (Breezy first_publish_date); exception to the 14-day rule. No questionnaire; preferred location field required. Letter states the SaaS-metrics and AppsFlyer/Adjust gaps.",
    "submitted": "25/09/2026"
-  }
- ],
- "inProgress": [
+  },
   {
    "company": "OnHires (client undisclosed)",
    "role": "Senior PPC Specialist (Google Ads)",
    "url": "https://jobs.ashbyhq.com/onhires/da74ab40-92aa-4e95-92dc-3bee4c03fbf5",
    "ats": "Ashby (recruiter)",
    "letter": "Drive 1MIMpnsN6WLjCQxNNikyyrUg_RiLvmyAz79ECgPb_00M (merged in front of CV)",
-   "note": "In Work since 22/07 (Found positions r162), never applied; re-published on Ashby 04/09. Exception to the 14-day rule. Form: name, email, resume, LinkedIn (required); no letter field."
+   "note": "In Work since 22/07 (Found positions r162), never applied; re-published on Ashby 04/09. Exception to the 14-day rule. Form: name, email, resume, LinkedIn (required); no letter field.",
+   "submitted": "25/09/2026"
   }
  ],
+ "inProgress": [],
  "skipped": [
   {
    "company": "LottieFiles",
