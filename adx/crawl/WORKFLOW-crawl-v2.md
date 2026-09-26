@@ -334,7 +334,7 @@ never reaches TED. Its grids read from a JSON API that works with the anonymous 
 2. `GET https://eojn.hr/api/searchgrid/<Grid>/get?skip=0&take=200&requireTotalCount=true&sort=[…]&filter=[…]` with the
    header `UserToken: <token>` and the same cookies. `filter` uses DevExtreme syntax, e.g.
    `[["CPVExtended","startswith","7934"],"or",["Name","contains","oglaš"]]`. Pages are capped at 200 rows, so page by the
-   number of rows returned.
+   number of rows returned, and sort by `Id`: sorting by a date with ties returns duplicates and silently skips rows.
 
 | Grid | What it holds | Useful fields | Detail page |
 |---|---|---|---|
@@ -359,3 +359,41 @@ exceptions).
 ### Dead ends on 26/09
 - Reddit JSON search (`/r/forhire/search.json`): HTTP 403 through the proxy.
 - EOJN procurement documents need a registered account; the grids and detail pages do not.
+
+---
+
+## Addendum 7, 26/09 night — monitoring public buyers for Adaxa, and one application per company
+
+Dario asked on 26/09 to monitor these leads regularly in their own part of the Work sheet. That part is the tab
+**ADAXA JAVNA NABAVA** (one row per public buyer, IDs `PB-0001`…); qualified leads also get a row in ADAXA LEADS, and the
+two are linked by "Adaxa Lead ID".
+
+### The monitor script
+`adx/crawl/tools/eojn_monitor.py` (stdlib only):
+- `refresh [--since 2024-01-01]` rebuilds `adx/adaxa/eojn-buyers.json` from the contract register: about 5,150 contracts
+  scanned, classified G (Google Ads/search), D (platform digital ads), P (portal placements), S (social media management),
+  M (marketing). Recruitment ads on job portals are excluded.
+- `new --since <date>` lists relevant contracts published since the date, open procedures, and 2026-2027 plan items changed
+  since the date. Run it on every crawl day; it takes a few minutes.
+- `buyer "<name>"` prints one buyer's contracts, plan items and procedures.
+
+### What to do with a hit
+1. Check the contract register before calling a plan item open (Addendum 6).
+2. Read the buyer's own simple-procurement rules if the value is near a threshold; they decide who gets asked. Zračna luka
+   Osijek (rules in force from 01/09/2026): up to EUR 15,000 the commercial and marketing service e-mails an offer request to
+   one or more companies of its choice; EUR 15,000-25,000 goes through the EOJN module with at least three invited bidders;
+   above EUR 25,000 it is published in the EOJN module. Below the first threshold a supplier the buyer does not know is
+   never asked, so outreach has to come before the purchase.
+3. Time the outreach. January is the most common signing month (43 of 118 contracts from recurring Google/digital-ads
+   buyers since 2024; 60% fall in January-March). Contact buyers in October-December for the next year.
+4. Look at what the buyer runs today. Google's Ads Transparency Center answers without a login:
+   `POST https://adstransparency.google.com/anji/_/rpc/SearchService/SearchCreatives?authuser=0` with form field
+   `f.req={"2":100,"3":{"12":{"1":"<domain>","2":true}},"7":{"1":1,"2":0,"3":2}}` returns the advertiser name, each ad's
+   format (1 text, 2 image, 3 video) and first/last shown dates. For osijek-airport.hr on 26/09: 7 image ads since
+   03/02/2026, no text (search) ads.
+5. Company facts (owners, revenue, staff) come from CompanyWall or the buyer's own transparency page.
+
+### Front A: one active application per company
+Do not propose a second role at a company that already has an active application in APPLIED (not Rejected, not Closed).
+On 26/09 Infobip's Senior Digital Advertising Specialist was put to Dario although his Infobip application from 24/09 was
+still open; he rightly asked why. Check APPLIED by company before listing a candidate.
