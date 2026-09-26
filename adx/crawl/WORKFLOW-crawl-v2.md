@@ -268,3 +268,33 @@ apply page (`/p/<id>/apply`) embeds the position object with **`first_publish_da
 Discovery Group's *Lead PPC Specialist* showed 21/09 in the list and carries `first_publish_date` 27/07/2026. It was
 recommended as the day's top role before this was checked, and was corrected while its letter was being prepared. For
 every Breezy role, read `first_publish_date` before applying the 14-day rule.
+
+---
+
+## Addendum 5, 26/09 — sources for Adaxa (Front B), and Workable throttling
+
+### Public tenders: the TED API
+`POST https://api.ted.europa.eu/v3/notices/search` needs no key. The body looks like
+`{"query":"classification-cpv IN (79341000 79341400 79341200 79342000 79342200) AND buyer-country IN (HRV SVN BIH SRB HUN AUT) AND publication-date>=20260801","fields":["publication-number","notice-title","buyer-name","deadline-receipt-tender-date-lot","estimated-value-lot","description-lot"],"limit":100,"paginationMode":"ITERATION"}`.
+Free-text `FT~` queries returned nothing. CPV codes work.
+
+On 26/09 the regional query returned 516 notices, and 181 of them were still open. Almost all are full-service media or
+creative agency contracts (TV, print, outdoor) with turnover thresholds. A small PPC agency can take part only as a digital
+subcontractor or partner. The one Croatian lead: **HP – Hrvatska pošta**, advertising incl. internet, about €1M, deadline 19/10/2026.
+
+### Freelance marketplaces
+- **Freelancer.com API:** `https://www.freelancer.com/api/projects/0.1/projects/active/?query=<kw>&limit=100&full_description=true`
+  needs no key. On 26/09, 551 projects matched Google Ads keywords. Only one paid at least $1k fixed or $25/h, and it
+  already had 175 bids. The work is low-value; watch the source, but don't prioritise it.
+- **freelancermap.de:** reachable (redirects to `/projekte`), but the projects are German-language DACH work.
+- **PeoplePerHour:** reachable, but listings are rendered by JavaScript. Budgets are low.
+
+### Job ads as agency leads
+Companies advertising PPC or marketing roles in Croatia are leads for Adaxa: pitch outsourced or specialist support instead
+of a hire. On 26/09 this turned up Falkensteiner (metasearch & affiliate specialist in Zadar, junior marketing manager in
+Petrčane), Foxelli Group (4-month contract cover, D2C e-commerce) and Lago (hires Google Ads execution in Croatia on US hours).
+
+### Workable throttling
+After two heavy runs on 25/09, the global API returned HTTP 429 on most calls on 26/09 even at 2.5 s pacing. Run a small,
+slow pass after a heavy day: about 20 queries × 4 locations, 1 page each, 4 s apart. Reuse the previous day's data for the
+earliest-date index.
