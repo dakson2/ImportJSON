@@ -292,9 +292,70 @@ subcontractor or partner. The one Croatian lead: **HP – Hrvatska pošta**, adv
 ### Job ads as agency leads
 Companies advertising PPC or marketing roles in Croatia are leads for Adaxa: pitch outsourced or specialist support instead
 of a hire. On 26/09 this turned up Falkensteiner (metasearch & affiliate specialist in Zadar, junior marketing manager in
-Petrčane), Foxelli Group (4-month contract cover, D2C e-commerce) and Lago (hires Google Ads execution in Croatia on US hours).
+Petrčane), Foxelli Group (4-month contract cover, D2C e-commerce). Lago was checked and dropped: it is a talent marketplace
+(HireLago) that places individual freelancers with its clients, not a company that would buy agency services.
 
 ### Workable throttling
 After two heavy runs on 25/09, the global API returned HTTP 429 on most calls on 26/09 even at 2.5 s pacing. Run a small,
 slow pass after a heavy day: about 20 queries × 4 locations, 1 page each, 4 s apart. Reuse the previous day's data for the
 earliest-date index.
+
+---
+
+## Addendum 6, 26/09 late — LinkedIn's public job search, and EOJN (Croatian public procurement)
+
+### LinkedIn guest job search (Front A, discovery only)
+`GET https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=<kw>&location=<place>&f_TPR=r<seconds>&start=<0,10,20…>`
+needs no login and returns HTML cards (10 per page): job id, title, company, location, listing date. `location` accepts
+names such as `Croatia`, `European Union`, `EMEA`, `Worldwide`. `f_TPR=r1296000` limits to the last 15 days. The remote
+filter `f_WT=2` is ignored by this endpoint, so remote status has to come from the job detail. At 2.5 s pacing, about 300
+calls on 26/09 produced no HTTP 429 (the full run: 479 calls, one 429, 2,066 unique roles, 1,301 relevant by title).
+
+Limit: cards carry only a location string. The 26/09 pass opened only roles listed at country or region level (Croatia,
+European Union, EMEA, Worldwide) or with "remote" in the title; about 1,250 roles listed under a city were not opened, so
+a remote role posted under a city name can be missed. Adding `remote` to the keywords is the cheapest fix.
+
+Detail: `GET https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/<id>` gives the description, seniority level,
+employment type and applicant count.
+
+**LinkedIn dates are listing dates, and reposts reset them.** On 26/09 LinkedIn showed Infobip's *Senior Digital
+Advertising Specialist* as posted "3 days ago". Infobip's own Workday (`/wday/cxs/infobip/InfobipCareers/job/...`) gives
+`startDate` 2026-08-12. Always take the date from the employer's ATS, as the earliest-copy rule already says.
+
+Related gap: the Workday list API gives `postedOn: "Posted 30+ Days Ago"` without a date, so these postings enter the
+normalised data with no date and the filter skips them silently. When another source lists the same company and title
+with a recent date, treat the undated ATS copy as 30+ days old, not as missing.
+
+### EOJN RH — Croatian public procurement (Front B)
+EOJN (`https://eojn.hr`) lists every Croatian procedure, including *jednostavna nabava* below the EU thresholds, which
+never reaches TED. Its grids read from a JSON API that works with the anonymous token every page carries:
+
+1. `GET https://eojn.hr/procurements-all` with a cookie jar, and read `<input id="uiUserToken" value="…">`.
+2. `GET https://eojn.hr/api/searchgrid/<Grid>/get?skip=0&take=200&requireTotalCount=true&sort=[…]&filter=[…]` with the
+   header `UserToken: <token>` and the same cookies. `filter` uses DevExtreme syntax, e.g.
+   `[["CPVExtended","startswith","7934"],"or",["Name","contains","oglaš"]]`. Pages are capped at 200 rows, so page by the
+   number of rows returned.
+
+| Grid | What it holds | Useful fields | Detail page |
+|---|---|---|---|
+| `TendersAll` | Open and past procedures | `Name`, `ContractingBody`, `EstimatedValue`, `SubmissionDeadline`, `CPVExtended`, `ProcedureType` | `/tender-eo/<Id>` |
+| `PlanItemsPublic` | Annual procurement plans: who plans to buy what | `PlanCA`, `PlanTenderName`, `PlanItemEstimatedValue`, `PlanItemQuarter`, `PlanItemStatusName`, `ProcPlanId` | `/plan-eo/<ProcPlanId>` |
+| `VContractRegisterPublic` | Contracts signed: supplier, value, date | `CAName`, `TenderName`, `ContractorName`, `TotalValue`, `ContractDate` | `/contract-eo/<Id>` |
+
+On 26/09: 16 open procedures matched advertising or marketing terms; the only new relevant one was CERP *Usluge
+oglašavanja* (€39,950, deadline 05/10), and its 2025 contract went to Hanza Media, a newspaper publisher, so it is almost
+certainly print notices. The 2026 plans held 1,969 advertising or marketing items, 198 explicitly digital, 6 naming Google
+Ads.
+
+**A plan item's status is not reliable.** Items still marked *Planirano* had often been contracted months earlier:
+Narodne novine's *Usluge Google Ads i optimizacija web stranica za tražilice* was signed with ARBONA d.o.o. on 21/01/2026
+(€16,800), and in 2025 with the same supplier (€10,350). Before calling a plan item open, search
+`VContractRegisterPublic` for the same buyer. The register is also the better lead source: it names the incumbent,
+the price and the renewal month, so Adaxa can pitch a buyer a month or two before the next plan is published
+(most digital contracts checked on 26/09 were signed between 31 December and 30 January: Narodne novine,
+Zračna luka Osijek, HNK Split, HNK Osijek, Daruvarske Toplice; NP Plitvice (May) and Hrvatska Lutrija (June) were the
+exceptions).
+
+### Dead ends on 26/09
+- Reddit JSON search (`/r/forhire/search.json`): HTTP 403 through the proxy.
+- EOJN procurement documents need a registered account; the grids and detail pages do not.

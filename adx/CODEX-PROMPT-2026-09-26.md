@@ -3,25 +3,26 @@
 Run only AFTER `CODEX-PROMPT-2026-09-25-FINAL.md` has been run. Copy everything inside the code block below.
 
 ```text
-TASK (for the AI with write access to the sheet - Codex or Claude): record 26/09/2026 in the live Google Sheet "Work" (project 1.ADX-Jobs). Do exactly steps 0-4, nothing else.
+TASK (for the AI with write access to the sheet - Codex or Claude): record 26/09/2026 in the live Google Sheet "Work" (project 1.ADX-Jobs). Do exactly steps 0-5, nothing else.
 
 SHEET: Work - https://docs.google.com/spreadsheets/d/15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4
 
 RULES (non-negotiable):
 R1. Immediately before writing to a tab, re-read its live header row and relevant rows. Map values BY HEADER NAME, never by column position. If a header named in the payload does not exist, stop that step and report it.
-R2. Never overwrite a non-empty cell except the cells named in step 1.
+R2. Never overwrite a non-empty cell except the cells named in steps 1 and 5.
 R3. Do not replay any ops batch file from the repository. Do not touch "Found positions" column Y or "Job sites" column G.
 R4. Dates as text dd/mm/yyyy; Fit score as a number; checkbox columns as the booleans given; everything else plain text.
 R5. Replace every "<current UTC ISO time>" with the real UTC time at the moment you write.
 
 STEPS:
 0. Check that the 25/09 batch was applied: APPLIED must contain a row with Company "Social Discovery Group" and Job title "Lead PPC Specialist". If it does not, STOP and report - run CODEX-PROMPT-2026-09-25-FINAL.md first.
-1. APPLIED - close six June applications. For each item in APPLIED_close_old_waiting: go to expected_row, verify that Company equals verify.Company and Job title starts with verify["Job title starts with"]; if both match, set STATUS to "NO REPLY - CLOSE" and append append_to_Actions to the END of the existing Actions cell. If a row does not match, do not edit it; find the row by Company + Job title instead, and report what you did.
-2. ADAXA LEADS - append the 5 rows in ADAXA_LEADS_append. IMPORTANT: this tab has the checkbox columns (LinkedIn visited, Adaxa Web visited, Form submitted) pre-filled FALSE on all ~1000 rows, so "last non-empty row" is misleading. Treat a row as empty when its "Lead ID" cell is empty, and write starting at the first row whose Lead ID is empty (expected row 2). Before writing, check that no existing row already has the same Company; if one does, skip that lead and report it.
-3. DAILY CONTROL - append one row for 26/09/2026 from DAILY_CONTROL_append (skip and report if a 26/09/2026 row exists).
-4. ACTIVITY LOG - append the 3 rows in ACTIVITY_LOG_append, in order.
+1. APPLIED - close six June applications. For each item in APPLIED_close_old_waiting: go to expected_row and verify that Company equals verify.Company and that Job title starts with verify["Job title starts with"]. If both match, set STATUS to "NO REPLY - CLOSE" and append append_to_Actions to the END of the existing Actions cell. If a row does not match, do not edit it; find the row by Company + Job title instead, and report what you did.
+2. ADAXA LEADS - write the 11 rows in ADAXA_LEADS_append. This tab has the checkbox columns (LinkedIn visited, Adaxa Web visited, Form submitted) pre-filled FALSE on all ~1000 rows, so "last non-empty row" and "append" are misleading. Treat a row as empty when its "Lead ID" cell is empty, and write starting at the first such row (expected row 2). Write the cells directly; do NOT use ADX_Bridge leads.upsert for this, because its first-free-row check counts the FALSE checkboxes as data and would write below row 1000. Before writing, check that no existing row has the same Company or Lead ID; if one does, skip that lead and report it.
+3. DAILY CONTROL - add one row for 26/09/2026 from DAILY_CONTROL_append (skip and report if a 26/09/2026 row exists).
+4. ACTIVITY LOG - add the 3 rows in ACTIVITY_LOG_append, in order, after the last filled row.
+5. WORK QUEUE - in the row where Queue ID = Q-20260911-DARIO, set the three cells in WORK_QUEUE_update.set (overwrite them).
 
-REPORT BACK: the rows edited in step 1 (before/after STATUS), the rows written in steps 2-4, and anything skipped with the reason.
+REPORT BACK: the rows edited in step 1 (STATUS before/after), the rows written in steps 2-5, and anything skipped with the reason.
 
 PAYLOAD:
 {
@@ -101,15 +102,15 @@ PAYLOAD:
  ],
  "ADAXA_LEADS_append": [
   {
-   "Lead ID": "ADX-L-20260926-01",
+   "Lead ID": "L-0001",
    "Date found": "26/09/2026",
-   "Company": "Falkensteiner Hotels (Croatia: Zadar, Petrčane)",
-   "Contact / role": "Marketing team (hiring manager not named)",
+   "Company": "Falkensteiner Hotels & Residences (Croatia)",
+   "Contact / role": "Marketing team, Zadar / Petrčane (contact not named)",
    "Company URL": "https://www.falkensteiner.com",
    "LinkedIn URL": "",
    "Website URL": "https://www.falkensteiner.com",
-   "Need / signal": "Two open marketing roles in Croatia on posao.hr: 'Meta Search i Affiliate Marketing Specijalist' (Falkensteiner Hotelmanagement d.o.o., Zadar) and 'Junior Marketing Manager' (Falkensteiner Hotel & Residences, Petrčane), September 2026.",
-   "Service angle": "Specialist support alongside the in-house team: Google Hotel Ads / metasearch, paid search and tracking for the Croatian properties; Adaxa as an outsourced specialist rather than an extra hire.",
+   "Need / signal": "Two marketing roles in Croatia on posao.hr (seen 25/09/2026, 22 days left, i.e. open to about 17/10): 'Meta Search i Affiliate Marketing Specijalist (m/ž)', Zadar, Falkensteiner Hotelmanagement d.o.o.; and 'Junior Marketing Manager (m/f)', Petrčane, Falkensteiner Hotel & Residences. Signal: they are adding metasearch and marketing staff in Croatia.",
+   "Service angle": "Outsourced specialist support alongside the new hires: Google Hotel Ads / metasearch, paid search and conversion tracking for the Croatian properties.",
    "Fit score": 70,
    "Priority": "B",
    "Status": "New",
@@ -117,19 +118,19 @@ PAYLOAD:
    "Adaxa Web visited": false,
    "Form submitted": false,
    "Last action": "Found by Claude 26/09/2026",
-   "Next action": "Find the Falkensteiner Croatia marketing lead on LinkedIn and send a short metasearch + Google Ads offer.",
-   "Notes": "Sources: https://www.posao.hr/oglasi/meta-search-i-affiliate-marketing-specijalist-m-z/1246521/ and https://www.posao.hr/oglasi/junior-marketing-manager-m-f/1246520/"
+   "Next action": "Find the Falkensteiner marketing lead for Croatia on LinkedIn; send a short Google Hotel Ads + paid search offer.",
+   "Notes": "Ads: https://www.posao.hr/oglasi/meta-search-i-affiliate-marketing-specijalist-m-z/1246521/ and https://www.posao.hr/oglasi/junior-marketing-manager-m-f/1246520/"
   },
   {
-   "Lead ID": "ADX-L-20260926-02",
+   "Lead ID": "L-0002",
    "Date found": "26/09/2026",
    "Company": "Foxelli Group",
    "Contact / role": "Hiring team (Ashby)",
    "Company URL": "https://jobs.ashbyhq.com/foxelligroup",
    "LinkedIn URL": "",
    "Website URL": "",
-   "Need / signal": "D2C e-commerce group (over $20M a year) hiring a 4-month maternity-cover Marketing Manager on a contract/freelance basis, EUR 2,000-2,800 per month after tax, remote, Croatia among eligible countries (published 11/09/2026).",
-   "Service angle": "Interim performance-marketing cover through Adaxa, or an ongoing Google Ads / landing-page retainer afterwards.",
+   "Need / signal": "D2C e-commerce group ('over $20M annually') hiring a Marketing Manager as a 4-month maternity cover on a contract/freelance agreement; fixed service fee EUR 2,000-2,800 after taxes (period not stated); 100% remote, Croatia among hiring countries; published 11/09/2026.",
+   "Service angle": "Interim performance-marketing cover contracted through Adaxa, then an ongoing Google Ads / CRO retainer.",
    "Fit score": 55,
    "Priority": "C",
    "Status": "New",
@@ -137,39 +138,19 @@ PAYLOAD:
    "Adaxa Web visited": false,
    "Form submitted": false,
    "Last action": "Found by Claude 26/09/2026",
-   "Next action": "Decide whether the fee is worth it; if yes, apply as a contractor via Adaxa or send a retainer offer.",
-   "Notes": "Posting: https://jobs.ashbyhq.com/foxelligroup/3d201db9-29fb-4b5a-9dd7-164036bfb4ad"
+   "Next action": "Dario decides whether the fee is worth it; if yes, apply as a contractor through Adaxa.",
+   "Notes": "Posting: https://jobs.ashbyhq.com/foxelligroup/3d201db9-29fb-4b5a-9dd7-164036bfb4ad . They also advertised a CRO Specialist role on 18/08/2026."
   },
   {
-   "Lead ID": "ADX-L-20260926-03",
-   "Date found": "26/09/2026",
-   "Company": "Lago",
-   "Contact / role": "Hiring team (Workable)",
-   "Company URL": "https://jobs.workable.com/view/wtZrcLLCiYTGBL8CPWpruG",
-   "LinkedIn URL": "",
-   "Website URL": "",
-   "Need / signal": "Hiring a Google Ads PPC Specialist based in Croatia on US Central hours, USD 1,800-3,200 per month (published 04/09/2026): outsources Google Ads execution to CEE talent.",
-   "Service angle": "White-label Google Ads execution partnership: an Adaxa team instead of individual hires.",
-   "Fit score": 50,
-   "Priority": "C",
-   "Status": "New",
-   "LinkedIn visited": false,
-   "Adaxa Web visited": false,
-   "Form submitted": false,
-   "Last action": "Found by Claude 26/09/2026",
-   "Next action": "Identify the company behind the Workable account; if it is an agency, pitch white-label execution.",
-   "Notes": "Company website not verified yet."
-  },
-  {
-   "Lead ID": "ADX-L-20260926-04",
+   "Lead ID": "L-0003",
    "Date found": "26/09/2026",
    "Company": "HP - Hrvatska pošta d.d.",
    "Contact / role": "Procurement (public tender)",
    "Company URL": "https://ted.europa.eu/en/notice/-/detail/646569-2026",
    "LinkedIn URL": "",
    "Website URL": "https://www.posta.hr",
-   "Need / signal": "Public tender 'Usluge oglašavanja u sredstvima javnog informiranja' incl. internet advertising; estimated EUR 1,000,000; deadline 19/10/2026 (TED 646569-2026).",
-   "Service angle": "Digital (Google/Meta) execution as a subcontractor or partner to a media agency that bids; Adaxa alone is unlikely to meet the TV/print/outdoor scope.",
+   "Need / signal": "Public tender 'Usluge oglašavanja u sredstvima javnog informiranja' (TED 646569-2026, published 21/09/2026): TV, print, radio, outdoor/indoor and internet advertising, bids priced as an average media discount; estimated EUR 1,000,000; deadline 19/10/2026.",
+   "Service angle": "Internet/Google execution as a subcontractor or partner of a media agency that bids; Adaxa cannot cover the TV/print/radio/outdoor scope alone.",
    "Fit score": 45,
    "Priority": "C",
    "Status": "New",
@@ -177,18 +158,18 @@ PAYLOAD:
    "Adaxa Web visited": false,
    "Form submitted": false,
    "Last action": "Found by Claude 26/09/2026",
-   "Next action": "Read the tender documents; contact 2-3 Croatian media agencies about a digital subcontract before 19/10.",
-   "Notes": "Full-media contract; realistic only as a partner."
+   "Next action": "Read the tender documents on EOJN; before 19/10 contact 2-3 Croatian media agencies about a digital subcontract.",
+   "Notes": "Tender documents: https://eojn.hr/tender-eo/99657 . Realistic only as a partner."
   },
   {
-   "Lead ID": "ADX-L-20260926-05",
+   "Lead ID": "L-0004",
    "Date found": "26/09/2026",
    "Company": "De Dietrich Australia (via Freelancer.com)",
    "Contact / role": "Project owner on Freelancer.com",
    "Company URL": "https://www.freelancer.com/projects/google-ads/SEO-Google-Ads-Search-Specialist",
    "LinkedIn URL": "",
    "Website URL": "",
-   "Need / signal": "Freelancer.com project: SEO, Google Ads and AI search specialist for a premium kitchen-appliance brand, AUD 1,500-3,000 fixed, 175 bids already (26/09/2026).",
+   "Need / signal": "Freelancer.com project 'SEO, Google Ads & AI Search Specialist - De Dietrich Australia', fixed AUD 1,500-3,000, 175 bids (posted 24/09/2026).",
    "Service angle": "One-off Google Ads + search audit and setup.",
    "Fit score": 30,
    "Priority": "D",
@@ -197,8 +178,148 @@ PAYLOAD:
    "Adaxa Web visited": false,
    "Form submitted": false,
    "Last action": "Found by Claude 26/09/2026",
-   "Next action": "Low priority: heavy competition and low budget; bid only if there is spare capacity.",
-   "Notes": "Freelancer.com is a weak source for Adaxa (1 relevant project of 551 matches)."
+   "Next action": "Low priority: 175 bids and a small budget; bid only if there is spare capacity.",
+   "Notes": "Freelancer.com is a weak source for Adaxa: 1 relevant project among 551 Google Ads matches."
+  },
+  {
+   "Lead ID": "L-0005",
+   "Date found": "26/09/2026",
+   "Company": "Hrvatska Lutrija d.o.o.",
+   "Contact / role": "Marketing / procurement (public buyer)",
+   "Company URL": "https://eojn.hr/plan-eo/12349",
+   "LinkedIn URL": "",
+   "Website URL": "https://www.lutrija.hr",
+   "Need / signal": "EOJN 2026 procurement plan item 62/2026 jed 'Usluge angažmana tehničke podrške pri postavljanju i optimizaciju Google Ads kampanja' (planned EUR 10,000, Q2 2026, status Planirano). No 2026 contract for it in the EOJN contract register on 26/09. In 2025 the same service went to Risely digital d.o.o. (EUR 6,000, 20/06/2025). Large advertiser: media strategy, planning and buying contract with Universal Media (EUR 1.59M, 17/07/2026).",
+   "Service angle": "Google Ads technical setup and optimisation support: exactly the planned service.",
+   "Fit score": 80,
+   "Priority": "A",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Contact Hrvatska Lutrija marketing/procurement: ask whether the 2026 Google Ads support purchase is still planned and ask to be invited to quote; otherwise aim at the 2027 plan.",
+   "Notes": "2025 contract: https://eojn.hr/contract-eo/518935 ; media contract: https://eojn.hr/contract-eo/1150591"
+  },
+  {
+   "Lead ID": "L-0006",
+   "Date found": "26/09/2026",
+   "Company": "HNK Split (Hrvatsko narodno kazalište Split)",
+   "Contact / role": "Marketing (public buyer)",
+   "Company URL": "https://eojn.hr/plan-eo/14046",
+   "LinkedIn URL": "",
+   "Website URL": "",
+   "Need / signal": "EOJN 2026 plan items JDN 76/26 'Media zakup (meta i google ads)' (EUR 13,200) and JDN 77/26 'Usluge oglašavanja - Meta i Google ads' (EUR 10,000), both Q1 2026, status Planirano; no 2026 contract for them in the register on 26/09. In 2025 digital ad management went to KLIKERI d.o.o. (EUR 6,646.32) plus social ad space through KLIKERI (EUR 10,538), contracts dated 02/01/2025.",
+   "Service angle": "Google + Meta ads management for ticket sales, replacing or alongside the current agency.",
+   "Fit score": 70,
+   "Priority": "B",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Contact HNK Split marketing: ask how the 2026 Meta/Google budget is being bought and offer management for the rest of 2026 or for 2027.",
+   "Notes": "2025 agency contract: https://eojn.hr/contract-eo/901236"
+  },
+  {
+   "Lead ID": "L-0007",
+   "Date found": "26/09/2026",
+   "Company": "Lječilište Topusko",
+   "Contact / role": "Management / procurement (public buyer)",
+   "Company URL": "https://eojn.hr/plan-eo/9709",
+   "LinkedIn URL": "",
+   "Website URL": "",
+   "Need / signal": "EOJN 2026 plan item 'Usluge digitalnog marketinga' (EUR 24,000, Q2 2026, status Planirano). The EOJN contract register shows no advertising or marketing contract for this buyer since 2025 (185 contracts checked on 26/09).",
+   "Service angle": "Digital marketing / Google Ads for health tourism (spa and rehabilitation).",
+   "Fit score": 60,
+   "Priority": "B",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Contact Lječilište Topusko: ask whether the digital marketing purchase is still planned for 2026 and ask to be invited to quote.",
+   "Notes": "Website not verified (guessed domains did not resolve)."
+  },
+  {
+   "Lead ID": "L-0008",
+   "Date found": "26/09/2026",
+   "Company": "Narodne novine d.d.",
+   "Contact / role": "Marketing / procurement",
+   "Company URL": "https://eojn.hr/plan-eo/14277",
+   "LinkedIn URL": "",
+   "Website URL": "https://www.nn.hr",
+   "Need / signal": "Buys 'Usluge Google Ads i optimizacija web stranica za tražilice' every year: ARBONA d.o.o. EUR 10,350 (23/01/2025) and EUR 16,800 (21/01/2026). The next contract is expected around January 2027; the 2026 plan item still shows Planirano although it was contracted.",
+   "Service angle": "Google Ads + search (SEO) for Narodne novine's retail and publishing sites; offer a proposal before the 2027 plan.",
+   "Fit score": 75,
+   "Priority": "B",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Pitch in Nov-Dec 2026, before the 2027 plan is published; ask to be invited to quote.",
+   "Notes": "Contracts: https://eojn.hr/contract-eo/780064 and https://eojn.hr/contract-eo/261134"
+  },
+  {
+   "Lead ID": "L-0009",
+   "Date found": "26/09/2026",
+   "Company": "Zračna luka Osijek d.o.o. (Osijek Airport)",
+   "Contact / role": "Marketing / procurement",
+   "Company URL": "https://eojn.hr/contract-eo/795645",
+   "LinkedIn URL": "",
+   "Website URL": "",
+   "Need / signal": "Contract 'Vođenje i optimizacija Google Ads kampanja' with KRYPTON WEB SOLUTIONS (obrt), EUR 6,000, signed 29/01/2026. Yearly renewal expected around January 2027. Local to Osijek.",
+   "Service angle": "Local Google Ads management for route and passenger campaigns; Adaxa is in Osijek.",
+   "Fit score": 70,
+   "Priority": "B",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Pitch in Nov-Dec 2026 before the 2027 purchase; a local meeting is possible.",
+   "Notes": "Airport website not verified."
+  },
+  {
+   "Lead ID": "L-0010",
+   "Date found": "26/09/2026",
+   "Company": "Javna ustanova Nacionalni park Plitvička jezera",
+   "Contact / role": "Marketing (public buyer)",
+   "Company URL": "https://eojn.hr/plan-eo/11780",
+   "LinkedIn URL": "",
+   "Website URL": "https://np-plitvicka-jezera.hr",
+   "Need / signal": "'Usluge vođenja digitalnog oglašavanja' contracted with Kontra digital d.o.o., EUR 23,520, 18/05/2026. The 2026 plan also has a EUR 300,000 item 'Usluge oglašavanja i medijskog zakupa' (VV-21/26).",
+   "Service angle": "Digital advertising management for a major tourism brand, or Google Ads work under the media-buying agency.",
+   "Fit score": 65,
+   "Priority": "C",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Pitch before the 2027 plan; check who wins the EUR 300k media contract and offer Google Ads support to that agency.",
+   "Notes": "2026 contract: https://eojn.hr/contract-eo/1061306"
+  },
+  {
+   "Lead ID": "L-0011",
+   "Date found": "26/09/2026",
+   "Company": "Grad Osijek",
+   "Contact / role": "City administration (public buyer)",
+   "Company URL": "https://eojn.hr/plan-eo/9751",
+   "LinkedIn URL": "",
+   "Website URL": "https://www.osijek.hr",
+   "Need / signal": "EOJN 2026 plan items 26-101 'Oglašavanje u elektroničkim medijima' (EUR 26,500) and 26-135 'Agencijske usluge vezane za zakup medija' (EUR 20,000), status Planirano; no 2026 contract for them in the register on 26/09. Past buys were mostly local media: daily press with Glas Slavonije (EUR 99,990, 05/06/2026).",
+   "Service angle": "Local digital media buying / agency services; Adaxa is in Osijek.",
+   "Fit score": 45,
+   "Priority": "C",
+   "Status": "New",
+   "LinkedIn visited": false,
+   "Adaxa Web visited": false,
+   "Form submitted": false,
+   "Last action": "Found by Claude 26/09/2026",
+   "Next action": "Low priority: ask the city's PR office how the two items will be procured; the budget likely goes to local portals and TV.",
+   "Notes": ""
   }
  ],
  "DAILY_CONTROL_append": {
@@ -206,16 +327,16 @@ PAYLOAD:
   "Front A target": 10,
   "Front A submitted": 0,
   "Front A remaining": 10,
-  "Qualified shortlist": "No new role passed all filters on 26/09 (Saturday crawl); exception candidates from 25/09 already sent or skipped.",
+  "Qualified shortlist": "No new role passes all filters. Exception candidates for Dario: Puffy Senior Director - Performance Marketing (posted 03/08, remote - applicant location to confirm: US in the page data, EMEA on LinkedIn; up to USD 240k) and Infobip Senior Digital Advertising Specialist (posted 12/08, Zagreb hybrid).",
   "Packages ready": "None",
   "Follow-ups due": "~01/10: Thyssen Ads, Brand Bolt, OnTheGoSystems, Powered by Search, Aimers, Adcubator, LAYER; ~08/10: Infobip, RNK Health, SimpleTiger, ScraperAPI, SolCrov; ~09/10: SDG, ennovationHUB, Taxes for Expats, Genesis, OnHires",
-  "Front B qualified leads": 5,
+  "Front B qualified leads": 11,
   "LinkedIn visits": 0,
   "Adaxa Web visits": 0,
   "Forms submitted": 0,
   "Confirmations/evidence": "https://github.com/dakson2/ImportJSON/pull/2",
   "Blockers": "Few new senior Google-first remote roles open to Croatia; Workable API throttled on 26/09.",
-  "Next action": "Contact Falkensteiner (Adaxa); weekday crawl; follow-ups ~01/10",
+  "Next action": "Dario decides on Puffy and Infobip (exceptions). Adaxa: contact Hrvatska Lutrija and Falkensteiner. Weekday crawl; follow-ups ~01/10.",
   "Last updated": "26/09/2026"
  },
  "ACTIVITY_LOG_append": [
@@ -227,10 +348,10 @@ PAYLOAD:
    "Target": "Crawl 26/09 - window first published on/after 12/09",
    "Target URL": "",
    "Related ID": "Q-20260911-DARIO",
-   "Action": "Refreshed 808 employer ATS boards (37,047 postings), aggregators, Himalayas Croatia filter (458 roles), Remote Rocketship (1,108 openings), 64 Workday tenants; Workable global throttled (HTTP 429), so the 25/09 Workable data (4,709 postings) was reused plus a small slow pass.",
-   "Outcome": "No new role passed all filters. One new in-window lead (VendueTech Growth Marketer, part-time) is equity-only and was excluded. No new older-but-live exception candidates beyond those reviewed on 25/09.",
+   "Action": "Refreshed 808 employer ATS boards (37,047 postings); Himalayas with country=Croatia (458 roles); Remote Rocketship (1,108 openings); 64 Workday tenants; Jobgether, Jobicy, Arbeitnow, Remotive, TheMuse, RemoteOK, WWR, Working Nomads, Landing.jobs, DOU, posao.hr. The Workable global API returned HTTP 429 most of the day, so the 25/09 Workable data was reused plus a slow 20-query pass (386 postings). New source: LinkedIn's public job search, 14 keywords x Croatia / European Union / EMEA / Worldwide, last 15 days (2,066 unique roles, 1,301 relevant by title roles).",
+   "Outcome": "No new role passes all filters. In-window leads from the usual sources fail: Fortis (integrity rule), Huzzle (US Central 9-5 hours), VendueTech Growth Marketer (part-time, equity only). LinkedIn (new source) added 33 in-window EU/remote roles; none passes: Meta-first (Mother's Earth, Cranberry Panda, Prosana), integrity (BettingJobs: parasite SEO publishers, grey markets; Lumino: requires TrafficJunky adult ad network), language (Leads Power French; hurra.com, diffusion, CONVACT, Instaffo German), location (WhyHireWrong Poland-only; Vondel Amsterdam/London hybrid; Prosana regular Hamburg travel; Cyncly remote only in the US, otherwise Lisbon/London hybrid; Ntice South Africa; Blacksmith Agency USA/Canada/South Africa only; Australian Internet Advertising Philippines), other (Priority Tech B2B outbound; Salient Group PLG growth; Octa Food Saudi market, fixed 15:00-23:00 shift, contract; Kajae programmatic, not senior). Two older live roles for Dario's decision as exceptions: Puffy Senior Director - Performance Marketing (careers.puffy.com datePosted 03/08/2026; remote, but the page's structured data lists United States as applicant location while LinkedIn lists copies for EMEA, Berlin, Amsterdam and London; base up to USD 200k + up to 20% monthly bonus; Google and Meta; reports to the CEO) and Infobip Senior Digital Advertising Specialist (Workday startDate 12/08/2026; Zagreb hybrid; LinkedIn shows it as 23/09 because of a repost).",
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
-   "Next step": "Next crawl on a weekday; prepare follow-ups due ~01/10",
+   "Next step": "Next crawl on a weekday; follow-ups due ~01/10",
    "Notes": ""
   },
   {
@@ -238,14 +359,14 @@ PAYLOAD:
    "Date/time": "<current UTC ISO time>",
    "Front": "ADAXA",
    "Activity type": "Sourcing",
-   "Target": "Adaxa Agency (Front B) - new lead sources and 5 leads",
-   "Target URL": "https://ted.europa.eu",
+   "Target": "Adaxa Agency (Front B) - new lead sources, 11 leads",
+   "Target URL": "https://eojn.hr",
    "Related ID": "Q-20260911-DARIO",
-   "Action": "Tested TED public tenders API (516 regional/EU advertising notices, 181 open), Freelancer.com API (551 Google Ads matches), freelancermap.de and PeoplePerHour, and mined job ads in Croatia for outsourcing signals.",
-   "Outcome": "5 leads added to ADAXA LEADS: Falkensteiner Hotels Croatia (B), Foxelli Group (C), Lago (C), HP - Hrvatska pošta tender (C, partner route), De Dietrich Australia via Freelancer.com (D). Tenders are mostly full-media contracts; freelance marketplaces are low-value.",
+   "Action": "Tested the TED public-tender API (516 advertising/marketing notices across the EU, 181 still open), the Freelancer.com API (551 Google Ads projects), freelancermap.de and PeoplePerHour; read Croatian and remote job ads for outsourcing signals; new source EOJN RH (Croatian e-procurement API): open tenders, 2026 procurement plans (1,969 advertising/marketing items, 198 explicitly digital, 6 naming Google Ads) and the contract register, used to check which planned items are already contracted and who the incumbent is.",
+   "Outcome": "11 leads written to ADAXA LEADS: L-0005 Hrvatska Lutrija (A, Google Ads support item not yet contracted), L-0001 Falkensteiner Croatia (B), L-0006 HNK Split (B), L-0007 Lječilište Topusko (B), L-0008 Narodne novine (B, renewal ~01/2027), L-0009 Zračna luka Osijek (B, local, renewal ~01/2027), L-0002 Foxelli Group (C), L-0003 HP - Hrvatska pošta tender (C, partner route), L-0010 NP Plitvička jezera (C), L-0011 Grad Osijek (C), L-0004 De Dietrich Australia via Freelancer.com (D). Dropped: Lago (talent marketplace, not a buyer of agency services) and the CERP advertising tender (2025 contract went to newspaper publisher Hanza Media, so almost certainly print notices).",
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
-   "Next step": "Dario picks which leads to contact; Falkensteiner first",
-   "Notes": "Sources documented in adx/crawl/WORKFLOW-crawl-v2.md Addendum 5."
+   "Next step": "Dario picks which leads to contact; Hrvatska Lutrija and Falkensteiner first",
+   "Notes": "Sources are documented in adx/crawl/WORKFLOW-crawl-v2.md, Addenda 5 and 6."
   },
   {
    "Activity ID": "CLAUDE-20260926-CLOSE-JUNE",
@@ -255,12 +376,22 @@ PAYLOAD:
    "Target": "Six June applications with no reply for 3+ months",
    "Target URL": "",
    "Related ID": "Q-20260911-DARIO",
-   "Action": "Close APPLIED rows 9, 17, 19, 20, 21, 22 (Lead Ember, Jordan Digital Marketing, Sporty Group, ALM Corp, Qdrant, StubGroup).",
-   "Outcome": "STATUS set to NO REPLY - CLOSE, decided by Dario 25/09/2026.",
+   "Action": "Closed APPLIED rows 9, 17, 19, 20, 21, 22 (Lead Ember, Jordan Digital Marketing, Sporty Group, ALM Corp, Qdrant, StubGroup).",
+   "Outcome": "STATUS set to NO REPLY - CLOSE, as decided by Dario 25/09/2026.",
    "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
    "Next step": "None",
    "Notes": ""
   }
- ]
+ ],
+ "WORK_QUEUE_update": {
+  "match": {
+   "Queue ID": "Q-20260911-DARIO"
+  },
+  "set": {
+   "Last updated": "<current UTC ISO time>",
+   "Next action": "Dario decides on Puffy and Infobip (exceptions); Adaxa: contact Hrvatska Lutrija (L-0005) and Falkensteiner (L-0001); follow-ups ~01/10",
+   "Notes": "26/09: no new role passed all filters; two exception candidates (Puffy, Infobip); six June applications closed; first 11 ADAXA LEADS recorded (see ACTIVITY LOG CLAUDE-20260926-ADAXA)."
+  }
+ }
 }
 ```
