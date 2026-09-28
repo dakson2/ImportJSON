@@ -1,12 +1,95 @@
 {
  "note": "Running record for 28/09/2026. Dario: 'idemo slati ono sto je jos preostalo' - send the remaining queue. Everything verified live on the employer ATS on 28/09/2026. Letters on Drive (project folder 1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-). Move each item to 'submitted' only when Dario says it was sent.",
  "queue": [
-  {"order": 1, "company": "Puffy", "role": "Senior Director - Performance Marketing", "url": "https://careers.puffy.com/roles/senior-director-performance-marketing", "ats": "Puffy careers site (form join.careers.puffy.com)", "firstPublished": "03/08/2026 (JSON-LD datePosted)", "rule": "Exception to the 14-day rule approved by Dario 26/09/2026", "letter": "Drive 1Q9p6uQ6F1-uj8RobdOdiOxrpy73fb7MHpm5skGRrwTY; merged letter + CV PDF", "compensation": "Up to USD 240,000 total (base up to USD 200,000 + monthly bonus up to 20%)", "status": "Ready - awaiting Dario"},
-  {"order": 2, "company": "Pragmatike (for an AI cloud infrastructure startup)", "role": "Chief Marketing Officer (EMEA - Remote)", "url": "https://jobs.ashbyhq.com/pragmatike/d50432f6-c724-4991-ba48-4e2a5d43cbda", "ats": "Ashby (recruiter)", "firstPublished": "14/09/2026", "rule": "Inside the 14-day window on 28/09/2026 (last day)", "letter": "Drive 1-cEbJdNBgvOnxnVgY3i80OsYXsX1N6ARtP60ls9kKDk; form has no letter field, so letter merged in front of the CV", "form": "Name, Email, Resume, LinkedIn, Location, Phone, Total years of experience (15), Ideal compensation (100000)", "status": "Ready - awaiting Dario"},
-  {"order": 3, "company": "Ruby Labs", "role": "Performance Marketing Lead (Google & Microsoft Ads)", "url": "https://jobs.ashbyhq.com/ruby-labs/15fe67f5-8451-4831-b8cb-e162a04569e7", "ats": "Ashby (employer)", "firstPublished": "10/07/2026", "rule": "Exception (older than 14 days); earlier Ruby Labs application (Google Ads Manager, July) was rejected 04/08/2026, so no active application blocks it", "letter": "Note for 'Anything else' (25/09 draft, opening sentence about the July application; unverified localisation sentence removed)", "form": "CET +/-4h, availability, expected monthly gross EUR (8333), years (More than 10), English level, Google Ads years (12, since 2014), largest monthly Google Ads budget USD (about 2.7M, i.e. EUR 2.5M), coached/evaluated specialists (Yes), Microsoft Ads incl. Audience Network (Dario to answer)", "status": "Ready - awaiting Dario"},
-  {"order": 4, "company": "Easyship", "role": "Head of Marketing", "url": "https://job-boards.greenhouse.io/easyship/jobs/4701875006", "ats": "Greenhouse (employer)", "firstPublished": "03/08/2026 (Greenhouse first_published)", "rule": "Exception (older than 14 days), sent at Dario's request 28/09/2026", "letter": "Drive 12T-Piv7TQEcKxwUQqRQbZIwMd_kRAiRA_xBDFjwIoxI", "form": "Location, visa sponsorship, notice period, expected salary, LinkedIn; cover letter optional", "status": "Ready - awaiting Dario"},
-  {"order": 5, "company": "Appsilon", "role": "Head of Marketing", "url": "https://appsilon-1739358905.teamtailor.com/jobs/8269841-head-of-marketing", "ats": "Teamtailor (employer)", "firstPublished": "26/08/2026 (JSON-LD datePosted)", "rule": "Exception (older than 14 days), sent at Dario's request 28/09/2026", "compensation": "Posting: 23,000 PLN per month, contractor (below the EUR 100k reference, above the void threshold)", "letter": "Drive 1yUI8iifgEQ69P4JvyrPFA_Z9PoveGLRI1m5h-jggIsk", "form": "Salary (monthly, contract type, currency), country, valid passport, source, location Remote/EUROPE; cover letter optional", "status": "Ready - awaiting Dario"}
+  {
+   "order": 1,
+   "company": "Puffy",
+   "role": "Senior Director - Performance Marketing",
+   "url": "https://careers.puffy.com/roles/senior-director-performance-marketing",
+   "ats": "Puffy careers site (form join.careers.puffy.com)",
+   "firstPublished": "03/08/2026 (JSON-LD datePosted)",
+   "rule": "Exception to the 14-day rule approved by Dario 26/09/2026",
+   "letter": "Drive 1Q9p6uQ6F1-uj8RobdOdiOxrpy73fb7MHpm5skGRrwTY; merged letter + CV PDF",
+   "compensation": "Up to USD 240,000 total (base up to USD 200,000 + monthly bonus up to 20%)",
+   "status": "Ready - awaiting Dario"
+  },
+  {
+   "order": 2,
+   "company": "Pragmatike (for an AI cloud infrastructure startup)",
+   "role": "Chief Marketing Officer (EMEA - Remote)",
+   "url": "https://jobs.ashbyhq.com/pragmatike/d50432f6-c724-4991-ba48-4e2a5d43cbda",
+   "ats": "Ashby (recruiter)",
+   "firstPublished": "14/09/2026",
+   "rule": "Inside the 14-day window on 28/09/2026 (last day)",
+   "letter": "Drive 1-cEbJdNBgvOnxnVgY3i80OsYXsX1N6ARtP60ls9kKDk; form has no letter field, so letter merged in front of the CV",
+   "form": "Name, Email, Resume, LinkedIn, Location, Phone, Total years of experience (15), Ideal compensation (100000)",
+   "status": "Ready - awaiting Dario"
+  },
+  {
+   "order": 3,
+   "company": "Ruby Labs",
+   "role": "Performance Marketing Lead (Google & Microsoft Ads)",
+   "url": "https://jobs.ashbyhq.com/ruby-labs/15fe67f5-8451-4831-b8cb-e162a04569e7",
+   "ats": "Ashby (employer)",
+   "firstPublished": "10/07/2026",
+   "rule": "Exception (older than 14 days); earlier Ruby Labs application (Google Ads Manager, July) was rejected 04/08/2026, so no active application blocks it",
+   "letter": "Note for 'Anything else' (25/09 draft, opening sentence about the July application; unverified localisation sentence removed)",
+   "form": "CET +/-4h, availability, expected monthly gross EUR (8333), years (More than 10), English level, Google Ads years (12, since 2014), largest monthly Google Ads budget USD (about 2.7M, i.e. EUR 2.5M), coached/evaluated specialists (Yes), Microsoft Ads incl. Audience Network (Dario to answer)",
+   "status": "Ready - awaiting Dario"
+  },
+  {
+   "order": 4,
+   "company": "Easyship",
+   "role": "Head of Marketing",
+   "url": "https://job-boards.greenhouse.io/easyship/jobs/4701875006",
+   "ats": "Greenhouse (employer)",
+   "firstPublished": "03/08/2026 (Greenhouse first_published)",
+   "rule": "Exception (older than 14 days), sent at Dario's request 28/09/2026",
+   "letter": "Drive 12T-Piv7TQEcKxwUQqRQbZIwMd_kRAiRA_xBDFjwIoxI",
+   "form": "Location, visa sponsorship, notice period, expected salary, LinkedIn; cover letter optional",
+   "status": "Ready - awaiting Dario"
+  },
+  {
+   "order": 5,
+   "company": "Appsilon",
+   "role": "Head of Marketing",
+   "url": "https://appsilon-1739358905.teamtailor.com/jobs/8269841-head-of-marketing",
+   "ats": "Teamtailor (employer)",
+   "firstPublished": "26/08/2026 (JSON-LD datePosted)",
+   "rule": "Exception (older than 14 days), sent at Dario's request 28/09/2026",
+   "compensation": "Posting: 23,000 PLN per month, contractor (below the EUR 100k reference, above the void threshold)",
+   "letter": "Drive 1yUI8iifgEQ69P4JvyrPFA_Z9PoveGLRI1m5h-jggIsk",
+   "form": "Salary (monthly, contract type, currency), country, valid passport, source, location Remote/EUROPE; cover letter optional",
+   "status": "Ready - awaiting Dario"
+  }
  ],
  "submitted": [],
- "skipped": []
+ "skipped": [],
+ "APPLIED_updates": [
+  {
+   "type": "rejection",
+   "verify": {
+    "Company": "ScraperAPI (saas.group)",
+    "Job title": "Growth Marketing Specialist"
+   },
+   "expected_row": 35,
+   "current_STATUS": "Submitted 24/09/2026",
+   "set": {
+    "STATUS": "Rejected 28/09/2026"
+   },
+   "append_to_Actions": " | Rejected - saas.group Talent Team email, reported by Dario 28/09/2026."
+  }
+ ],
+ "activity_log": [
+  {
+   "Activity ID": "CLAUDE-20260928-REJECT-SAASGROUP",
+   "Front": "DARIO",
+   "Activity type": "Status update",
+   "Target": "ScraperAPI (saas.group) - Growth Marketing Specialist",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Dario forwarded the saas.group Talent Team rejection email on 28/09/2026.",
+   "Outcome": "APPLIED STATUS set to Rejected 28/09/2026 (applied 24/09/2026).",
+   "Next step": "None; saas.group invites re-applying to other roles in its 23 brands."
+  }
+ ]
 }
