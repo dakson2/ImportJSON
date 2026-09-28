@@ -2,10 +2,10 @@
 """EOJN RH monitor for Adaxa (Front B): Croatian public buyers of digital advertising.
 
 EOJN (https://eojn.hr) grids read from a JSON API that accepts the anonymous token every page carries
-(<input id="uiUserToken">) plus the session cookies. See adx/crawl/WORKFLOW-crawl-v2.md, Addenda 6 and 7.
+(<input id="uiUserToken">) plus the session cookies. See adx/UPUTE.md, section 9.
 
 Usage (stdlib only):
-  python3 eojn_monitor.py refresh [--since 2024-01-01] [--out adx/adaxa/eojn-buyers.json]
+  python3 eojn_monitor.py refresh [--since 2024-01-01] [--out adx/data/eojn-buyers.json]
       Pull advertising/marketing contracts from the contract register, classify them, aggregate per buyer.
   python3 eojn_monitor.py new --since YYYY-MM-DD
       Relevant contracts published since the date, open tenders, prior market consultations, and plan items changed
@@ -229,7 +229,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("refresh")
     r.add_argument("--since", default="2024-01-01")
-    r.add_argument("--out", default="adx/adaxa/eojn-buyers.json")
+    r.add_argument("--out", default="adx/data/eojn-buyers.json")
     n = sub.add_parser("new")
     n.add_argument("--since", required=True)
     b = sub.add_parser("buyer")
