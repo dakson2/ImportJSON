@@ -1,0 +1,205 @@
+{
+ "APPLIED_append": [
+  {
+   "Date found": "26/09/2026",
+   "Application deadline": "Not stated",
+   "Job title": "Senior Director - Performance Marketing",
+   "Company": "Puffy",
+   "Job site": "Puffy careers site (form join.careers.puffy.com)",
+   "Work mode / Location": "Remote (LinkedIn: Remote Global; the page's structured data lists United States)",
+   "Engagement type": "Full-time",
+   "Compensation": "Up to USD 240,000 total (base up to USD 200,000 + monthly bonus up to 20%)",
+   "Availability status": "Submitted 28/09/2026. Exception to the 14-day rule approved by Dario 26/09/2026: first posted 03/08/2026 (careers.puffy.com datePosted); LinkedIn copies re-listed 17/09/2026.",
+   "Fit score": 80,
+   "Priority": "Applied - do not duplicate",
+   "Work description": "Owns the paid media engine of a USD 1B+ D2C mattress brand: multi-million monthly budgets on Google (brand/non-brand search, PMax, Shopping) and Meta, pause/hold/scale decision systems, measurement and incrementality, creative system, new channels; reports to the CEO; leads a Senior Manager PPC.",
+   "Url": "https://careers.puffy.com/roles/senior-director-performance-marketing",
+   "Tag 1": "Google Ads",
+   "Tag 2": "Meta Ads",
+   "Tag 3": "Director",
+   "Tag 4": "Remote",
+   "Actions": "Wait for the online skills-test invitation (check spam; 4-hour inactivity timer); then case study. Follow up ~12/10/2026.",
+   "STATUS": "Submitted 28/09/2026",
+   "GOOGLE DRIVE FOLDER Name/Url": "https://docs.google.com/document/d/1Q9p6uQ6F1-uj8RobdOdiOxrpy73fb7MHpm5skGRrwTY/edit"
+  }
+ ],
+ "APPLIED_update_rejection": {
+  "type": "rejection",
+  "verify": {
+   "Company": "ScraperAPI (saas.group)",
+   "Job title": "Growth Marketing Specialist"
+  },
+  "expected_row": 35,
+  "current_STATUS": "Submitted 24/09/2026",
+  "set": {
+   "STATUS": "Rejected 28/09/2026"
+  },
+  "append_to_Actions": " | Rejected - saas.group Talent Team email, reported by Dario 28/09/2026."
+ },
+ "Found_positions_void": [
+  {
+   "find": {
+    "Company contains": "Pragmatike",
+    "Job title starts with": "Chief Marketing Officer"
+   },
+   "set": {
+    "Priority": "VOID - Dario 28/09/2026"
+   }
+  },
+  {
+   "find": {
+    "Company contains": "Ruby Labs",
+    "Job title starts with": "Performance Marketing Lead"
+   },
+   "set": {
+    "Priority": "VOID - Dario 28/09/2026"
+   }
+  },
+  {
+   "find": {
+    "Company contains": "asyship",
+    "Job title starts with": "Head of Marketing"
+   },
+   "set": {
+    "Priority": "VOID - Dario 28/09/2026"
+   }
+  },
+  {
+   "find": {
+    "Company contains": "Appsilon",
+    "Job title starts with": "Head of Marketing"
+   },
+   "set": {
+    "Priority": "VOID - Dario 28/09/2026"
+   }
+  }
+ ],
+ "ADAXA_JAVNA_NABAVA_append": [
+  {
+   "Buyer ID": "PB-0055",
+   "Buyer": "MINISTARSTVO RADA, MIROVINSKOGA SUSTAVA, OBITELJI I SOCIJALNE POLITIKE",
+   "OIB": "",
+   "Region": "",
+   "Category": "Marketing",
+   "Fit score": 3,
+   "Priority": "C",
+   "Adaxa angle": "Digital part of a national communication campaign, as a partner of the winning agency",
+   "Last contract date": "",
+   "Last contract": "",
+   "Incumbent": "",
+   "Last value EUR": 0,
+   "2024 EUR": 0,
+   "2025 EUR": 0,
+   "2026 EUR": 0,
+   "Usual month": "",
+   "Expected next purchase": "Tender expected after the prior consultation (09-17/09/2026)",
+   "Open 2026 plan item": "Usluga informiranja, podizanja svijesti, promidžbe i provedbe komunikacijskih aktivnosti (EUR 379,200, prior consultation)",
+   "EOJN link": "https://eojn.hr/prior-consultation-eo/95513",
+   "Adaxa Lead ID": "",
+   "Status": "Monitor",
+   "Next action": "Watch for the tender; if it is published, contact bidding agencies about the digital part",
+   "Next check": "15/10/2026",
+   "Last checked": "28/09/2026",
+   "Notes": "Found by the EOJN monitor (prior market consultations) on 28/09/2026."
+  }
+ ],
+ "DAILY_CONTROL_append": {
+  "Date": "28/09/2026",
+  "Front A target": 10,
+  "Front A submitted": 1,
+  "Front A remaining": 9,
+  "Qualified shortlist": "No new role passes all filters. For Dario's decision (weaker, LinkedIn dates only): 1) Neon Growth - Director, DTC Performance Marketing; 2) 42DM - Senior B2B Marketing Manager.",
+  "Packages ready": "28/09 letters for Pragmatike, Ruby Labs (note), Easyship and Appsilon were prepared and then voided by Dario; Puffy sent.",
+  "Follow-ups due": "~01/10: Thyssen Ads, Brand Bolt, OnTheGoSystems, Powered by Search, Aimers, Adcubator, LAYER; ~08/10: Infobip, RNK Health, SimpleTiger, SolCrov; ~09/10: SDG, ennovationHUB, Taxes for Expats, Genesis, OnHires; ~12/10: Puffy",
+  "Front B qualified leads": 0,
+  "LinkedIn visits": 0,
+  "Adaxa Web visits": 0,
+  "Forms submitted": 1,
+  "Confirmations/evidence": "https://github.com/dakson2/ImportJSON/pull/2",
+  "Blockers": "Few new senior Google-first remote roles open to Croatia; most new remote listings on LinkedIn are German-language or limited to other countries.",
+  "Next action": "Follow-ups on 01/10 for the 16-17/09 applications; next crawl on the next working day; Adaxa outreach (Hrvatska Lutrija, Falkensteiner) when Dario is ready",
+  "Last updated": "28/09/2026"
+ },
+ "ACTIVITY_LOG_append": [
+  {
+   "Activity ID": "CLAUDE-20260928-SUB-PUFFY",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Submission",
+   "Target": "Puffy - Senior Director - Performance Marketing",
+   "Target URL": "https://careers.puffy.com/roles/senior-director-performance-marketing",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Dario submitted the application on 28/09/2026 (letter + CV).",
+   "Outcome": "Submitted. Exception to the 14-day rule approved by Dario 26/09/2026 (first posted 03/08/2026).",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "Watch for the online skills-test e-mail (check spam); follow up ~12/10/2026",
+   "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260928-REJECT-SAASGROUP",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Status update",
+   "Target": "ScraperAPI (saas.group) - Growth Marketing Specialist",
+   "Target URL": "",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Dario forwarded the saas.group Talent Team rejection e-mail.",
+   "Outcome": "APPLIED STATUS set to Rejected 28/09/2026 (applied 24/09/2026).",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "None",
+   "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260928-VOID",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Decision",
+   "Target": "Pragmatike CMO, Ruby Labs Performance Marketing Lead, Easyship Head of Marketing, Appsilon Head of Marketing",
+   "Target URL": "",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Letters and form answers were prepared on 28/09/2026 (Drive).",
+   "Outcome": "All four voided by Dario on 28/09/2026 (various reasons); not sent.",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "None",
+   "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260928-CRAWL",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "DARIO",
+   "Activity type": "Sourcing",
+   "Target": "Crawl 28/09 - window first published on/after 14/09",
+   "Target URL": "",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Refreshed 808 employer ATS boards (807 ok, 36,837 postings); aggregators (Jobgether, Jobicy, Remotive, RemoteOK, WWR, Working Nomads, Arbeitnow, TheMuse, Landing.jobs, DOU, posao.hr); Himalayas with country=Croatia (516 roles); Remote Rocketship (649 openings); 64 Workday tenants; Workable global small pass (533 postings); LinkedIn public search, 18 keywords incl. 'remote' variants x Croatia / European Union / EMEA / Worldwide (2,326 roles, 1,518 relevant by title). Window: first published on/after 14/09/2026.",
+   "Outcome": "No new role passes all filters. New in-window roles failed: Tameson Marketing Analytics Specialist (mid-level), Finyard CRM & Lifecycle Marketing Lead (not paid search), Forbes Advisor SEM Campaign Manager (3+ years, mid-level), German-language roles (arboro, ProviPanda, automadeit, Zimmer Consulting, Instaffo, NATURTREU; Adbaker Germany-only), social/app-first (Admiral Media, SaaSlyte, Talent Hackers), Amazon-only (Zazu Digital Talent), location-locked (Blacksmith Agency, BairesDev, FusionAuth, Directive, Roadsoft, Bizneo HR, alist.ae). Two weaker options for Dario, dates from LinkedIn only (employer ATS not found): Neon Growth - Director, DTC Performance Marketing (fully remote agency, Meta + Google) and 42DM - Senior B2B Marketing Manager (fully remote B2B agency).",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "Dario picks by number (Neon Growth, 42DM) or skips; next crawl on the next working day",
+   "Notes": ""
+  },
+  {
+   "Activity ID": "CLAUDE-20260928-ADAXA",
+   "Date/time": "<current UTC ISO time>",
+   "Front": "ADAXA",
+   "Activity type": "Sourcing",
+   "Target": "Adaxa (Front B) - EOJN monitor, TED, job-ad signals",
+   "Target URL": "https://eojn.hr",
+   "Related ID": "Q-20260911-DARIO",
+   "Action": "Ran eojn_monitor.py new --since 26/09 (contracts, open procedures, prior market consultations, plan items), TED since 25/09, posao.hr marketing ads and Croatian LinkedIn marketing ads.",
+   "Outcome": "No new relevant EOJN contracts or plan changes since 26/09; open procedures unchanged (CERP deadline 05/10, HP deadline 19/10; HP re-published on TED on 28/09 as 664429-2026). New signal: Ministry of Labour prior market consultation for an information and communication campaign (EUR 379,200, closed 17/09), added to ADAXA JAVNA NABAVA as PB-0055 (C). TED EU-wide: only local-language contracts (SE, ES, FR). Croatian job ads: posao.hr marketing ads unchanged (Falkensteiner still open); LinkedIn Croatia marketing roles are in-house roles at large brands. No new ADAXA LEADS.",
+   "Evidence / confirmation URL": "https://github.com/dakson2/ImportJSON/pull/2",
+   "Next step": "Weekly EOJN check; first renewal outreach (Zracna luka Osijek) in October-November",
+   "Notes": ""
+  }
+ ],
+ "WORK_QUEUE_update": {
+  "match": {
+   "Queue ID": "Q-20260911-DARIO"
+  },
+  "set": {
+   "Last updated": "<current UTC ISO time>",
+   "Next action": "Follow-ups on 01/10 for the 16-17/09 applications; next crawl on the next working day; Adaxa outreach (Hrvatska Lutrija, Falkensteiner) when Dario is ready",
+   "Notes": "28/09: Puffy sent; saas.group rejected; Pragmatike, Ruby Labs, Easyship, Appsilon voided; crawl 28/09 logged in CLAUDE-20260928-CRAWL."
+  }
+ }
+}

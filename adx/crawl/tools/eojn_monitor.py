@@ -8,7 +8,8 @@ Usage (stdlib only):
   python3 eojn_monitor.py refresh [--since 2024-01-01] [--out adx/adaxa/eojn-buyers.json]
       Pull advertising/marketing contracts from the contract register, classify them, aggregate per buyer.
   python3 eojn_monitor.py new --since YYYY-MM-DD
-      Relevant contracts published since the date, open tenders, and plan items changed since the date.
+      Relevant contracts published since the date, open tenders, prior market consultations, and plan items changed
+      since the date.
   python3 eojn_monitor.py buyer "<name fragment>"
       Every contract, plan item and procedure of one buyer.
 
@@ -184,6 +185,13 @@ def cmd_new(a):
         if classify(r.get("Name")) or (r.get("CPVExtended") or "").startswith(("7934", "79416")):
             print(f"  {(r.get('SubmissionDeadline') or '')[:10]} | {r.get('ContractingBody')} | {r.get('Name')} | "
                   f"EUR {r.get('EstimatedValue')} | {r.get('ProcedureType')} | https://eojn.hr/tender-eo/{r['Id']}")
+    print(f"\n== Prior market consultations published since {a.since} (early signal of larger tenders)")
+    rows, _ = e.all("PriorConsultationsAll", [terms, "and", ["NoticePublishDate", ">=", a.since]])
+    for r in sorted(rows, key=lambda r: r.get("NoticePublishDate") or ""):
+        if not (classify(r.get("Name")) or (r.get("CPVExtended") or "").startswith(("7934", "79416"))):
+            continue
+        print(f"  {(r.get('NoticePublishDate') or '')[:10]} | closes {(r.get('PriorConsultClosingDate') or '')[:10]} | {r.get('ContractingBody')} | "
+              f"{r.get('Name')} | EUR {r.get('EstimatedValue')} | https://eojn.hr/prior-consultation-eo/{r['Id']}")
     print(f"\n== Plan items (2026-2027) changed since {a.since}")
     words = any_of("PlanTenderName", ["oglaš", "Oglaš", "OGLAŠ", "digitaln", "Digitaln", "društvenim mrežama", "Google", "marketin", "Marketin"])
     rows, _ = e.all("PlanItemsPublic", [[["PlanYear", "=", 2026], "or", ["PlanYear", "=", 2027]], "and",

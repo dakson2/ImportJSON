@@ -397,3 +397,17 @@ two are linked by "Adaxa Lead ID".
 Do not propose a second role at a company that already has an active application in APPLIED (not Rejected, not Closed).
 On 26/09 Infobip's Senior Digital Advertising Specialist was put to Dario although his Infobip application from 24/09 was
 still open; he rightly asked why. Check APPLIED by company before listing a candidate.
+
+---
+
+## Addendum 8, 28/09 — prior market consultations, and what the "remote" keywords added
+
+- `eojn_monitor.py new` now also lists **prior market consultations** (`PriorConsultationsAll`, detail page
+  `/prior-consultation-eo/<Id>`). A consultation precedes an open procedure above the EU thresholds by weeks, so it is the
+  earliest public signal of a large campaign tender. On 28/09 it surfaced a Ministry of Labour communication campaign
+  (EUR 379,200, consultation 09-17/09). Only advertising/PR CPV codes or marketing names are printed.
+- Adding `google ads remote`, `ppc remote`, `paid search remote` and `performance marketing remote` to the LinkedIn keywords
+  (Addendum 6, "Limit") found about 20 extra remote roles on 28/09. Most were German-language ads from German companies
+  ("m/w/d") or roles limited to one country, so the gain for Dario's rules was small; keep the variants, they are cheap.
+- Check `adx/STATUS-2026-09-15.md` §7 (standing rules) before listing candidates: a role Dario has paused is not listed,
+  and candidates go to him as a numbered list; packages are prepared only for the numbers he picks.
