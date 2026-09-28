@@ -202,7 +202,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
    - Za spajanje koristi pypdf; prije importa postavi `sys.modules['cryptography']=None`.
 3. Pismo ima **1 stranicu**. Ako forma nema polje za pismo, pismo i CV spajaju se u jedan PDF.
 4. Za ispravak sadržaja napravi novi dokument, a stari ukloni s `trash_file`. `update_file` mijenja samo naslov i mapu.
-5. CV: `Dario_Suler_Ultimate_CV.pdf` (Drive `13-k6kp3so90pImf7E_xyHKNjfJQARQAu`).
+5. CV: `Dario_Suler_CV_2026.pdf` (Drive `1sYObHASxiW6o8PWTW2yfDgybhHHGaMEN`, od 28/09/2026). Stari `Dario_Suler_Ultimate_CV.pdf` (`13-k6kp3so90pImf7E_xyHKNjfJQARQAu`) više se ne koristi jer navodi >€5M.
 6. Zaglavlje (ime, grad, e-mail, telefon, LinkedIn) kopiraj iz zadnjeg pisma na Driveu (Puffy, 28/09). Ne upisuj ga u repo.
 7. Plaća, kad forma pita: „€100,000 annual gross, flexible depending on final scope, bonus structure and contract setup”.
 
@@ -212,7 +212,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - EMEA/APAC za međunarodnu e-commerce grupu, preko Adaxe:
   - usmjeravao 15+ agencijskih PPC specijalista u višerazinskom MCC-u;
   - izvještavao regionalne voditelje;
-  - nadzor nad >€5M mjesečno plaćenih medija.
+  - regionalna odgovornost za plaćene medije do **€7,8M mjesečno na vrhuncu** (Dario, 28/09/2026). Ovu brojku koristi svugdje, u CV-u, pismima i formama; „>€5M” se više ne koristi.
 - RSA feed po kampanji, koji skripta učitava svaki sat.
 - Sustav za praćenje SERP-a: Google Ads + Apps Script + GPT.
 - Iskustvo s politikama osjetljivih kategorija.
@@ -228,14 +228,15 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - Predavač na Algebri. **Predmet nije provjeren, ne navoditi ga.**
 - GA4, GTM, Looker Studio, Tableau, Google Sheets, Apps Script.
 - B2B iskustvo preko Adaxe.
+- Demand Gen i YouTube (Dario, 28/09/2026).
+- AI lokalizacija oglasa i PPC materijala za DE, FR i JP, uz ljudsku provjeru (Dario, 28/09/2026).
 
 **Ne tvrditi (nije provjereno):**
 - SQL, BigQuery, pLTV;
 - AppsFlyer/Adjust, offline conversion import;
-- Demand Gen, Apple Search Ads, Reddit/Quora Ads, Microsoft Audience Network;
+- Apple Search Ads, Reddit/Quora Ads, Microsoft Audience Network;
 - zapošljavanje ljudi (hiring);
 - subscription aplikacije, incrementality, kreativni sustavi, high-AOV;
-- lokalizacijski workflow;
 - EU državljanstvo;
 - „taught digital marketing”.
 
@@ -336,7 +337,7 @@ U Work postoje dvije kartice:
 - Work: https://docs.google.com/spreadsheets/d/15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4
 - Base (tagovi; `All` ima 481 red): https://docs.google.com/spreadsheets/d/1JoqSmuT4TengPkDyLbngv7V2E0WM715kk59bvOos5Ks
 - Glavna mapa projekta na Driveu: `1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-`
-- CV na Driveu: `13-k6kp3so90pImf7E_xyHKNjfJQARQAu`
+- CV na Driveu: `1sYObHASxiW6o8PWTW2yfDgybhHHGaMEN` (`Dario_Suler_CV_2026.pdf`)
 - Gmail oznaka: `1.2.ADX-JOB` (`Label_24`)
 - Repo: https://github.com/dakson2/ImportJSON/tree/claude/dario-adaxa-project-9u32ik/adx
 - Formati ID-jeva:

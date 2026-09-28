@@ -84,6 +84,17 @@ Za ove tvrtke ne predlaže se druga rola.
 
 ## Dnevnik
 
+### 28/09/2026 · Claude · Novi CV, €7,8M svugdje, Puffy test i drugi crawl
+- **CV:** novi glavni CV je `Dario_Suler_CV_2026.pdf` (Drive `1sYObHASxiW6o8PWTW2yfDgybhHHGaMEN`). Ima 2 stranice, redizajniran je, s AI sekcijom i datumima iz tablice ALL. Dario je odlučio da se svugdje koristi **€7,8M** mjesečno na vrhuncu; UPUTE §8 i §11 su ažurirane. Demand Gen i AI lokalizacija (DE/FR/JP) prebačeni su u provjerene činjenice; Algebra ostaje samo „Lecturer”, bez predmeta.
+- **Puffy:** 28/09 u 07:03 stigla je pozivnica na skills assessment. Part 1 traje 34 min, proctored, bez AI-ja; Part 2 je case study od 30 min s AI-jem, upload jedne stranice. Rok je 30/09 u 07:03. Istraživanje tvrtke i priprema su u Google Calendar eventu (dakson2, 30/09 04:03–06:03). Tvrtka je stvarna, a lijevak automatiziran. Crvene zastavice: CEO-u je sud naložio da plati $400k dublinskom fondu, class action Webb v. Puffy zbog lažnih popusta, a na ovo mjesto stalno traže nove ljude (Head of PPC prije 11 mjeseci).
+- **Drugi crawl 28/09** (prozor od 14/09):
+  - izvori: LinkedIn 896, Jobgether 3.861, Remote Rocketship 774, Himalayas HR 401, Workable global 289, WWR i Working Nomads, 206 ATS boardova;
+  - rezultat: 735 jedinstvenih marketinških rola, 162 ručno pregledane;
+  - jedan kandidat za Darijevu odluku: **Sweat Pants Agency — Senior Google Ads Buyer, DTC eCommerce (Remote)**, Workable `BEA85FB812`, prva objava 27/09. Hiring je worldwide, uz pozive u US Eastern satima; plaća nije navedena;
+  - slabiji: Cranberry Panda (Director, Meta-first, €150–200K), Mother's Earth (Head of Growth, Meta-first);
+  - Dario je rekao da se ništa ne šalje dok se ne riješi Puffy.
+- Tablica: ništa (nema naloga).
+
 ### 28/09/2026 · Codex · Drive pregled i pripremljeno čišćenje
 - U glavnoj mapi ADAXA JOBS zatečena je 41 stavka. Trenutačni izvor pravila su `adx/UPUTE.md` i ovaj log na grani `claude/dario-adaxa-project-9u32ik`; Work i Base ostaju aktivne tablice.
 - Stvorena je prazna [ARHIVA — stari pregledi i neaktivni paketi](https://drive.google.com/drive/folders/1QSVGrzQs4_b4ngrODJJKhZUHg33REXzh). **Nijedan postojeći dokument još nije premješten.** Drive konektor vraća `appNotAuthorizedToFile` za pisanje u postojeće datoteke; prijava u pregledniku nije dovršena. Premještanje ostaje otvoreno.
