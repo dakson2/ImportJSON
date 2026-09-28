@@ -14,7 +14,7 @@ Zajednički dnevnik za Claude i Codex. Pravila rada su u [`UPUTE.md`](UPUTE.md);
 
 ### Nalozi za tablicu
 
-#### W-001 · `PENDING` · Nadoknada 25/09–28/09
+#### W-001 · `IN PROGRESS` · Nadoknada 25/09–28/09
 
 Nalog je 28/09/2026 pripremio Claude. Izvršava ga Codex ili drugi AI s pravom pisanja u Work, po pravilima **R1–R9 iz UPUTE §10**.
 
