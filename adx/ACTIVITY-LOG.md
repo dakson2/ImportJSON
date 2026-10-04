@@ -32,7 +32,7 @@ Nema otvorenih naloga.
 |---|---|
 | **01/10/2026** | Thyssen Ads (poslano 16/09); Brand Bolt, OnTheGoSystems, Powered by Search, Aimers, Adcubator, LAYER (17/09) |
 | **08/10/2026** | Infobip, RNK Health (Toogeza), SimpleTiger (24/09); SolCrov (datum slanja nije zabilježen) |
-| **09/10/2026** | Social Discovery Group, ennovationHUB, Taxes for Expats, Genesis, OnHires (25/09) |
+| **09/10/2026** | Social Discovery Group, Taxes for Expats, Genesis, OnHires (25/09) |
 | **12/10/2026** | Puffy (28/09). Do tada pratiti mail s pozivom na online skills test (provjeri i spam; test ima timer od 4 h neaktivnosti). |
 
 Ako Taxes for Expats pozove na razgovor, treba pripremiti Google Ads audit i demo AI workflowa.
@@ -54,15 +54,16 @@ Ako Taxes for Expats pozove na razgovor, treba pripremiti Google Ads audit i dem
 
 Popis vrijedi nakon što se izvrši W-001. Izvor istine je kartica APPLIED.
 
-**Aktivne (17):**
+**Aktivne (16):**
 - 16–17/09: Thyssen Ads, Brand Bolt, OnTheGoSystems, Powered by Search, Aimers, Adcubator, LAYER.
 - 24/09: Infobip, RNK Health (Toogeza), SimpleTiger, SolCrov.
-- 25/09: Social Discovery Group, ennovationHUB, Taxes for Expats, Genesis, OnHires (klijent).
+- 25/09: Social Discovery Group, Taxes for Expats, Genesis, OnHires (klijent).
 - 28/09: Puffy.
 
 Za ove tvrtke ne predlaže se druga rola.
 
 **Ne predlagati ponovo (Darijeve odluke i pravila):**
+- **ennovationHUB — VOID 28/09:** prijava za Senior Google Ads Specialist odbijena (Darijeva dojava 28/09); bez follow-upa i novih prijedloga za tvrtku. Svibanjska rola nije bila poslana.
 - **VOID 28/09:** Pragmatike (CMO), Ruby Labs (Performance Marketing Lead, Google & Microsoft Ads), Easyship (Head of Marketing), Appsilon (Head of Marketing).
 - **Skip 25/09:**
   - LottieFiles (Head of Growth);
@@ -78,11 +79,18 @@ Za ove tvrtke ne predlaže se druga rola.
   - UTTR (24/09);
   - Amplemarket (25/09);
   - ScraperAPI / saas.group (28/09);
+  - ennovationHUB, Senior Google Ads Specialist (Dario javio 28/09);
   - Ruby Labs Google Ads Manager (04/08).
 
 ---
 
 ## Dnevnik
+
+### 04/10/2026 · Codex · ennovationHUB odbijen / VOID; provjera baza i Drivea
+- Work, APPLIED r38: `Priority` → `VOID - Dario 28/09/2026`; `Actions` → odbijenica, bez follow-upa; `STATUS` → `Rejected 28/09/2026`. Datum je dan Darijeve dojave; datum e-maila nije zasebno provjeren.
+- Work, Found positions r16 (druga, svibanjska rola): `Availability status` pojašnjen kao ranije preskočen i tvrtka VOID; `Priority` → `VOID - Dario 28/09/2026`. Zaštićeni stupac Y ostao je prazan; nije označeno da je ta rola bila odbijena. ACTIVITY LOG r48 dodan je `CODEX-20261004-ENNOVATIONHUB-REJECT` u 2026-10-04T15:29:47.891Z. Bez duplikata.
+- Base je provjeren kao profil/tagovi, bez izmjena. Drive ADAXA JOBS ima 43 stavke u glavnoj mapi, arhiva je prazna. Pokušaj premještanja pisma ennovationHUB (`1vGnUKtanW7HTKauq_xQoCVqnTxuh2CFud_ZU6ljai8I`) odbijen je s 403 `appNotAuthorizedToFile`; ono i ranije pripremljena 22 premještaja ostaju otvoreni. Nijedan dokument nije obrisan.
+- Tablica: izravna Darijeva odluka, izvan W-naloga, prema UPUTE §3 i §10. [Work](https://docs.google.com/spreadsheets/d/15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4/edit) · [Drive](https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-).
 
 ### 28/09/2026 · Claude · Novi CV, €7,8M svugdje, Puffy test i drugi crawl
 - **CV:** novi glavni CV je `Dario_Suler_CV_2026.pdf` (Drive `1sYObHASxiW6o8PWTW2yfDgybhHHGaMEN`). Ima 2 stranice, redizajniran je, s AI sekcijom i datumima iz tablice ALL. Dario je odlučio da se svugdje koristi **€7,8M** mjesečno na vrhuncu; UPUTE §8 i §11 su ažurirane. Demand Gen i AI lokalizacija (DE/FR/JP) prebačeni su u provjerene činjenice; Algebra ostaje samo „Lecturer”, bez predmeta.
