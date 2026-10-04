@@ -88,7 +88,7 @@ Za ove tvrtke ne predlaže se druga rola.
 
 ### 04/10/2026 · Codex · ennovationHUB odbijen / VOID; provjera baza i Drivea
 - Work, APPLIED r38: `Priority` → `VOID - Dario 28/09/2026`; `Actions` → odbijenica, bez follow-upa; `STATUS` → `Rejected 28/09/2026`. Datum je dan Darijeve dojave; datum e-maila nije zasebno provjeren.
-- Work, Found positions r16 (druga, svibanjska rola): `Availability status` pojašnjen kao ranije preskočen i tvrtka VOID; `Priority` → `VOID - Dario 28/09/2026`. Zaštićeni stupac Y ostao je prazan; nije označeno da je ta rola bila odbijena. ACTIVITY LOG r48 dodan je `CODEX-20261004-ENNOVATIONHUB-REJECT` u 2026-10-04T15:29:47.891Z. Bez duplikata.
+- Work, Found positions r16 (druga, svibanjska rola): `Availability status` pojašnjen kao ranije preskočen i tvrtka VOID; `Priority` → `VOID - Dario 28/09/2026`. Pri prvom upisu Y16 je greškom nakratko popunjen; odmah je vraćen na izvorno prazno stanje i provjeren (UPUTE §10 R3). Nije označeno da je svibanjska rola bila odbijena. ACTIVITY LOG r48 dodan je `CODEX-20261004-ENNOVATIONHUB-REJECT` u 2026-10-04T15:29:47.891Z. Bez duplikata.
 - Base je provjeren kao profil/tagovi, bez izmjena. Drive ADAXA JOBS ima 43 stavke u glavnoj mapi, arhiva je prazna. Pokušaj premještanja pisma ennovationHUB (`1vGnUKtanW7HTKauq_xQoCVqnTxuh2CFud_ZU6ljai8I`) odbijen je s 403 `appNotAuthorizedToFile`; ono i ranije pripremljena 22 premještaja ostaju otvoreni. Nijedan dokument nije obrisan.
 - Tablica: izravna Darijeva odluka, izvan W-naloga, prema UPUTE §3 i §10. [Work](https://docs.google.com/spreadsheets/d/15Do6cDJLu4CeBDsfnOpVzV1ZuO09pzHvNMsL54m7jt4/edit) · [Drive](https://drive.google.com/drive/folders/1PajW6-eCWfcWzfE-E-4AXSDmW1r_jaJ-).
 
