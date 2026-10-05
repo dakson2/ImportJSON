@@ -86,6 +86,35 @@ Za ove tvrtke ne predlaže se druga rola.
 
 ## Dnevnik
 
+### 05/10/2026 · Claude · Crawl 05/10 (prva objava od 21/09) i EOJN
+- **Pretraženo:**
+  - LinkedIn: 808 kartica, 18 ključnih riječi × 4 lokacije, 29 detalja;
+  - Jobgether: 3.494;
+  - Remote Rocketship: 777;
+  - Himalayas HR: 441;
+  - Workable global: 286;
+  - WWR i Working Nomads;
+  - 209 ATS boardova (Greenhouse, Ashby, Lever, Workable, Recruitee, Teamtailor), iz URL-ova agregatora i seed liste.
+
+  Ukupno 748 jedinstvenih marketinških rola; 156 nakon automatskog filtera; ručno pregledani svi koji su otvoreni Europi.
+- **Ni jedna rola ne prolazi sve filtere.** Za Darijevu odluku:
+  - **(1) David Kennedy Recruitment (klijent: consumer adult-AI companionship): Senior Performance Marketer – Mainstream.** Remote Europe/Asia, B2B, traži $300K+ mjesečno pod osobnom kontrolom. Teamtailor 02/10. Neprovjereno: klijent je skriven, kanali nisu navedeni, plaća nije navedena. Kategorija odgovara iskustvu s osjetljivim kategorijama.
+  - **(2) Vysta Paid Media Group: Senior Google Ads Media Buyer.** LinkedIn EMEA 05/10; agencija koja radi samo Google Ads za e-commerce. Slabo: evergreen zapošljavanje (kopije u Indiji i APAC-u, careers stranica bez datuma), 3–5+ godina iskustva, plaća nije navedena.
+  - **(3) Chess.com: Senior Performance Marketing Manager.** Rippling, worldwide. Slabo: mobile UA (Meta, ASA, AppsFlyer) i preklapanje s US ET i PT.
+- **Otpali, s razlogom:**
+  - JobRack/Syroscape: $3.500–4.500 mjesečno, ispod praga;
+  - Reach Realm: Meta;
+  - Huzzle: Media Buyer, 3+ godine, contractor;
+  - Typeform: samo UK;
+  - Kaufland: Njemačka;
+  - Acquire: Njemačka, 200+ prijava;
+  - Londonske agencije: Hearts & Science, Omnicom, Ticketmaster, 3Search.
+- **EOJN** (`new --since 2026-09-28`):
+  - prethodno savjetovanje Hrvatskih autocesta za kampanju Crolibertas, €393.000, zatvara 06/10. Adaxa može ući samo kao digitalni partner medijske agencije;
+  - novi ugovori: Terme Bjelovar, digitalno oglašavanje €8.500 (Go2Digital); DRŽAVNE NEKRETNINE €10.880 (24sata);
+  - otvoreno: HP do 19/10, MPŠR praćenje medija do 09/10.
+- Tablica: ništa (nema naloga). Mail na dakson2 nema odgovora poslodavaca; prijave idu na dario.suler@gmail.com, koji nije dostupan.
+
 ### 04/10/2026 · Codex · Status prijava i ciljani crawl 04/10
 - Work/APPLIED C2:D43 i Z2:Z43: **16 otvorenih** sa statusom `Submitted` (7 od 16–17/09, 4 od 24/09 uključujući SolCrov bez datuma, 4 od 25/09, Puffy od 28/09). ennovationHUB je odbijen i izvan broja. Nije provjeravan inbox ni slanje follow-upova; broj je stanje evidencije.
 - Ciljani crawl za najraniju objavu od 20/09 nadalje: javni rezultati Workable, Ashby i Greenhouse, te LinkedIn, Himalayas, Remote Rocketship, We Work Remotely i Working Nomads za otkrivanje; pojedini oglasi provjereni na poslodavčevu ATS-u gdje je bio dostupan. **0 novih preporuka** koje su prošle sve filtere i provjeru datuma/geografije; nije rađen puni API crawl svih boardova.
