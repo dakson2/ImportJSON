@@ -87,7 +87,12 @@ Filteri se primjenjuju ovim redom.
 4. **Kanal:** težište je Google / paid search.
    - Meta, Microsoft i Amazon su sekundarni.
    - Native (Taboola, Outbrain, MGID) i čisti paid social su druga disciplina.
-5. **Plaća:** referenca je ~€100.000 bruto godišnje. Raspon ispod pola reference je void, a ne predmet pregovora.
+5. **Plaća** (Dario, 05/10/2026):
+   - referenca je ~€100.000 bruto godišnje;
+   - **donji prag je €3.500 bruto mjesečno** (~€42.000 godišnje);
+   - rola ispod praga, i rola čiji je cijeli raspon ispod praga, je void;
+   - rola između €3.500/mj i ~€4.200/mj (pola reference), ili raspon koji zahvaća prag, ide na listu s oznakom **⚠️ niska plaća**: navedi raspon i preračun u EUR;
+   - neiskazana plaća nije razlog za odbacivanje, ali se navodi.
 6. **Integritet:** odbij cloaking, anti-detect, izbjegavanje banova, nabavu računa ili Business Managera od resellera i siva tržišta.
    - Pročitaj **cijeli** tekst zahtjeva. Fortis Media je imao cloaking tek iza 1.500. znaka.
    - Tracker sam po sebi (Voluum, Keitaro, Binom) nije prekršaj.

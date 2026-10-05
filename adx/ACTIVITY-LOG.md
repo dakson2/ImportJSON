@@ -86,6 +86,14 @@ Za ove tvrtke ne predlaže se druga rola.
 
 ## Dnevnik
 
+### 05/10/2026 · Dario / Claude · UPUTE §4.5: prag plaće €3.500/mj
+- Dario je spustio prag plaće na **€3.500 bruto mjesečno**. Role između praga i ~€4.200/mj idu na listu s oznakom ⚠️ niska plaća.
+- Ponovno provjereno iz crawla 05/10: **Syroscape (preko JobRacka), Senior Performance Marketing Manager**.
+  - Plaća $3.500–4.500 mjesečno (~€3.000–3.900), pa je ⚠️ niska plaća.
+  - Uvjeti: Google + Bing primarno, B2B SaaS, AI alati dio posla, fully remote, preklapanje s US ET 7–15 h.
+  - **Na Workableu kreirano 23/06/2026**, ponovno objavljeno 29/09. Pada na pravilu od 14 dana; moguće samo uz Darijevu iznimku.
+- Tablica: ništa.
+
 ### 05/10/2026 · Claude · Crawl 05/10 (prva objava od 21/09) i EOJN
 - **Pretraženo:**
   - LinkedIn: 808 kartica, 18 ključnih riječi × 4 lokacije, 29 detalja;
