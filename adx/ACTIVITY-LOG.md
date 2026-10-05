@@ -86,6 +86,21 @@ Za ove tvrtke ne predlaže se druga rola.
 
 ## Dnevnik
 
+### 05/10/2026 · Dario / Claude · Izabrani 1 i 4; pisma spremna
+- Dario je izabrao:
+  - **(1) David Kennedy Recruitment — Senior Performance Marketer, Mainstream** (adult-AI companionship);
+  - **(4) Syroscape preko JobRacka — Senior Performance Marketing Manager.** Iznimka za datum: kreirano 23/06, ponovno objavljeno 29/09. ⚠️ niska plaća: $3.500–4.500/mj.
+- Pisma na Driveu, po 1 stranica:
+  - [DK Mainstream](https://docs.google.com/document/d/19u_stMNqML5RZ2iteWAy0l1E66m1cNWPZkTDgtxrGOE/edit) · prijava: [Teamtailor](https://davidkennedyrecruitment.teamtailor.com/jobs/8490833-senior-performance-marketer-mainstream);
+  - [Syroscape](https://docs.google.com/document/d/1iH8wI2Re7dpMrjG1cR7Ym2QK0lWn429WsDJ1FUQsEqw/edit) · prijava: [JobRack Workable A1EBE780C4](https://apply.workable.com/jobrack/j/A1EBE780C4/).
+- Spojeni PDF-ovi (pismo + CV v3) predani su Dariju.
+- Gapovi iskazani u pismima:
+  - DK: subscription aplikacije (nema iskustva);
+  - Syroscape: B2B SaaS.
+- Namjerno izostavljeno jer je neprovjereno: offline conversion import, Hyros.
+- Nije poslano; šalje Dario.
+- Tablica: ništa dok Dario ne javi slanje. Tada slijedi nalog za APPLIED, Found positions i ACTIVITY LOG.
+
 ### 05/10/2026 · Dario / Claude · UPUTE §4.5: prag plaće €3.500/mj
 - Dario je spustio prag plaće na **€3.500 bruto mjesečno**. Role između praga i ~€4.200/mj idu na listu s oznakom ⚠️ niska plaća.
 - Ponovno provjereno iz crawla 05/10: **Syroscape (preko JobRacka), Senior Performance Marketing Manager**.
