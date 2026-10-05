@@ -14,7 +14,33 @@ Zajednički dnevnik za Claude i Codex. Pravila rada su u [`UPUTE.md`](UPUTE.md);
 
 ### Nalozi za tablicu
 
-Nema otvorenih naloga.
+#### W-002 · PENDING · Claude · 05/10/2026 — David Kennedy poslan, Syroscape VOID
+Koraci (UPUTE §10, R1–R9):
+1. **APPLIED:** dodaj red za David Kennedy (dedupe Company + Job title).
+2. **Found positions:** dodaj dva reda. Syroscape `Priority` = `VOID - Dario 05/10/2026`.
+3. **ACTIVITY LOG:** dodaj dva zapisa.
+4. **DAILY CONTROL:** dodaj red za 05/10/2026.
+5. **WORK QUEUE `Q-20260911-DARIO`:** postavi `Last updated`, `Next action` i `Notes` (prepisuju se samo te tri ćelije).
+
+```json
+{
+ "APPLIED": [
+  {"Date found": "05/10/2026", "Application deadline": "Not stated", "Job title": "Senior Performance Marketer - Mainstream", "Company": "David Kennedy Recruitment (client: consumer adult-AI companionship company)", "Job site": "Teamtailor / recruiter direct", "Work mode / Location": "Remote (Europe/Asia)", "Engagement type": "B2B preferred", "Compensation": "Not stated", "Availability status": "Teamtailor 02/10/2026; client not named; channels not named; no integrity red flags found", "Fit score": 80, "Priority": "A - Dario 05/10/2026", "Work description": "Hands-on paid acquisition for a consumer AI (adult companionship) company: personally controlled spend $300K+/month, CAC/ROAS/LTV/payback ownership, creative testing decisions, subscription funnels, account-restriction handling.", "Url": "https://davidkennedyrecruitment.teamtailor.com/jobs/8490833-senior-performance-marketer-mainstream", "Tag 1": "Paid Acquisition", "Tag 2": "Sensitive Category", "Tag 3": "Consumer AI", "Tag 4": "Remote", "Tag 5": "B2B", "Actions": "Submitted 05/10/2026 by Dario. Letter: https://docs.google.com/document/d/19u_stMNqML5RZ2iteWAy0l1E66m1cNWPZkTDgtxrGOE/edit . Follow-up ~19/10/2026.", "STATUS": "Submitted 05/10/2026"}
+ ],
+ "Found positions": [
+  {"Date found": "05/10/2026", "Application deadline": "Not stated", "Job title": "Senior Performance Marketer - Mainstream", "Company": "David Kennedy Recruitment (client: consumer adult-AI companionship company)", "Job site": "Teamtailor", "Work mode / Location": "Remote (Europe/Asia)", "Engagement type": "B2B preferred", "Compensation": "Not stated", "Availability status": "Teamtailor 02/10/2026; applied 05/10/2026", "Fit score": 80, "Priority": "A - Dario 05/10/2026", "Url": "https://davidkennedyrecruitment.teamtailor.com/jobs/8490833-senior-performance-marketer-mainstream"},
+  {"Date found": "05/10/2026", "Application deadline": "Not stated", "Job title": "Senior Performance Marketing Manager", "Company": "Syroscape (via JobRack)", "Job site": "Workable (JobRack) / LinkedIn", "Work mode / Location": "Fully remote, US ET 7am-3pm", "Engagement type": "Full time", "Compensation": "$3,500-4,500/month (low pay flag)", "Availability status": "Workable A1EBE780C4 created 23/06/2026, republished 29/09/2026 (outside 14-day rule; exception considered). Letter prepared, not sent.", "Fit score": 72, "Priority": "VOID - Dario 05/10/2026", "Url": "https://apply.workable.com/jobrack/j/A1EBE780C4/"}
+ ],
+ "ACTIVITY LOG": [
+  {"Activity ID": "CLAUDE-20261005-CRAWL", "Date/time": "<current UTC ISO time>", "Front": "DARIO", "Activity type": "Sourcing", "Target": "Crawl 05/10 (first posted since 21/09)", "Target URL": "", "Related ID": "Q-20260911-DARIO", "Action": "LinkedIn 808, Jobgether 3,494, Remote Rocketship 777, Himalayas HR 441, Workable 286, WWR, Working Nomads, 209 ATS boards; EOJN since 28/09", "Outcome": "748 unique roles; 0 passed every filter; 3 offered to Dario; salary floor lowered to EUR 3,500/month", "Evidence / confirmation URL": "", "Next step": "Next crawl", "Notes": "Details in adx/ACTIVITY-LOG.md 05/10/2026"},
+  {"Activity ID": "CLAUDE-20261005-DKR-SUBMIT", "Date/time": "<current UTC ISO time>", "Front": "DARIO", "Activity type": "Application", "Target": "David Kennedy Recruitment - Senior Performance Marketer - Mainstream", "Target URL": "https://davidkennedyrecruitment.teamtailor.com/jobs/8490833-senior-performance-marketer-mainstream", "Related ID": "Q-20260911-DARIO", "Action": "Letter prepared by Claude; submitted by Dario", "Outcome": "Submitted 05/10/2026; Syroscape VOID by Dario", "Evidence / confirmation URL": "https://docs.google.com/document/d/19u_stMNqML5RZ2iteWAy0l1E66m1cNWPZkTDgtxrGOE/edit", "Next step": "Follow-up ~19/10/2026", "Notes": ""}
+ ],
+ "DAILY CONTROL": [
+  {"Date": "05/10/2026", "Front A target": 10, "Front A submitted": 1, "Front A remaining": 9, "Qualified shortlist": 4, "Packages ready": 2, "Follow-ups due": 7, "Blockers": "Market thin: 0 roles passed every filter; follow-ups from 01/10 not recorded as sent", "Next action": "Next crawl; confirm 01/10 follow-ups; Puffy status", "Last updated": "05/10/2026"}
+ ],
+ "WORK QUEUE": {"Queue ID": "Q-20260911-DARIO", "Last updated": "<current UTC ISO time>", "Next action": "Follow-ups: 01/10 batch (unconfirmed), 08/10, 09/10, 12/10 Puffy, 19/10 David Kennedy; next crawl", "Notes": "05/10: David Kennedy Recruitment (Mainstream) submitted; Syroscape VOID; salary floor EUR 3,500/month (UPUTE §4.5)."}
+}
+```
 
 ### Odluke koje čekaju Darija
 
@@ -33,6 +59,7 @@ Nema otvorenih naloga.
 | **01/10/2026** | Thyssen Ads (poslano 16/09); Brand Bolt, OnTheGoSystems, Powered by Search, Aimers, Adcubator, LAYER (17/09) |
 | **08/10/2026** | Infobip, RNK Health (Toogeza), SimpleTiger (24/09); SolCrov (datum slanja nije zabilježen) |
 | **09/10/2026** | Social Discovery Group, Taxes for Expats, Genesis, OnHires (25/09) |
+| **19/10/2026** | David Kennedy Recruitment — Senior Performance Marketer, Mainstream (05/10) |
 | **12/10/2026** | Puffy (28/09). Do tada pratiti mail s pozivom na online skills test (provjeri i spam; test ima timer od 4 h neaktivnosti). |
 
 Ako Taxes for Expats pozove na razgovor, treba pripremiti Google Ads audit i demo AI workflowa.
@@ -54,15 +81,17 @@ Ako Taxes for Expats pozove na razgovor, treba pripremiti Google Ads audit i dem
 
 Popis vrijedi nakon što se izvrši W-001. Izvor istine je kartica APPLIED.
 
-**Aktivne (16):**
+**Aktivne (17):**
 - 16–17/09: Thyssen Ads, Brand Bolt, OnTheGoSystems, Powered by Search, Aimers, Adcubator, LAYER.
 - 24/09: Infobip, RNK Health (Toogeza), SimpleTiger, SolCrov.
 - 25/09: Social Discovery Group, Taxes for Expats, Genesis, OnHires (klijent).
 - 28/09: Puffy.
+- 05/10: David Kennedy Recruitment (klijent: consumer adult-AI companionship).
 
 Za ove tvrtke ne predlaže se druga rola.
 
 **Ne predlagati ponovo (Darijeve odluke i pravila):**
+- **VOID 05/10:** Syroscape preko JobRacka (Senior Performance Marketing Manager); pismo pripremljeno, nije poslano. Ne predlagati: Vysta i Chess.com s liste od 05/10.
 - **ennovationHUB — VOID 28/09:** prijava za Senior Google Ads Specialist odbijena (Darijeva dojava 28/09); bez follow-upa i novih prijedloga za tvrtku. Svibanjska rola nije bila poslana.
 - **VOID 28/09:** Pragmatike (CMO), Ruby Labs (Performance Marketing Lead, Google & Microsoft Ads), Easyship (Head of Marketing), Appsilon (Head of Marketing).
 - **Skip 25/09:**
@@ -85,6 +114,11 @@ Za ove tvrtke ne predlaže se druga rola.
 ---
 
 ## Dnevnik
+
+### 05/10/2026 · Dario · David Kennedy poslan, Syroscape VOID
+- Poslano 05/10: **David Kennedy Recruitment — Senior Performance Marketer, Mainstream**. Follow-up oko 19/10.
+- **Syroscape (JobRack): VOID**, Darijeva odluka. Pismo ostaje na Driveu.
+- Tablica: **W-002 (PENDING)**.
 
 ### 05/10/2026 · Dario / Claude · Izabrani 1 i 4; pisma spremna
 - Dario je izabrao:
