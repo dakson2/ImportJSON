@@ -335,7 +335,7 @@ Za ove tvrtke ne predlaže se druga rola.
   - prethodno savjetovanje Hrvatskih autocesta za kampanju Crolibertas, €393.000, zatvara 06/10. Adaxa može ući samo kao digitalni partner medijske agencije;
   - novi ugovori: Terme Bjelovar, digitalno oglašavanje €8.500 (Go2Digital); DRŽAVNE NEKRETNINE €10.880 (24sata);
   - otvoreno: HP do 19/10, MPŠR praćenje medija do 09/10.
-- Tablica: ništa (nema naloga). Mail na dakson2 nema odgovora poslodavaca; prijave idu na dario.suler@gmail.com, koji nije dostupan.
+- Tablica: ništa (nema naloga). Mail na dakson2 nema odgovora poslodavaca; prijave idu na Darijevu drugu adresu, koja nije dostupna.
 
 ### 04/10/2026 · Codex · Status prijava i ciljani crawl 04/10
 - Work/APPLIED C2:D43 i Z2:Z43: **16 otvorenih** sa statusom `Submitted` (7 od 16–17/09, 4 od 24/09 uključujući SolCrov bez datuma, 4 od 25/09, Puffy od 28/09). ennovationHUB je odbijen i izvan broja. Nije provjeravan inbox ni slanje follow-upova; broj je stanje evidencije.
