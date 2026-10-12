@@ -74,11 +74,14 @@ Svaka promjena ovih uputa dobiva zapis u dnevniku („UPUTE §x: …”).
 
 Filteri se primjenjuju ovim redom.
 
-1. **Starost ≤ 14 dana**, računato od **najranije** objave iste role bilo gdje: u bilo kojoj zemlji, u bilo kojoj kopiji, na bilo kojem izvoru. Iznimke su moguće samo uz Darijevo odobrenje (SDG, Taxes for Expats, Genesis, OnHires, Puffy).
+1. **Starost ≤ 30 dana** (Dario, 12/10/2026; prije 14 dana), računato od **najranije** objave iste role bilo gdje: u bilo kojoj zemlji, u bilo kojoj kopiji, na bilo kojem izvoru.
+   - Oglas mora biti **aktivan** na dan provjere, tj. još objavljen na ATS-u ili stranici poslodavca.
+   - Starije od 30 dana samo uz Darijevo odobrenje (ranije iznimke: SDG, Taxes for Expats, Genesis, OnHires, Puffy).
 2. **Geografija:**
    - remote mora biti otvoren Europi ili Hrvatskoj;
    - hibrid samo u Hrvatskoj, prvenstveno Slavonija/Osijek;
-   - hibrid drugdje u EU samo ako je dolazak otprilike jednom u 6–12 mjeseci.
+   - hibrid drugdje u EU samo ako je dolazak otprilike jednom u 6–12 mjeseci;
+   - remote s popisom EU zemalja na kojem nema Hrvatske dolazi u obzir (Dario, 12/10/2026). Takva prijava ide **preko osobnog profila**, bez ponude B2B ugovora preko Adaxe.
 
    Ne dolaze u obzir:
    - remote vezan uz jednu zemlju („based in Spain”);
@@ -190,7 +193,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 ## 7. Dnevni tijek — Front A
 
 1. `git pull` i čitanje loga (§3).
-2. Crawl s prozorom „prva objava ≥ danas − 14 dana”, po izvorima iz §6.
+2. Crawl s prozorom „prva objava ≥ danas − 30 dana” i samo aktivni oglasi, po izvorima iz §6.
 3. Filteri iz §4. Usporedi s aktivnim prijavama i s Darijevim VOID/Skip odlukama.
 4. Provjeri rolu na ATS-u, datum po §5 i poslodavca.
 5. Dariju pošalji numeriranu listu.
