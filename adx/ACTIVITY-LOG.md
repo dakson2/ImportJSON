@@ -146,13 +146,14 @@ Od 30/10 EOJN i javna nabava vode se u zasebnom chatu „Adaxa — EOJN javna na
 
 | Kada | Što | ID |
 |---|---|---|
-| **do 16/10** | **Fakultet prometnih znanosti — digitalni marketing i medijsko praćenje** (projekt Interreg NETLOOP HR–BiH–CG). Jednostavna nabava preko e-Dostave, €12.800, CPV 79342000, rok 16/10. Adaxa se može javiti izravno, za što treba registracija na EOJN-u. [EOJN](https://eojn.hr/tender-eo/105214) | novo |
+| **odmah** | **Registracija Adaxe na EOJN RH** (eojn.hr/login → „Želim se registrirati” → Gospodarski subjekt; OIB; aktivacija e-poštom; e-potpis ne treba). Bez nje nema DoN-a, pitanja ni ponude. Zatim preuzeti DoN za HAC i APN. Vodič i analiza: [ADAXA — EOJN priprema i natječaji (studeni 2026)](https://docs.google.com/document/d/1FjU5e9Se3TKDPI7PRu69BQdtly7oFdc3HGoPo9RAhco/edit) | — |
+| **do 05/11 12:00** | **APN — web i društvene mreže**, €25.000, jednostavna nabava, kriterij samo cijena. Uvjetni GO: ovisi o pragu prometa i referencama iz DoN-a. [EOJN](https://eojn.hr/tender-eo/110057) | novo |
+| **do 09/11 09:30** | **Hrvatske autoceste — Crolibertas** (otvoreni postupak, 5 grupa). **Grupa 4** vođenje društvenih mreža €26.000 (cijena 80, dva stručnjaka 20): uvjetni GO, treba dva stručnjaka i jamstvo po grupi. **Grupa 2** zakup medija €247.000: samo kao online media planer u ponudi agencije. Pitanja do 01/11. [EOJN](https://eojn.hr/tender-eo/104028) | PB-0056 |
+| — | **No-go 30/10:** INOVAcija Zadar (događanja i tisak, €7.600, 03/11), Lučka uprava Dubrovnik (70 % bodova za iskustvo u PR-u EU projekata gradnje, €60.000, 06/11), Obiteljski centar (promo materijal i konferencija, €26.000, 09/11). | — |
 | čim Dario odluči | **Novi prostori kulture (Zagreb):** plan za 2026. za oglašavanje na internetu i društvenim mrežama podignut je na €26.500. Ugovoreno je €11.650 (Think Say Make Do 11/02, Hanza Media 16/04). U 2025. planirali su €25.000, a ugovorili €4.160, pa je plan gornja granica. | PB-0014 |
 | čim Dario odluči | **Hrvatska Lutrija:** pitati je li podrška za Google Ads iz 2026. još planirana. Stavka je u Q2 i nije ugovorena; zadnji izvođač je Risely digital (€6.000). | L-0005 · PB-0002 |
 | čim Dario odluči | **Falkensteiner:** pronaći marketing leada za Hrvatsku na LinkedInu i poslati kratku poruku o Google Hotel Ads / metasearchu. Imaju otvoren oglas za metasearch & affiliate specijalista u Zadru. | L-0001 |
 | čim Dario odluči | **Aranea toys (Zagreb, webshop Denis.hr):** traže voditelja/stručnjaka za e-commerce i digitalni marketing (EURES, 30/09). Ponuditi vanjsku uslugu umjesto zaposlenja. | novo |
-| prije 19/10 | **HP – Hrvatska pošta:** oglašavanje uključujući internet, oko €1M, rok 19/10 (TED 664429-2026). Adaxa može ući samo kao digitalni partner medijske agencije. HP je 09/10 ugovorio strategiju i sadržaj za društvene mreže s BBDO Zagreb (€23.600). | L-0003 |
-| do 09/11 | **Hrvatske autoceste — Crolibertas:** prethodno savjetovanje zatvoreno je 06/10 (nije zabilježeno je li Adaxa poslala primjedbu). Sada je otvoreni postupak, €393.000, rok 09/11. Adaxa može ući samo kao digitalni partner agencije koja se natječe. [EOJN](https://eojn.hr/tender-eo/104028) | PB-0056 |
 | 15/10 | **EOJN pregled** (`eojn_monitor.py new --since 2026-10-12`) i praćenje natječaja **Ministarstva rada** nakon savjetovanja (€379.200) | PB-0055 |
 | 15/10 | **HNK Split, Lječilište Topusko, HINA, Medicinski fakultet Osijek:** pitati kako kupuju stavke iz 2026. Topusko je 06/08 ugovorilo digitalni marketing za €24.000 s LINK2DIGITAL (u EOJN-u objavljeno nakon 05/10). | L-0006 · L-0007 · L-0012 · L-0013 |
 | listopad–studeni | **Zračna luka Osijek:** ugovor s KRYPTON WEB SOLUTIONS (€6.000) ističe 31/01/2027.<br>Do €15.000 ZLO pita izravno pa kontakt mora prethoditi kupnji.<br>Ponuditi kratki audit: 7 slikovnih oglasa od 03/02/2026, bez search oglasa. | L-0009 · PB-0001 |
@@ -213,6 +214,13 @@ Za ove tvrtke ne predlaže se druga rola.
 ---
 
 ## Dnevnik
+
+### 30/10/2026 · Claude · EOJN: registracija, pet postupaka, vodič za Adaxu
+- **Dokument:** [ADAXA — EOJN priprema i natječaji (studeni 2026)](https://docs.google.com/document/d/1FjU5e9Se3TKDPI7PRu69BQdtly7oFdc3HGoPo9RAhco/edit) (Drive, glavna mapa): sažetak, hitni koraci, tablica pet postupaka, vodič (ZJN i NN 48/2026, pragovi, ESPD, dokumenti, reference, zajednica ponuditelja, DKOM, tipične pogreške), kontrolna lista i pitanja za Darija.
+- **Nalaz:** dokumentaciju o nabavi EOJN daje samo registriranim korisnicima, pa je analiza iz javnih objava, TED-a (693457-2026) i službenih uputa EOJN-a. Jednostavna nabava je od 01/09/2026 do €50.000 (usluge); ugovori iz javne nabave od 01/09/2026 potpisuju se kvalificiranim e-potpisom kroz EOJN.
+- **Preporuka:** uvjetni GO za HAC grupu 4 (društvene mreže, €26.000) i APN (€25.000); HAC grupa 2 samo kao stručnjak u ponudi agencije; no-go INOVAcija, Lučka uprava Dubrovnik, Obiteljski centar. Rokovi FPZ (16/10) i HP (19/10) su prošli i maknuti iz Otvorenog.
+- **Čeka Darija:** pravni oblik Adaxe, registracija na EOJN-u, e-potpis, reference, stručnjaci za HAC grupu 4. Ništa nije registrirano ni poslano.
+- Tablica: ništa.
 
 ### 30/10/2026 · Dario / Claude · EOJN se seli u zaseban chat
 - **Dario:** „EOJN sekciju ćeš voditi unutar ovog projekta u novom chatu”. Zanima ga postupak i dokumentacija za prijavu Adaxe na natječaje preko EOJN-a.
