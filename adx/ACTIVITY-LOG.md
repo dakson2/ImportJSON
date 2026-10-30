@@ -212,6 +212,22 @@ Za ove tvrtke ne predlaže se druga rola.
 
 ## Dnevnik
 
+### 30/10/2026 · Claude · Inventura i crawl 30/10 (prva objava od 30/09)
+- **Dario:** „napravi detaljnu inventuru otvorenih poslova i novih … i nastavi dalje u crawl”.
+- **Stanje u tablici Work (drugi AI, 12–21/10):**
+  - 12/10 18:49: Codex je u Work prenio W-002 iz repoa `dakson2/adx-jobs` (redovi `CLAUDE-2026100x` i `CODEX-20261012-RECONCILE`), ne W-002 s ove grane;
+  - 13/10: HLTH poslan (APPLIED r47); Dario je zatvorio praćenje APPLIED r2–r43; od 13/10 do 21/10 dnevni „PPC Job Watch” (Found r200–r260); Upwork je na pauzi.
+- **Razlike tablice i stvarnog stanja:**
+  - nisu u APPLIED: David Kennedy (poslano 05/10), Huzzle, Google Ads Specialist (Workable potvrda 21/10, očekivanje $5.000/mj) i Infobip, Senior Digital Advertising Specialist (odbijenica 29/10);
+  - paketi od 12/10 (AttaPoll, Voy, Brightvision, Bigburg, Echelonn, Admiral Media) nemaju zapis o slanju. Gmail nacrt za Bigburg nije poslan; Admiral Media je zatvoren.
+- **Inventura:** svi oglasi iz APPLIED r44–r47, paketa od 12/10 i Found r195–r260 provjereni su na izvoru. Zatvoreni ili istekli: Binance.US, Recraft, OnHires ×3, Viktor, TNT Growth, Sagan, Scale Army ×2, Formula, Boosta Solvy ×2, Jobgether, Full Funnel Growth, Powered by Search, AbroadLimited, Admiral Media. Dario označava što je još aktualno.
+- **Crawl 30/10:**
+  - LinkedIn 30 dana (Hrvatska i EU s 24 ključne riječi; Europa, EMEA i Worldwide s 12): 2.506 jedinstvenih rola;
+  - 754 ATS ploče osvježene (35.549 oglasa), Himalayas HR (438), Remote Rocketship (1.153), Workable (1.096), agregatori, EURES (1.983), MojPosao (1.466);
+  - 862 jedinstvena paid/growth oglasa u prozoru; nove opcije nakon usporedbe s Found i APPLIED: lemlist, DuckDuckGo, Thrive Internet Marketing Agency, TripleTen, appflame preko TalentC, BetterMe, Triangulate Digital, Nord Recruitment, Ad-Lab; slabije Afina, Nectar Life, ScholarshipOwl, MM Coaching, FunnelFox.
+- **Adaxa (EOJN `new --since 2026-10-12`):** otvoreno: Lučka uprava Dubrovnik, komunikacija i vidljivost €60.000 (06/11); APN, web i društvene mreže €25.000 (05/11); Obiteljski centar, promidžba €26.000 (09/11); INOVAcija Zadar €7.600 (03/11); HAC Crolibertas €393.000 (09/11). Rokovi FPZ (16/10) i HP (19/10) su prošli.
+- Tablica: ništa; čeka Darijeve oznake.
+
 ### 12/10/2026 · Dario / Claude · Odluke, sedam paketa, pravilo od 30 dana
 - **Dario:**
   - s liste 12/10 izabrao je 1, 2, 3, 7, 8, 9 i 10; brojevi 4–6 (Fit4Me, Jooble, Strategyzer) nisu izabrani;
