@@ -142,6 +142,8 @@ Stanje 12/10. Nije zabilježeno je li ijedan follow-up poslan.
 
 ### Adaxa — sljedeći koraci
 
+Od 30/10 EOJN i javna nabava vode se u zasebnom chatu „Adaxa — EOJN javna nabava (1.ADX-Jobs)” (UPUTE §9). Tablica ispod vrijedi dok je taj chat ne ažurira.
+
 | Kada | Što | ID |
 |---|---|---|
 | **do 16/10** | **Fakultet prometnih znanosti — digitalni marketing i medijsko praćenje** (projekt Interreg NETLOOP HR–BiH–CG). Jednostavna nabava preko e-Dostave, €12.800, CPV 79342000, rok 16/10. Adaxa se može javiti izravno, za što treba registracija na EOJN-u. [EOJN](https://eojn.hr/tender-eo/105214) | novo |
@@ -211,6 +213,15 @@ Za ove tvrtke ne predlaže se druga rola.
 ---
 
 ## Dnevnik
+
+### 30/10/2026 · Dario / Claude · EOJN se seli u zaseban chat
+- **Dario:** „EOJN sekciju ćeš voditi unutar ovog projekta u novom chatu”. Zanima ga postupak i dokumentacija za prijavu Adaxe na natječaje preko EOJN-a.
+- Otvoren je chat „Adaxa — EOJN javna nabava (1.ADX-Jobs)”, na istoj grani. Dobio je zadatak:
+  - registracija gospodarskog subjekta na EOJN-u, hitno zbog rokova;
+  - dokumentacija i preporuka go / no-go za pet otvorenih postupaka: INOVAcija Zadar 03/11, APN 05/11, Lučka uprava Dubrovnik 06/11, Obiteljski centar i HAC 09/11;
+  - opći vodič i kontrolna lista spremnosti, kao Google Doc na Driveu.
+- UPUTE §9: dodana napomena o zasebnom chatu.
+- Tablica: ništa.
 
 ### 30/10/2026 · Claude · Inventura i crawl 30/10 (prva objava od 30/09)
 - **Dario:** „napravi detaljnu inventuru otvorenih poslova i novih … i nastavi dalje u crawl”.

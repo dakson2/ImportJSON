@@ -250,6 +250,8 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 
 ## 9. Front B — Adaxa
 
+**EOJN i javna nabava** (Dario, 30/10/2026) vode se u zasebnom chatu projekta, „Adaxa — EOJN javna nabava (1.ADX-Jobs)”, na istoj grani. Ondje su postupak prijave, dokumentacija i odluke o natječajima. Glavni chat (Front A) EOJN više ne obrađuje, nego samo upućuje na taj chat.
+
 U Work postoje dvije kartice:
 - **ADAXA LEADS:** kvalificirani leadovi s ID-jem `L-0001`…
   - Novi red ide u **prvi red s praznim `Lead ID`**.
