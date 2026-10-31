@@ -16,6 +16,7 @@ Projekt ima **dva dokumenta**. Ovo je prvi, a drugi je [`ACTIVITY-LOG.md`](ACTIV
 | `adx/ACTIVITY-LOG.md` | Nalozi za tablicu, otvorene odluke, follow-upovi, dnevnik rada | Claude i Codex |
 
 - **Ne otvaraj nove `.md` datoteke.** Nema više zasebnih CODEX-PROMPT, STATUS i HANDOFF datoteka ni paketa. Novo pravilo ide ovamo, a novi događaj u log.
+  - Jedina iznimka: [`CV-WORKFLOW.md`](CV-WORKFLOW.md), postupak za CV po oglasu (Dario, 31/10/2026). Činjenice i dalje stoje samo u §8.
 - Osim ta dva dokumenta u `adx/` ostaju samo:
   - `tools/eojn_monitor.py` (alat);
   - `data/eojn-buyers.json` (izlaz alata).
@@ -99,8 +100,9 @@ Filteri se primjenjuju ovim redom.
 6. **Integritet:** odbij cloaking, anti-detect, izbjegavanje banova, nabavu računa ili Business Managera od resellera i siva tržišta.
    - Pročitaj **cijeli** tekst zahtjeva. Fortis Media je imao cloaking tek iza 1.500. znaka.
    - Tracker sam po sebi (Voluum, Keitaro, Binom) nije prekršaj.
-7. **Jedna aktivna prijava po tvrtki.** Ako tvrtka već ima prijavu u APPLIED koja nije Rejected ni Closed, ne predlaži drugu rolu (Infobip, 26/09). Popis aktivnih prijava je u logu.
-8. **Darijeve odluke su konačne.** Rola označena `VOID` ili `Skip` ne vraća se na listu.
+7. **Preskači regrutere** (Dario, 31/10/2026). Oglasi agencija za zapošljavanje i regrutera (npr. Nord Recruitment, TalentC, RemotelyTalents, Huzzle, David Kennedy, Thrive Talent Solutions) ne idu na listu. Traži izravan oglas poslodavca; ako ga nema, rolu preskoči. Iznimku odobrava Dario.
+8. **Jedna aktivna prijava po tvrtki.** Ako tvrtka već ima prijavu u APPLIED koja nije Rejected ni Closed, ne predlaži drugu rolu (Infobip, 26/09). Popis aktivnih prijava je u logu.
+9. **Darijeve odluke su konačne.** Rola označena `VOID` ili `Skip` ne vraća se na listu.
 
 **Provjera:**
 - **Provjereno znači pročitano na ATS-u poslodavca** ili u indeksu tog ATS-a.
@@ -236,7 +238,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
   - LinkedIn ~€30K;
   - TikTok ~€20K;
   - uz to Microsoft/Bing.
-- Rent-a-car u Dubrovniku: oko +30%. Kasniji zastoj ROAS-a pronađen je u strukturi flote.
+- Rent-a-car u Dubrovniku: oko +30%. Kasniji zastoj ROAS-a pronađen je u strukturi flote. Bilo je u razdoblju Promosapiensa (2016–2017), budžet oko 30.000 kn (~€4K) mjesečno; ne pod Adaxom (Dario, 31/10/2026).
 - 3 javna custom GPT-a; Claude Code za scrapere; Codex za web i landing stranice.
 - Reseller hosting posao.
 - Osnivač Digital Point HR; Adaxa.
@@ -245,6 +247,31 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - B2B iskustvo preko Adaxe.
 - Demand Gen i YouTube (Dario, 28/09/2026).
 - AI lokalizacija oglasa i PPC materijala za DE, FR i JP, uz ljudsku provjeru (Dario, 28/09/2026).
+- **Potvrdio Dario 31/10/2026:**
+  - **Wowtech:**
+    - titula „Senior Performance Marketing Specialist – EMEA & APAC Brandshops”, od 2021.;
+    - četiri brandshopa (Womanizer, We-Vibe, Arcwave, ROMP) na storefrontima DE, EU, UK, FR, ES, IT, CH, JP i AU;
+    - Amazon Ads za sve brendove u DE, UK, IT i FR;
+    - brendovi se smiju imenovati u CV-u, ali ne u videima.
+  - **Lovehoney retail:** oko 6 mjeseci u istim regijama, sa 7–10 specijalista vanjske agencije pod Darijevom ingerencijom; odgovoran i za specijaliziranu agenciju za Shopping feedove.
+  - **Case s filmom (srpanj 2026, Wowtech):** CAC novih kupaca oko 10–12 % niži prije premijere i do 21 % niži poslije; pristup ponovljen na drugom tržištu.
+  - **Rujan 2026 (Wowtech, snimke na Driveu):**
+    - ukupno ~£2,3M na Google Adsu;
+    - Generic Search ~£747K, ROAS ~3,3;
+    - Brand Search ~£246K, ROAS ~9,2, Top IS 88 %;
+    - Shopping/PMax ~£77K, ROAS ~4,1;
+    - YouTube ~£1,2M.
+    - U CV-u stoji „Google Ads ~€2,5M+”.
+  - **Rast prihoda ili ROAS-a:** ostvaren, ali se ne navodi.
+  - **Shopping feedovi:** feedovi brandshopova u svim regijama bili su isključivo Darijevi (Channable, povezivanje s Google Apps Scriptom, kompletni pregovori s CSS partnerima).
+  - **Ostali poslovi:**
+    - komunikacija s agencijama za prijevod;
+    - skripte za dnevne tečajeve valuta u izvještajima, aktivne dok nije oformljen BI tim;
+    - povremeno marketplace PPC u Njemačkoj za We-Vibe i Womanizer (ime marketplacea nije poznato);
+    - lead LinkedIn kampanje za zapošljavanje (oglasi; to nije „hiring”).
+  - **Za forme:** engleski C1; dostupnost 10 dana; datumi kao u CV-u 2026.
+  - **Ne ide u CV:** IT u ljekarnama.
+  - **Čeka detalje:** Marko Rubel, PPC i YouTube u SAD-u, real estate. Ne ide u CV dok Dario ne da razdoblje i ulogu.
 - Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).
 - Višerazinski MCC podijeljen po tržištu, jeziku i kategoriji proizvoda; brand i non-brand odvojeni (potvrdio Dario 31/10/2026).
 - SERP sustav prati plaćene pozicije i konkurente po tržištima (potvrdio Dario 31/10/2026).
@@ -254,10 +281,11 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - SQL, BigQuery, pLTV;
 - AppsFlyer/Adjust, offline conversion import;
 - Apple Search Ads, Reddit/Quora Ads, Microsoft Audience Network;
-- zapošljavanje ljudi (hiring);
+- zapošljavanje ljudi (hiring); LinkedIn kampanja za zapošljavanje nije isto;
 - subscription aplikacije, incrementality, kreativni sustavi, high-AOV;
 - EU državljanstvo;
-- „taught digital marketing”.
+- „taught digital marketing”;
+- B2B lead gen ili SaaS klijenti s CRM-om (Dario 31/10: nema).
 
 ## 9. Front B — Adaxa
 

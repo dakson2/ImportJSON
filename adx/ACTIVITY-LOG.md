@@ -112,24 +112,15 @@ Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji” (https
 4. CV po oglasu za sve brojeve iz privremene tablice osim 16 (THE/STUDIO, skip); za 14 i 15 (Scento i 10ML) samo jedan, po Darijevu izboru. Odgovoriti u CV-u na što više pitanja iz oglasa. Potpis po želji na dno.
 5. Link na svaki CV upisati u privremenu tablicu.
 
-**Stanje 31/10/2026** (Drive, mapa [CV po oglasu](https://drive.google.com/drive/folders/1cCZepnepiYEiMR_M3oPZrbHC6GL5kSTA)):
-- [x] 1. [CV smjernice i analiza odbijenica](https://docs.google.com/document/d/15_M7csU1kozgzbikNc50TBVcvnM2C7UXyYebYf9uN1E/edit): 20 izvora.
-- [x] 2. Analiza je u istom dokumentu (§8, osam zaključaka).
-- [~] 3. [Master: poslovi i case studiji](https://docs.google.com/document/d/1tTF5NQPOuuVR2V2Gdxx2Y7HzRrK0QYEUnzA1b5UsqNE/edit): popunjen iz CV-a 2026, pisama, APPLIED, tablice Base, dokumenta *APPLICATION – CASE STUDIES* i case studija o filmu (13/10). Pitanja za Darija poslana 31/10 i čekaju odgovor.
-- [~] 4. Predložak: Google Doc s jednim stupcem, 2 stranice i potpisom na dnu (HTML uvoz; margine 43/47 pt). Gotov je 9 Voy ([CV](https://docs.google.com/document/d/1WhvexFxu54QtrwN5vONfY0GWtCPt2PHTsCLtrKffaaQ/edit)). Slijede 12 Echelonn, 37 lemlist, 42 BetterMe, pa ostali.
-- [~] 5. Stupac *CV po oglasu* dodan je ispred stupca *Odluka* (Q); upisan je Voy.
-
-### Video predstavljanje (od 31/10/2026)
-
-Vodi se u zasebnom chatu „1.ADX-Jobs — video predstavljanje (plan i scenarij)” (https://claude.ai/code/session_01QJi9MsKf2MhhZ6caJJxfMZ), na istoj grani. Cilj je video koji Dario snimi jednom i linka uz prijave (CV, pismo, forme, LinkedIn).
-1. Istraživanje s izvorima: što recruiteri žele od video predstavljanja za remote marketing role.
-2. Plan: glavna verzija od 60–90 s, kratka od 30 s i po želji 2–3 min s case studijima.
-3. Scenarij na engleskom, verzija za teleprompter i SRT titlovi.
-4. Shot list, tehnička priprema i kontrolna lista; pitanja za Darija.
-
-Sadržaj samo iz provjerenih činjenica (UPUTE §8). Bez podataka klijenata na ekranu. Dokumenti i video idu na Drive, ne u repo.
-
-**Stanje 31/10 (nacrt 2):** Darijevi odgovori uključeni: YouTube unlisted; dvije verzije, V1 s Adaxa logom (`adaxa.agency/video`) i V2 bez logotipa (`adaxa.agency/intro`); poslodavac se opisuje, ne imenuje; naglasak na automatizaciji i AI-ju; snima na računalu u Google Vidsu; portfolio od 2–3 min na demo podacima; samo engleska verzija. Drive mapa [Video](https://drive.google.com/drive/folders/1zwO5ivaGqBTZ3kqNUn_xh0ht41X-K6IZ): [plan i scenarij, nacrt 2](https://docs.google.com/document/d/14NK1Wjvqh72xMy9yNuPqTsEzt-jtdVL6LdZukJhf0bw/edit), [DEMO tablica](https://docs.google.com/spreadsheets/d/15Y6WhuInkKRksAq1ytRpB2c36sqGpfvMRwS0ccbk_Wk/edit) (izmišljeni podaci), demo Apps Script, SRT za 90 s i 30 s, teleprompter `.txt`. Čeka Darija: proba u Google Vidsu, Adaxa logo za V1, kasnije novi case studiji. Zatim Dario snima i objavljuje.
+**Stanje 31/10/2026, kasno** (postupak: [`CV-WORKFLOW.md`](CV-WORKFLOW.md); Drive mapa [CV po oglasu](https://drive.google.com/drive/folders/1cCZepnepiYEiMR_M3oPZrbHC6GL5kSTA)):
+- [x] 1–2. [Smjernice i analiza odbijenica](https://docs.google.com/document/d/15_M7csU1kozgzbikNc50TBVcvnM2C7UXyYebYf9uN1E/edit).
+- [x] 3. [Master](https://docs.google.com/document/d/1tTF5NQPOuuVR2V2Gdxx2Y7HzRrK0QYEUnzA1b5UsqNE/edit): Darijeve potvrde od 31/10 upisane (odjeljak 7) i prenesene u UPUTE §8. Otvoreno: Marko Rubel (real estate, SAD).
+- [x] 4. CV po oglasu za 14 brojeva (svi 2 stranice, potpis na dnu, popis u `CV-WORKFLOW.md` §4).
+  - 15 10ML i 16 THE/STUDIO: Dario je odlučio skip.
+  - 17 RemotelyTalents: Dario je odlučio skip nakon što je CV već bio napravljen.
+  - 41 appflame (TalentC) i 44 Nord Recruitment su regruteri (novo pravilo §4.7); Dario odlučuje hoće li ih slati.
+- [x] 5. Stupac Q *CV po oglasu* u privremenoj tablici: link i bilješka (naglašeno, praznine) za svaki red.
+- Sljedeće: pisma za brojeve koje Dario izabere (postojeća za Voy i Echelonn treba uskladiti s novim činjenicama).
 
 ### Razgovori
 
@@ -200,6 +191,28 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 31/10/2026 · Dario / Claude · CV po oglasu za 14 oglasa, nove činjenice, pravilo o regruterima
+- **Dario je potvrdio:**
+  - case s filmom (Wowtech);
+  - Wowtech titulu, brandshopove, storefronte i Amazon;
+  - Lovehoney retail;
+  - snimke iz rujna 2026;
+  - Dubrovnik pod Promosapiensom;
+  - nema B2B lead gena;
+  - engleski C1 i dostupnost 10 dana;
+  - feedove (Channable, CSS), valutne skripte, agencije za prijevod, marketplace PPC i LinkedIn kampanju za zapošljavanje.
+  - Sve je u UPUTE §8 s datumom 31/10.
+- **UPUTE:**
+  - §1: iznimka za `CV-WORKFLOW.md` (Dario: „unesi sve navedeno u novi workflow md”);
+  - §4.7 (novo): preskakati regrutere (Dario: „pokušaj preskakati regrutere u budućnosti”); stara pravila 7–8 su sada 8–9;
+  - §8: proširen popis provjerenih činjenica i dopunjen popis „Ne tvrditi”.
+- **Drive:**
+  - 14 CV-jeva (Voy, Echelonn, Scento, RemotelyTalents, eCommerce Smart, Tameson, D2LINE, lemlist, Thrive, TripleTen, appflame, BetterMe, Nord, Ad-Lab);
+  - prethodne verzije za Voy su u smeću.
+  - Svi oglasi ponovo pročitani na izvoru 31/10 i aktivni. BetterMe sada navodi „Ukraine, remote”.
+- **Privremena tablica:** stupac Q popunjen. Dario je u stupcu *Odluka* označio skip za 15, 16 i 17.
+- Tablica Work: ništa. Ništa nije poslano.
 
 ### 31/10/2026 · Dario / Claude · Video predstavljanje: odgovori i nacrt 2
 - **Dario:** „1 YT unlisted, 2 možeš dvije verzije, smije biti na adx, 3 možeš ih malo opisati ali ne govoriti o imenima, 4 dodat ćemo kasnije, 5 da, 6 snimam na računalu, 1 može logo drugi bez, 7 samo screenshare – google videos, 8 automatizaciju i poglavito sve što radim sa AI, 9 može, 10 naravno samo ENG verzija”.
