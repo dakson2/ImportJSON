@@ -277,7 +277,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
     - u godinu dana savez ima 120+ članova, a županija je poznata po steel pikadu;
     - psobz.eu je na vlastitom hostingu: od glasila je u mjesec dana postao platforma za vođenje klubova, administraciju igrača, liječničke preglede, transfere, samostalnu izradu dokumentacije, vijesti, statistike do H2H, praćenje članarina, interni chat, livescore u realnom vremenu, objave turnira i virtualne članske iskaznice;
     - izrađen i održavan sa sinkroniziranim agentima Claude Code i OpenAI Codex: nadzor i izmjene na serveru, zapisi u baze na GitHubu, backup na Google Drive, dokumentacija.
-  - **Marko Rubel = Turn-key Systems, Inc.** (San Diego, remote), PPC Specialist, 12/2014 – 10/2016: Google AdWords, Bing Ads i YouTube (postavljanje, vođenje, analiza, optimizacija, reporting). Dario u chatu kaže da je to bilo tržište SAD-a i real estate, a LinkedIn opisuje „B2B technology context”. Do Darijeve odluke CV ostaje na „AdWords, Bing Ads and YouTube for a US company”.
+  - **Marko Rubel = Turn-key Systems, Inc.** (San Diego, remote), PPC Specialist, 12/2014 – 10/2016: Google AdWords, Bing Ads i YouTube za vrlo konkurentno tržište nekretnina u SAD-u (real estate). U CV-u stoji „for highly competitive US real-estate campaigns” (Dario je 31/10 izabrao opciju 1). LinkedIn još opisuje „B2B technology context”; Dario ga treba uskladiti.
 - Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).
 - Višerazinski MCC podijeljen po tržištu, jeziku i kategoriji proizvoda; brand i non-brand odvojeni (potvrdio Dario 31/10/2026).
 - SERP sustav prati plaćene pozicije i konkurente po tržištima (potvrdio Dario 31/10/2026).
