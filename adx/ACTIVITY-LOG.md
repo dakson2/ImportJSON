@@ -129,6 +129,8 @@ Vodi se u zasebnom chatu „1.ADX-Jobs — video predstavljanje (plan i scenarij
 
 Sadržaj samo iz provjerenih činjenica (UPUTE §8). Bez podataka klijenata na ekranu. Dokumenti i video idu na Drive, ne u repo.
 
+**Stanje 31/10:** prvi nacrt plana i scenarija gotov (koraci 1–4), čeka Darijeve odgovore na 10 pitanja na kraju dokumenta. Drive mapa [Video](https://drive.google.com/drive/folders/1zwO5ivaGqBTZ3kqNUn_xh0ht41X-K6IZ): [plan i scenarij](https://docs.google.com/document/d/1R9wmlZykTI7IguwijaI8BWruc2oT5GWQT70dSodhuHU/edit), SRT za 90 s i 30 s, teleprompter `.txt`. Sljedeće: nacrt 2 po odgovorima; Dario snima i objavljuje.
+
 ### Razgovori
 
 Nema zakazanih razgovora. SolCrov je odbio prijavu nakon razgovora 07/10 (Dario, 12/10).
@@ -198,6 +200,12 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 31/10/2026 · Claude · Video predstavljanje: plan i scenarij, nacrt 1
+- Istraživanje s izvorima (duljina 60–90 s, titlovi, hosting, GDPR i pristranost), plan tri verzije (90 s, 30 s, po želji 2–3 min portfolio), scenariji na engleskom s vremenima, kadrom i natpisima, 6 uvodnih rečenica po tipu oglasa, teleprompter, SRT, shot list, tehnika, kontrolne liste i 10 pitanja za Darija. Hrvatska verzija: preporuka da se sada ne radi.
+- Sadržaj samo iz UPUTE §8; stavke iz CV-a koje nisu u §8 označene su „[CV, potvrdi]”. Ime poslodavca se ne izgovara dok Dario ne odobri.
+- Drive: mapa [Video](https://drive.google.com/drive/folders/1zwO5ivaGqBTZ3kqNUn_xh0ht41X-K6IZ), [dokument](https://docs.google.com/document/d/1R9wmlZykTI7IguwijaI8BWruc2oT5GWQT70dSodhuHU/edit), dva `.srt` i teleprompter `.txt`. Ništa snimljeno ni objavljeno.
+- Tablica Work: ništa.
 
 ### 31/10/2026 · Claude · CV po oglasu: smjernice, analiza odbijenica, master dokument, CV za Voy
 - **Dario:** „kreni malo raditi na izradi boljih i customiziranih CV-a za svaki od poslova … Pretraži internet i vidi koje su najbolje smjernice … Krenut ćemo također u proširivanje case studyja kao i proširivanje opisa poslova”.
