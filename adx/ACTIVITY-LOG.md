@@ -192,6 +192,16 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 31/10/2026 · Dario / Claude · Case PSOBŽ / psobz.eu, Rubel = Turn-key
+- **Dario** je opisao projekt psobz.eu kao dodatni case za AI pitanja; potvrđeno 31/10.
+- **Upisano:**
+  - master dokument, odjeljak 8 (HR kontekst, EN tekst za forme i pisma, kratka verzija za CV);
+  - UPUTE §8;
+  - `CV-WORKFLOW.md`, bazen stavki.
+- **CV lemlist:** stavka o istraživačkim agentima zamijenjena PSOBŽ stavkom.
+- **Marko Rubel = Turn-key Systems** (12/2014–10/2016); kako opisati tržište (real estate ili B2B tech), čeka Darija.
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 31/10/2026 · Dario / Claude · CV po oglasu za 14 oglasa, nove činjenice, pravilo o regruterima
 - **Dario je potvrdio:**
   - case s filmom (Wowtech);

@@ -69,6 +69,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | Amazon Ads (DE, UK, IT, FR) i marketplace PPC u DE | marketplace, D2C |
 | Politike osjetljive kategorije | health, regulirano, adult, dating |
 | AI agenti (Claude Code, Codex), custom GPT-ovi | AI-native, automatizacija |
+| PSOBŽ / psobz.eu: platforma za savez od 120+ članova, izrađena u mjesec dana s Claude Code + Codex (EN tekst u masteru, odjeljak 8) | AI pitanja u formama i pismima, AI-native role, inicijativa i vodstvo |
 | LinkedIn kampanja za zapošljavanje | samo kad oglas traži LinkedIn |
 
 ## 4. CV-jevi od 31/10/2026
@@ -82,7 +83,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | 22 | eCommerce Smart | `1v4kpKUqfatUFFZ-s55fP2neqOyHwdlxN4ypu0vtMxEY` |
 | 27 | Tameson | `1WEHliy8JuN8wZqNEpJyusBM-Ebei-JaVegf92JVdAfI` |
 | 28 | D2LINE | `1mqcc9wNJUOTisxMCzw6dwrba0I0kn9nsSscV61u_n2o` |
-| 37 | lemlist | `1cX-MqrsGcfVMuF8NsaWz-mJbgeDV8S95RHhlqVZENho` |
+| 37 | lemlist (s PSOBŽ stavkom) | `1cX-MqrsGcfVMuF8NsaWz-mJbgeDV8S95RHhlqVZENho` |
 | 39 | Thrive Internet Marketing Agency | `1iUd2Vv29K2srmgDfk798MF8zZZaUhl-GMtS7ouxHhD8` |
 | 40 | TripleTen | `1CBKo1tYL5XMzuYXoE-S5r8eyuq-q5tsjhmgNTaRHJzs` |
 | 41 | appflame (regruter TalentC) | `13tlCscKMWMbsLifuDCxNbcUpnjmahpj_P7pFFeoii_o` |
