@@ -214,6 +214,13 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 6. Zaglavlje (ime, grad, e-mail, telefon, LinkedIn) kopiraj iz zadnjeg pisma na Driveu (Puffy, 28/09). Ne upisuj ga u repo.
 7. Plaća, kad forma pita: „€100,000 annual gross, flexible depending on final scope, bonus structure and contract setup”.
 
+**CV po oglasu i case studiji (Dario, 31/10/2026):**
+- Za svaku prijavu radi se **CV prilagođen oglasu**, a ne jedan opći CV. Cilj je odgovoriti u samom CV-u na što više pitanja iz oglasa i forme: lokacija i vremenska zona, način rada (remote, B2B ili zaposlenje), jezici, kanali, budžeti, tržišta, alati, sektor i rezultati.
+- Smjernice za CV dokumentiraju se s izvorima (istraživanje na webu) u dokumentu na Driveu, ne u repou.
+- **Master izvor sadržaja** je Google Doc na Driveu s proširenim opisima svih poslova i case studijima. Svaka nova tvrdnja u njemu ima oznaku „potvrdio Dario dd/mm/yyyy”. Tek potvrđena tvrdnja ulazi u CV ili pismo i dodaje se u popis provjerenih činjenica ispod.
+- Darijev vlastoručni potpis je na Driveu: `Dario_Suler_potpis.png` (`1L3odnQPCE20Uonmu3bSGurF5cp-O_Hp_`, prozirna pozadina). Može se dodati na dno CV-a ili pisma. **Ne ide u repo** ni u javne dokumente.
+- CV-jevi i pisma po oglasu spremaju se na Drive (glavna mapa ili podmapa za CV). Link na CV upisuje se uz red u privremenoj tablici ili u Work.
+
 **Provjerene činjenice (smiju se koristiti):**
 - 15+ godina iskustva, od toga 10+ godina Google Ads kao primarni kanal (od 2014., logIT).
 - Osobno vođeno do ~€2,5M mjesečno na Google Adsu.

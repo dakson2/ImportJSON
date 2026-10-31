@@ -94,7 +94,7 @@ Koraci (UPUTE §10, R1–R9):
 
 1. **Front A: Dario nastavlja s provjerenim popisom u privremenoj tablici [ADX prijedlozi poslova 30-10-2026 (privremeno)](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit).** Ostalo je 16 redova s odlukom OK; stupci *Ranija prijava*, *Provjera poslodavca 31/10* i *Rezultat provjere* su dodani ispred stupca *Odluka*.
    - **Prolazi:** 9 Voy, 12 Echelonn, 37 lemlist, 42 BetterMe.
-   - **Prolazi uz napomenu:** 14 Scento (samo jedan od 14 i 15), 17 RemotelyTalents (niska plaća), 27 Tameson (BigQuery, Python), 28 D2LINE (prijava mailom preko d2line.com), 39 Thrive Internet Marketing Agency, 40 TripleTen (niska plaća), 41 appflame preko TalentC, 44 Nord Recruitment (uvjet $1M+ mjesečno), 45 Ad-Lab (tko zapošljava: Ad-Lab ili Clickbait Agency).
+   - **Prolazi uz napomenu:** 14 Scento (samo jedan od 14 i 15), 17 RemotelyTalents (niska plaća), 27 Tameson (BigQuery, Python), 28 D2LINE (prijava mailom preko d2line.com), 39 Thrive Internet Marketing Agency, 40 TripleTen (niska plaća), 41 appflame preko TalentC, 44 Nord Recruitment (regruter; uvjet od $1M+ mjesečno je ispunjen, provjereno do ~€2,5M), 45 Ad-Lab (tko zapošljava: Ad-Lab ili Clickbait Agency).
    - **Rizik:** 15 10ML (poslodavac nije provjerljiv), 22 eCommerce Smart (malo podataka o poslodavcu).
    - **Skip:** 16 THE/STUDIO (ranija prijava, APPLIED r3).
 
@@ -102,6 +102,15 @@ Koraci (UPUTE §10, R1–R9):
 2. **Adaxa, FPZ NETLOOP (€12.800, rok 16/10):** Dario: „na kraju ćemo to detaljno pregledati” (ima li smisla i koliko je komplicirano sudjelovati). Pregled treba biti prije roka.
 3. **Adaxa:** koje leadove prvo kontaktirati? Prijedlog je Hrvatska Lutrija (L-0005), Falkensteiner (L-0001) i Novi prostori kulture (PB-0014) odmah, a Zračna luka Osijek (L-0009) u listopadu–studenom.
 4. **Foxelli (L-0002):** isplati li se honorar za zamjenu na 4 mjeseca. Ako da, prijava ide kao ugovorni suradnik preko Adaxe.
+
+### CV po oglasu i case studiji (od 31/10/2026)
+
+Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji”, na istoj grani. Pravila su u UPUTE §8.
+1. Smjernice za CV s izvorima (web istraživanje) kao dokument na Driveu.
+2. Analiza dosadašnjih odbijenica (APPLIED: Amplemarket, UTTR, saas.group, ennovationHUB, Adcubator, SolCrov, Ruby Labs, Infobip) i što je CV-u nedostajalo.
+3. Master dokument na Driveu: prošireni opisi svih dosadašnjih poslova i case studiji. Pitanja za Darija se šalju u chatu, a svaka nova tvrdnja dobiva oznaku „potvrdio Dario”.
+4. CV po oglasu za sve brojeve iz privremene tablice osim 16 (THE/STUDIO, skip); za 14 i 15 (Scento i 10ML) samo jedan, po Darijevu izboru. Odgovoriti u CV-u na što više pitanja iz oglasa. Potpis po želji na dno.
+5. Link na svaki CV upisati u privremenu tablicu.
 
 ### Razgovori
 
