@@ -112,6 +112,16 @@ Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji” (https
 4. CV po oglasu za sve brojeve iz privremene tablice osim 16 (THE/STUDIO, skip); za 14 i 15 (Scento i 10ML) samo jedan, po Darijevu izboru. Odgovoriti u CV-u na što više pitanja iz oglasa. Potpis po želji na dno.
 5. Link na svaki CV upisati u privremenu tablicu.
 
+### Video predstavljanje (od 31/10/2026)
+
+Vodi se u zasebnom chatu „1.ADX-Jobs — video predstavljanje (plan i scenarij)” (https://claude.ai/code/session_01QJi9MsKf2MhhZ6caJJxfMZ), na istoj grani. Cilj je video koji Dario snimi jednom i linka uz prijave (CV, pismo, forme, LinkedIn).
+1. Istraživanje s izvorima: što recruiteri žele od video predstavljanja za remote marketing role.
+2. Plan: glavna verzija od 60–90 s, kratka od 30 s i po želji 2–3 min s case studijima.
+3. Scenarij na engleskom, verzija za teleprompter i SRT titlovi.
+4. Shot list, tehnička priprema i kontrolna lista; pitanja za Darija.
+
+Sadržaj samo iz provjerenih činjenica (UPUTE §8). Bez podataka klijenata na ekranu. Dokumenti i video idu na Drive, ne u repo.
+
 ### Razgovori
 
 Nema zakazanih razgovora. SolCrov je odbio prijavu nakon razgovora 07/10 (Dario, 12/10).
@@ -181,6 +191,11 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 31/10/2026 · Dario / Claude · Video predstavljanje u zasebnom chatu
+- **Dario:** „hoćemo napraviti i jedan scenarij za video da to snimimo i generalno uvijek imamo pri ruci, napravi mi plan za video isto u novom chatu”.
+- Otvoren je chat „1.ADX-Jobs — video predstavljanje (plan i scenarij)” (https://claude.ai/code/session_01QJi9MsKf2MhhZ6caJJxfMZ), na istoj grani. Zadatak je u Otvorenom → „Video predstavljanje”.
+- Tablica Work: ništa.
 
 ### 31/10/2026 · Dario / Claude · CV po oglasu i case studiji u zasebnom chatu
 - **Dario:** „u novom chatu kreni raditi na izradi boljih i customiziranih CV-a za svaki od poslova … imamo jako lošu statistiku što se tiče odbijenica … odgovoriti na što više pitanja unutar CV-a … pretraži internet koje su najbolje smjernice … imaš i moj vlastoručni potpis … proširivanje case studyja i opisa poslova … uvedi to u git”.
