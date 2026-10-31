@@ -114,7 +114,7 @@ Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji” (https
 
 **Stanje 31/10/2026, kasno** (postupak: [`CV-WORKFLOW.md`](CV-WORKFLOW.md); Drive mapa [CV po oglasu](https://drive.google.com/drive/folders/1cCZepnepiYEiMR_M3oPZrbHC6GL5kSTA)):
 - [x] 1–2. [Smjernice i analiza odbijenica](https://docs.google.com/document/d/15_M7csU1kozgzbikNc50TBVcvnM2C7UXyYebYf9uN1E/edit).
-- [x] 3. [Master](https://docs.google.com/document/d/1tTF5NQPOuuVR2V2Gdxx2Y7HzRrK0QYEUnzA1b5UsqNE/edit): Darijeve potvrde od 31/10 upisane (odjeljak 7) i prenesene u UPUTE §8. Otvoreno: Marko Rubel (real estate, SAD).
+- [x] 3. [Master](https://docs.google.com/document/d/1tTF5NQPOuuVR2V2Gdxx2Y7HzRrK0QYEUnzA1b5UsqNE/edit): Darijeve potvrde od 31/10 upisane (odjeljak 7) i prenesene u UPUTE §8. Marko Rubel = Turn-key Systems (12/2014–10/2016); otvoreno je samo kako opisati tržište (real estate ili B2B tech, kao na LinkedInu).
 - [x] 4. CV po oglasu za 14 brojeva (svi 2 stranice, potpis na dnu, popis u `CV-WORKFLOW.md` §4).
   - 15 10ML i 16 THE/STUDIO: Dario je odlučio skip.
   - 17 RemotelyTalents: Dario je odlučio skip nakon što je CV već bio napravljen.

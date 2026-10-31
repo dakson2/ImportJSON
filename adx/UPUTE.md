@@ -271,7 +271,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
     - lead LinkedIn kampanje za zapošljavanje (oglasi; to nije „hiring”).
   - **Za forme:** engleski C1; dostupnost 10 dana; datumi kao u CV-u 2026.
   - **Ne ide u CV:** IT u ljekarnama.
-  - **Čeka detalje:** Marko Rubel, PPC i YouTube u SAD-u, real estate. Ne ide u CV dok Dario ne da razdoblje i ulogu.
+  - **Marko Rubel = Turn-key Systems, Inc.** (San Diego, remote), PPC Specialist, 12/2014 – 10/2016: Google AdWords, Bing Ads i YouTube (postavljanje, vođenje, analiza, optimizacija, reporting). Dario u chatu kaže da je to bilo tržište SAD-a i real estate, a LinkedIn opisuje „B2B technology context”. Do Darijeve odluke CV ostaje na „AdWords, Bing Ads and YouTube for a US company”.
 - Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).
 - Višerazinski MCC podijeljen po tržištu, jeziku i kategoriji proizvoda; brand i non-brand odvojeni (potvrdio Dario 31/10/2026).
 - SERP sustav prati plaćene pozicije i konkurente po tržištima (potvrdio Dario 31/10/2026).
