@@ -105,7 +105,7 @@ Koraci (UPUTE §10, R1–R9):
 
 ### CV po oglasu i case studiji (od 31/10/2026)
 
-Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji”, na istoj grani. Pravila su u UPUTE §8.
+Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji” (https://claude.ai/code/session_01QJi9Mt8HhJkHaT8McbYUDt), na istoj grani. Pravila su u UPUTE §8.
 1. Smjernice za CV s izvorima (web istraživanje) kao dokument na Driveu.
 2. Analiza dosadašnjih odbijenica (APPLIED: Amplemarket, UTTR, saas.group, ennovationHUB, Adcubator, SolCrov, Ruby Labs, Infobip) i što je CV-u nedostajalo.
 3. Master dokument na Driveu: prošireni opisi svih dosadašnjih poslova i case studiji. Pitanja za Darija se šalju u chatu, a svaka nova tvrdnja dobiva oznaku „potvrdio Dario”.
@@ -181,6 +181,14 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 31/10/2026 · Dario / Claude · CV po oglasu i case studiji u zasebnom chatu
+- **Dario:** „u novom chatu kreni raditi na izradi boljih i customiziranih CV-a za svaki od poslova … imamo jako lošu statistiku što se tiče odbijenica … odgovoriti na što više pitanja unutar CV-a … pretraži internet koje su najbolje smjernice … imaš i moj vlastoručni potpis … proširivanje case studyja i opisa poslova … uvedi to u git”.
+- Otvoren je chat „1.ADX-Jobs — CV po oglasu i case studiji” (https://claude.ai/code/session_01QJi9Mt8HhJkHaT8McbYUDt), na istoj grani. Zadatak: smjernice za CV s izvorima, analiza odbijenica, master dokument s proširenim opisima poslova i case studijima, CV za svaki oglas iz privremene tablice (osim 16).
+- Potpis je izrezan, s prozirnom pozadinom, i spremljen na Drive kao `Dario_Suler_potpis.png` (`1L3odnQPCE20Uonmu3bSGurF5cp-O_Hp_`). Nije u repou.
+- UPUTE §8: nova pravila „CV po oglasu i case studiji”. Otvoreno: novi odjeljak s koracima.
+- Ispravak: za Nord Recruitment uvjet od $1M+ mjesečno je ispunjen (provjereno: osobno do ~€2,5M mjesečno); ispravljeno u privremenoj tablici i u Otvorenom.
+- Tablica Work: ništa.
 
 ### 31/10/2026 · Dario / Claude · Odluke iz privremene tablice, provjera poslodavaca, W-002 izvršen
 - **Dario:** „Provjeri moje komentare u sheetu, obriši sve u kojima odluka nije OK … zavedi ih kao void … Ostale, u kojima je OK, ćeš prvo detaljno provjeriti kao poslodavca, također provjeri jesmo li se do sada prijavljivali u istu tvrtku, ako da onda skip … ažuriraj sve u privremenoj tablici, bazama i gitu”.
