@@ -245,6 +245,10 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - B2B iskustvo preko Adaxe.
 - Demand Gen i YouTube (Dario, 28/09/2026).
 - AI lokalizacija oglasa i PPC materijala za DE, FR i JP, uz ljudsku provjeru (Dario, 28/09/2026).
+- Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).
+- Višerazinski MCC podijeljen po tržištu, jeziku i kategoriji proizvoda; brand i non-brand odvojeni (potvrdio Dario 31/10/2026).
+- SERP sustav prati plaćene pozicije i konkurente po tržištima (potvrdio Dario 31/10/2026).
+- Poslodavac EMEA/APAC u javnim materijalima (video) se opisuje, ne imenuje: „a global D2C e-commerce group in a strictly regulated category” (Dario, 31/10/2026).
 
 **Ne tvrditi (nije provjereno):**
 - SQL, BigQuery, pLTV;

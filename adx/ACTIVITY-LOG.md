@@ -129,7 +129,7 @@ Vodi se u zasebnom chatu „1.ADX-Jobs — video predstavljanje (plan i scenarij
 
 Sadržaj samo iz provjerenih činjenica (UPUTE §8). Bez podataka klijenata na ekranu. Dokumenti i video idu na Drive, ne u repo.
 
-**Stanje 31/10:** prvi nacrt plana i scenarija gotov (koraci 1–4), čeka Darijeve odgovore na 10 pitanja na kraju dokumenta. Drive mapa [Video](https://drive.google.com/drive/folders/1zwO5ivaGqBTZ3kqNUn_xh0ht41X-K6IZ): [plan i scenarij](https://docs.google.com/document/d/1R9wmlZykTI7IguwijaI8BWruc2oT5GWQT70dSodhuHU/edit), SRT za 90 s i 30 s, teleprompter `.txt`. Sljedeće: nacrt 2 po odgovorima; Dario snima i objavljuje.
+**Stanje 31/10 (nacrt 2):** Darijevi odgovori uključeni: YouTube unlisted; dvije verzije, V1 s Adaxa logom (`adaxa.agency/video`) i V2 bez logotipa (`adaxa.agency/intro`); poslodavac se opisuje, ne imenuje; naglasak na automatizaciji i AI-ju; snima na računalu u Google Vidsu; portfolio od 2–3 min na demo podacima; samo engleska verzija. Drive mapa [Video](https://drive.google.com/drive/folders/1zwO5ivaGqBTZ3kqNUn_xh0ht41X-K6IZ): [plan i scenarij, nacrt 2](https://docs.google.com/document/d/14NK1Wjvqh72xMy9yNuPqTsEzt-jtdVL6LdZukJhf0bw/edit), [DEMO tablica](https://docs.google.com/spreadsheets/d/15Y6WhuInkKRksAq1ytRpB2c36sqGpfvMRwS0ccbk_Wk/edit) (izmišljeni podaci), demo Apps Script, SRT za 90 s i 30 s, teleprompter `.txt`. Čeka Darija: proba u Google Vidsu, Adaxa logo za V1, kasnije novi case studiji. Zatim Dario snima i objavljuje.
 
 ### Razgovori
 
@@ -200,6 +200,13 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 31/10/2026 · Dario / Claude · Video predstavljanje: odgovori i nacrt 2
+- **Dario:** „1 YT unlisted, 2 možeš dvije verzije, smije biti na adx, 3 možeš ih malo opisati ali ne govoriti o imenima, 4 dodat ćemo kasnije, 5 da, 6 snimam na računalu, 1 može logo drugi bez, 7 samo screenshare – google videos, 8 automatizaciju i poglavito sve što radim sa AI, 9 može, 10 naravno samo ENG verzija”.
+- Nacrt 2: scenariji prepisani s naglaskom na AI i automatizaciji (opener F za AI-first role), V1/V2, upute za Google Vids i web kameru, portfolio na demo podacima, HR verzija uklonjena. Nacrt 1 i stare SRT/txt datoteke premješteni u otpad na Driveu.
+- Novo na Driveu: [nacrt 2](https://docs.google.com/document/d/14NK1Wjvqh72xMy9yNuPqTsEzt-jtdVL6LdZukJhf0bw/edit), [DEMO tablica](https://docs.google.com/spreadsheets/d/15Y6WhuInkKRksAq1ytRpB2c36sqGpfvMRwS0ccbk_Wk/edit) (RSA_Feed s formulama, SERP_Monitor, Localisation; sve izmišljeno), `DEMO_apps_script_buildFeed.gs.txt`.
+- UPUTE §8: dodane stavke koje je Dario potvrdio 31/10 (Search/Shopping/PMax, podjela MCC-a i brand/non-brand, opis SERP sustava) i pravilo da se poslodavac u videu opisuje, ne imenuje.
+- Tablica Work: ništa.
 
 ### 31/10/2026 · Claude · Video predstavljanje: plan i scenarij, nacrt 1
 - Istraživanje s izvorima (duljina 60–90 s, titlovi, hosting, GDPR i pristranost), plan tri verzije (90 s, 30 s, po želji 2–3 min portfolio), scenariji na engleskom s vremenima, kadrom i natpisima, 6 uvodnih rečenica po tipu oglasa, teleprompter, SRT, shot list, tehnika, kontrolne liste i 10 pitanja za Darija. Hrvatska verzija: preporuka da se sada ne radi.
