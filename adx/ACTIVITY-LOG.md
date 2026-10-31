@@ -112,6 +112,13 @@ Vodi se u zasebnom chatu „1.ADX-Jobs — CV po oglasu i case studiji” (https
 4. CV po oglasu za sve brojeve iz privremene tablice osim 16 (THE/STUDIO, skip); za 14 i 15 (Scento i 10ML) samo jedan, po Darijevu izboru. Odgovoriti u CV-u na što više pitanja iz oglasa. Potpis po želji na dno.
 5. Link na svaki CV upisati u privremenu tablicu.
 
+**Stanje 31/10/2026** (Drive, mapa [CV po oglasu](https://drive.google.com/drive/folders/1cCZepnepiYEiMR_M3oPZrbHC6GL5kSTA)):
+- [x] 1. [CV smjernice i analiza odbijenica](https://docs.google.com/document/d/15_M7csU1kozgzbikNc50TBVcvnM2C7UXyYebYf9uN1E/edit): 20 izvora.
+- [x] 2. Analiza je u istom dokumentu (§8, osam zaključaka).
+- [~] 3. [Master: poslovi i case studiji](https://docs.google.com/document/d/1tTF5NQPOuuVR2V2Gdxx2Y7HzRrK0QYEUnzA1b5UsqNE/edit): popunjen iz CV-a 2026, pisama, APPLIED, tablice Base, dokumenta *APPLICATION – CASE STUDIES* i case studija o filmu (13/10). Pitanja za Darija poslana 31/10 i čekaju odgovor.
+- [~] 4. Predložak: Google Doc s jednim stupcem, 2 stranice i potpisom na dnu (HTML uvoz; margine 43/47 pt). Gotov je 9 Voy ([CV](https://docs.google.com/document/d/1WhvexFxu54QtrwN5vONfY0GWtCPt2PHTsCLtrKffaaQ/edit)). Slijede 12 Echelonn, 37 lemlist, 42 BetterMe, pa ostali.
+- [~] 5. Stupac *CV po oglasu* dodan je ispred stupca *Odluka* (Q); upisan je Voy.
+
 ### Video predstavljanje (od 31/10/2026)
 
 Vodi se u zasebnom chatu „1.ADX-Jobs — video predstavljanje (plan i scenarij)” (https://claude.ai/code/session_01QJi9MsKf2MhhZ6caJJxfMZ), na istoj grani. Cilj je video koji Dario snimi jednom i linka uz prijave (CV, pismo, forme, LinkedIn).
@@ -191,6 +198,21 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 31/10/2026 · Claude · CV po oglasu: smjernice, analiza odbijenica, master dokument, CV za Voy
+- **Dario:** „kreni malo raditi na izradi boljih i customiziranih CV-a za svaki od poslova … Pretraži internet i vidi koje su najbolje smjernice … Krenut ćemo također u proširivanje case studyja kao i proširivanje opisa poslova”.
+- **Drive:**
+  - mapa *CV po oglasu*;
+  - smjernice s 20 izvora i analizom 49 redova APPLIED (2 intervjua, 1 recruiter screen, 9 odbijenica);
+  - master dokument;
+  - CV za Voy (2 stranice, ATS čitljiv, potpis na dnu). Prva verzija od 3 stranice je u smeću.
+- **Nalazi:**
+  - CV 2026 navodi Algebru kao „Lecturer, Digital Marketing … training”, što je na popisu „Ne tvrditi”; novi CV-jevi pišu samo „Lecturer”;
+  - profil („last one to two years”) proturječi datumu Wowtech 2021 – Present;
+  - Base ima drukčije datume za Oxidian (10/17) i Promosapiens (09/16) te poslove kojih nema u CV-u (e-recept u ljekarni 2011–2014, Zderić, Hattrick).
+  - Sve to čeka Darijevu potvrdu.
+- **Privremena tablica:** novi stupac Q *CV po oglasu* (ispred *Odluka*); red 9 Voy.
+- Tablica Work: ništa. Ništa nije poslano.
 
 ### 31/10/2026 · Dario / Claude · Video predstavljanje u zasebnom chatu
 - **Dario:** „hoćemo napraviti i jedan scenarij za video da to snimimo i generalno uvijek imamo pri ruci, napravi mi plan za video isto u novom chatu”.
