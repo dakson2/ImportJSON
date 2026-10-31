@@ -31,13 +31,13 @@ Projekt ima **dva dokumenta**. Ovo je prvi, a drugi je [`ACTIVITY-LOG.md`](ACTIV
   - odobrava iznimke;
   - sam šalje prijave;
   - bira koje će Adaxa leadove kontaktirati.
-- **Claude** radi u repou, Gmailu, na Driveu i webu, ali **ne može pisati ćelije u Work**. Zadaci:
+- **Claude** radi u repou, Gmailu, na Driveu i webu. U Work piše izravno samo kad Dario to traži (Dario, 31/10/2026); tada radi po §10 i izvještaj stavlja u Dnevnik. Zadaci:
   - crawl i provjera oglasa;
   - numerirana lista kandidata;
   - pisma na Driveu i Gmail nacrti;
   - Adaxa istraživanje i EOJN monitor.
 
-  Sve što treba ući u tablicu Claude priprema kao nalog u `ACTIVITY-LOG.md`.
+  Inače sve što treba ući u tablicu Claude priprema kao nalog u `ACTIVITY-LOG.md`.
 - **Codex** (ili bilo koji AI s pravom pisanja u Work) izvršava naloge iz `ACTIVITY-LOG.md` točno kako pišu i u logu potvrđuje što je upisao.
 
 ## 3. Protokol loga
