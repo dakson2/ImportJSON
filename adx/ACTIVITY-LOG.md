@@ -192,6 +192,10 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · appflame: vođenje izvan posla u CV-u
+- U CV-u za appflame redak „Team” u bloku *At a glance* dopunjen je volonterskim predsjedništvom pikado saveza (120+ članova) i boćarskog kluba. CV je i dalje na 2 stranice.
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Vođenje ljudi izvan posla
 - **Dario:** uz vođenje agencija, kod pitanja o vođenju timova spomenuti:
   - pikado savez (120+ članova);
