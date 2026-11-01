@@ -192,6 +192,20 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Ljudskiji ton CV-jeva
+- **Dario:** „pokušaj da CV izgledaju više human like … s nekom dozom emocija”.
+- **13 CV-jeva:** sažetak prepisan u prvom licu, s osobnom niti po oglasu:
+  - lavanda 2009. (Voy, eCommerce Smart);
+  - prvi YouTube oglasi u HR (BetterMe, Ad-Lab, lemlist);
+  - PSOBŽ i ChatGPT Ads (lemlist);
+  - flota i ROAS (Nord);
+  - Excel VBA → Supermetrics → Tableau (Tameson);
+  - ChatGPT Ads (Thrive).
+  - RemotelyTalents nije diran (skip).
+- **Provjera PDF-om:** svi provjereni CV-jevi su na 2 stranice; Echelonn je skraćen nakon prvog pokušaja.
+- **Upisano:** UPUTE §8 i `CV-WORKFLOW.md` §0.
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Alati: Meta, tracking, reporting, Microsoft Ads, ChatGPT Ads
 - **Dario je opisao:**
   - Meta kampanje (crowdfunding Zvjezdarnice Višnjan);

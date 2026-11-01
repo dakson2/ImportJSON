@@ -217,6 +217,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 7. Plaća, kad forma pita: „€100,000 annual gross, flexible depending on final scope, bonus structure and contract setup”.
 
 **CV po oglasu i case studiji (Dario, 31/10/2026):**
+- **Ton (Dario, 01/11/2026):** CV-jevi i pisma zvuče ljudski, u prvom licu i s dozom emocije, s Darijevim stvarnim pričama; bez korporativnih fraza.
 - **Cilj (Dario, 01/11/2026):** prvo dobiti posao. Bez obzira na ishod, CV mora dovesti poslodavca na Darijev LinkedIn ili na adaxa.agency (klikabilni linkovi s UTM-om po tvrtki; postupak u `CV-WORKFLOW.md` §0).
 - Za svaku prijavu radi se **CV prilagođen oglasu**, a ne jedan opći CV. Cilj je odgovoriti u samom CV-u na što više pitanja iz oglasa i forme: lokacija i vremenska zona, način rada (remote, B2B ili zaposlenje), jezici, kanali, budžeti, tržišta, alati, sektor i rezultati.
 - Smjernice za CV dokumentiraju se s izvorima (istraživanje na webu) u dokumentu na Driveu, ne u repou.

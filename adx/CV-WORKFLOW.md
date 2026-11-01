@@ -12,7 +12,11 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
      - LinkedIn vodi na https://www.linkedin.com/in/dakson/;
      - Adaxa vodi na stranicu „About Dario” s UTM-om `utm_source=<tvrtka>&utm_medium=cv&utm_campaign=job-application`, pa se u GA4 vidi koji je poslodavac otvorio stranicu;
    - **ispod potpisa:** „Dario Šuler · linkedin.com/in/dakson · adaxa.agency” s istim linkovima, u istom retku.
-3. Linkovi se dodaju u dokumentu nakon izrade (Docs `updateTextStyle` s `link`, indeksi iz `read_doc`).
+3. **Ton (Dario, 01/11/2026):** CV zvuči ljudski, s dozom emocije, kako Dario sam priča.
+   - Summary je u prvom licu i ima jednu osobnu nit vezanu uz oglas (lavanda 2009., prvi YouTube oglasi u HR, PSOBŽ, „ROAS je pao zbog flote”).
+   - Bez korporativnih fraza i bez pretjerivanja; činjenice samo iz §8.
+   - Stavke iskustva ostaju kratke i konkretne.
+4. Linkovi se dodaju u dokumentu nakon izrade (Docs `updateTextStyle` s `link`, indeksi iz `read_doc`).
 
 ## 1. Izvori
 
