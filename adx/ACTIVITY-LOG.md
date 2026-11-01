@@ -192,6 +192,11 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Case: među prvim YouTube oglasima u HR (logIT, Ledo)
+- **Upisano:** master dokument (odjeljak 11, s EN tekstom za pitanje o YouTubeu) i UPUTE §8.
+- CV-jevi nisu mijenjani. Promosapiens kampanje čekaju Darijeve detalje.
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Google certifikati
 - Pročitan crtež „Google Certifications”:
   - AdWords Search, Display, Video, Shopping i Mobile (do 09/2018);
