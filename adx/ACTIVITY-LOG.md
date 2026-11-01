@@ -192,6 +192,16 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Dodatni case studiji za pitanja (SEO, Oxidian, Exponential)
+- **Dario (FYI, ako netko pita):**
+  - Lavender-croatia.com i počeci SEO-a, analitike i AdWordsa (2009–2010);
+  - Oxidian: Sebastus, najam plovila na Jadranu;
+  - Exponential.buzz: skuplje nekretnine u Portugalu za klijente iz Izraela.
+- **Upisano:**
+  - master dokument, odjeljak 9 (s EN tekstom za pitanje o SEO-u);
+  - UPUTE §8 (samo za pitanja).
+- CV-jevi nisu mijenjani. Tablica Work: ništa. Ništa nije poslano.
+
 ### 31/10/2026 · Dario / Claude · Case PSOBŽ / psobz.eu, Rubel = Turn-key
 - **Dario** je opisao projekt psobz.eu kao dodatni case za AI pitanja; potvrđeno 31/10.
 - **Upisano:**
