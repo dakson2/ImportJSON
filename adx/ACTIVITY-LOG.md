@@ -154,7 +154,7 @@ Od 30/10 EOJN i javna nabava vode se u zasebnom chatu „Adaxa — EOJN javna na
 
 Izvor istine je kartica APPLIED.
 
-**Aktivnih prijava nema (30/10/2026).** Dario je 13/10 zatvorio praćenje APPLIED r2–r43, a 30/10 i r44–r47 (Thrive Talent Solutions, Shotstack, Pro Coffee Gear, HLTH), David Kennedy, Huzzle (Google Ads Specialist) i Infobip (Senior Digital Advertising Specialist, odbijenica 29/10). Zatvorene prijave ostaju u APPLIED kao povijest; zatvaranja od 30/10 upisana su u Work 31/10 (APPLIED r44–r50).
+**Aktivne prijave (01/11/2026):** Voy (Growth Marketing Manager – New Expansion, APPLIED r51) i Echelonn (Google Ads Media Buyer – PPC Specialist, APPLIED r52), obje poslane 01/11/2026. Ranije stanje: aktivnih prijava nije bilo (30/10/2026). Dario je 13/10 zatvorio praćenje APPLIED r2–r43, a 30/10 i r44–r47 (Thrive Talent Solutions, Shotstack, Pro Coffee Gear, HLTH), David Kennedy, Huzzle (Google Ads Specialist) i Infobip (Senior Digital Advertising Specialist, odbijenica 29/10). Zatvorene prijave ostaju u APPLIED kao povijest; zatvaranja od 30/10 upisana su u Work 31/10 (APPLIED r44–r50).
 
 **Ne predlagati ponovo (Darijeve odluke i pravila):**
 - **VOID 31/10 (privremena tablica):** svi brojevi 8–50 bez odluke OK i 20 zatvorenih ili neprovjerljivih oglasa iz Found; u Work je `Priority` = `VOID - Dario 31/10/2026` (popis je u Dnevniku 31/10). Skip 31/10: THE/STUDIO (ranija prijava).
@@ -191,6 +191,19 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 01/11/2026 · Dario / Claude · Poslani Voy i Echelonn; APPLIED r51–r52
+- **Dario:** „poslao sam Voy i Echelonn, upiši u APPLIED”.
+- **Pripremljeno za slanje:**
+  - Voy: odgovori za formu (motivacija, otkazni rok 10 dana, €100k, bez UK sponzorstva, remote iz Hrvatske);
+  - Echelonn: odgovori na Google Ads test, USD 9.350/mj i plan za video.
+- **Tablica Work, izravan upis** (Dario je tražio; UPUTE §10):
+  - APPLIED r51 Voy (Menwell Limited) i r52 Echelonn, `STATUS` = `Submitted 01/11/2026`;
+  - dedupe: Company + Job title nisu postojali;
+  - datumi kao tekst.
+  - Za Echelonn nije zabilježeno je li video poslan.
+- **Privremena tablica:** stupac *Odluka* za redove 9 i 12 je „OK — POSLANO 01/11/2026”.
+- Aktivne prijave ažurirane u Otvorenom.
 
 ### 01/11/2026 · Dario / Claude · appflame: vođenje izvan posla u CV-u
 - U CV-u za appflame redak „Team” u bloku *At a glance* dopunjen je volonterskim predsjedništvom pikado saveza (120+ članova) i boćarskog kluba. CV je i dalje na 2 stranice.
