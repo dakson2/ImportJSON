@@ -192,6 +192,16 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Vođenje ljudi izvan posla
+- **Dario:** uz vođenje agencija, kod pitanja o vođenju timova spomenuti:
+  - pikado savez (120+ članova);
+  - boćarski klub (volonterski predsjednik);
+  - OPG;
+  - predstavnik roditelja u nogometnom klubu;
+  - zato komunikacija, damage control i osjećaj za ljude nisu problem.
+- **Upisano:** master dokument (odjeljak 13, s EN tekstom), UPUTE §8 i `CV-WORKFLOW.md`.
+- CV-jevi nisu mijenjani. Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Ljudskiji ton CV-jeva
 - **Dario:** „pokušaj da CV izgledaju više human like … s nekom dozom emocija”.
 - **13 CV-jeva:** sažetak prepisan u prvom licu, s osobnom niti po oglasu:

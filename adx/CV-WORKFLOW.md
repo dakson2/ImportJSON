@@ -86,6 +86,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | AI agenti (Claude Code, Codex), custom GPT-ovi | AI-native, automatizacija |
 | PSOBŽ / psobz.eu: platforma za savez od 120+ članova, izrađena u mjesec dana s Claude Code + Codex (EN tekst u masteru, odjeljak 8) | AI pitanja u formama i pismima, AI-native role, inicijativa i vodstvo |
 | LinkedIn kampanja za zapošljavanje | samo kad oglas traži LinkedIn |
+| Vođenje izvan posla: savez (120+), boćarski klub, OPG, predstavnik roditelja (EN tekst u masteru, odjeljak 13) | pitanja o vođenju timova, lead i head-of role, pisma |
 | Supermetrics for Sheets → Apps Script → Tableau (reporting po klijentu, svaki sat) | analitika, reporting, agencije |
 | Meta Pixel, GA, GTM, Zapier/IFTTT, Mailchimp | tracking, mala i srednja e-commerce, freelance |
 | Crowdfunding Zvjezdarnice Višnjan (Meta, cilj ostvaren) | Meta, crowdfunding, neprofitne udruge |

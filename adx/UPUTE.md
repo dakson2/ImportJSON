@@ -291,6 +291,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
     - **AI za sastanke:** botovi koji screenshot ili export pretvaraju u PPTX s komentarima prilagođenima razini sastanka.
     - **Microsoft Ads:** dosta iskustva; volumen je postao vidljiv na US kampanji za stariju publiku (Edge); danas je omjer jači.
     - **ChatGPT Ads:** glavni fokus danas; upoznao platformu i odradio nekoliko seminara.
+  - **Vođenje ljudi izvan posla** (Dario, 01/11/2026; za pitanja o vođenju timova, uz Wowtech i Lovehoney): volonterski predsjednik Pikado saveza OBŽ (120+ članova) i Boćarskog kluba Dragovoljac Bosutsko; obiteljsko poljoprivredno gospodarstvo; dugogodišnji predstavnik roditelja u nogometnom klubu. Iz toga dolaze komunikacija na raznim razinama, damage control i osjećaj za ljude.
   - **Certifikati:** redak u CV-u „Google: Search, Display & Video Advertising (Advanced); Analytics & GTM Fundamentals” ostaje kakav jest; ne mijenja se (Dario, 01/11/2026). Puni popis s datumima isteka je u master dokumentu (odjeljak 10), samo za pitanja.
   - **Marko Rubel = Turn-key Systems, Inc.** (San Diego, remote), PPC Specialist, 12/2014 – 10/2016: Google AdWords, Bing Ads i YouTube za vrlo konkurentno tržište nekretnina u SAD-u (real estate). U CV-u stoji „for highly competitive US real-estate campaigns” (Dario je 31/10 izabrao opciju 1). LinkedIn još opisuje „B2B technology context”; Dario ga treba uskladiti.
 - Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).
