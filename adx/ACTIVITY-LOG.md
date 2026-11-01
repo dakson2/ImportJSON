@@ -92,11 +92,10 @@ Koraci (UPUTE §10, R1–R9):
 
 ### Odluke koje čekaju Darija
 
-1. **Front A: Dario nastavlja s provjerenim popisom u privremenoj tablici [ADX prijedlozi poslova 30-10-2026 (privremeno)](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit).** Ostalo je 16 redova s odlukom OK; stupci *Ranija prijava*, *Provjera poslodavca 31/10* i *Rezultat provjere* su dodani ispred stupca *Odluka*.
-   - **Prolazi:** 9 Voy, 12 Echelonn, 37 lemlist, 42 BetterMe.
-   - **Prolazi uz napomenu:** 14 Scento (samo jedan od 14 i 15), 17 RemotelyTalents (niska plaća), 27 Tameson (BigQuery, Python), 28 D2LINE (prijava mailom preko d2line.com), 39 Thrive Internet Marketing Agency, 40 TripleTen (niska plaća), 41 appflame preko TalentC, 44 Nord Recruitment (regruter; uvjet od $1M+ mjesečno je ispunjen, provjereno do ~€2,5M), 45 Ad-Lab (tko zapošljava: Ad-Lab ili Clickbait Agency).
-   - **Rizik:** 15 10ML (poslodavac nije provjerljiv), 22 eCommerce Smart (malo podataka o poslodavcu).
-   - **Skip:** 16 THE/STUDIO (ranija prijava, APPLIED r3).
+1. **Front A: lista iz crawla 01/11 u tablici [ADX prijedlozi poslova](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit)** (stari redovi su zavedeni u Work i obrisani). Dario upisuje *Odluka*.
+   - **Jače:** 46 Vysta Paid Media Group, Senior Google Ads Media Buyer (LinkedIn, bez ATS-a; vjerojatno stalni oglas); 47 Loora, UA Manager Google Ads (Ashby 17/10; geografija: Tel Aviv uz oznaku remote).
+   - **Slabije:** 48 Boosta Google PPC Manager (Ukrajina, 2+ god.), 49 Chess.com (nije Google-first), 50 Publitas (⚠️ plaća, višekanalno).
+   - **CV spreman, prijava nije poslana:** Scento, Tameson, D2LINE, appflame (Work `Priority` = `OK - Dario 31/10/2026 | CV ready 01/11/2026, not sent`).
 
    Pisma od 12/10 postoje za Voy ([pismo](https://docs.google.com/document/d/1tD_NmxV-K7i9NtXeMAxcI1FkVb30v8vlc_vbsUXuKi4/edit)) i Echelonn ([pismo](https://docs.google.com/document/d/18EckA9pNhwhJdw-aLd5EG-RVSOlYe5a_HzHw-3r4Fik/edit)); za ostale Claude priprema paket kad Dario potvrdi broj. Kad Dario pošalje, Claude upisuje red u APPLIED.
 2. **Adaxa, FPZ NETLOOP (€12.800, rok 16/10):** Dario: „na kraju ćemo to detaljno pregledati” (ima li smisla i koliko je komplicirano sudjelovati). Pregled treba biti prije roka.
@@ -191,6 +190,18 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 01/11/2026 · Claude · Tablica preimenovana, stari redovi zavedeni, crawl 01/11
+- **Dario:** „preimenuj ADX prijedlozi poslova 30-10-2026 (privremeno) - ADX prijedlozi poslova, obriši stare, zavedi ih tamo di trebaš, i kreni u Crawl”.
+- **Tablica:** preimenovana u „ADX prijedlozi poslova” (više nije privremena); zaglavlja *Oglas 30/10* → *Oglas aktivan*, *Provjera poslodavca 31/10* → *Provjera poslodavca*. Obrisano 16 starih redova.
+- **Work › Found positions, `Priority`:**
+  - `A - Applied 01/11/2026`: r200 eCommerce Smart, r246 Echelonn, r264 Voy, r269 lemlist, r271 Thrive, r272 TripleTen, r274 BetterMe, r276 Nord, r277 Ad-Lab;
+  - `Skip - Dario 01/11/2026`: r235 RemotelyTalents, r249 10ML (r224 THE/STUDIO već Skip);
+  - `OK - Dario 31/10/2026 | CV ready 01/11/2026, not sent`: r198 D2LINE, r230 Tameson, r248 Scento, r273 appflame.
+- **Crawl 01/11 (prva objava od 02/10):** LinkedIn guest 15 dana (24 ključne riječi × Hrvatska, EU, Europa, EMEA, Worldwide; 1.664 role), Himalayas HR (213), Remote Rocketship (20 slugova × 3; 259), Workable global (10 × 3; 226), WWR, Working Nomads, Jobgether (4.041). Nakon filtera ~170 jedinstvenih; na ATS-u provjereni Boosta, Bratte, Genesis Tech, deepset, Neuroscale, Yadda, TENEX, Sword Health, Global Accelerator, WHIP, Boldin, Loora, EverAI, Gear Games, Nutrameg, Hilo, Yoru, crackerJCK, Clients Blackbox.
+- **Otpali (razlog):** starost > 30 dana (Bratte 21/08, Genesis JustDone 26/01, deepset 31/07, Yadda 06/08, TENEX 13/07, Nutrameg 09/08, EverAI prva kopija 31/08, Boosta Logos 14/09); SAD (Neuroscale, WHIP, Gear Games, crackerJCK, Boldin); njemački ili DE (Hilo, Sword Health, MAI Group, Evolve); Meta/Amazon (Clients Blackbox, ScaleJet); regruteri (Huzzle, Nord, Jobgether, Digital Waffle, Cranberry Panda, BettingJobs); Yoru (freelance po računu, 2–4 god.); Sweat Pants (Dario VOID 12/10).
+- **Lista Dariju:** 46–50 (vidi Otvoreno → Odluke, točka 1). Workable je u prvom prolazu vratio 429 pa je ponovljen sporije.
+- Tablica: Work Found `Priority` (16 ćelija, gore).
 
 ### 01/11/2026 · Dario / Claude · Poslan Ad-Lab; APPLIED r59
 - **Dario:** „Ad-Lab poslano, upiši u APPLIED”.

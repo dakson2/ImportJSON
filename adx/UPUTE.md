@@ -223,7 +223,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - Smjernice za CV dokumentiraju se s izvorima (istraživanje na webu) u dokumentu na Driveu, ne u repou.
 - **Master izvor sadržaja** je Google Doc na Driveu s proširenim opisima svih poslova i case studijima. Svaka nova tvrdnja u njemu ima oznaku „potvrdio Dario dd/mm/yyyy”. Tek potvrđena tvrdnja ulazi u CV ili pismo i dodaje se u popis provjerenih činjenica ispod.
 - Darijev vlastoručni potpis je na Driveu: `Dario_Suler_potpis.png` (`1L3odnQPCE20Uonmu3bSGurF5cp-O_Hp_`, prozirna pozadina). Može se dodati na dno CV-a ili pisma. **Ne ide u repo** ni u javne dokumente.
-- CV-jevi i pisma po oglasu spremaju se na Drive (glavna mapa ili podmapa za CV). Link na CV upisuje se uz red u privremenoj tablici ili u Work.
+- CV-jevi i pisma po oglasu spremaju se na Drive (glavna mapa ili podmapa za CV). Link na CV upisuje se uz red u tablici „ADX prijedlozi poslova” ili u Work.
 
 **Provjerene činjenice (smiju se koristiti):**
 - 15+ godina iskustva, od toga 10+ godina Google Ads kao primarni kanal (od 2014., logIT).

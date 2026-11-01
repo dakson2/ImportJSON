@@ -28,7 +28,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | Dokazi (snimke Google Adsa, GMC, case s filmom) | Drive mapa `1lj8AD1EWQae-StZmiRdV9IZKhEQTbpZV` |
 | Potpis | Drive `1L3odnQPCE20Uonmu3bSGurF5cp-O_Hp_` (u CV se ugrađuje smanjen na 300 px, prikazan 120×42) |
 | Zaglavlje s kontaktima | iz CV-a ili pisama na Driveu; nikad u repo |
-| Linkovi na CV-jeve | privremena tablica `1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA`, stupac *CV po oglasu* (ispred *Odluka*) |
+| Linkovi na CV-jeve | tablica „ADX prijedlozi poslova” `1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA`, stupac *CV po oglasu* (ispred *Odluka*) |
 
 ## 2. Postupak za jedan oglas
 
