@@ -192,6 +192,11 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · UPUTE §4.5: referenca plaće €70.000
+- **Dario:** „Smanji godišnji target na 70.000 za iduće crawlove”.
+- **UPUTE §4.5:** referenca je ~€70.000 bruto godišnje (prije ~€100.000). Donji prag od €3.500/mj i oznaka ⚠️ niska plaća (€3.500–4.200/mj) ostaju.
+- Odgovor za forme (§8.7, €100.000) nije mijenjan dok Dario ne kaže.
+
 ### 01/11/2026 · Dario / Claude · Poslan Thrive Internet Marketing Agency; APPLIED r55
 - **Dario:** „Thrive Internet Marketing Agency done”.
 - **Tablica Work:** APPLIED r55, `STATUS` = `Submitted 01/11/2026`; dedupe u redu.
