@@ -154,7 +154,7 @@ Od 30/10 EOJN i javna nabava vode se u zasebnom chatu „Adaxa — EOJN javna na
 
 Izvor istine je kartica APPLIED.
 
-**Aktivne prijave (01/11/2026):** Voy (Growth Marketing Manager – New Expansion, APPLIED r51) Echelonn (Google Ads Media Buyer – PPC Specialist, APPLIED r52) eCommerce Smart (Ecommerce Performance Marketing Specialist, freelance, APPLIED r53) i lemlist (AI Growth Manager, Ads, APPLIED r54), sve četiri poslane 01/11/2026. Ranije stanje: aktivnih prijava nije bilo (30/10/2026). Dario je 13/10 zatvorio praćenje APPLIED r2–r43, a 30/10 i r44–r47 (Thrive Talent Solutions, Shotstack, Pro Coffee Gear, HLTH), David Kennedy, Huzzle (Google Ads Specialist) i Infobip (Senior Digital Advertising Specialist, odbijenica 29/10). Zatvorene prijave ostaju u APPLIED kao povijest; zatvaranja od 30/10 upisana su u Work 31/10 (APPLIED r44–r50).
+**Aktivne prijave (01/11/2026):** Voy (Growth Marketing Manager – New Expansion, APPLIED r51) Echelonn (Google Ads Media Buyer – PPC Specialist, APPLIED r52) eCommerce Smart (Ecommerce Performance Marketing Specialist, freelance, APPLIED r53) lemlist (AI Growth Manager, Ads, APPLIED r54) i Thrive Internet Marketing Agency (Senior Paid Media Specialist, APPLIED r55), svih pet poslano 01/11/2026. Ranije stanje: aktivnih prijava nije bilo (30/10/2026). Dario je 13/10 zatvorio praćenje APPLIED r2–r43, a 30/10 i r44–r47 (Thrive Talent Solutions, Shotstack, Pro Coffee Gear, HLTH), David Kennedy, Huzzle (Google Ads Specialist) i Infobip (Senior Digital Advertising Specialist, odbijenica 29/10). Zatvorene prijave ostaju u APPLIED kao povijest; zatvaranja od 30/10 upisana su u Work 31/10 (APPLIED r44–r50).
 
 **Ne predlagati ponovo (Darijeve odluke i pravila):**
 - **VOID 31/10 (privremena tablica):** svi brojevi 8–50 bez odluke OK i 20 zatvorenih ili neprovjerljivih oglasa iz Found; u Work je `Priority` = `VOID - Dario 31/10/2026` (popis je u Dnevniku 31/10). Skip 31/10: THE/STUDIO (ranija prijava).
@@ -191,6 +191,13 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 01/11/2026 · Dario / Claude · Poslan Thrive Internet Marketing Agency; APPLIED r55
+- **Dario:** „Thrive Internet Marketing Agency done”.
+- **Tablica Work:** APPLIED r55, `STATUS` = `Submitted 01/11/2026`; dedupe u redu.
+  - To nije Thrive Talent Solutions (r44).
+  - Plaća i preklapanje s US Central nisu zabilježeni; potvrđuje Dario.
+- **Privremena tablica:** *Odluka* za red 39 je „ok — POSLANO 01/11/2026”.
 
 ### 01/11/2026 · Dario / Claude · Poslan lemlist; APPLIED r54
 - **Dario:** „lemlist done”.
