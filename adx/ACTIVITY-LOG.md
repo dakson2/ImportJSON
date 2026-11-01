@@ -192,6 +192,15 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Claude · Pismo za BetterMe
+- **Drive:** [Dario_Suler_Cover_Letter_BetterMe](https://docs.google.com/document/d/1wamZ8SD3pMZ8G4__UXE22XBZTcYZMfjqM_5kdpRuy2s/edit), mapa *CV po oglasu*.
+  - 1 stranica, ljudski ton, potpis;
+  - LinkedIn i Adaxa linkovi s UTM-om `utm_source=betterme&utm_medium=cover-letter`;
+  - priča o prvim YouTube oglasima u HR (Ledo), rujan 2026 (YouTube ~£1,2M), slučaj s filmom;
+  - iskreno navedene praznine: subscription aplikacije, in-house motion dizajn tim.
+- **Privremena tablica:** link na pismo dodan u stupac Q za red 42.
+- Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Poslan TripleTen; APPLIED r56
 - **Dario:** „TripleTen poslano”.
 - **Tablica Work:** APPLIED r56, `STATUS` = `Submitted 01/11/2026`, rok 28/12/2026; dedupe u redu.
