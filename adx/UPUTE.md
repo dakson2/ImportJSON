@@ -283,6 +283,13 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
     - **Oxidian:** oglašavanje za Sebastus, platformu za najam plovila na Jadranu.
     - **Exponential.buzz:** oglašavanje skupljih nekretnina u Portugalu za klijente iz Izraela.
   - **YouTube pionir u HR (logIT):** za Ledo (Agrokor), koji je kao premium partner među prvima dobio beta pristup YouTube oglašavanju u Hrvatskoj, Dario je osobno vodio kampanju; jedan od prvih ljudi koji su pustili YouTube oglase u HR. TV spot imao je disonantnu glazbu u prvih 5 sekundi, a rezultati su ipak bili dobri (Dario, 01/11/2026). Za pitanja o YouTubeu i za CV-jeve s naglaskom na video.
+  - **Alati (Dario, 01/11/2026):**
+    - **Meta Ads:** kampanje za klijente od početaka Adaxe; crowdfunding Zvjezdarnice Višnjan za novi teleskop, cilj ostvaren.
+    - **Tracking:** Meta Pixel, GA i GTM postavljao sam kod svakog klijenta; Zapier i IFTTT za konverzije s formi i Mailchimp liste.
+    - **Reporting:** Excel VBA (logIT) → Supermetrics for Sheets (izvještaji po klijentu, osvježavanje svaki sat, grafovi) → Google Apps Script → Tableau na razini Lovehoneyja; Looker Studio za manje stvari.
+    - **AI za sastanke:** botovi koji screenshot ili export pretvaraju u PPTX s komentarima prilagođenima razini sastanka.
+    - **Microsoft Ads:** dosta iskustva; volumen je postao vidljiv na US kampanji za stariju publiku (Edge); danas je omjer jači.
+    - **ChatGPT Ads:** glavni fokus danas; upoznao platformu i odradio nekoliko seminara.
   - **Certifikati:** redak u CV-u „Google: Search, Display & Video Advertising (Advanced); Analytics & GTM Fundamentals” ostaje kakav jest; ne mijenja se (Dario, 01/11/2026). Puni popis s datumima isteka je u master dokumentu (odjeljak 10), samo za pitanja.
   - **Marko Rubel = Turn-key Systems, Inc.** (San Diego, remote), PPC Specialist, 12/2014 – 10/2016: Google AdWords, Bing Ads i YouTube za vrlo konkurentno tržište nekretnina u SAD-u (real estate). U CV-u stoji „for highly competitive US real-estate campaigns” (Dario je 31/10 izabrao opciju 1). LinkedIn još opisuje „B2B technology context”; Dario ga treba uskladiti.
 - Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).

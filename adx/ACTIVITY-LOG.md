@@ -192,6 +192,18 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Alati: Meta, tracking, reporting, Microsoft Ads, ChatGPT Ads
+- **Dario je opisao:**
+  - Meta kampanje (crowdfunding Zvjezdarnice Višnjan);
+  - Meta Pixel, GA i GTM, Zapier, IFTTT, Mailchimp;
+  - razvoj reportinga od Excel VBA preko Supermetricsa i Apps Scripta do Tableaua i Looker Studija;
+  - AI botove za PPTX;
+  - Microsoft Ads (Edge, starija US publika);
+  - ChatGPT Ads.
+- **Upisano:** master dokument (odjeljak 12, s EN tekstovima), UPUTE §8 i `CV-WORKFLOW.md` (bazen stavki).
+- CV-jevi nisu mijenjani (Drive kvota za izvoz PDF-a privremeno potrošena, a bez provjere nema izmjena).
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Načelo: posao, pa LinkedIn ili Adaxa
 - **Dario:** „PRVA i OSNOVNA nit vodilja je DOBITI POSAO, nakon toga bez obzira na ishod cilj je dovesti poslodavca i/ili na Adaxa Agency web ili na Linkedin profil … shodno tome gradi i CVove”.
 - **Svih 14 CV-jeva:**
