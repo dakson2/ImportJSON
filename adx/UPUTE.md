@@ -281,6 +281,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
     - **Lavender-croatia.com (2009–2010):** pri osnivanju OPG-a Šuler sam je izgradio Joomla portal za svoj i ostale lokalne OPG-ove s lavandom (danas nije aktivan). SEO tehnike tog doba (keyword density, meta tagovi, SEF URL-ovi, XML sitemap, direktoriji, link building) dale su dobre rezultate. Odatle GA certifikati, Webmaster Tools / Search Console i učenje AdWordsa.
     - **Oxidian:** oglašavanje za Sebastus, platformu za najam plovila na Jadranu.
     - **Exponential.buzz:** oglašavanje skupljih nekretnina u Portugalu za klijente iz Izraela.
+  - **Certifikati:** redak u CV-u „Google: Search, Display & Video Advertising (Advanced); Analytics & GTM Fundamentals” ostaje kakav jest; ne mijenja se (Dario, 01/11/2026). Puni popis s datumima isteka je u master dokumentu (odjeljak 10), samo za pitanja.
   - **Marko Rubel = Turn-key Systems, Inc.** (San Diego, remote), PPC Specialist, 12/2014 – 10/2016: Google AdWords, Bing Ads i YouTube za vrlo konkurentno tržište nekretnina u SAD-u (real estate). U CV-u stoji „for highly competitive US real-estate campaigns” (Dario je 31/10 izabrao opciju 1). LinkedIn još opisuje „B2B technology context”; Dario ga treba uskladiti.
 - Google Ads kanali Search, Shopping i Performance Max (potvrdio Dario 31/10/2026).
 - Višerazinski MCC podijeljen po tržištu, jeziku i kategoriji proizvoda; brand i non-brand odvojeni (potvrdio Dario 31/10/2026).

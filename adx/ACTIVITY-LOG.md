@@ -192,6 +192,14 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Google certifikati
+- Pročitan crtež „Google Certifications”:
+  - AdWords Search, Display, Video, Shopping i Mobile (do 09/2018);
+  - Analytics IQ (do 05/2019);
+  - četiri tečaja Analytics Academyja.
+- Claude je zamijenio redak s certifikatima u 14 CV-jeva. Dario je to odbio („ne diraj to”), pa je izvorni redak vraćen u svih 14 CV-jeva. Pravilo je upisano u UPUTE §8, a popis certifikata u master (odjeljak 10).
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Dodatni case studiji za pitanja (SEO, Oxidian, Exponential)
 - **Dario (FYI, ako netko pita):**
   - Lavender-croatia.com i počeci SEO-a, analitike i AdWordsa (2009–2010);
