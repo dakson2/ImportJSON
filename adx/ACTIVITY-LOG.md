@@ -192,6 +192,15 @@ Izvor istine je kartica APPLIED.
 
 ## Dnevnik
 
+### 01/11/2026 · Dario / Claude · Načelo: posao, pa LinkedIn ili Adaxa
+- **Dario:** „PRVA i OSNOVNA nit vodilja je DOBITI POSAO, nakon toga bez obzira na ishod cilj je dovesti poslodavca i/ili na Adaxa Agency web ili na Linkedin profil … shodno tome gradi i CVove”.
+- **Svih 14 CV-jeva:**
+  - LinkedIn i adaxa.agency u zaglavlju su klikabilni; Adaxa link ima UTM po tvrtki (`utm_source=<tvrtka>&utm_medium=cv&utm_campaign=job-application`);
+  - ispod potpisa dodan je redak „linkedin.com/in/dakson · adaxa.agency” s istim linkovima.
+  - Voy provjeren: 2 stranice, linkovi rade u PDF-u.
+- **Upisano:** UPUTE §8 i `CV-WORKFLOW.md` §0.
+- Tablica Work: ništa. Ništa nije poslano.
+
 ### 01/11/2026 · Dario / Claude · Case: među prvim YouTube oglasima u HR (logIT, Ledo)
 - **Upisano:** master dokument (odjeljak 11, s EN tekstom za pitanje o YouTubeu) i UPUTE §8.
 - CV-jevi nisu mijenjani. Promosapiens kampanje čekaju Darijeve detalje.

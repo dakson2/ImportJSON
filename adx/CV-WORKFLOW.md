@@ -4,6 +4,16 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 - **Činjenice** o iskustvu stoje samo u UPUTE §8 (provjerene i „Ne tvrditi”). Ovdje je samo postupak.
 - **Ne ide u repo:** kontakti, potpis ni CV-jevi (repo je javan).
 
+## 0. Cilj svakog CV-a (Dario, 01/11/2026)
+
+1. **Prvi i osnovni cilj je dobiti posao.** Sve u CV-u služi tome.
+2. **Drugi cilj, bez obzira na ishod:** dovesti poslodavca na Darijev LinkedIn ili na adaxa.agency. Zato svaki CV ima:
+   - **u zaglavlju:** klikabilne linkove `linkedin.com/in/dakson` i `adaxa.agency`;
+     - LinkedIn vodi na https://www.linkedin.com/in/dakson/;
+     - Adaxa vodi na stranicu „About Dario” s UTM-om `utm_source=<tvrtka>&utm_medium=cv&utm_campaign=job-application`, pa se u GA4 vidi koji je poslodavac otvorio stranicu;
+   - **ispod potpisa:** „Dario Šuler · linkedin.com/in/dakson · adaxa.agency” s istim linkovima, u istom retku.
+3. Linkovi se dodaju u dokumentu nakon izrade (Docs `updateTextStyle` s `link`, indeksi iz `read_doc`).
+
 ## 1. Izvori
 
 | Što | Gdje |
@@ -50,6 +60,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
    - ako je 3, skrati stavke izravno u dokumentu (`deleteContentRange` / `insertText` uz `requiredRevisionId`);
    - `pdftotext` mora dati tekst ispravnim redom.
 7. **Ispravak** postojećeg CV-a ide u isti dokument (Docs API), da link ostane isti.
+7a. **Linkovi:** prema §0.
 8. **Bilješka za Darija** u stupcu *CV po oglasu*: link, što je naglašeno, koje praznine ostaju.
 9. **Log:** zapis u `ACTIVITY-LOG.md` (odjeljak „CV po oglasu i case studiji” i Dnevnik). Ništa se ne šalje; šalje Dario.
 
