@@ -154,7 +154,7 @@ Od 30/10 EOJN i javna nabava vode se u zasebnom chatu „Adaxa — EOJN javna na
 
 Izvor istine je kartica APPLIED.
 
-**Aktivne prijave (01/11/2026):** Voy (Growth Marketing Manager – New Expansion, APPLIED r51) Echelonn (Google Ads Media Buyer – PPC Specialist, APPLIED r52) eCommerce Smart (Ecommerce Performance Marketing Specialist, freelance, APPLIED r53) lemlist (AI Growth Manager, Ads, APPLIED r54) Thrive Internet Marketing Agency (Senior Paid Media Specialist, APPLIED r55) i TripleTen (Senior User Acquisition Manager, APPLIED r56), svih šest poslano 01/11/2026. Ranije stanje: aktivnih prijava nije bilo (30/10/2026). Dario je 13/10 zatvorio praćenje APPLIED r2–r43, a 30/10 i r44–r47 (Thrive Talent Solutions, Shotstack, Pro Coffee Gear, HLTH), David Kennedy, Huzzle (Google Ads Specialist) i Infobip (Senior Digital Advertising Specialist, odbijenica 29/10). Zatvorene prijave ostaju u APPLIED kao povijest; zatvaranja od 30/10 upisana su u Work 31/10 (APPLIED r44–r50).
+**Aktivne prijave (01/11/2026):** Voy (Growth Marketing Manager – New Expansion, APPLIED r51) Echelonn (Google Ads Media Buyer – PPC Specialist, APPLIED r52) eCommerce Smart (Ecommerce Performance Marketing Specialist, freelance, APPLIED r53) lemlist (AI Growth Manager, Ads, APPLIED r54) Thrive Internet Marketing Agency (Senior Paid Media Specialist, APPLIED r55) TripleTen (Senior User Acquisition Manager, APPLIED r56) i BetterMe (Google Ads Demand Gen Manager, APPLIED r57), svih sedam poslano 01/11/2026. Ranije stanje: aktivnih prijava nije bilo (30/10/2026). Dario je 13/10 zatvorio praćenje APPLIED r2–r43, a 30/10 i r44–r47 (Thrive Talent Solutions, Shotstack, Pro Coffee Gear, HLTH), David Kennedy, Huzzle (Google Ads Specialist) i Infobip (Senior Digital Advertising Specialist, odbijenica 29/10). Zatvorene prijave ostaju u APPLIED kao povijest; zatvaranja od 30/10 upisana su u Work 31/10 (APPLIED r44–r50).
 
 **Ne predlagati ponovo (Darijeve odluke i pravila):**
 - **VOID 31/10 (privremena tablica):** svi brojevi 8–50 bez odluke OK i 20 zatvorenih ili neprovjerljivih oglasa iz Found; u Work je `Priority` = `VOID - Dario 31/10/2026` (popis je u Dnevniku 31/10). Skip 31/10: THE/STUDIO (ranija prijava).
@@ -191,6 +191,12 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 01/11/2026 · Dario / Claude · Poslan BetterMe; APPLIED r57
+- **Dario:** „BetterMe poslano, upiši u APPLIED”.
+- **Pismo:** prije slanja ispravljena je rečenica „Today video is a big part of my week” u „Video is still at the heart of what I do … roughly half of our £2.3M … went to YouTube”.
+- **Tablica Work:** APPLIED r57, `STATUS` = `Submitted 01/11/2026`; dedupe u redu.
+- **Privremena tablica:** *Odluka* za red 42 je „ok — POSLANO 01/11/2026”.
 
 ### 01/11/2026 · Claude · Pismo za BetterMe
 - **Drive:** [Dario_Suler_Cover_Letter_BetterMe](https://docs.google.com/document/d/1wamZ8SD3pMZ8G4__UXE22XBZTcYZMfjqM_5kdpRuy2s/edit), mapa *CV po oglasu*.
