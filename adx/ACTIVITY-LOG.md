@@ -93,7 +93,8 @@ Koraci (UPUTE §10, R1–R9):
 ### Odluke koje čekaju Darija
 
 1. **Front A: lista u tablici [ADX prijedlozi poslova](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit).** Dario upisuje *Odluka*.
-   - **Spremno za slanje (CV gotov, 02/11):** 51 refurbed, SEA Manager (Greenhouse 23/10; odgovori za formu u chatu); 46 Vysta Paid Media Group (LinkedIn).
+   - **Poslano 02/11:** 51 refurbed (APPLIED r60).
+   - **Spremno za slanje:** 46 Vysta Paid Media Group (LinkedIn; CV gotov).
    - **Loora (47):** Ashby forma kaže hibrid u Tel Avivu → pada na geografiji; CV postoji, ne koristiti bez iznimke.
    - **Slabije:** 48 Boosta, 49 Chess.com, 50 Publitas.
    - **Ikaros / David HR Europa (Gmail 02/11):** traže HEXACO test i CV za „Marketing Manager” u Osijeku, €1.500–2.000 neto. Prijava nije zapisana; čeka Darija (vidi Dnevnik 02/11).
@@ -192,6 +193,12 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 02/11/2026 · Dario / Claude · Poslan refurbed; APPLIED r60
+- **Dario:** „riješeni” (forma za refurbed ispunjena i poslana).
+- APPLIED r60: SEA Manager (f/m/x) - remote, Greenhouse, `Submitted 02/11/2026`; odabrani iznos plaće nije zapisan (potvrditi).
+- Tablica ADX prijedlozi r7 *Odluka* = `POSLANO 02/11/2026 (APPLIED r60)`.
+- Tablica: APPLIED r60.
 
 ### 02/11/2026 · Claude · Gmail, crawl 02/11, paketi za refurbed i Vysta, provjera Ikarosa
 - **Gmail (od 30/10):** lemlist (lempire) odbijenica 02/11 → APPLIED r54 `Rejected 02/11/2026`; BetterMe potvrda primitka (bez javljanja u 5 radnih dana = odbijeno, ~09/11) → APPLIED r57 Actions; TripleTen potvrda primitka; Huzzle podsjetnik za AI chat (regruter, ne dira se).
