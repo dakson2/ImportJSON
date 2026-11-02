@@ -93,10 +93,9 @@ Koraci (UPUTE §10, R1–R9):
 ### Odluke koje čekaju Darija
 
 1. **Front A: lista u tablici [ADX prijedlozi poslova](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit).** Dario upisuje *Odluka*.
-   - **Poslano 02/11:** 51 refurbed (APPLIED r60).
-   - **Spremno za slanje:** 46 Vysta Paid Media Group (LinkedIn; CV gotov).
+   - **Poslano 02/11:** 51 refurbed (APPLIED r60), 46 Vysta Paid Media Group (r61), 48 Boosta Google PPC Manager (r62).
    - **Loora (47):** Ashby forma kaže hibrid u Tel Avivu → pada na geografiji; CV postoji, ne koristiti bez iznimke.
-   - **Slabije:** 48 Boosta, 49 Chess.com, 50 Publitas.
+   - **Slabije, bez odluke:** 49 Chess.com, 50 Publitas.
    - **Ikaros / David HR Europa (Gmail 02/11):** traže HEXACO test i CV za „Marketing Manager” u Osijeku, €1.500–2.000 neto. Prijava nije zapisana; čeka Darija (vidi Dnevnik 02/11).
    - **CV spreman, prijava nije poslana:** Scento, Tameson, D2LINE, appflame (Work `Priority` = `OK - Dario 31/10/2026 | CV ready 01/11/2026, not sent`).
 
@@ -193,6 +192,12 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 02/11/2026 · Dario / Claude · Poslani Vysta i Boosta; APPLIED r61–r62
+- **Dario:** „46, 48 sam poslao sam”.
+- APPLIED r61 Vysta Paid Media Group, Senior Google Ads Media Buyer (LinkedIn, CV `1Ts3tJCc…`); r62 Boosta, Google PPC Manager (Greenhouse; CV nije pripremio Claude, koji je poslan nije zapisano). Oba `Submitted 02/11/2026`; iznosi plaće nisu zapisani.
+- Tablica ADX prijedlozi: *Odluka* r2 i r4 = POSLANO.
+- Tablica: APPLIED r61–r62.
 
 ### 02/11/2026 · Dario / Claude · Poslan refurbed; APPLIED r60
 - **Dario:** „riješeni” (forma za refurbed ispunjena i poslana).
