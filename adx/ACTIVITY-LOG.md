@@ -92,9 +92,11 @@ Koraci (UPUTE §10, R1–R9):
 
 ### Odluke koje čekaju Darija
 
-1. **Front A: lista iz crawla 01/11 u tablici [ADX prijedlozi poslova](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit)** (stari redovi su zavedeni u Work i obrisani). Dario upisuje *Odluka*.
-   - **Jače:** 46 Vysta Paid Media Group, Senior Google Ads Media Buyer (LinkedIn, bez ATS-a; vjerojatno stalni oglas); 47 Loora, UA Manager Google Ads (Ashby 17/10; geografija: Tel Aviv uz oznaku remote).
-   - **Slabije:** 48 Boosta Google PPC Manager (Ukrajina, 2+ god.), 49 Chess.com (nije Google-first), 50 Publitas (⚠️ plaća, višekanalno).
+1. **Front A: lista u tablici [ADX prijedlozi poslova](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit).** Dario upisuje *Odluka*.
+   - **Spremno za slanje (CV gotov, 02/11):** 51 refurbed, SEA Manager (Greenhouse 23/10; odgovori za formu u chatu); 46 Vysta Paid Media Group (LinkedIn).
+   - **Loora (47):** Ashby forma kaže hibrid u Tel Avivu → pada na geografiji; CV postoji, ne koristiti bez iznimke.
+   - **Slabije:** 48 Boosta, 49 Chess.com, 50 Publitas.
+   - **Ikaros / David HR Europa (Gmail 02/11):** traže HEXACO test i CV za „Marketing Manager” u Osijeku, €1.500–2.000 neto. Prijava nije zapisana; čeka Darija (vidi Dnevnik 02/11).
    - **CV spreman, prijava nije poslana:** Scento, Tameson, D2LINE, appflame (Work `Priority` = `OK - Dario 31/10/2026 | CV ready 01/11/2026, not sent`).
 
    Pisma od 12/10 postoje za Voy ([pismo](https://docs.google.com/document/d/1tD_NmxV-K7i9NtXeMAxcI1FkVb30v8vlc_vbsUXuKi4/edit)) i Echelonn ([pismo](https://docs.google.com/document/d/18EckA9pNhwhJdw-aLd5EG-RVSOlYe5a_HzHw-3r4Fik/edit)); za ostale Claude priprema paket kad Dario potvrdi broj. Kad Dario pošalje, Claude upisuje red u APPLIED.
@@ -190,6 +192,18 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 02/11/2026 · Claude · Gmail, crawl 02/11, paketi za refurbed i Vysta, provjera Ikarosa
+- **Gmail (od 30/10):** lemlist (lempire) odbijenica 02/11 → APPLIED r54 `Rejected 02/11/2026`; BetterMe potvrda primitka (bez javljanja u 5 radnih dana = odbijeno, ~09/11) → APPLIED r57 Actions; TripleTen potvrda primitka; Huzzle podsjetnik za AI chat (regruter, ne dira se).
+- **Ikaros (ds@david-hr-europa.de, cc office@ikaros.hr), „Marketing Manager Ikaros – sljedeći korak”:**
+  - traži HEXACO test (link je Gmailov `google.com/url` omot oko pravog hexaco.org) i CV na engleski mail; plaća €1.500–2.000 neto;
+  - provjera: Ikaros d.o.o. postoji (OIB 38851689661, MBS 070216951, Trgovački sud Varaždin, osnovan 15/05/2025, sjedište **Ludbreg**, ne Osijek; CompanyWall: 0 zaposlenih, prihod ~€20.600); direktorica Mihaela Stančin, prokurist David Stančin; David Stančin je i direktor David HR Europa GmbH (Neu-Ulm, HRB 19932 Memmingen, posredovanje mehaničara s Balkana u Njemačku). Domene imaju Google Workspace MX, SPF i DMARC (p=none);
+  - nesklad: potpis kaže Osijek, a tvrtka je u Ludbregu; FAQ na ikaros.hr kaže da zapošljavaju samo mehaničare; prijava se ne vidi ni u Gmailu ni u logu;
+  - procjena: vjerojatno stvarni ljudi i tvrtke, nije klasični phishing (ne traži novac ni lozinke), ali mala firma bez zaposlenih, šablonski mail i plaća daleko ispod praga (§4.5). Ništa nije poslano.
+- **Crawl 02/11 (razlika prema 01/11):** LinkedIn 1.693, Himalayas HR 320, Remote Rocketship 262, Workable 221, WWR/Working Nomads/Jobgether 4.697; 63 novih nakon filtera. Na ATS-u provjereni: refurbed (Greenhouse 23/10, remote Europa) — **prolazi**; GiveDirectly (Greenhouse 02/10, 31 dan, East Africa overlap) — na rubu, preskočeno; FINN (Tajland), Trustt (francuski, freelance), Juno Projects i Vurke (regruteri, paid social), TransPerfect (agencija, US sati), Hilo (njemački) — otpali.
+- **Loora:** Ashby forma vraća `workplaceType: Hybrid`, Tel Aviv → FAIL geo.
+- **CV-jevi (Drive, mapa CV po oglasu, kopija Echelonn CV-a s novim naslovom, sažetkom i UTM-om; PDF 2 stranice):** Vysta `1Ts3tJCcHIU4l9LYwrS5VylQP5YZ-YB7BYZEK_V8BR2g`, refurbed `12_tux2yQ2cB46uPmdtqdW50LH9H-Ugv_cel4knJBK34`, Loora `1WxNymVyg-LmiyW1FPLA39e1tE3j5ulZufnhfoUUw4uM` (ne koristiti).
+- Tablica: APPLIED r54 (Y, Z), r57 (Y); ADX prijedlozi r2, r3, r7.
 
 ### 01/11/2026 · Claude · Tablica preimenovana, stari redovi zavedeni, crawl 01/11
 - **Dario:** „preimenuj ADX prijedlozi poslova 30-10-2026 (privremeno) - ADX prijedlozi poslova, obriši stare, zavedi ih tamo di trebaš, i kreni u Crawl”.

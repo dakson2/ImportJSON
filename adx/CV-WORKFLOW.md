@@ -94,7 +94,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | ChatGPT Ads (platforma, seminari) | AI-native role, novi kanali (lemlist, Thrive) |
 | AI botovi: screenshot/export → PPTX za sastanke | AI pitanja, reporting stakeholderima |
 
-## 4. CV-jevi od 31/10/2026
+## 4. CV-jevi od 31/10/2026 (dopunjeno 02/11)
 
 | # | Poslodavac | Google Doc |
 |---|---|---|
@@ -112,5 +112,8 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | 42 | BetterMe | `1xwgqQ7A6XgnJXJoCh5ERrWLbyKGWHN5KxmRYzCA3eqc` |
 | 44 | Nord Recruitment (regruter) | `1Ob7GamU0f-9NfzhSx-H5v0HTxJ_-drm8FtHBKfiI4a4` |
 | 45 | Ad-Lab | `1dNwgIH5U66_q3LO5pgkXDBmlcqyjGH7091TmAcCDP_M` |
+| 46 | Vysta Paid Media Group | `1Ts3tJCcHIU4l9LYwrS5VylQP5YZ-YB7BYZEK_V8BR2g` |
+| 47 | Loora (hibrid Tel Aviv; ne koristi se) | `1WxNymVyg-LmiyW1FPLA39e1tE3j5ulZufnhfoUUw4uM` |
+| 51 | refurbed | `12_tux2yQ2cB46uPmdtqdW50LH9H-Ugv_cel4knJBK34` |
 
 PDF: u dokumentu Datoteka → Preuzmi → PDF, ili `https://docs.google.com/document/d/<ID>/export?format=pdf`.
