@@ -95,7 +95,7 @@ Koraci (UPUTE §10, R1–R9):
 1. **Front A: lista u tablici [ADX prijedlozi poslova](https://docs.google.com/spreadsheets/d/1lqX7aicbyP6ws8GSl_IdhMfVw6IUtiFdXZwzbEMOmdA/edit).** Dario upisuje *Odluka*.
    - **Poslano 02/11:** 51 refurbed (APPLIED r60), 46 Vysta Paid Media Group (r61), 48 Boosta Google PPC Manager (r62).
    - **Loora (47):** Ashby forma kaže hibrid u Tel Avivu → pada na geografiji; CV postoji, ne koristiti bez iznimke.
-   - **Slabije, bez odluke:** 49 Chess.com, 50 Publitas.
+   - **VOID 02/11:** 49 Chess.com, 50 Publitas.
    - **Ikaros / David HR Europa (Gmail 02/11):** traže HEXACO test i CV za „Marketing Manager” u Osijeku, €1.500–2.000 neto. Prijava nije zapisana; čeka Darija (vidi Dnevnik 02/11).
    - **CV spreman, prijava nije poslana:** Scento, Tameson, D2LINE, appflame (Work `Priority` = `OK - Dario 31/10/2026 | CV ready 01/11/2026, not sent`).
 
@@ -192,6 +192,11 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 02/11/2026 · Dario / Claude · Chess.com i Publitas VOID
+- **Dario:** za CV uz Boostu „Poslao” (verzija nije navedena); Chess.com i Publitas „Ne”.
+- Tablica ADX prijedlozi: *Odluka* r5 (Chess.com) i r6 (Publitas) = `VOID - Dario 02/11/2026`. Iznosi plaće za refurbed, Vystu i Boostu i dalje nisu zapisani.
+- Tablica: ADX prijedlozi r5–r6.
 
 ### 02/11/2026 · Dario / Claude · Poslani Vysta i Boosta; APPLIED r61–r62
 - **Dario:** „46, 48 sam poslao sam”.
