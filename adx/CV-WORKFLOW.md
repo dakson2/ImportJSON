@@ -72,7 +72,7 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 
 | Stavka | Kad je koristiti |
 |---|---|
-| CAC s filmom (−10–12 % / do −21 %) | growth, UA, CAC, D2C, gotovo uvijek |
+| CAC s filmom (−10–12 % / do −21 %) | growth/UA/D2C uz jasno navedenu usporedbu razdoblja; nije dokaz inkrementalnog učinka ili izoliranog testa |
 | Rujan 2026: ~£2,3M, ROAS po tipu kampanje | media buyer, skala, e-commerce |
 | YouTube ~£1,2M u rujnu 2026 | Demand Gen, YouTube, video |
 | RSA feed svaki sat | Search, automatizacija, e-commerce |
@@ -117,3 +117,17 @@ Iznimka od UPUTE §1, na Darijev zahtjev od 31/10/2026.
 | 51 | refurbed | `12_tux2yQ2cB46uPmdtqdW50LH9H-Ugv_cel4knJBK34` |
 
 PDF: u dokumentu Datoteka → Preuzmi → PDF, ili `https://docs.google.com/document/d/<ID>/export?format=pdf`.
+
+## 5. Provedba audita — 17/11/2026
+
+- Prije izrade paketa prođi UPUTE §12. Ne izrađuj novi paket za neizabrane brojeve.
+- Prva polovica prve stranice: uloga, primarni Google/SEA problem koji Dario rješava, jedan relevantan rezultat i jedan dokaz automatizacije. Prilagodi opseg budžeta oglasu; regionalnu odgovornost odvoji od osobnog rada.
+- Wowtech navedi sa službenom titulom, kao klijentski angažman kroz Adaxu. Adaxa ostaje točan poslodavac/poslovni kontekst; ne glumi izravno zaposlenje kod klijenta. Za zaposlenje naglasak je na osobnom operativnom radu i dostupnosti, za B2B na istom radu i uvjetima ugovora. Ne nuditi agencijsku uslugu unutar osobne prijave.
+- Trenutačni i povijesni maksimalni budžeti su odvojene činjenice. Mjesečni maksimum ne pomnožiti s 12 kao dokaz stvarnog godišnjeg budžeta. Koordinacija vanjskih specijalista nije izravno zapošljavanje ili people management.
+- CV do dvije stranice; kratki obični odlomci, standardni naslovi, jedan stupac. Važni podaci ne smiju postojati samo u zaglavlju/podnožju ili slici potpisa. Izvezene PDF stranice vizualno provjeriti i provjeriti redoslijed izdvojenog teksta.
+- Pismo ciljano 180–250 riječi, najviše jedna stranica: razlog interesa, dva konkretna dokaza relevantna za oglas, uvjeti/dostupnost i kratak završetak. Bez inventara svih kanala, maksimalnih budžeta i životopisa u prozi. Nije potrebno nabrajati sve neobvezne praznine; obvezno iskustvo ne izmišljati i na izravno pitanje odgovoriti jasno.
+- Odgovori: tvrdnja → vlastita radnja → rezultat/metrika i razdoblje → ograničenje ili naučeno. Razdvoji ono što je Dario osobno napravio, što je tim izveo i što je alat/AI generirao.
+- NDA: ponuditi odobren anonimizirani case, agregatne podatke ili sintetički demo koji je tako označen. Ne otkrivati klijentske tajne; ne koristiti blanket odbijanje videa kao zamjenu za dostupnu demonstraciju rada.
+- Prije slanja zaključaj verziju paketa i spremi stvarne odgovore iz forme. Naknadno uređeni Drive dokument nije pouzdan dokaz što je ranije poslano.
+- Testirati jednu promjenu u jednoj usporedivoj kohorti: npr. kraći uvod CV-a; ne mijenjati istodobno sadržaj, ciljani posao i plaću pa pripisati učinak samo jednom faktoru. Zbog malog uzorka rezultate opisivati, bez tvrdnje o uzročnosti.
+- Primjeri teksta i otvorena pitanja za vještine nalaze se u izvještaju audita i Work SKILL INPUT. Potvrđene nove činjenice i dalje se dodaju samo u §8 i master.
