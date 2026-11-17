@@ -214,7 +214,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 4. Za ispravak sadržaja napravi novi dokument, a stari ukloni s `trash_file`. `update_file` mijenja samo naslov i mapu.
 5. CV: `Dario_Suler_CV_2026.pdf` (Drive `1sYObHASxiW6o8PWTW2yfDgybhHHGaMEN`, od 28/09/2026). Stari `Dario_Suler_Ultimate_CV.pdf` (`13-k6kp3so90pImf7E_xyHKNjfJQARQAu`) više se ne koristi jer navodi >€5M.
 6. Zaglavlje (ime, grad, e-mail, telefon, LinkedIn) kopiraj iz zadnjeg pisma na Driveu (Puffy, 28/09). Ne upisuj ga u repo.
-7. Plaća, kad forma pita: „€100,000 annual gross, flexible depending on final scope, bonus structure and contract setup”.
+7. Plaća (usklađeno auditom 17/11/2026 s odlukom od 01/11): nema automatskog odgovora €100.000. Referenca za traženje je ~€70.000 bruto godišnje; prije odgovora provjeri objavljeni raspon, opseg, sate, valutu, bruto/neto i zaposlenje/B2B. Za standardnu full-time seniorsku ulogu početni tekst može biti: “My reference is around €70,000 gross annually for employment, flexible depending on scope and the overall package. For a B2B contract, I would agree a separate fee based on hours and terms.” Ne pretvaraj bruto plaću u jednak B2B fee. Donji prag iz §4 je interni filter, ne početna ponuda. Točno poslani iznos spremi nakon Darijeve potvrde; predložak nije dokaz poslanog odgovora.
 
 **CV po oglasu i case studiji (Dario, 31/10/2026):**
 - **Ton (Dario, 01/11/2026):** CV-jevi i pisma zvuče ljudski, u prvom licu i s dozom emocije, s Darijevim stvarnim pričama; bez korporativnih fraza.
@@ -231,7 +231,7 @@ DACH SEA role „100% remote” gotovo uvijek traže boravak u Njemačkoj i njem
 - EMEA/APAC za međunarodnu e-commerce grupu, preko Adaxe:
   - usmjeravao 15+ agencijskih PPC specijalista u višerazinskom MCC-u;
   - izvještavao regionalne voditelje;
-  - regionalna odgovornost za plaćene medije do **€7,8M mjesečno na vrhuncu** (Dario, 28/09/2026). Ovu brojku koristi svugdje, u CV-u, pismima i formama; „>€5M” se više ne koristi.
+  - regionalna odgovornost za plaćene medije do **€7,8M mjesečno na vrhuncu** (Dario, 28/09/2026). Ovu brojku koristi kad je regionalni opseg relevantan i izričito je označi kao regionalnu odgovornost. Ne zamjenjuje osobno upravljani Google Ads budžet. „>€5M” se više ne koristi.
 - RSA feed po kampanji, koji skripta učitava svaki sat.
 - Sustav za praćenje SERP-a: Google Ads + Apps Script + GPT.
 - Iskustvo s politikama osjetljivih kategorija.
@@ -416,3 +416,34 @@ U Work postoje dvije kartice:
   - lead `L-####`;
   - javni naručitelj `PB-####`;
   - zapis u ACTIVITY LOG `CLAUDE-yyyymmdd-<OZNAKA>`.
+
+
+## 12. Audit prijava i FIT v2 — 17/11/2026
+
+Ovo je provedba Darijeva zahtjeva za analizom i poboljšanjem cijelog procesa. Ne mijenja ovlast slanja: konačan izbor i slanje ostaju Dariju.
+
+### Prije ocjene FIT
+- Provjeri najstariji izvorni datum, aktivan ATS, lokaciju/ugovaranje iz Hrvatske, jezik, raspored, postojeću prijavu i VOID odluke. “Remote” ili EU lokacija sami po sebi ne potvrđuju mogućnost rada iz Hrvatske. Ne pretpostavljaj radnu dozvolu.
+- Svaki uvjet označi PASS, FAIL ili UNKNOWN. Nepoznat obvezan uvjet = HOLD, poznat blokator = SKIP. Iznimke samo prema već zabilježenoj Darijevoj odluci.
+- Razdvoji MUST-HAVE i NICE-TO-HAVE. Google Ads ne nadomješta obvezno iskustvo s B2B SaaS pipelineom, CRM-om, SQL/BigQuery modeliranjem, mobilnim UA ili vođenjem creative produkcije.
+- Nepoznata plaća sama po sebi ne blokira kvalitetan oglas; status SALARY UNKNOWN. Nepoznat datum ili uvjet lokacije ne prikazuje se kao potvrđeno svjež/kvalificiran oglas.
+
+### FIT v2 (procjena podudaranja, nije vjerojatnost zaposlenja)
+Zapiši verziju, datum i dokaz uz svaku komponentu: primarni kanal i zadaci 30; poslovni model i relevantni rezultati 20; mjerenje i obvezni alati 20; razina odgovornosti 15; operativni uvjeti i poznati budžet 10; motivacija i dokazi za baš tu ulogu 5. Ukupno 100.
+- Nepotvrđeno iskustvo ne dobiva bodove kao potvrđeno; zapiši donju ocjenu i što nedostaje. Odvojeno navedi pouzdanost dokaza (visoka/srednja/niska).
+- A: najmanje 80, obvezni uvjeti potvrđeni, jasan primarni fit. B: 65–79 bez blokatora. HOLD: bilo koja ključna nepoznanica. SKIP: blokator ili VOID. Stari FIT ostaje povijest, ne prepisuje se kao v2.
+- Primarni smjer: senior Google/SEA, e-commerce, Shopping/feedovi, multi-market i automatizacija. B2B pipeline, subscription UA, kreativno vođenje i napredna statistička analitika su zasebni smjerovi koji zahtijevaju dodatne dokaze.
+
+### Evidencija događaja
+- Pripremljen paket nije poslano. Svaka prijava ima stabilan ključ (poslodavac + ATS job ID), datum slanja, kanal, potvrdu, točnu verziju CV-a/pisma/odgovora i stvarno upisanu plaću.
+- Čuvaj odvojeno ponuđeni raspon i traženi iznos: valuta, period, bruto/neto/nepoznato, zaposlenje/B2B, sati, datum i izvor. Ne kopiraj očekivanje u ponuđenu plaću.
+- Odvoji potvrdu primitka, poziv, zakazani razgovor, održani razgovor, AI screening, asinkroni video/test, odbijenicu, ponudu i kandidatovo zatvaranje. Poziv nije dokaz održanog razgovora.
+- CLOSED BY DARIO nije employer rejection. “Nema pronađenog maila” nije dokaz da se poslodavac nikad nije javio. NO REPLY mora imati datum provjere i provjerene kanale.
+- Uspoređuj kohorte stare barem 21 dan; nove prijave prikazuj zasebno. Operativni follow-up ostaje oko 14. dana ako poslodavac ne navodi drukčije. Zatvorene prijave ne otvaraj ponovno i ne šalji poruke bez ovlasti.
+- Za poziv ili video pripremi odgovor/pripremu u roku 24–48 h; rok poslodavca ima prednost. Snimka se temelji na natuknicama i stvarnim primjerima, ne na čitanju dugog AI teksta.
+- Razloge odbijanja označi: izričit feedback / generička odbijenica / naša hipoteza. Hipoteze o plaći, Adaxi ili ATS-u ne prikazuj kao uzrok.
+- Adaxa kodiraj za cijeli poslani paket (CV/pismo/obrazac/link), odvojeno od samo spomena u pismu. Bez usporedive skupine bez Adaxe nema procjene njezina učinka.
+- Cilj 10 dnevno ne opravdava recikliranje VOID oglasa, stare oglase ili visok FIT uz nepotvrđen MUST-HAVE. Zapiši koliko je pregledano, kvalificirano, izabrano i stvarno poslano.
+
+### Trenutačni analitički izvor
+Work: kartice AUDIT PRIJAVA, AUDIT SAZETAK, AUDIT ODLUKE, SKILL INPUT i CRAWL AUDIT. Audit je presjek 17/11/2026; izvorne povijesne retke ne brisati.
