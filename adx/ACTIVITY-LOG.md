@@ -868,3 +868,14 @@ Izvor istine je kartica APPLIED.
   - TestGorilla je pauziran;
   - kandidati se biraju po broju;
   - bez Google Clouda.
+
+
+### 17/11/2026 · Codex · Audit prijava i provedba FIT v2
+- UTC: 2026-11-17T22:55:18.738Z.
+- Tablica: izravno APPLIED; bez novog W-payload naloga. Dodana 2 prethodno nedostajuća receipt zapisa; ažuriran status jedne pronađene prilike; 4 nova Found retka. Izvorna povijest i Found Y nisu brisani niti prepisani.
+- Work auditni izvori: AUDIT PRIJAVA (gid 17111701), AUDIT SAZETAK (17111702), AUDIT ODLUKE (17111703), SKILL INPUT (17111704), CRAWL AUDIT (17111705). Presjek 17/11: 65 analitičkih zapisa, 56 s dokazom slanja/postupka i 9 nepotvrđenih; 2 izričita duplikata isključena samo analitički. To nije dokaz potpune pokrivenosti svih kanala. Detalji i privatni izvori ostaju u Work/privatnom elaboratu.
+- UPUTE §8 plaća usklađena s novijom referencom iz §4; dodan §12 za gates prije FIT-a, verzioniranje i odvajanje ishoda/plaće. CV-WORKFLOW dopunjen kontrolom tvrdnji, relevantnim dokazima, kraćim pismima i arhiviranjem stvarno poslanog paketa. Master salary odlomak usklađen; nepotvrđene vještine nisu dodane.
+- Crawl: 11 signala, 3 nova uvjetna HOLD kandidata; nema izmišljeno kvalificiranih prilika radi kvote. Stare VOID/closed odluke poštovane. Nove prijave i poruke nisu slane.
+- Provjera: pročitani novi retci/kartice; sažetak vizualno pregledan u Sheets. Elaborat ima pretraživ registar i CSV izvoz; brojke usklađene s analitičkim modelom.
+- Otvoreno: SKILL INPUT, nedostajuća potvrda slanja, mogući isti Infobip proces, stvarni salary odgovori i potpuna glavna prijavna pošta. Poziv/termin nije automatski održani razgovor. Generička odbijenica ne otkriva razlog.
+- Koordinacija: Dario javio da drugi AI posprema Drive ADAXA JOBS. Ova sesija ne premješta/renamira/briše datoteke; pri pospremanju sačuvati postojeće ID-eve i veze na master, CV-eve i pet auditnih kartica.
