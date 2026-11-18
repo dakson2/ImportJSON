@@ -3,7 +3,7 @@
 Vrijedi od 28/09/2026 za Darija i za svakog AI-ja na projektu (Claude, Codex ili bilo koji drugi).
 Projekt ima **dva dokumenta**. Ovo je prvi, a drugi je [`ACTIVITY-LOG.md`](ACTIVITY-LOG.md).
 
-- **Front A:** seniorske Google Ads, performance i growth role, remote ili dostupne iz Hrvatske. Cilj je 10 prijava dnevno.
+- **Front A:** seniorske Google Ads + primijenjeni AI role, remote ili dostupne iz Hrvatske. PPC + AI je najviši strateški prioritet (Dario, 18/11/2026); AI je drugi glavni stup profila odmah iza Google Adsa. Cilj je 10 prijava dnevno.
 - **Front B:** klijenti za Adaxa Agency.
 
 ---
@@ -88,7 +88,7 @@ Filteri se primjenjuju ovim redom.
    - remote vezan uz jednu zemlju („based in Spain”);
    - oglasi na njemačkom ili oni koji traže njemački.
 3. **Senioritet:** senior ili više.
-4. **Kanal:** težište je Google / paid search.
+4. **Kanal i AI:** težište je Google / paid search u kombinaciji s primijenjenim AI-jem, agentima, automatizacijom analiza i izradom alata. Aktivno traži AI-native PPC, Paid Search + AI, Performance Marketing Automation i Marketing Engineer s PPC jezgrom. AI je glavni fokus nakon Google Adsa (Dario, 18/11/2026).
    - Meta, Microsoft i Amazon su sekundarni.
    - Native (Taboola, Outbrain, MGID) i čisti paid social su druga disciplina.
 5. **Plaća** (Dario, 05/10/2026; referenca promijenjena 01/11/2026):
@@ -418,7 +418,7 @@ U Work postoje dvije kartice:
   - zapis u ACTIVITY LOG `CLAUDE-yyyymmdd-<OZNAKA>`.
 
 
-## 12. Audit prijava i FIT v2 — 17/11/2026
+## 12. Audit prijava i FIT v2.1 — PPC + AI, 18/11/2026
 
 Ovo je provedba Darijeva zahtjeva za analizom i poboljšanjem cijelog procesa. Ne mijenja ovlast slanja: konačan izbor i slanje ostaju Dariju.
 
@@ -428,11 +428,18 @@ Ovo je provedba Darijeva zahtjeva za analizom i poboljšanjem cijelog procesa. N
 - Razdvoji MUST-HAVE i NICE-TO-HAVE. Google Ads ne nadomješta obvezno iskustvo s B2B SaaS pipelineom, CRM-om, SQL/BigQuery modeliranjem, mobilnim UA ili vođenjem creative produkcije.
 - Nepoznata plaća sama po sebi ne blokira kvalitetan oglas; status SALARY UNKNOWN. Nepoznat datum ili uvjet lokacije ne prikazuje se kao potvrđeno svjež/kvalificiran oglas.
 
-### FIT v2 (procjena podudaranja, nije vjerojatnost zaposlenja)
-Zapiši verziju, datum i dokaz uz svaku komponentu: primarni kanal i zadaci 30; poslovni model i relevantni rezultati 20; mjerenje i obvezni alati 20; razina odgovornosti 15; operativni uvjeti i poznati budžet 10; motivacija i dokazi za baš tu ulogu 5. Ukupno 100.
-- Nepotvrđeno iskustvo ne dobiva bodove kao potvrđeno; zapiši donju ocjenu i što nedostaje. Odvojeno navedi pouzdanost dokaza (visoka/srednja/niska).
-- A: najmanje 80, obvezni uvjeti potvrđeni, jasan primarni fit. B: 65–79 bez blokatora. HOLD: bilo koja ključna nepoznanica. SKIP: blokator ili VOID. Stari FIT ostaje povijest, ne prepisuje se kao v2.
-- Primarni smjer: senior Google/SEA, e-commerce, Shopping/feedovi, multi-market i automatizacija. B2B pipeline, subscription UA, kreativno vođenje i napredna statistička analitika su zasebni smjerovi koji zahtijevaju dodatne dokaze.
+### FIT v2.1 (podudaranje sa željenim angažmanom, nije vjerojatnost zaposlenja)
+Potvrdio Dario 18/11/2026: **PPC + AI = MAX FIT**. Google Ads je prvi, a primijenjeni AI drugi glavni fokus i dokazana snaga. Prethodni v2 podcjenjivao je AI.
+
+Zapiši verziju, datum i dokaz uz svaku komponentu: Google/PPC dubina i zadaci 30; primijenjeni AI, agenti i izrada radnih procesa 25; mjerenje, podaci i integracije 15; poslovni model i relevantni caseovi 15; senioritet i odgovornost 10; operativni uvjeti 5. Ukupno 100.
+- Bodovi opisuju spoj zahtjeva/prilike u konkretnoj ulozi i Darijevih dokaza. Za svih 25 AI bodova treba stvaran prostor za izgradnju/upotrebu AI sustava, ne samo AI u nazivu poslodavca ili generiranje copyja.
+- Oglas za čist Google/PPC može biti dobar stručni match, ali ima niži strateški prioritet od usporedivog PPC + AI angažmana. To nije procjena slabijeg Google Ads iskustva.
+- Dokazani AI caseovi iz §8 već su početna osnova: Google Ads + Apps Script + GPT SERP monitoring; Claude Code/Codex agenti i psobz.eu; botovi screenshot/export → PPTX; AI lokalizacija s ljudskom provjerom; custom GPT-i, scraperi i landing stranice. Ne traži ponovno potvrdu koristi li Dario AI. Dodatno traži samo detalje konkretnog casea, osobni doprinos, način provjere i mjerljiv učinak koji nedostaju.
+- Običan Apps Script/GAQL pipeline nije sam po sebi AI; jasno opiši gdje je model/agent, a gdje deterministička automatizacija. Ne tvrdi ML engineering, treniranje modela, autonomno upravljanje budžetom ili dokazani uplift bez izvora.
+- Nepotvrđen obvezni alat ostaje označen kao nepoznanica; AI iskustvo se pritom ne briše. Odvojeno navedi pouzdanost dokaza (visoka/srednja/niska).
+- A: najmanje 80, obvezni uvjeti potvrđeni, jasan primarni fit. B: 65–79 bez blokatora. HOLD: ključna nepoznanica. SKIP: blokator ili VOID. Visok stručni potencijal može biti HOLD zbog datuma/lokacije; nije potvrđen kandidat za prijavu.
+- Stari FIT ostaje povijest. Novi score ima verziju i raščlambu; ne prepisuj povijesni score u v2.1.
+- Primarni smjer: **senior Google Ads / Paid Search + Applied AI**. E-commerce, Shopping/feedovi i multi-market su jaki dokazi domene; AI alati i agenti su drugi glavni stup. Uloga može biti u agenciji, e-commerceu, marketplaceu ili AI proizvodu. B2B CRM, subscription UA i napredna statistika provjeravaju se po stvarnim obveznim zahtjevima oglasa, bez automatskog isključivanja cijelog sektora.
 
 ### Evidencija događaja
 - Pripremljen paket nije poslano. Svaka prijava ima stabilan ključ (poslodavac + ATS job ID), datum slanja, kanal, potvrdu, točnu verziju CV-a/pisma/odgovora i stvarno upisanu plaću.
