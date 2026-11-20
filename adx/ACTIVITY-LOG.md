@@ -12,6 +12,48 @@ Zajednički dnevnik za Claude i Codex. Pravila rada su u [`UPUTE.md`](UPUTE.md);
 
 ## Otvoreno
 
+### Sljedeći crawl — PPC + AI · zabilježeno 20/11/2026
+
+**Darijev prioritet:** Google Ads je prvi, primijenjeni AI drugi glavni fokus; **PPC + AI = MAX FIT**. Prije novog crawla pročitati UPUTE §12 (FIT v2.1 i obvezni postupak) i CV-WORKFLOW §5. AI iskustvo je potvrđeno; tražiti samo nedostajuće pojedinosti relevantnog casea, a ne ponovno osnovnu potvrdu rada s AI-jem.
+
+**Datumi i status:** nalazi ispod potječu iz istraživanja **18/11/2026**, zapisani su **20/11/2026**. Ovo nije nova provjera aktivnih oglasa od 20/11. Nijedan HOLD nije potvrđen kandidat za prijavu. Prije daljnjeg rangiranja ponovno pročitati izvorni ATS, najraniji datum, aktualne Work/APPLIED retke i Darijeve VOID/Skip odluke. Stari popis aktivnih prijava niže u logu nije aktualni izvor; aktualno stanje čitati iz APPLIED.
+
+**Prve provjere, ovim redoslijedom:**
+
+| Poslodavac / rola | Nalaz 18/11 i zašto je zanimljiv | Što riješiti prije kvalifikacije |
+|---|---|---|
+| **crackerJCK — Paid Search Media Buyer (eCommerce)** · [ATS 5AD25593AC](https://apply.workable.com/crackerjck/j/5AD25593AC/) | Workable widget navodi 04/11/2026; Google Search/Shopping/PMax, Merchant Center, feedovi, GA4/Shopify i svakodnevni AI/Claude za analizu i reporting. $30–45/h, contract-to-hire; međunarodni kandidati uz preferenciju US sati. Visok PPC+AI potencijal. | **HOLD:** potvrditi aktualnost, mogućnost ugovaranja iz HR, sate i traženi high-AOV/fashion/jewelry/apparel ili odgovarajući dokaz iskustva. Provjeriti Shopify dubinu. $150–250K je mjesečni oglasni budžet portfelja, NE ponuđena godišnja plaća. |
+| **ClickGUARD — Inbound Growth Engineer (AI-Native, SEO + Paid Search)** · [karijere](https://www.clickguard.com/careers/) · [TurboHire](https://clickguard.turbohire.co/jobdescription/08b0e2a3-89c6-4a29-86c1-c7b1875cfb47) | Vrlo relevantan PPC+AI/automation opseg; portfolio produkcijskih workflowa, Google Ads Scripts / Python ili JS, LLM API, n8n/Make ili Zapier, GA4/GTM. 4+ SEO **i/ili** paid search, ne obvezno oboje. | **HOLD:** puni ATS nije uspješno pročitan; najraniji datum i HR uvjeti nepotvrđeni. $2.500–7.000/mj samo je podatak agregatora. Provjeriti US Eastern overlap, plaću i formu; HubSpot/B2B SaaS ne pretvoriti iz nice-to-have u obvezno. Pripremiti mapiranje SERP GPT + reporting bot + psobz.eu, bez izrade prijave prije izbora. |
+| **Groupon — Senior PPC Specialist (AI-Native Search)** · [Greenhouse 4833321101](https://job-boards.eu.greenhouse.io/groupon/jobs/4833321101) | ATS pročitan 18/11; Google Ads, feedovi, API/scripts, AI agenti za pacing/anomalije. **Već postoji u Work** (tada Found r292, CRAWL AUDIT r3; pronaći po ID-u, ne osloniti se na stare brojeve redaka). | **HOLD:** navedene baze Czechia/Poland/Spain, HR nije potvrđen; najraniji datum nije potvrđen. Primijeniti zabilježenu iznimku za popis EU zemalja preko osobnog profila, bez izmišljanja prihvatljivosti. Python je strong plus. Ne duplicirati red. |
+| **FutureMedia — Head of PPC** · [Ashby ce782baf-ee09-48d4-b80e-68939e198160](https://jobs.ashbyhq.com/futuremedia/ce782baf-ee09-48d4-b80e-68939e198160) | Ashby navodi 13/11/2026, global remote; skala, Google/Bing i širi kanali, vodstvo. AI je manje izražen nego u prve tri role. | **HOLD:** SQL kao obvezan uvjet, native/Quora i subscription/B2C zahtjeve usporediti s potvrđenim iskustvom; provjeriti ranije kopije/role. Ne miješati s ranijim VOID Senior PPC oglasom ili zatvorenim Marketing Engineer oglasom. |
+| **Ruby Labs — Senior User Acquisition Manager, Search Ads** · [Ashby 0ffdc980-6642-46e4-a0e6-03ab9d00dc63](https://jobs.ashbyhq.com/ruby-labs/0ffdc980-6642-46e4-a0e6-03ab9d00dc63) | Ashby navodi 04/11/2026; Croatia navedena, CET ±4, Google/Microsoft + Claude/automation. | **HOLD:** obvezni mobile App campaigns, MMP (AppsFlyer/Adjust/Singular), ATT/SKAN, subscription/cohort i MAN zahtjevi nisu time potvrđeni. Prvo povezati s prethodnim Ruby odlukama po konkretnoj roli/ID-u; ne ponovno predlagati već preskočenu rolu. |
+
+**Nalazi za isključivanje i sprečavanje recikliranja (stanje istraživanja 18/11):**
+
+| Oglas / izvor | Razlog i nastavak |
+|---|---|
+| FutureMedia — Marketing Engineer (PPC Automation), [Remotive](https://remotive.com/remote/jobs/marketing/marketing-engineer-6537848) · [službeni board](https://jobs.ashbyhq.com/futuremedia) | Nije bio na živom Ashby boardu; druga kopija navodi zatvoren oglas. Ne prikazivati kao aktivan; zadržati tip uloge kao smjer pretrage. |
+| Freedom24 — Senior Paid Search / AI Advertising Specialist, [službeni board](https://apply.workable.com/freedomfinanceeu) | Nije bio na aktualnom Workable boardu; cached kopije nisu dokaz aktivnosti. Ispravan account slug je freedomfinanceeu. |
+| Baker — [Performance Marketing Engineer](https://withbaker.com/careers/performance-marketing-engineer) | **SKIP:** obvezan fluent Spanish uz English. Fiksno €30–44K; €40–60K OTE uključuje varijabilni dio. |
+| Henry Schein — [Digital Paid Media Specialist, EMEA, R132978](https://henryschein.wd1.myworkdayjobs.com/en-US/External_Careers/job/Digital-Paid-Media-Specialist--EMEA_R132978) | **SKIP starost:** Workday „Posted 30+ Days Ago”, raniji trag iz travnja; nije svjež oglas. |
+| Ruby Labs — [Performance Marketing Lead, Google & Microsoft](https://jobs.ashbyhq.com/ruby-labs/15fe67f5-8451-4831-b8cb-e162a04569e7) | **SKIP starost/VOID:** Ashby 10/07/2026; nov agregatorski datum ne čini ga novim. Ne zamijeniti s gornjim zasebnim Search Ads ID-om. |
+| fonio — [Marketing Engineer](https://jobs.ashbyhq.com/Fonio/38f9b87f-319a-4a3d-ac02-5fd16aad318d) | **SKIP opseg:** data warehouse/ETL/reverse ETL/SQL/dbt, bez PPC jezgre; AI proizvod nije dovoljan fit. |
+| Google — [Agentic Marketing Specialist, AI, Google Ads](https://www.google.com/about/careers/applications/jobs/results/100575021860037318-agentic-marketing-specialist-ai-google-ads) | **SKIP geografija:** London, on-site. |
+| Adaptify Digital — Performance Marketing Manager, [otkrivena kopija](https://jobs.vn.indeed.com/viewjob?jk=ac12e848bde7d652) | AI/Claude/MCP + Google/Meta signal, ali ranije kopije i nepotvrđen employer-direct oglas, datum i HR uvjeti. Ne uvrstiti kao kvalificiran. Ne miješati agenciju Adaptify Digital s Adaptify.ai. |
+| THE/STUDIO — Paid Ads Specialist (Google + Meta), [kopija](https://www.caferemote.com/jobs/the-studio-paid-ads-specialist-google-meta) | Otkriven trag, nije potpuno provjeren. Log već ima Skip 31/10; prvo povezati s prethodnom odlukom, ne ponovno predlagati preskočenu rolu. |
+| Clera — Performance Marketing Lead (Google Ads), [kopija](https://earlystagestartups.com/jobs/marketing-growth-clera-eef92507) | Nepotpun trag; moguća regruterska/duplicirana Viktor rola. Bez potvrđenog izravnog poslodavca preskočiti po §4.7. |
+| Hirify — skriveni Media Buyer, Paid Social + Search | Skriven poslodavac i nepotvrđen izravni put; nije kvalificiran kandidat. |
+ 
+**Izvori istraženi u prethodnoj sesiji:** Workable, Ashby, Greenhouse, Workday i stranice poslodavaca; za otkrivanje LinkedIn, PPCJobs, RemoteTechJobsEurope, WorkAllRemote, Remotive, Workreap, Hirify i web indeksi. Nije izveden zaključak da na cijelom tržištu nema odgovarajućih poslova.
+
+**Nastavak i nedovršeno:**
+1. U sljedećem crawl runu prvo ponovno provjeriti gore navedene prioritetne ATS-ove; zatim tražiti nove role po PPC+AI upitima iz UPUTE §12. Prednost dati stvarnom prostoru za izradu alata i agenata uz Google Ads.
+2. Pročitati dossier `dario_polymath_portfolio_case_study_dossier_en.md` (20/11/2026; referenca u UPUTE §12) i postojeći master/§8. Povezati konkretne caseove s konkretnim zadacima. Dossier nije sam po sebi potvrda svih brojki ili apsolutnih marketinških tvrdnji.
+3. **Work:** istraživanje 18/11 iz ovog bloka još nije preneseno u Found positions / CRAWL AUDIT / ACTIVITY LOG. Prije upisa pročitati aktualna zaglavlja, validacije i postojeće retke, deduplicirati po ID-u, upisati stvarni datum provjere i razlog HOLD/SKIP. Za potvrđeno aktualne nalaze ažurirati postojeće retke; čuvati Y u Found i G u Job sites po §10. W-003 pripada Frontu B i ostaje zaseban.
+4. **Audit/master:** izvještaj audita od 17/11 i master još trebaju sadržajno usklađivanje s PPC+AI prioritetom; povijesna statistika i stvarno poslani paketi ostaju povijest. Upute i CV postupak jesu usklađeni; ne tvrditi da je već izmijenjen svaki CV ili izvještaj.
+5. Drugi AI posprema Google Drive: prije izmjene pročitati aktualnu verziju; u ovom nastavku ne premještati, preimenovati ni brisati projektne mape/dokumente.
+6. Zabilježiti broj pregledanih, kvalificiranih, HOLD/SKIP i stvarno poslanih prijava odvojeno. Ovaj zapis nije slanje prijave ni izrada paketa; Dario bira brojeve i šalje.
+
 ### Nalozi za tablicu
 
 #### W-003 · PENDING · Claude · 31/10/2026 — Adaxa koraci preneseni iz W-002
@@ -193,6 +235,13 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 20/11/2026 · Codex · PPC + AI: upute i bilješke za idući crawl
+
+- Na Darijev zahtjev „dodaj ovo u bilješke i upute za idući crawl” spremljen praktičan postupak u UPUTE §12: PPC+AI upiti, povezivanje zadataka s potvrđenim caseovima, ciljana pitanja za nedostajuće dokaze, kontrola izvornog datuma/plaće i obvezan zapis nastavka. FIT v2.1 i prioritet uvedeni su 18/11 u commitu `1c8252bc74cefb79c68376c37da15edc1cc66eea`; današnja dopuna: `ddc5906ab61bfd00fb4b8a119fe106f817a8096c`.
+- U **Otvoreno → Sljedeći crawl — PPC + AI** spremljeni prioritetni oglasi, izvori, HOLD/SKIP razlozi i nedovršene provjere iz istraživanja 18/11. Nisu predstavljeni kao ponovno provjereni 20/11.
+- CV-WORKFLOW §5 usklađen: Google/PPC rezultat + konkretan dokaz primijenjenog AI-ja, uz razdvajanje vlastite radnje i AI doprinosa; commit `48764b856787afc809487560eb285ef16bf2d72d`. Pročitan dossier od 20/11 i povezan kao dodatni izvor, bez pretvaranja nepotvrđenih brojki u činjenice.
+- Tablica: **ništa u ovoj izmjeni bilježaka**; preostali upisi navedeni su iznad. Nije izvršavan W-003, nisu slane prijave ni poruke poslodavcima.
 
 ### 17/11/2026 · Claude · EOJN: aktualni i nadolazeći natječaji (od 30/10)
 - **Dario:** „osvježi s aktualnim i nadolazećim natječajima”.
