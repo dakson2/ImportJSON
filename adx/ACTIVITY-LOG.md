@@ -180,7 +180,7 @@ Od 30/10 EOJN i javna nabava vode se u zasebnom chatu „Adaxa — EOJN javna na
 | Kada | Što | ID |
 |---|---|---|
 | **odmah** | **Registracija Adaxe na EOJN RH** (eojn.hr/login → „Želim se registrirati” → Gospodarski subjekt; OIB; aktivacija e-poštom; e-potpis ne treba). Bez nje nema DoN-a, pitanja ni ponude. Zatim preuzeti DoN za HAC i APN. Vodič i analiza: [ADAXA — EOJN priprema i natječaji (studeni 2026)](https://docs.google.com/document/d/1FjU5e9Se3TKDPI7PRu69BQdtly7oFdc3HGoPo9RAhco/edit) | — |
-| **do 21/11 pitanja, 27/11 10:00 ponuda** | **AURORA (Istarska županija), METRIS — grupa 2: savjetovanje, upravljanje i oglašavanje na digitalnim kanalima**, €20.000, 01/12/2026–31/08/2028; cijena 90, ključni stručnjak 10. Jedini otvoreni natječaj koji odgovara Adaxi (uvjetni GO; DoN nakon registracije). [EOJN](https://eojn.hr/tender-eo/109181) | novo |
+| **do 21/11 pitanja, 27/11 10:00 ponuda** | **AURORA (Istarska županija), METRIS — grupa 2: digitalni kanali**, €20.000; kampanja 01/09/2027–31/08/2028 (24+ plaćeno promoviranih objava, Meta i Google). Preporuka: ponuda, ako glavni dio DoN-a ne traži nešto što portfelj ne pokriva. Čeka se glavni dio DoN-a i troškovnik grupe 2 u mapi EOJN/Aurora. [Analiza](https://docs.google.com/document/d/1AAWbCa4aS8n3toAoA0JEVqcAc1RALfS_PecOkwJh8z8/edit) · [EOJN](https://eojn.hr/tender-eo/109181) | novo |
 | **što prije** | **TZ Požeško-slavonske županije — digitalna promocija Adventa**, €11.000 (plan 2026, ispod €15.000, naručitelj pita izravno). Kontakt prije kupnje, samo uz Darijevo odobrenje. [EOJN](https://eojn.hr/plan-eo/15963) | novo |
 | **do 23/11 09:00** | **Hrvatske autoceste — Crolibertas:** rok pomaknut četiri puta; 11/11 izmijenjeni kriteriji sposobnosti. Grupa 2 samo s Darijem kao stručnjakom u ponudi medijske agencije; grupa 4 no-go. [EOJN](https://eojn.hr/tender-eo/104028) | PB-0056 |
 | **do 25/11 / 01/12** | **Ministarstvo rada, grupa 5 „marketinška agencija”** (€184.000, rok 25/11) i **Porezna uprava, oglašavanje nagradne igre 2027.** (€100.000, rok 01/12): samo kao digitalni podizvođač agencije. [EOJN](https://eojn.hr/tender-eo/108105) · [EOJN](https://eojn.hr/tender-eo/113472) | PB-0055 |
@@ -235,6 +235,13 @@ Izvor istine je kartica APPLIED.
 ---
 
 ## Dnevnik
+
+### 20/11/2026 · Dario / Claude · EOJN mapa na Driveu, AURORA grupa 2
+- **Dario:** sve vezano za EOJN ide u novu Drive mapu EOJN; napravio je podmapu Aurora i u mapu stavio tehničke specifikacije METRIS (izmjena 03/11) i dva obrasca izjave o iskustvu stručnjaka. UPUTE §9: dodana EOJN mapa.
+- **Pročitano:** grupa 2 je 12-mjesečna kampanja od 01/09/2027 do 31/08/2028 (24+ objava, svaka plaćeno promovirana ≥ 7 dana, Meta i Google/GDN, vizuali i tekstovi ≥ 500 znakova, doseg 10.000 jedinstvenih korisnika, mjesečno plaćanje). Obrasci izjave u zaglavlju imaju „Grad Koprivnica” (vjerojatno pogrešan predložak naručitelja).
+- **Nedostaje:** glavni dio DoN-a (uvjeti sposobnosti, jamstvo, bodovanje stručnjaka) i troškovnik grupe 2. Linkovi iz EOJN-a traže prijavu, pa ih Claude ne može otvoriti.
+- **Drive:** glavni EOJN dokument premješten u mapu EOJN (link isti); nova analiza u podmapi Aurora: [AURORA METRIS — grupa 2](https://docs.google.com/document/d/1AAWbCa4aS8n3toAoA0JEVqcAc1RALfS_PecOkwJh8z8/edit), s prijedlogom pitanja naručitelju (rok 21/11) i koracima do 27/11.
+- Tablica: ništa.
 
 ### 20/11/2026 · Codex · PPC + AI: upute i bilješke za idući crawl
 
